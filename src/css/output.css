@@ -972,6 +972,27 @@ video {
           animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530)   both;
 }
 
+@-webkit-keyframes fadeInUpBig {
+  from {
+    -webkit-transform: translate3d(0, var(--animate-distance, 1000px), 0);
+            transform: translate3d(0, var(--animate-distance, 1000px), 0);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInUpBig {
+  from {
+    -webkit-transform: translate3d(0, var(--animate-distance, 1000px), 0);
+            transform: translate3d(0, var(--animate-distance, 1000px), 0);
+    opacity: 0;
+  }
+}
+
+.animate-fadeInUpBig {
+  -webkit-animation: 1s both fadeInUpBig;
+          animation: 1s both fadeInUpBig;
+}
+
 .appearance-none {
   -webkit-appearance: none;
           appearance: none;

@@ -25,22 +25,22 @@ function Hero() {
           </button>
 
           <img
-            className="absolute bottom-2 left-2 animate-fadeInLeftBig animate-delay-300"
+            className="absolute bottom-2 left-2 animate-fadeInUpBig animate-delay-300"
             src={BorderImg}
             alt=""
           />
           <img
-            className="absolute -rotate-90 bottom-2 right-2 animate-fadeInRightBig animate-delay-500"
+            className="absolute -rotate-90 bottom-2 right-2 animate-fadeInUpBig animate-delay-500"
             src={BorderImg}
             alt=""
           />
           <img
-            className="absolute rotate-90 top-2 left-2 animate-fadeInLeftBig animate-delay-700"
+            className="absolute rotate-90 top-2 left-2 animate-fadeInUpBig animate-delay-700"
             src={BorderImg}
             alt=""
           />
           <img
-            className="absolute rotate-180 top-2 right-2 animate-fadeInRightBig animate-delay-1000"
+            className="absolute rotate-180 top-2 right-2 animate-fadeInUpBig animate-delay-1000"
             src={BorderImg}
             alt=""
           />
