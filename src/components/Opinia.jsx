@@ -1,7 +1,7 @@
 function Opinia() {
   return (
-    <div id="opinia" className=" bg-cadet-space">
-      <section className="text-center text-gray-800 lg:text-left xl:w-[1170px] mx-auto">
+    <div id="opinia" className="py-32 bg-cadet-space">
+      <section className="text-center lg:text-left xl:w-[1170px] mx-auto">
         <h2 className="mb-12 text-6xl font-bold text-center uppercase text-mint-cream">
           Opinia
         </h2>

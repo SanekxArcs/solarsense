@@ -9,12 +9,12 @@ import pic6 from "../resourses/gal6.webp";
 
 function Galeria() {
   return (
-    <div id="galeria" class="relative max-h-screen">
-      <section class="max-w-[1170px] mx-auto py-32">
-        <h2 className="py-10 text-6xl font-bold text-center uppercase text-cadet-space">
+    <div id="galeria" class="relative">
+      <section class="max-w-[1170px] mx-auto lg:py-32">
+        <h2 className="py-10 text-4xl font-bold text-center uppercase lg:text-6xl text-cadet-space">
           wykonane montaże
         </h2>
-        <div class="grid grid-cols-3 grid-rows-3 gap-2 max-h-144 mb-10">
+        <div class="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-2 max-h-144 pb-10">
           <div class="overflow-hidden rounded-sm">
             <img
               alt="gallery"
@@ -25,7 +25,7 @@ function Galeria() {
             <span></span>
           </div>
 
-          <div class="overflow-hidden rounded-sm row-span-2">
+          <div class="overflow-hidden rounded-sm  row-span-2">
             <img
               alt="gallery"
               class="block h-full w-full rounded-sm object-cover object-center  hover:scale-110 transition-all duration-300 hover:rounded-md"
@@ -41,7 +41,7 @@ function Galeria() {
             />
           </div>
 
-          <div class="overflow-hidden rounded-sm">
+          <div class="overflow-hidden rounded-sm row-span-2 md:row-span-1">
             <img
               alt="gallery"
               class="block h-full w-full rounded-sm object-cover object-center  hover:scale-110 transition-all duration-300 hover:rounded-md"
@@ -49,7 +49,7 @@ function Galeria() {
             />
           </div>
 
-          <div class="overflow-hidden rounded-sm row-span-2">
+          <div class="overflow-hidden rounded-sm md:row-span-2">
             <img
               alt="gallery"
               class="block h-full w-full rounded-sm object-cover object-center  hover:scale-110 transition-all duration-300 hover:rounded-md"
@@ -57,7 +57,7 @@ function Galeria() {
             />
           </div>
 
-          <div class="overflow-hidden rounded-sm col-span-2">
+          <div class="overflow-hidden rounded-sm md:col-span-2">
             <img
               alt="gallery"
               class="block h-full w-full rounded-sm object-cover object-center  hover:scale-110 transition-all duration-300 hover:rounded-md"
