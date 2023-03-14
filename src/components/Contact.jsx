@@ -1,11 +1,14 @@
+import topImg from "../resourses/wave-haikei.svg";
+import bottomImg from "../resourses/wave-haikei (1).svg";
+
 function Contact() {
   return (
-    <div id="contact" className="py-16">
-      <h2 className=" text-6xl uppercase font-bold text-center text-cadet-space py-10">
+    <div id="contact" className="relative ">
+      <h2 className="py-10 text-6xl font-bold text-center uppercase text-cadet-space">
         Contact
       </h2>
       <div className="xl:max-w-[1170px] p-6 bg-white rounded-lg shadow-lg dark:bg-neutral-700  mx-auto grid grid-cols-1 lg:grid-cols-5 gap-5 bg-cadet-space  text-mint-cream">
-        <form className=" col-span-3">
+        <form className="col-span-3">
           <div
             className="relative mb-5 text-cadet-space"
             data-te-input-wrapper-init
@@ -82,7 +85,7 @@ function Contact() {
             Send
           </button>
         </form>
-        <div className=" col-span-2">
+        <div className="col-span-2 ">
           <div className="w-full px-3 mb-12 grow-0 shrink-0 basis-auto ">
             <div className="flex transition-all duration-300 hover:-translate-y-1">
               <div className="shrink-0">
@@ -93,7 +96,7 @@ function Contact() {
               <div className="ml-4 grow">
                 <p className="mb-1 font-bold">Support 24/7</p>
                 <a
-                  className="hover:text-primary-mint transition-all hover:-translate-y-1 hover:drop-shadow "
+                  className="transition-all hover:text-primary-mint hover:-translate-y-1 hover:drop-shadow "
                   href="tel:+48735145620"
                 >
                   +48 735 145 620
@@ -128,6 +131,17 @@ function Contact() {
           </div>
         </div>
       </div>
+
+      <img
+        className="absolute top-0 left-0 right-0 w-full -z-40"
+        src={topImg}
+        alt=""
+      />
+      <img
+        className="absolute bottom-0 left-0 right-0 w-full -z-50"
+        src={bottomImg}
+        alt=""
+      />
     </div>
   );
 }

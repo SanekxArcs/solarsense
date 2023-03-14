@@ -1,9 +1,9 @@
 function Opinia() {
   return (
-    <div id="opinia" className="container px-6 mx-auto py-24 bg-cadet-space">
-      <section className="mb-32 text-center text-gray-800 lg:text-left xl:w-[1170px] mx-auto">
-        <h2 className="mb-12 text-3xl font-bold text-center">
-          Projects we are proud of
+    <div id="opinia" className=" bg-cadet-space">
+      <section className="text-center text-gray-800 lg:text-left xl:w-[1170px] mx-auto">
+        <h2 className="mb-12 text-6xl font-bold text-center uppercase text-mint-cream">
+          Opinia
         </h2>
 
         <div className="grid lg:grid-cols-3 gap-x-6 lg:gap-x-12 ">

@@ -4,7 +4,7 @@ import bottomImg from "../../resourses/wave-haikei (1).svg";
 
 function DlaCzego() {
   return (
-    <div id="dlaChegoMy" className="relative py-5 md:py-32">
+    <div id="dlaChegoMy" className="relative py-5 md:pt-32 pb-44">
       <section className="xl:w-[1170px] mx-auto">
         <div className="relative grid items-center grid-cols-1 ld:grid-cols-3">
           <div className="relative w-full p-10 mb-6 grow-0 shrink-0 basis-auto md:mb-0">
