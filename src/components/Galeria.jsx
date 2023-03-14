@@ -1,8 +1,11 @@
+import topImg from "../resourses/wave-haikei.svg";
+import bottomImg from "../resourses/wave-haikei (1).svg";
+
 function Galeria() {
   return (
-    <div id="galeria" class="container my-24 px-6 mx-auto ">
-      <section class="overflow-hidden text-neutral-700">
-        <h2 className=" text-6xl uppercase font-bold text-center text-cadet-space py-10">
+    <div id="galeria" class="relative">
+      <section class="overflow-hidden text-neutral-700 max-w-[1170px] py-24 px-6 mx-auto ">
+        <h2 className="py-10 text-6xl font-bold text-center uppercase text-cadet-space">
           wykonane montaże
         </h2>
         <div class="w-[1170px] mx-auto px-5 py-2 lg:px-32 ">
@@ -56,6 +59,16 @@ function Galeria() {
           </div>
         </div>
       </section>
+      <img
+        className="absolute top-0 left-0 right-0 w-full -z-40"
+        src={topImg}
+        alt=""
+      />
+      <img
+        className="absolute bottom-0 left-0 right-0 w-full -z-50"
+        src={bottomImg}
+        alt=""
+      />
     </div>
   );
 }
