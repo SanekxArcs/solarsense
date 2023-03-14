@@ -2,7 +2,7 @@ import Logo from "../resourses/Монтажна-область-1.webp";
 
 function Header() {
   return (
-    <header className="sticky top-0 z-50 shadow-md bg-cadet-space text-mint-cream">
+    <header className=" shadow-md bg-cadet-space text-mint-cream">
       {/* TIME AND LINKS */}
       <div className=" flex justify-between items-center w-[1170px] h-5 mx-auto text-xs animate-text-focus-in">
         <span>
@@ -34,7 +34,7 @@ function Header() {
           >
             <img className="h-10" src={Logo} alt="" />
           </a>
-          <div className="flex gap-5 text-2xl font-bold">
+          <div className="flex gap-5 text-xl font-bold">
             <a
               className="hover:text-primary-mint transition-all hover:-translate-y-1 hover:drop-shadow "
               href="tel:+48735145620"
@@ -48,35 +48,11 @@ function Header() {
               href="mailto:test@gmail.com"
             >
               <i className="fa-solid fa-at p-3 mr-2 transition-all border rounded-sm bg-cadet-space text-mint-cream hover:bg-primary-mint "></i>
-              test@gmail.com
+              solar.sense@gmail.com
             </a>
           </div>
         </div>
       </nav>
-
-      <ul className="flex justify-between w-[1170px] mx-auto  items-center animate-text-focus-in animate-delay-500">
-        <li className="hover:bg-primary-mint py-2 px-4 transition-all duration-300 rounded-sm">
-          <a href="http://">Home</a>
-        </li>
-        <li className="hover:bg-primary-mint py-2 px-4 transition-all duration-300 rounded-sm">
-          <a href="http://">Dla czego my?</a>
-        </li>
-        <li className="hover:bg-primary-mint py-2 px-4 transition-all duration-300 rounded-sm">
-          <a href="http://">Etapy</a>
-        </li>
-        <li className="hover:bg-primary-mint py-2 px-4 transition-all duration-300 rounded-sm">
-          <a href="http://">Galeria</a>
-        </li>
-        <li className="hover:bg-primary-mint py-2 px-4 transition-all duration-300 rounded-sm">
-          <a href="http://">Opinia</a>
-        </li>
-        <li className="hover:bg-primary-mint py-2 px-4 transition-all duration-300 rounded-sm">
-          <a href="http://">Servisy</a>
-        </li>
-        <li className="hover:bg-primary-mint py-2 px-4 transition-all duration-300 rounded-sm">
-          <a href="http://">Contacts</a>
-        </li>
-      </ul>
     </header>
   );
 }

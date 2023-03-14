@@ -1,6 +1,6 @@
 function Galeria() {
   return (
-    <div class="container my-24 px-6 mx-auto">
+    <div id="galeria" class="container my-24 px-6 mx-auto">
       <section class="mb-32 text-gray-800 w-[1170px] mx-auto">
         <h2 class="text-3xl font-bold mb-12 text-center">
           Projects we are<u class="text-blue-600"> proud of</u>
