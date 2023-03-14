@@ -12,10 +12,10 @@ function Hero() {
       <div className="z-10 grid w-full h-screen transition-all duration-500 place-content-center lg:py-32 backdrop-blur-sm hover:backdrop-blur-none bg-rich-black bg-opacity-40 animate-text-focus-in">
         <div className="relative flex flex-col items-center justify-center gap-12 mx-auto max-h-102 max-w-[900px] text-center text-mint-cream px-5 py-10">
           <h1 className="hidden text-3xl">Solar Sense</h1>
-          <p className="text-xl font-bold lg:text-6xl">
+          <p className="text-xl font-bold md:text-6xl">
             CLEAN, SAFE, RENEWABLE.{" "}
           </p>
-          <p className="text-sm lg:text-lg ">
+          <p className="text-sm md:text-lg ">
             Nulla eget ipsum id est accumsan pellentesque nec et odio. Duis sit
             amet convallis sem, tincidunt feugiat lorem. Nunc porttitor arcu ac
             dui aliquam efficitur.{" "}

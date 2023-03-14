@@ -13,7 +13,7 @@ function App() {
     <>
       <Header />
       <div className="sticky top-0 left-0 right-0 bottom-auto z-50 shadow-md text-mint-cream bg-cadet-space">
-        <ul className=" flex justify-end md:justify-between max-w-[1170px] h-20 md:h-10  mx-auto items-center animate-text-focus-in animate-delay-500">
+        <ul className=" flex justify-between px-4  md:justify-between max-w-[1170px] h-20 md:h-10  mx-auto items-center animate-text-focus-in animate-delay-500">
           <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block">
             <a href="#home">Home</a>
           </li>
@@ -40,7 +40,7 @@ function App() {
               <img className="h-7" src={LightLogo} alt="" />
             </a>
           </li>
-          <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:hidden">
+          <li className="py-2 transition-all duration-300 rounded-sm  hover:bg-primary-mint md:hidden">
             <i class="fa-solid fa-bars text-xl"></i>
           </li>
         </ul>

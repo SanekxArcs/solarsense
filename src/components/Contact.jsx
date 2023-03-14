@@ -8,7 +8,7 @@ function Contact() {
         Contact
       </h2>
       <div className="xl:max-w-[1170px] p-6 rounded-lg shadow-lg  mx-auto bg-cadet-space  text-mint-cream">
-        <form className="grid grid-cols-1 grid-rows-3 gap-5 lg:grid-cols-5">
+        <form className="grid grid-cols-1 lg:grid-rows-3 gap-5 lg:grid-cols-5">
           <div className="col-span-2 row-span-2">
             <div
               className="relative mb-5 text-cadet-space"
