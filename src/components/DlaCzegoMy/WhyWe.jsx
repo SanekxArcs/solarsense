@@ -30,13 +30,13 @@ const WhyWe = () => {
             <div className="w-full px-3 mb-12 grow-0 shrink-0 basis-auto lg:w-6/12">
               <div className="flex transition-all duration-300 hover:-translate-y-1">
                 <div className="shrink-0">
-                  <div className="p-4 bg-blue-600 rounded-sm shadow-lg">
+                  <div className="grid w-16 h-16 text-2xl rounded-sm shadow-lg bg-primary-mint place-content-center">
                     <i class={item.logo}></i>
                   </div>
                 </div>
                 <div className="ml-4 grow">
                   <p className="mb-1 font-bold">{item.name}</p>
-                  <p className="text-sm  text-cadet-space">{item.text}</p>
+                  <p className="text-sm text-cadet-space">{item.text}</p>
                 </div>
               </div>
             </div>

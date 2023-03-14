@@ -20,18 +20,18 @@ module.exports = withAnimations({
       xl: "1440px",
       "2xl": "1920px",
     },
-    colors: {
-      "primary-mint": "#41B883",
-      "secondary-cadet": "#181D3A",
-      "mint-cream": "#F0FAF5",
-      "sea-green": "#308860",
-      "cadet-space": "#222244",
-      "rich-black": "#0C0F1D",
-    },
     fontFamily: {
       sans: ["Montserrat", "sans-serif"],
     },
     extend: {
+      colors: {
+        "primary-mint": "#41B883",
+        "secondary-cadet": "#181D3A",
+        "mint-cream": "#F0FAF5",
+        "sea-green": "#308860",
+        "cadet-space": "#222244",
+        "rich-black": "#0C0F1D",
+      },
       animation: {
         "scale-up-center":
           "scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both",
