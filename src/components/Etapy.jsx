@@ -4,8 +4,8 @@ function Etapy() {
       <div className="container px-5 mx-auto">
         <section className=" text-center">
           <h2 className=" text-6xl font-bold uppercase pb-10">Etapy</h2>
-          <div className=" grid items-center md:grid-cols-2 place-content-center lg:grid-cols-6 gap-6 lg:gap-x-6 p-5 ">
-            <div className="relative mb-12 lg:mb-0 hover:bg-primary-mint bg-primary-mint bg-opacity-10 hover:text-cadet-space transition-all duration-500 rounded-sm p-10">
+          <div className=" grid items-center md:grid-cols-2 place-content-center lg:grid-cols-6 gap-6 lg:gap-x-6 p-5 items-stretch">
+            <div className="relative mb-12 lg:mb-0 hover:bg-primary-mint bg-primary-mint bg-opacity-10 hover:text-cadet-space transition-all duration-500 rounded-sm p-10 ">
               <i class="fa-solid fa-chalkboard-user text-5xl pb-2"></i>
               <h5 className="text-lg font-medium pb-2">Contact</h5>
               <p className="text-sm">

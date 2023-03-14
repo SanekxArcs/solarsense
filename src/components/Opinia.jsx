@@ -1,7 +1,7 @@
 function Opinia() {
   return (
     <div id="opinia" className="container px-6 mx-auto py-24 bg-cadet-space">
-      <section className="mb-32 text-center text-gray-800 lg:text-left w-[1170px] mx-auto">
+      <section className="mb-32 text-center text-gray-800 lg:text-left xl:w-[1170px] mx-auto">
         <h2 className="mb-12 text-3xl font-bold text-center">
           Projects we are proud of
         </h2>

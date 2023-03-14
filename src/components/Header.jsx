@@ -4,7 +4,7 @@ function Header() {
   return (
     <header className=" shadow-md bg-cadet-space text-mint-cream">
       {/* TIME AND LINKS */}
-      <div className=" flex justify-between items-center w-[1170px] h-5 mx-auto text-xs animate-text-focus-in">
+      <div className=" lg:flex justify-between items-center w-[1170px] h-5 mx-auto text-xs animate-text-focus-in hidden">
         <span>
           <i className="fa-regular fa-clock pr-2"></i>
           Opening Times: Mon - Sat 8.00 - 18.00
@@ -26,15 +26,15 @@ function Header() {
         </span>
       </div>
       {/* HEADER CONTENT  */}
-      <nav className="flex items-center justify-between h-32 bg-mint-cream text-rich-black animate-text-focus-in animate-delay-300">
-        <div className="flex items-center justify-between w-[1170px] mx-auto">
+      <nav className="flex items-center justify-between h-20 bg-mint-cream text-rich-black animate-text-focus-in animate-delay-300 ">
+        <div className="flex items-center justify-between xl:w-[1170px] mx-auto">
           <a
             className="hover:scale-110 transition-all duration-300"
             href="http://solarsense.pl"
           >
             <img className="h-10" src={Logo} alt="" />
           </a>
-          <div className="flex gap-5 text-xl font-bold">
+          <div className="lg:flex gap-5 text-xl font-bold hidden">
             <a
               className="hover:text-primary-mint transition-all hover:-translate-y-1 hover:drop-shadow "
               href="tel:+48735145620"

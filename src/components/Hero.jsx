@@ -4,11 +4,12 @@ import BorderImg from "../resourses/slider-dash.png";
 function Hero() {
   return (
     <section
+      id="home"
       className="bg-center bg-no-repeat bg-cover transition-all duration-300"
       style={{ backgroundImage: `url(${HeroImg})` }}
     >
       <div className="w-full py-32 backdrop-blur-sm hover:backdrop-blur-none transition-all duration-500 bg-rich-black bg-opacity-40 animate-text-focus-in">
-        <div className="relative flex flex-col items-center justify-center gap-12 mx-auto h-102 w-[900px]   text-center text-mint-cream p-5">
+        <div className="relative flex flex-col items-center justify-center gap-12 mx-auto h-102 xl:w-[900px]   text-center text-mint-cream p-5">
           <h1 className="text-3xl ">Solar Sense</h1>
           <p className="text-6xl font-bold">CLEAN, SAFE, RENEWABLE. </p>
           <p className="text-lg ">

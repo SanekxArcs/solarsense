@@ -4,7 +4,7 @@ function Contact() {
       <h2 className=" text-6xl uppercase font-bold text-center text-cadet-space py-10">
         Contact
       </h2>
-      <div className="max-w-[1170px] p-6 bg-white rounded-lg shadow-lg dark:bg-neutral-700 w-[1170px] mx-auto grid grid-cols-5 gap-5 bg-cadet-space  text-mint-cream">
+      <div className="xl:max-w-[1170px] p-6 bg-white rounded-lg shadow-lg dark:bg-neutral-700  mx-auto grid grid-cols-1 lg:grid-cols-5 gap-5 bg-cadet-space  text-mint-cream">
         <form className=" col-span-3">
           <div
             className="relative mb-5 text-cadet-space"

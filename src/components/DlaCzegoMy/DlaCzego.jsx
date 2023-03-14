@@ -3,9 +3,9 @@ import BorderImg from "../../resourses/slider-dash-primary-mint.png";
 
 function DlaCzego() {
   return (
-    <div id="dlaChegoMy" className="w-[1170px] mx-auto py-32">
+    <div id="dlaChegoMy" className="xl:w-[1170px] mx-auto py-32">
       <section className="text-gray-800">
-        <div className="relative grid grid-cols-3 items-center">
+        <div className="relative grid grid-cols-1 ld:grid-cols-3 items-center">
           <div className="relative w-full mb-6 grow-0 shrink-0 basis-auto  md:mb-0 p-10">
             <p className="mb-6 font-bold uppercase text-primary-mint">
               WE OFFER DIFFEREN SERVICES
