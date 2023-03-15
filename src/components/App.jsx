@@ -4,7 +4,7 @@ import DlaCzego from "./DlaCzegoMy/DlaCzego";
 import Etapy from "./Etapy";
 import Footer from "./Footer";
 import Galeria from "./Galeria";
-import Opinia from "./Opinia";
+// import Opinia from "./Opinia";
 import Contact from "./Contact";
 import LightLogo from "../resourses/solarsense-light-logo.png";
 
