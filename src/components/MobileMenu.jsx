@@ -6,7 +6,7 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
       <nav
         className={`${
           isOpen ? "" : "hidden"
-        } absolute top-2 left-2 right-2 bottom-2 bg-cadet-space bg-opacity-50 text-mint-cream md:hidden backdrop-blur-xl rounded-md z-50 `}
+        } absolute top-2 left-2 right-2 bottom-2 bg-cadet-space bg-opacity-90 text-mint-cream md:hidden backdrop-blur-xl rounded-md z-50 `}
       >
         <div className=" relative">
           <button
