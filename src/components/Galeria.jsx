@@ -15,7 +15,7 @@ function Galeria() {
         <h2 className="py-10 text-4xl font-bold text-center uppercase max-h-144 lg:text-6xl text-cadet-space">
           wykonane montaże
         </h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-5  pb-10 px-4">
+        <div class="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-5  pb-10 px-4 max-h-144">
           <div class="overflow-hidden rounded-sm relative hover:scale-110 transition-all duration-300 hover:rounded-md hover:z-50 ">
             <img
               alt="gallery"

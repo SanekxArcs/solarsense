@@ -8,7 +8,12 @@ function Contact() {
         Kontakt
       </h2>
       <div className="max-w-[1170px] p-6 rounded-sm shadow-lg  mx-auto bg-cadet-space  text-mint-cream">
-        <form className="grid grid-cols-1 gap-5 lg:grid-rows-3 lg:grid-cols-4">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          className="grid grid-cols-1 gap-5 lg:grid-rows-3 lg:grid-cols-4"
+        >
           <div className="lg:col-span-2 lg:row-span-2">
             <div
               className="relative mb-5 text-cadet-space"
@@ -110,7 +115,6 @@ function Contact() {
               />
             </div>
           </div>
-
           <div
             className="relative mb-6 lg:col-span-2 lg:row-span-1 text-cadet-space"
             data-te-input-wrapper-init

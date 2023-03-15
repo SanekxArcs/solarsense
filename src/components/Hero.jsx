@@ -34,28 +34,28 @@ function Hero() {
           <img
             className="absolute bottom-2 left-2 animate-fadeInUpBig animate-delay-300"
             src={BorderImg}
-            alt=""
+            alt="design image"
           />
           <img
             className="absolute -rotate-90 bottom-2 right-2 animate-fadeInUpBig animate-delay-500"
             src={BorderImg}
-            alt=""
+            alt="design image"
           />
           <img
             className="absolute rotate-90 top-2 left-2 animate-fadeInUpBig animate-delay-700"
             src={BorderImg}
-            alt=""
+            alt="design image"
           />
           <img
             className="absolute rotate-180 top-2 right-2 animate-fadeInUpBig animate-delay-1000"
             src={BorderImg}
-            alt=""
+            alt="design image"
           />
         </div>
         <img
           className="absolute bottom-0 left-0 right-0 z-0 w-full"
           src={BorderImgWhite}
-          alt=""
+          alt="design image"
         />
       </div>
     </section>
