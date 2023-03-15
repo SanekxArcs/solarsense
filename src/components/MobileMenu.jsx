@@ -15,7 +15,10 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
           >
             <i class="fa-regular fa-circle-xmark"></i>
           </button>
-          <ul className="py-5 flex flex-col justify-between gap-5 px-4 max-w-[1170px] h-20 md:h-10  mx-auto items-center ">
+          <ul
+            onClick={toggleMenu}
+            className="py-5 flex flex-col justify-between gap-5 px-4 max-w-[1170px] h-20 md:h-10  mx-auto items-center "
+          >
             <li className="">
               <a
                 className="transition-all duration-300 hover:scale-110"
