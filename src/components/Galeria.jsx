@@ -24,9 +24,7 @@ function Galeria() {
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
               <img className="h-1/2" src={svgRew} alt="" />
-              <div className="p-2 bg-mint-cream">
-                majora Nurta 1, 27-200 Starachowice
-              </div>
+              <div className="p-2 bg-mint-cream">27-200 Starachowice</div>
             </div>
           </div>
 
@@ -38,9 +36,7 @@ function Galeria() {
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
               <img src={svgRew} alt="" />
-              <div className="p-2 bg-mint-cream">
-                Piskorzów 19, 55-216 Piskorzów
-              </div>
+              <div className="p-2 bg-mint-cream">55-216 Piskorzów</div>
             </div>
           </div>
 
@@ -52,9 +48,7 @@ function Galeria() {
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
               <img src={svgRew} alt="" />
-              <div className="p-2 bg-mint-cream">
-                Batalionu Miotła 22, 01-366 Warszawa
-              </div>
+              <div className="p-2 bg-mint-cream">01-366 Warszawa</div>
             </div>
           </div>
 
@@ -66,9 +60,7 @@ function Galeria() {
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
               <img src={svgRew} alt="" />
-              <div className="p-2 bg-mint-cream">
-                Kolejowa 5, 95-011 Bratoszewice
-              </div>
+              <div className="p-2 bg-mint-cream">95-011 Bratoszewice</div>
             </div>
           </div>
 
@@ -80,9 +72,7 @@ function Galeria() {
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
               <img src={svgRew} alt="" />
-              <div className="p-2 bg-mint-cream">
-                Wrzosowa 18A, 58-521 Jeżuw-Sudecki,
-              </div>
+              <div className="p-2 bg-mint-cream">58-521 Jeżuw-Sudecki,</div>
             </div>
           </div>
 
@@ -94,9 +84,7 @@ function Galeria() {
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
               <img src={svgRew} alt="" />
-              <div className="p-2 bg-mint-cream">
-                Świerkowa 20, 58-570 Jelenia Góra
-              </div>
+              <div className="p-2 bg-mint-cream">58-570 Jelenia Góra</div>
             </div>
           </div>
         </div>

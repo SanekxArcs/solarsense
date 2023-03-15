@@ -23,12 +23,12 @@ function DlaCzego() {
             alt=""
           /> */}
           <img
-            className="absolute -rotate-90 bottom-2 right-2 animate-fadeInRightBig animate-delay-500"
+            className="absolute -rotate-90 bottom-2 right-2 animate-fadeInUPBig animate-delay-500"
             src={BorderImg}
             alt=""
           />
           <img
-            className="absolute rotate-90 top-2 left-2 animate-fadeInLeftBig animate-delay-700"
+            className="absolute rotate-90 top-2 left-2 animate-fadeInUpBig animate-delay-700"
             src={BorderImg}
             alt=""
           />

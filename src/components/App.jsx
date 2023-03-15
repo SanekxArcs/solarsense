@@ -26,9 +26,9 @@ function App() {
           <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block">
             <a href="#galeria">Galeria</a>
           </li>
-          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block">
+          {/* <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block">
             <a href="#opinia">Opinia</a>
-          </li>
+          </li> */}
           <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block">
             <a href="#contact">Kontakty</a>
           </li>
@@ -50,7 +50,7 @@ function App() {
       <DlaCzego />
       <Etapy />
       <Galeria />
-      <Opinia />
+      {/* <Opinia /> */}
       <Contact />
       <Footer />
     </>

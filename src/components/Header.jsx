@@ -10,7 +10,7 @@ function Header() {
           Godziny otwarcia: pon. - sob. 8.00 - 18.00
         </span>
         <span className="flex gap-2 ">
-          Śledź nas:
+          Bądź na bieżąco:
           <a href="http://">
             <i className="transition-all fa-brands fa-linkedin hover:text-primary-mint"></i>
           </a>

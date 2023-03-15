@@ -92,9 +92,9 @@ const Etapy = () => {
               <h5 className="text-lg font-medium">Odbiór instalacji</h5>
               <p className="text-sm">
                 Po zakończeniu montażu przeprowadzimy niezbędne pomiary oraz
-                protokół odbioru usługi. Odbiór instalacji następuje po
-                potwierdzeniu, że została ona wykonana zgodnie z umową i jest w
-                pełni sprawna.
+                podpiszemy protokół odbioru usługi. Odbiór instalacji następuje
+                po potwierdzeniu, że została ona wykonana zgodnie z umową i jest
+                w pełni sprawna.
               </p>
               <span className="absolute text-6xl font-black opacity-50 top-1 left-3">
                 6
