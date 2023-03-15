@@ -5,7 +5,7 @@ import svgRew from "../resourses/wave-haikei (4).svg";
 
 const opiniaData = [
   {
-    name: "Piotr Szymański",
+    name: "Piotr Szymański - Powstańców 8, 48-320 Sidzina",
     review:
       "Firma fotowoltaiczna, którą wybrałem, zrobiła świetną robotę z montażem paneli słonecznych. Jestem bardzo zadowolony z ich usług, a ich profesjonalizm i doświadczenie są godne pochwały.",
     photo: openie1,
@@ -17,7 +17,7 @@ const opiniaData = [
     photo: openie2,
   },
   {
-    name: "Jan Nowakowski",
+    name: "Jan Nowakowski - (revolvefitness.pl)",
     review:
       "Polecam tę firmę fotowoltaiczną każdemu, kto potrzebuje montażu paneli słonecznych. Ich praca była dokładna, zorganizowana i wykonana z pasją. Nie tylko byli profesjonalni, ale również zadbali o każdy szczegół, aby zapewnić, że ich klient jest w pełni zadowolony.",
     photo: openie3,
@@ -26,7 +26,7 @@ const opiniaData = [
 
 function Opinia() {
   return (
-    <div id="opinia" className="py-32 bg-cadet-space">
+    <div id="opinia" className="py-32 bg-cadet-space select-none">
       <section className="text-center lg:text-left xl:w-[1170px] mx-auto">
         <h2 className="mb-12 text-4xl font-bold text-center uppercase md:text-6xl text-mint-cream">
           Nasze najlepsze recenzje

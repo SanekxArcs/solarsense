@@ -1,6 +1,9 @@
 const Etapy = () => {
   return (
-    <div id="etapy" className="relative bg-cadet-space py-14 text-mint-cream">
+    <div
+      id="etapy"
+      className="relative bg-cadet-space py-14 text-mint-cream select-none"
+    >
       <div className="max-w-[1170px] mx-auto">
         <section className="text-center ">
           <h2 className="pb-10 text-3xl font-bold uppercase md:text-6xl ">

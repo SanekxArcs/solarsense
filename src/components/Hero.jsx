@@ -6,7 +6,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="relative h-screen transition-all duration-300 bg-center bg-no-repeat bg-cover -z-50"
+      className="relative h-screen transition-all duration-300 bg-center bg-no-repeat bg-cover -z-50 select-none"
       style={{ backgroundImage: `url(${HeroImg})` }}
     >
       <img

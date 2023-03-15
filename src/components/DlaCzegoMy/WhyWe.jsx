@@ -3,12 +3,12 @@ const WhyWe = () => {
     {
       logo: "fa-solid fa-headset ",
       name: "Wsparcie 24/7",
-      text: "W ofercie naszej firmy znajdują się kompleksowe usługi w zakresie projektowania, sprzedaży oraz montażu instalacji fotowoltaicznych. Doramy klientom w doborze odpowiednich rozwiązań oraz zajmujemy się wszelkimi formalnościami związanymi z dotacjami i przyłączeniem do sieci.",
+      text: "W ofercie naszej firmy znajdują się kompleksowe usługi w zakresie projektowania, sprzedaży oraz montażu instalacji fotowoltaicznych. Doradzamy klientom w doborze odpowiednich rozwiązań oraz zajmujemy się wszelkimi formalnościami związanymi z dotacjami i przyłączeniem do sieci.",
     },
     {
       logo: "fa-solid fa-shield-halved",
       name: "Bezpieczny i solidny",
-      text: "Jesteśmy elastyczni i dopasowujemy się do wymagań klientów, oferując instalacje na terenie całego kraju. Posiadamy liczne certyfikaty i nagrody, co świadczy o wysokiej jakości usług oraz profesjonalnym podejściu do klienta. Dzięki wiedzy i doświadczeniu, instalacje fotowoltaiczne montowane przez naszą firmę są energooszczędne, niezawodne, opłacalne dla klientów a przede wszystkim bezpieczne.",
+      text: "Jesteśmy elastyczni i dopasowujemy się do wymagań klientów, oferując instalacje na terenie całego kraju. Dzięki wiedzy i doświadczeniu, instalacje fotowoltaiczne montowane przez naszą firmę są energooszczędne, niezawodne, opłacalne dla klientów a przede wszystkim bezpieczne.",
     },
     {
       logo: "fa-solid fa-truck-fast",

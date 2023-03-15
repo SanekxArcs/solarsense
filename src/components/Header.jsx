@@ -48,7 +48,7 @@ function Header() {
               href="mailto:buiro@solarsense.com"
             >
               <i className="p-3 mr-2 transition-all border rounded-sm fa-solid fa-at text-cadet-space bg-mint-cream hover:bg-primary-mint "></i>
-              buiro@solarsense.com
+              biuro@solarsense.pl
             </a>
           </div>
         </div>
