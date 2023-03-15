@@ -9,17 +9,13 @@ function DlaCzego() {
         <div className="relative grid items-center grid-cols-1 ld:grid-cols-3">
           <div className="relative w-full p-10 mb-6 grow-0 shrink-0 basis-auto md:mb-0">
             <p className="mb-6 text-sm font-bold uppercase text-primary-mint lg:text-base">
-              WE OFFER DIFFEREN SERVICES
+              OFERUJEMY RÓŻNE USŁUGI
             </p>
             <h2 className="mb-6 text-3xl font-bold lg:text-5xl">
-              WHY CHOOSE US
+              Dlaczego my?
             </h2>
 
-            <p className="text-sm lg:mb-12">
-              Nunc tincidunt vulputate elit. Mauris varius purus malesuada neque
-              iaculis malesuada. Aenean gravida magna orci, non efficitur est
-              porta id. Donec magna diam.
-            </p>
+            <p className="text-sm lg:mb-12"></p>
           </div>
           {/* <img
             className="absolute bottom-0 left-0 animate-fadeInLeftBig animate-delay-300"
