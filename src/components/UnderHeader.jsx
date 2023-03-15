@@ -30,11 +30,10 @@ const Underheader = ({ toggleMenu }) => {
             <img className="h-7" src={LightLogo} alt="" />
           </a>
         </li>
-        <li
-          onClick={toggleMenu}
-          className="p-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:hidden"
-        >
-          <i class="fa-solid fa-bars text-xl"></i>
+        <li className="p-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:hidden">
+          <button onClick={toggleMenu}>
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
         </li>
       </ul>
     </div>
@@ -42,3 +41,4 @@ const Underheader = ({ toggleMenu }) => {
 };
 
 export default Underheader;
+

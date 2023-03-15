@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <Header />
-      <Underheader toggleMenu={toggleMenu} isOpen={isOpen} />
+      <Underheader toggleMenu={toggleMenu} />
       <Hero />
       <DlaCzego />
       <Etapy />
@@ -32,9 +32,10 @@ function App() {
       <div className=" bg-cadet-space h-20 w-screen"></div>
       <Contact />
       <Footer />
-      <MobileMenu toggleMenu={toggleMenu} />
+      <MobileMenu toggleMenu={toggleMenu} isOpen={isOpen} />
     </>
   );
 }
 
 export default App;
+

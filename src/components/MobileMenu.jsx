@@ -5,8 +5,8 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
     <>
       <nav
         className={`${
-          isOpen ? "bloc" : "hidden"
-        } absolute top-2 left-2 right-2 bottom-2 bg-cadet-space bg-opacity-50 text-mint-cream md:hidden backdrop-blur-xl rounded-md z-50`}
+          isOpen ? "" : "hidden"
+        } absolute top-2 left-2 right-2 bottom-2 bg-cadet-space bg-opacity-50 text-mint-cream md:hidden backdrop-blur-xl rounded-md z-50 `}
       >
         <div className=" relative">
           <button
@@ -15,7 +15,7 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
           >
             <i class="fa-regular fa-circle-xmark"></i>
           </button>
-          <ul className="py-5 flex flex-col justify-between gap-5 px-4 max-w-[1170px] h-20 md:h-10  mx-auto items-center animate-text-focus-in animate-delay-500 ">
+          <ul className="py-5 flex flex-col justify-between gap-5 px-4 max-w-[1170px] h-20 md:h-10  mx-auto items-center ">
             <li className="">
               <a
                 className="transition-all duration-300 hover:scale-110"
