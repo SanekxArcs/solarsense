@@ -23,7 +23,11 @@ function Galeria() {
               src={pic1}
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
-              <img className="h-1/2" src={svgRew} alt="" />
+              <img
+                className="h-1/2"
+                src={svgRew}
+                alt="Zdjęcie fotowoltaiczne na dachu Blachodachówka"
+              />
               <div className="p-2 bg-mint-cream">27-200 Starachowice</div>
             </div>
           </div>
@@ -35,7 +39,10 @@ function Galeria() {
               src={pic2}
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
-              <img src={svgRew} alt="" />
+              <img
+                src={svgRew}
+                alt="Zdjęcie fotowoltaiczne na dachu Dachówka"
+              />
               <div className="p-2 bg-mint-cream">55-216 Piskorzów</div>
             </div>
           </div>
@@ -47,7 +54,10 @@ function Galeria() {
               src={pic3}
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
-              <img src={svgRew} alt="" />
+              <img
+                src={svgRew}
+                alt="Zdjęcie fotowoltaiczne na dachu Blacha na rąbek"
+              />
               <div className="p-2 bg-mint-cream">01-366 Warszawa</div>
             </div>
           </div>
@@ -59,7 +69,10 @@ function Galeria() {
               src={pic4}
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
-              <img src={svgRew} alt="" />
+              <img
+                src={svgRew}
+                alt="Zdjęcie fotowoltaiczne na dachu Blachodachówka"
+              />
               <div className="p-2 bg-mint-cream">95-011 Bratoszewice</div>
             </div>
           </div>
@@ -71,7 +84,10 @@ function Galeria() {
               src={pic5}
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
-              <img src={svgRew} alt="" />
+              <img
+                src={svgRew}
+                alt="Zdjęcie fotowoltaiczne na dachu Dachówka"
+              />
               <div className="p-2 bg-mint-cream">58-521 Jeżuw-Sudecki,</div>
             </div>
           </div>
@@ -83,7 +99,10 @@ function Galeria() {
               src={pic6}
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
-              <img src={svgRew} alt="" />
+              <img
+                src={svgRew}
+                alt="Zdjęcie fotowoltaiczne na dachu Blachodachówka"
+              />
               <div className="p-2 bg-mint-cream">58-570 Jelenia Góra</div>
             </div>
           </div>
@@ -93,12 +112,12 @@ function Galeria() {
       <img
         className="absolute top-0 left-0 right-0 w-full -z-40"
         src={topImg}
-        alt=""
+        alt="Zdjęcie fotowoltaiczne na dachu"
       />
       <img
         className="absolute bottom-0 left-0 right-0 w-full -z-50"
         src={bottomImg}
-        alt=""
+        alt="Zdjęcie fotowoltaiczne na dachu"
       />
     </div>
   );

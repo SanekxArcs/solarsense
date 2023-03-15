@@ -11,10 +11,10 @@ function Header() {
         </span>
         <span className="flex gap-2 ">
           Bądź na bieżąco:
-          <a href="http://">
+          <a href="#contact">
             <i className="transition-all fa-brands fa-linkedin hover:text-primary-mint"></i>
           </a>
-          <a href="http://">
+          <a href="#contact">
             <i className="transition-all fa-brands fa-telegram hover:text-primary-mint"></i>
           </a>
           <a href="tel:+48733897120">
@@ -32,7 +32,7 @@ function Header() {
             className="transition-all duration-300 hover:scale-110"
             href="http://solarsense.pl"
           >
-            <img className="h-10" src={Logo} alt="" />
+            <img className="h-10" src={Logo} alt="logo solar sense" />
           </a>
           <div className="hidden font-bold md:flex md:pl-5 md:gap-2 lg:gap-5 md:text-md lg:text-xl">
             <a

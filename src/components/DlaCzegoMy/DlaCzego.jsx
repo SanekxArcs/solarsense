@@ -25,7 +25,7 @@ function DlaCzego() {
           <img
             className="absolute -rotate-90 bottom-2 right-2 animate-fadeInUPBig animate-delay-500"
             src={BorderImg}
-            alt=""
+            alt="image for desine"
           />
           <img
             className="absolute rotate-90 top-2 left-2 animate-fadeInUpBig animate-delay-700"

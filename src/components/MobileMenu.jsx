@@ -24,7 +24,7 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
                 className="transition-all duration-300 hover:scale-110"
                 href="http://solarsense.pl"
               >
-                <img className="h-7" src={LightLogo} alt="" />
+                <img className="h-7" src={LightLogo} alt="logo solar sense" />
               </a>
             </li>
             <li className="   px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint  ">
