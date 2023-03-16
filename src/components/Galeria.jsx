@@ -18,12 +18,14 @@ function Galeria() {
         <div class="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-5  pb-10 px-4 max-h-144">
           <div class="overflow-hidden rounded-sm relative hover:scale-110 transition-all duration-300 hover:rounded-md hover:z-50 ">
             <img
+              loading="lazy"
               alt="gallery"
               class="block h-full w-full rounded-sm object-cover object-center peer"
               src={pic1}
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
               <img
+                loading="lazy"
                 className="h-1/2"
                 src={svgRew}
                 alt="Zdjęcie fotowoltaiczne na dachu Blachodachówka"
@@ -34,6 +36,7 @@ function Galeria() {
 
           <div class="overflow-hidden rounded-sm relative hover:scale-110 transition-all duration-300 hover:rounded-md hover:z-50 row-span-2">
             <img
+              loading="lazy"
               alt="gallery"
               class="block h-full w-full rounded-sm object-cover object-center  hover:scale-110 transition-all duration-300 hover:rounded-md"
               src={pic2}
@@ -41,7 +44,7 @@ function Galeria() {
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
               <img
                 src={svgRew}
-                alt="Zdjęcie fotowoltaiczne na dachu Dachówka"
+                alt="Zdjęcie fotowoltaiczne na dachu Dachówka 2"
               />
               <div className="p-2 bg-mint-cream">55-216 Piskorzów</div>
             </div>
@@ -49,12 +52,14 @@ function Galeria() {
 
           <div class="overflow-hidden rounded-sm relative hover:scale-110 transition-all duration-300 hover:rounded-md hover:z-50 ">
             <img
+              loading="lazy"
               alt="gallery"
               class="block h-full w-full rounded-sm object-cover object-center  hover:scale-110 transition-all duration-300 hover:rounded-md"
               src={pic3}
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
               <img
+                loading="lazy"
                 src={svgRew}
                 alt="Zdjęcie fotowoltaiczne na dachu Blacha na rąbek"
               />
@@ -64,12 +69,14 @@ function Galeria() {
 
           <div class="overflow-hidden rounded-sm relative hover:scale-110 transition-all duration-300 hover:rounded-md hover:z-50  row-span-2 md:row-span-1">
             <img
+              loading="lazy"
               alt="gallery"
               class="block h-full w-full rounded-sm object-cover object-center  hover:scale-110 transition-all duration-300 hover:rounded-md"
               src={pic4}
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
               <img
+                loading="lazy"
                 src={svgRew}
                 alt="Zdjęcie fotowoltaiczne na dachu Blachodachówka"
               />
@@ -79,29 +86,33 @@ function Galeria() {
 
           <div class="overflow-hidden rounded-sm relative hover:scale-110 transition-all duration-300 hover:rounded-md hover:z-50  md:row-span-2">
             <img
+              loading="lazy"
               alt="gallery"
               class="block h-full w-full rounded-sm object-cover object-center  hover:scale-110 transition-all duration-300 hover:rounded-md"
               src={pic5}
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
               <img
+                loading="lazy"
                 src={svgRew}
                 alt="Zdjęcie fotowoltaiczne na dachu Dachówka"
               />
-              <div className="p-2 bg-mint-cream">58-521 Jeżuw-Sudecki,</div>
+              <div className="p-2 bg-mint-cream">58-521 Jeżuw-Sudecki</div>
             </div>
           </div>
 
           <div class="overflow-hidden rounded-sm relative hover:scale-110 transition-all duration-300 hover:rounded-md hover:z-50  md:col-span-2">
             <img
+              loading="lazy"
               alt="gallery"
               class="block h-full w-full rounded-sm object-cover object-center  hover:scale-110 transition-all duration-300 hover:rounded-md"
               src={pic6}
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
               <img
+                loading="lazy"
                 src={svgRew}
-                alt="Zdjęcie fotowoltaiczne na dachu Blachodachówka"
+                alt="Zdjęcie fotowoltaiczne na dachu Blachodachówka 2"
               />
               <div className="p-2 bg-mint-cream">58-570 Jelenia Góra</div>
             </div>
@@ -110,14 +121,16 @@ function Galeria() {
       </section>
 
       <img
+        loading="lazy"
         className="absolute top-0 left-0 right-0 w-full -z-40"
         src={topImg}
         alt="Zdjęcie fotowoltaiczne na dachu"
       />
       <img
+        loading="lazy"
         className="absolute bottom-0 left-0 right-0 w-full -z-50"
         src={bottomImg}
-        alt="Zdjęcie fotowoltaiczne na dachu"
+        alt="Zdjęcie fotowoltaiczne na dachu 2"
       />
     </div>
   );

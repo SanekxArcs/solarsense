@@ -572,6 +572,20 @@ video {
   position: sticky;
 }
 
+.inset-2 {
+  top: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  left: 0.5rem;
+}
+
+.inset-10 {
+  top: 2.5rem;
+  right: 2.5rem;
+  bottom: 2.5rem;
+  left: 2.5rem;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -628,6 +642,10 @@ video {
   top: 1rem;
 }
 
+.top-10 {
+  top: 2.5rem;
+}
+
 .-z-40 {
   z-index: -40;
 }
@@ -640,8 +658,16 @@ video {
   z-index: 0;
 }
 
+.z-40 {
+  z-index: 40;
+}
+
 .z-50 {
   z-index: 50;
+}
+
+.z-30 {
+  z-index: 30;
 }
 
 .col-span-2 {
@@ -766,12 +792,24 @@ video {
   height: 100vh;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
 .max-h-144 {
   max-height: 36rem;
 }
 
 .min-h-\[auto\] {
   min-height: auto;
+}
+
+.min-h-full {
+  min-height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-16 {
@@ -962,6 +1000,182 @@ video {
           animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530)   both;
 }
 
+@-webkit-keyframes fadeInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+}
+
+.animate-fadeInLeft {
+  -webkit-animation: 1s both fadeInLeft;
+          animation: 1s both fadeInLeft;
+}
+
+@-webkit-keyframes fadeOutLeft {
+  to {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeOutLeft {
+  to {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.animate-fadeOutLeft {
+  -webkit-animation: 1s both fadeOutLeft;
+          animation: 1s both fadeOutLeft;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    opacity: 0;
+  }
+}
+
+.animate-fadeInRight {
+  -webkit-animation: 1s both fadeInRight;
+          animation: 1s both fadeInRight;
+}
+
+@-webkit-keyframes fadeOutRight {
+  to {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeOutRight {
+  to {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.animate-fadeOutRight {
+  -webkit-animation: 1s both fadeOutRight;
+          animation: 1s both fadeOutRight;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    opacity: 0;
+  }
+}
+
+.animate-fadeInDown {
+  -webkit-animation: 1s both fadeInDown;
+          animation: 1s both fadeInDown;
+}
+
+@-webkit-keyframes fadeOutUp {
+  to {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeOutUp {
+  to {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.animate-fadeOutUp {
+  -webkit-animation: 1s both fadeOutUp;
+          animation: 1s both fadeOutUp;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    opacity: 0;
+  }
+}
+
+.animate-fadeInUp {
+  -webkit-animation: 1s both fadeInUp;
+          animation: 1s both fadeInUp;
+}
+
+@-webkit-keyframes fadeOutDown {
+  to {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeOutDown {
+  to {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.animate-fadeOutDown {
+  -webkit-animation: 1s both fadeOutDown;
+          animation: 1s both fadeOutDown;
+}
+
 .select-none {
   -webkit-user-select: none;
           user-select: none;
@@ -998,6 +1212,10 @@ video {
 
 .items-start {
   align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -1051,6 +1269,14 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded-\[0\.25rem\] {
@@ -1125,6 +1351,10 @@ video {
 
 .bg-opacity-90 {
   --tw-bg-opacity: 0.9;
+}
+
+.bg-opacity-80 {
+  --tw-bg-opacity: 0.8;
 }
 
 .bg-cover {
@@ -1438,6 +1668,14 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.delay-1000 {
+  transition-delay: 1000ms;
+}
+
+.delay-75 {
+  transition-delay: 75ms;
 }
 
 .duration-150 {
@@ -2020,6 +2258,39 @@ video {
     height: 2.5rem;
   }
 
+  @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+
+    to {
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+
+    to {
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+  .md\:animate-text-focus-in {
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530)   both;
+            animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530)   both;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2064,6 +2335,11 @@ video {
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:animate-faster {
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
   }
 }
 

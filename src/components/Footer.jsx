@@ -6,11 +6,11 @@ function Footer() {
           <div className="mx-6 py-10 text-center md:text-left max-w-[1170px] mx-auto">
             <div className="grid gap-8 grid-1 md:grid-cols-2 lg:grid-cols-3">
               <div className="">
-                <h6 className="pb-5 text-3xl font-black uppercase md:block select-none">
+                <h6 className="pb-5 text-3xl font-black uppercase select-none md:block">
                   <span className=" text-mint-cream">Solar </span>{" "}
                   <span className=" text-primary-mint">Sense</span>
                 </h6>
-                <p className=" select-none">
+                <p className="select-none ">
                   Z nami zyskasz nie tylko oszczędności, ale także pewność,
                   jakość i niezawodność
                 </p>
@@ -37,7 +37,7 @@ function Footer() {
                 <h6 className="flex justify-center mb-4 font-semibold uppercase md:justify-start">
                   Kontakt
                 </h6>
-                <p className="flex items-center justify-center mb-4 md:justify-start select-none">
+                <p className="flex items-center justify-center mb-4 select-none md:justify-start">
                   Ul. Szczęsna 26
                   <br />
                   02-454 Warszawa <br /> NIP: 7382063255
@@ -52,7 +52,7 @@ function Footer() {
                     <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
                     <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                   </svg>
-                  <a href="mailto:buiro@solarsense.pl">buiro@solarsense.pl</a>
+                  <a href="mailto:biuro@solarsense.pl">biuro@solarsense.pl</a>
                 </p>
                 <p className="flex items-center justify-center mb-4 md:justify-start">
                   <svg
@@ -88,7 +88,7 @@ function Footer() {
             </div>
           </div>
           <div className="p-6 text-center bg-rich-black dark:bg-rich-black">
-            <span className=" select-none">© 2023 Copyright: </span>
+            <span className="select-none ">© 2023 Copyright: </span>
             <a
               className="font-semibold text-neutral-600 dark:text-neutral-400"
               href="https://github.com/SanekxArcs"

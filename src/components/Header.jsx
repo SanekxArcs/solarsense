@@ -1,4 +1,4 @@
-import Logo from "../resourses/Монтажна-область-1.webp";
+import Logo from "../resourses/logo.webp";
 
 function Header() {
   return (
