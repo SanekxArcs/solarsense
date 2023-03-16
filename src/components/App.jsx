@@ -12,7 +12,10 @@ import Underheader from "./UnderHeader";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const [isOpenModal, setIsOpenModal] = useState(false);
+  const toggleMOdal = () => {
+    setIsOpenModal(!isOpenModal);
+  };
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -27,7 +30,7 @@ function App() {
       {/* <Opinia /> */}
       <div className="w-screen h-20 bg-cadet-space"></div>
       <Contact />
-      <Footer />
+      <Footer toggleMOdal={toggleMOdal} isOpenModal={isOpenModal} />
     </>
   );
 }
