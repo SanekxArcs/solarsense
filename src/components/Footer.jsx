@@ -1,9 +1,9 @@
-function Footer() {
+const Footer = () => {
   return (
     <>
       <footer className="text-center bg-cadet-space text-mint-cream dark:bg-cadet-space dark:text-neutral-200 lg:text-left">
         <div>
-          <div className="mx-6 py-10 text-center md:text-left max-w-[1170px] mx-auto">
+          <div className="py-10 text-center md:text-left max-w-[1170px] mx-auto px-6">
             <div className="grid gap-8 grid-1 md:grid-cols-2 lg:grid-cols-3">
               <div className="">
                 <h6 className="pb-5 text-3xl font-black uppercase select-none md:block">
@@ -28,9 +28,14 @@ function Footer() {
                 <p className="mb-4">
                   <a href="#galeria">Galeria</a>
                 </p>
-                {/* <p>
-                  <a href="#opinia">Opinia</a>
-                </p> */}
+                <p>
+                  <a
+                    href="../resourses/polityka_prywatnosci_strony_internetowej.pdf"
+                    download
+                  >
+                    Polityka Prywatności
+                  </a>
+                </p>
               </div>
 
               <div>
@@ -100,6 +105,6 @@ function Footer() {
       </footer>
     </>
   );
-}
+};
 
 export default Footer;

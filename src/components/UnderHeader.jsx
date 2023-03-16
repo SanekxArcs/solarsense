@@ -1,5 +1,4 @@
-import LightLogo from "../resourses/solarsense-light-logo.png";
-
+import LightLogo from "../resourses/solarsense-light-logo.svg";
 
 const Underheader = ({ toggleMenu, isOpen }) => {
   return (
@@ -112,4 +111,3 @@ const Underheader = ({ toggleMenu, isOpen }) => {
 };
 
 export default Underheader;
-

@@ -2,7 +2,7 @@ const Etapy = () => {
   return (
     <div
       id="etapy"
-      className="relative bg-cadet-space py-14 text-mint-cream select-none"
+      className="relative select-none bg-cadet-space py-14 text-mint-cream"
     >
       <div className="max-w-[1170px] mx-auto">
         <section className="text-center ">
@@ -12,7 +12,7 @@ const Etapy = () => {
           <div className="grid items-stretch gap-6 p-5 md:grid-cols-3 place-content-center lg:gap-x-6">
             <div className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-primary-mint bg-primary-mint bg-opacity-10 hover:text-cadet-space ">
               <i class="fa-solid fa-chalkboard-user text-5xl pb-2"></i>
-              <h5 className="pb-2 text-lg font-medium">Kontakt</h5>
+              <h3 className="pb-2 text-lg font-medium">Kontakt</h3>
               <p className="text-sm">
                 Skontaktuj się z nami poprzez telefon, e-mail lub wypełniając
                 formularz kontaktowy na naszej stronie internetowej.
@@ -26,7 +26,7 @@ const Etapy = () => {
 
             <div className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-primary-mint bg-primary-mint bg-opacity-10 hover:text-cadet-space">
               <i class="fa-solid fa-file-signature text-5xl pb-2"></i>
-              <h5 className="text-lg font-medium">Wstępna rozmowa i audyt</h5>
+              <h3 className="text-lg font-medium">Wstępna rozmowa i audyt</h3>
               <p className="text-sm">
                 Na pierwszym etapie przeprowadzimy z Tobą wstępną rozmowę, aby
                 poznać Twoje potrzeby oraz możliwości. Następnie wykonamy
@@ -42,7 +42,7 @@ const Etapy = () => {
 
             <div className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-primary-mint bg-primary-mint bg-opacity-10 hover:text-cadet-space">
               <i class="fa-solid fa-file-signature text-5xl pb-2"></i>
-              <h5 className="text-lg font-medium">Projekt i oferta</h5>
+              <h3 className="text-lg font-medium">Projekt i oferta</h3>
               <p className="text-sm">
                 Na podstawie wyników audytu przygotujemy dla Ciebie projekt
                 instalacji wraz z ofertą cenową. Otrzymasz od nas także
@@ -57,9 +57,9 @@ const Etapy = () => {
 
             <div className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-primary-mint bg-primary-mint bg-opacity-10 hover:text-cadet-space">
               <i class="fa-regular fa-handshake text-5xl pb-2"></i>
-              <h5 className="text-lg font-medium">
+              <h3 className="text-lg font-medium">
                 Umowa i przygotowanie materiałów
-              </h5>
+              </h3>
               <p className="text-sm">
                 Po akceptacji oferty podpiszemy umowę, a następnie przystąpimy
                 do przygotowania materiałów. Sprzęt na montaż zostanie wysłany
@@ -74,7 +74,7 @@ const Etapy = () => {
 
             <div className="relative p-10 transition-all duration-500 rounded-sm md:col-start-2 md:row-start-2 lg:mb-0 hover:bg-primary-mint bg-primary-mint bg-opacity-10 hover:text-cadet-space">
               <i class="fa-solid fa-screwdriver-wrench text-5xl pb-2"></i>
-              <h5 className="text-lg font-medium">Montaż</h5>
+              <h3 className="text-lg font-medium">Montaż</h3>
               <p className="text-sm">
                 Po wcześniejszym ustaleniu terminu przystąpimy do montażu
                 instalacji. Zajmie nam to od 1 do 3 dni, w zależności od
@@ -89,7 +89,7 @@ const Etapy = () => {
 
             <div className="relative p-10 transition-all duration-500 rounded-sm md:col-start-1 md:row-start-2 lg:mb-0 hover:bg-primary-mint bg-primary-mint bg-opacity-10 hover:text-cadet-space">
               <i class="fa-solid fa-handshake-simple text-5xl pb-2"></i>
-              <h5 className="text-lg font-medium">Odbiór instalacji</h5>
+              <h3 className="text-lg font-medium">Odbiór instalacji</h3>
               <p className="text-sm">
                 Po zakończeniu montażu przeprowadzimy niezbędne pomiary oraz
                 podpiszemy protokół odbioru usługi. Odbiór instalacji następuje

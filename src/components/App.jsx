@@ -10,7 +10,6 @@ import Galeria from "./Galeria";
 import Contact from "./Contact";
 import Underheader from "./UnderHeader";
 
-
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 

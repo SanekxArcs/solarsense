@@ -1,4 +1,4 @@
-import Logo from "../resourses/logo.webp";
+import Logo from "../resourses/logo-solar-sense.svg";
 
 function Header() {
   return (

@@ -9,7 +9,7 @@ function Hero() {
       className="relative h-screen transition-all duration-300 bg-center bg-no-repeat bg-cover"
       style={{ backgroundImage: `url(${HeroImg})` }}
     >
-      <div className="grid w-full h-screen transition-all duration-500 place-content-center lg:py-32 backdrop-blur-sm hover:backdrop-blur-none bg-rich-black bg-opacity-40 animate-text-focus-in">
+      <div className="grid w-full h-screen transition-all duration-500 place-content-center lg:py-32 md:backdrop-blur-sm hover:backdrop-blur-none bg-rich-black bg-opacity-40 animate-text-focus-in">
         <div className="relative flex flex-col items-center justify-center gap-12 mx-auto max-h-144 max-w-[900px] text-center text-mint-cream px-5 py-10">
           <h1 className="hidden text-3xl font-black uppercase md:block">
             <span className=" text-cadet-space">Solar </span>{" "}

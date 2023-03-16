@@ -29,7 +29,7 @@ const opiniaData = [
 
 function Opinia() {
   return (
-    <div id="opinia" className="py-32 bg-cadet-space select-none">
+    <div id="opinia" className="py-32 select-none bg-cadet-space">
       <section className="text-center lg:text-left xl:w-[1170px] mx-auto">
         <h2 className="mb-12 text-4xl font-bold text-center uppercase md:text-6xl text-mint-cream">
           Nasze najlepsze recenzje
