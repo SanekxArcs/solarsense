@@ -6,23 +6,23 @@ const Underheader = ({ toggleMenu, isOpen }) => {
       <nav
         className={`sticky top-0 left-0 right-0 bottom-auto z-40 shadow-md text-mint-cream bg-cadet-space`}
       >
-        <ul className=" flex justify-between px-4  md:justify-between max-w-[1170px] h-14 md:h-10  mx-auto items-center md:animate-text-focus-in md:animate-faster">
-          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block">
+        <ul className=" flex justify-between px-4  md:justify-between max-w-[1170px] h-14 md:h-10  mx-auto items-center">
+          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in  animate-delay-150">
             <a href="#home">Strona główna</a>
           </li>
-          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block">
+          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in  animate-delay-300">
             <a href="#dlaChegoMy">Dlaczego my?</a>
           </li>
-          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block">
+          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in  animate-delay-500">
             <a href="#etapy">Etapy współpracy</a>
           </li>
-          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block">
+          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in  animate-delay-700">
             <a href="#galeria">Galeria</a>
           </li>
-          {/* <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block">
+          {/* <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in  animate-delay-150">
             <a href="#opinia">Opinia</a>
           </li> */}
-          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block">
+          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
             <a href="#contact">Kontakt</a>
           </li>
           <li className="w-full md:hidden animate-fadeInDown">
@@ -38,7 +38,7 @@ const Underheader = ({ toggleMenu, isOpen }) => {
                 isOpen ? "animate-fadeOutUp" : `animate-fadeInDown`
               } absolute text-3xl text-right text-mint-cream top-2 right-2`}
             >
-              <i class="fa-solid fa-bars"></i>
+              <i className="fa-solid fa-bars"></i>
             </button>
 
             <nav
@@ -51,7 +51,7 @@ const Underheader = ({ toggleMenu, isOpen }) => {
                   onClick={toggleMenu}
                   className="absolute text-3xl text-right text-mint-cream top-2 right-2"
                 >
-                  <i class="fa-regular fa-circle-xmark"></i>
+                  <i className="fa-regular fa-circle-xmark"></i>
                 </button>
                 <ul
                   onClick={toggleMenu}

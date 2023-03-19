@@ -11,7 +11,7 @@ const Etapy = () => {
           </h2>
           <div className="grid items-stretch gap-6 p-5 md:grid-cols-3 place-content-center lg:gap-x-6">
             <div className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-primary-mint bg-primary-mint bg-opacity-10 hover:text-cadet-space ">
-              <i class="fa-solid fa-chalkboard-user text-5xl pb-2"></i>
+              <i className="fa-solid fa-chalkboard-user text-5xl pb-2"></i>
               <h3 className="pb-2 text-lg font-medium">Kontakt</h3>
               <p className="text-sm">
                 Skontaktuj się z nami poprzez telefon, e-mail lub wypełniając
@@ -20,12 +20,12 @@ const Etapy = () => {
               <span className="absolute text-6xl font-black opacity-50 top-1 left-3">
                 1
               </span>
-              <i class="fa-solid fa-angle-right absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 text-6xl text-mint-cream hidden md:block"></i>
-              <i class="fa-solid fa-angle-down absolute left-1/2  bottom-0 translate-y-1/2 -translate-x-1/2 text-6xl text-mint-cream md:hidden"></i>
+              <i className="fa-solid fa-angle-right absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 text-6xl text-mint-cream hidden md:block"></i>
+              <i className="fa-solid fa-angle-down absolute left-1/2  bottom-0 translate-y-1/2 -translate-x-1/2 text-6xl text-mint-cream md:hidden"></i>
             </div>
 
             <div className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-primary-mint bg-primary-mint bg-opacity-10 hover:text-cadet-space">
-              <i class="fa-solid fa-file-signature text-5xl pb-2"></i>
+              <i className="fa-solid fa-file-signature text-5xl pb-2"></i>
               <h3 className="text-lg font-medium">Wstępna rozmowa i audyt</h3>
               <p className="text-sm">
                 Na pierwszym etapie przeprowadzimy z Tobą wstępną rozmowę, aby
@@ -36,12 +36,12 @@ const Etapy = () => {
               <span className="absolute text-6xl font-black opacity-50 top-1 left-3">
                 2
               </span>
-              <i class="fa-solid fa-angle-right absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 text-6xl text-mint-cream hidden md:block"></i>
-              <i class="fa-solid fa-angle-down absolute left-1/2  bottom-0 translate-y-1/2 -translate-x-1/2 text-6xl text-mint-cream md:hidden"></i>
+              <i className="fa-solid fa-angle-right absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 text-6xl text-mint-cream hidden md:block"></i>
+              <i className="fa-solid fa-angle-down absolute left-1/2  bottom-0 translate-y-1/2 -translate-x-1/2 text-6xl text-mint-cream md:hidden"></i>
             </div>
 
             <div className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-primary-mint bg-primary-mint bg-opacity-10 hover:text-cadet-space">
-              <i class="fa-solid fa-file-signature text-5xl pb-2"></i>
+              <i className="fa-solid fa-file-signature text-5xl pb-2"></i>
               <h3 className="text-lg font-medium">Projekt i oferta</h3>
               <p className="text-sm">
                 Na podstawie wyników audytu przygotujemy dla Ciebie projekt
@@ -52,11 +52,11 @@ const Etapy = () => {
               <span className="absolute text-6xl font-black opacity-50 top-1 left-3">
                 3
               </span>
-              <i class="fa-solid fa-angle-down absolute left-1/2  bottom-0 translate-y-1/2 -translate-x-1/2 text-6xl text-mint-cream"></i>
+              <i className="fa-solid fa-angle-down absolute left-1/2  bottom-0 translate-y-1/2 -translate-x-1/2 text-6xl text-mint-cream"></i>
             </div>
 
             <div className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-primary-mint bg-primary-mint bg-opacity-10 hover:text-cadet-space">
-              <i class="fa-regular fa-handshake text-5xl pb-2"></i>
+              <i className="fa-regular fa-handshake text-5xl pb-2"></i>
               <h3 className="text-lg font-medium">
                 Umowa i przygotowanie materiałów
               </h3>
@@ -68,12 +68,12 @@ const Etapy = () => {
               <span className="absolute text-6xl font-black opacity-50 top-1 left-3">
                 4
               </span>
-              <i class="fa-solid fa-angle-left absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 text-6xl text-mint-cream  hidden md:block"></i>
-              <i class="fa-solid fa-angle-down absolute left-1/2  bottom-0 translate-y-1/2 -translate-x-1/2 text-6xl text-mint-cream md:hidden"></i>
+              <i className="fa-solid fa-angle-left absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 text-6xl text-mint-cream  hidden md:block"></i>
+              <i className="fa-solid fa-angle-down absolute left-1/2  bottom-0 translate-y-1/2 -translate-x-1/2 text-6xl text-mint-cream md:hidden"></i>
             </div>
 
             <div className="relative p-10 transition-all duration-500 rounded-sm md:col-start-2 md:row-start-2 lg:mb-0 hover:bg-primary-mint bg-primary-mint bg-opacity-10 hover:text-cadet-space">
-              <i class="fa-solid fa-screwdriver-wrench text-5xl pb-2"></i>
+              <i className="fa-solid fa-screwdriver-wrench text-5xl pb-2"></i>
               <h3 className="text-lg font-medium">Montaż</h3>
               <p className="text-sm">
                 Po wcześniejszym ustaleniu terminu przystąpimy do montażu
@@ -83,12 +83,12 @@ const Etapy = () => {
               <span className="absolute text-6xl font-black opacity-50 top-1 left-3">
                 5
               </span>
-              <i class="fa-solid fa-angle-left absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 text-6xl text-mint-cream hidden md:block"></i>
-              <i class="fa-solid fa-angle-down absolute left-1/2  bottom-0 translate-y-1/2 -translate-x-1/2 text-6xl text-mint-cream md:hidden"></i>
+              <i className="fa-solid fa-angle-left absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 text-6xl text-mint-cream hidden md:block"></i>
+              <i className="fa-solid fa-angle-down absolute left-1/2  bottom-0 translate-y-1/2 -translate-x-1/2 text-6xl text-mint-cream md:hidden"></i>
             </div>
 
             <div className="relative p-10 transition-all duration-500 rounded-sm md:col-start-1 md:row-start-2 lg:mb-0 hover:bg-primary-mint bg-primary-mint bg-opacity-10 hover:text-cadet-space">
-              <i class="fa-solid fa-handshake-simple text-5xl pb-2"></i>
+              <i className="fa-solid fa-handshake-simple text-5xl pb-2"></i>
               <h3 className="text-lg font-medium">Odbiór instalacji</h3>
               <p className="text-sm">
                 Po zakończeniu montażu przeprowadzimy niezbędne pomiary oraz

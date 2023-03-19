@@ -1,6 +1,6 @@
 import WhyWe from "./WhyWe";
-import Borderimage from "../../resourses/slider-dash-primary-mint.png";
-import bottomimage from "../../resourses/wave-haikei (1).svg";
+import svgBorderImg from "../../resourses/slider-dash-primary-mint.svg";
+import bottomImage from "../../resourses/wave-haikei (1).svg";
 
 function DlaCzego() {
   return (
@@ -17,36 +17,24 @@ function DlaCzego() {
 
             <p className="text-sm lg:mb-12"></p>
           </div>
-          {/* <image
-            className="absolute bottom-0 left-0 animate-fadeInLeftBig animate-delay-300"
-            src={Borderimage}
-            alt=""
-          /> */}
-          <image
-          loading="lazy"
-            className="absolute -rotate-90 bottom-2 right-2 animate-fadeInUPBig animate-delay-500"
-            src={Borderimage}
-            alt="design1"
+
+          <img
+            className="absolute -rotate-90 bottom-2 right-2 animate-fadeInUpBig"
+            src={svgBorderImg}
+            alt="design image2"
           />
-          <image
-          loading="lazy"
-            className="absolute rotate-90 top-2 left-2 animate-fadeInUpBig animate-delay-700"
-            src={Borderimage}
-            alt="design2"
+          <img
+            className="absolute rotate-90 top-2 left-2 animate-fadeInUpBig"
+            src={svgBorderImg}
+            alt="design image3"
           />
-          {/* <image
-            className="absolute top-0 right-0 rotate-180 animate-fadeInRightBig animate-delay-1000"
-            src={Borderimage}
-            alt=""
-          /> */}
           <WhyWe />
         </div>
       </section>
-      <image
-      loading="lazy"
+      <img
         className="absolute bottom-0 left-0 right-0 w-full -z-50"
-        src={bottomimage}
-        alt="design3"
+        src={bottomImage}
+        alt=""
       />
     </div>
   );
