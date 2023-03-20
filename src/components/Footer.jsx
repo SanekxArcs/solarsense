@@ -1,6 +1,6 @@
 const Footer = ({ toggleMOdal, isOpenModal }) => {
   return (
-    <footer className="text-center bg-cadet-space text-mint-cream text-neutral-200 lg:text-left">
+    <footer className="text-center bg-cadet-space text-mint-cream lg:text-left">
       <div>
         <div className="py-10 text-center md:text-left max-w-[1170px] mx-auto px-6">
           <div className="grid gap-8 grid-1 md:grid-cols-2 lg:grid-cols-3">
