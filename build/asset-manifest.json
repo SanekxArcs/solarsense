@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d51f1e32.css",
+    "main.js": "/static/js/main.259f044b.js",
+    "static/media/ga3.webp": "/static/media/ga3.70aa4da34b3c6afa6347.webp",
+    "static/media/hero.webp": "/static/media/hero.cd5ab2be2e9e57ca53b4.webp",
+    "static/media/gal4.webp": "/static/media/gal4.d1a8a012fc4b7284c475.webp",
+    "static/media/gal6.webp": "/static/media/gal6.9e0af764bac96b0c8000.webp",
+    "static/media/gal5.webp": "/static/media/gal5.92e1b1c2e9ab1a8691e3.webp",
+    "static/media/gal1.webp": "/static/media/gal1.d6e386636eb41b67a530.webp",
+    "static/media/gal2.webp": "/static/media/gal2.b2b4282629a051ec4649.webp",
+    "static/media/logo-solar-sense.svg": "/static/media/logo-solar-sense.9489c20395e442cdfab06d75879941e9.svg",
+    "static/media/solarsense-light-logo.svg": "/static/media/solarsense-light-logo.858db85be81c9ebc958692656376ffac.svg",
+    "index.html": "/index.html",
+    "static/media/wave-haikei (4).svg": "/static/media/wave-haikei (4).4fd94bbb90783523001315e7daddbf7d.svg",
+    "static/media/wave-haikei (1).svg": "/static/media/wave-haikei (1).0eff53abfef80b441489987dbe63832b.svg",
+    "static/media/wave-haikei-white.svg": "/static/media/wave-haikei-white.ba7568339c640e8b7caf6d196d4e05af.svg",
+    "static/media/wave-haikei.svg": "/static/media/wave-haikei.90529baeec5deed2f2e710c943a0ab5f.svg",
+    "static/media/slider-dash-primary-mint.svg": "/static/media/slider-dash-primary-mint.76cfa738e7845c3ec7da09845a446cc8.svg",
+    "static/media/slider-dash.svg": "/static/media/slider-dash.d1b48cdb3321328387c11f3f97da3ba9.svg",
+    "main.d51f1e32.css.map": "/static/css/main.d51f1e32.css.map",
+    "main.259f044b.js.map": "/static/js/main.259f044b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d51f1e32.css",
+    "static/js/main.259f044b.js"
+  ]
+}
