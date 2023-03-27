@@ -7,21 +7,18 @@ const Underheader = ({ toggleMenu, isOpen }) => {
         className={`sticky top-0 left-0 right-0 bottom-auto z-40 shadow-md text-mint-cream bg-cadet-space`}
       >
         <ul className=" flex justify-between px-4  md:justify-between max-w-[1170px] h-14 md:h-10  mx-auto items-center">
-          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in  animate-delay-150">
+          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-150">
             <a href="#home">Strona główna</a>
           </li>
-          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in  animate-delay-300">
+          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-300">
             <a href="#dlaChegoMy">Dlaczego my?</a>
           </li>
-          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in  animate-delay-500">
+          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-500">
             <a href="#etapy">Etapy współpracy</a>
           </li>
-          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in  animate-delay-700">
+          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-700">
             <a href="#galeria">Galeria</a>
           </li>
-          {/* <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in  animate-delay-150">
-            <a href="#opinia">Opinia</a>
-          </li> */}
           <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
             <a href="#contact">Kontakt</a>
           </li>
