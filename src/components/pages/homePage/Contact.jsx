@@ -1,5 +1,5 @@
-import topImg from "../resourses/wave-haikei.svg";
-import bottomImg from "../resourses/wave-haikei (1).svg";
+import topImg from "../../../resourses/wave-haikei.svg";
+import bottomImg from "../../../resourses/wave-haikei (1).svg";
 
 function Contact() {
   return (
@@ -15,7 +15,17 @@ function Contact() {
           data-netlify="true"
           className="grid grid-cols-1 gap-5 lg:grid-rows-3 lg:grid-cols-4"
         >
+          <input
+            type="hidden"
+            name="_next"
+            value="https://solarsense.pl/thanks.html"
+          ></input>
           <input type="text" name="_honey" className="hidden" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="Contact od klienta!"
+          ></input>
           <input type="hidden" name="_captcha" value="false" />
           <div className="lg:col-span-2 lg:row-span-2">
             <div
@@ -164,7 +174,7 @@ function Contact() {
               data-te-ripple-init
               data-te-ripple-color="light"
             >
-              Wysłać
+              Wyślij
             </button>
           </div>
         </form>

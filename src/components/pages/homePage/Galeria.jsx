@@ -1,12 +1,12 @@
-import topImg from "../resourses/wave-haikei.svg";
-import bottomImg from "../resourses/wave-haikei (1).svg";
-import pic1 from "../resourses/gal1.webp";
-import pic2 from "../resourses/gal2.webp";
-import pic3 from "../resourses/ga3.webp";
-import pic4 from "../resourses/gal4.webp";
-import pic5 from "../resourses/gal5.webp";
-import pic6 from "../resourses/gal6.webp";
-import svgRew from "../resourses/wave-haikei (4).svg";
+import topImg from "../../../resourses/wave-haikei.svg";
+import bottomImg from "../../../resourses/wave-haikei (1).svg";
+import pic1 from "../../../resourses/gal1.webp";
+import pic2 from "../../../resourses/gal2.webp";
+import pic3 from "../../../resourses/ga3.webp";
+import pic4 from "../../../resourses/gal4.webp";
+import pic5 from "../../../resourses/gal5.webp";
+import pic6 from "../../../resourses/gal6.webp";
+import svgRew from "../../../resourses/wave-haikei (4).svg";
 
 function Galeria() {
   return (
@@ -15,14 +15,14 @@ function Galeria() {
         <h2 className="py-10 text-4xl font-bold text-center uppercase max-h-144 lg:text-6xl text-cadet-space">
           Wykonane montaże
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-5  pb-10 px-4 max-h-144">
-          <div className="overflow-hidden rounded-sm relative hover:scale-110 transition-all duration-300 hover:rounded-md hover:z-50 ">
+        <div className="grid grid-cols-2 gap-5 px-4 pb-10 md:grid-cols-3 md:grid-rows-3 max-h-144">
+          <div className="relative overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md hover:z-50 ">
             <img
               alt="gallery"
-              className="block h-full w-full rounded-sm object-cover object-center peer"
+              className="block object-cover object-center w-full h-full rounded-sm peer"
               src={pic1}
             />
-            <div className="absolute -bottom-1 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
+            <div className="absolute left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 -bottom-1 hover:opacity-80 hover:translate-y-0">
               <img
                 loading="lazy"
                 className="h-1/2"
@@ -33,11 +33,11 @@ function Galeria() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-sm relative hover:scale-110 transition-all duration-300 hover:rounded-md hover:z-50 row-span-2">
+          <div className="relative row-span-2 overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md hover:z-50">
             <img
               loading="lazy"
               alt="gallery"
-              className="block h-full w-full rounded-sm object-cover object-center  hover:scale-110 transition-all duration-300 hover:rounded-md"
+              className="block object-cover object-center w-full h-full transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md"
               src={pic2}
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
@@ -49,11 +49,11 @@ function Galeria() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-sm relative hover:scale-110 transition-all duration-300 hover:rounded-md hover:z-50 ">
+          <div className="relative overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md hover:z-50 ">
             <img
               loading="lazy"
               alt="gallery"
-              className="block h-full w-full rounded-sm object-cover object-center  hover:scale-110 transition-all duration-300 hover:rounded-md"
+              className="block object-cover object-center w-full h-full transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md"
               src={pic3}
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
@@ -66,11 +66,11 @@ function Galeria() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-sm relative hover:scale-110 transition-all duration-300 hover:rounded-md hover:z-50  row-span-2 md:row-span-1">
+          <div className="relative row-span-2 overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md hover:z-50 md:row-span-1">
             <img
               loading="lazy"
               alt="gallery"
-              className="block h-full w-full rounded-sm object-cover object-center  hover:scale-110 transition-all duration-300 hover:rounded-md"
+              className="block object-cover object-center w-full h-full transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md"
               src={pic4}
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
@@ -83,11 +83,11 @@ function Galeria() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-sm relative hover:scale-110 transition-all duration-300 hover:rounded-md hover:z-50  md:row-span-2">
+          <div className="relative overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md hover:z-50 md:row-span-2">
             <img
               loading="lazy"
               alt="gallery"
-              className="block h-full w-full rounded-sm object-cover object-center  hover:scale-110 transition-all duration-300 hover:rounded-md"
+              className="block object-cover object-center w-full h-full transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md"
               src={pic5}
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">
@@ -100,11 +100,11 @@ function Galeria() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-sm relative hover:scale-110 transition-all duration-300 hover:rounded-md hover:z-50  md:col-span-2">
+          <div className="relative overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md hover:z-50 md:col-span-2">
             <img
               loading="lazy"
               alt="gallery"
-              className="block h-full w-full rounded-sm object-cover object-center  hover:scale-110 transition-all duration-300 hover:rounded-md"
+              className="block object-cover object-center w-full h-full transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md"
               src={pic6}
             />
             <div className="absolute bottom-0 left-0 right-0 transition-all duration-300 translate-y-10 opacity-0 hover:opacity-80 hover:translate-y-0">

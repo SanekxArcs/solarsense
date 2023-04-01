@@ -1,7 +1,7 @@
-import openie1 from "../resourses/20210715_220221_156.jpg";
-import openie2 from "../resourses/photo_2023-03-14_19-23-13.jpg";
-import openie3 from "../resourses/photo_2023-03-14_19-23-15.jpg";
-import svgRew from "../resourses/wave-haikei (4).svg";
+import openie1 from "../../../resourses/20210715_220221_156.jpg";
+import openie2 from "../../../resourses/photo_2023-03-14_19-23-13.jpg";
+import openie3 from "../../../resourses/photo_2023-03-14_19-23-15.jpg";
+import svgRew from "../../../resourses/wave-haikei (4).svg";
 
 const opiniaData = [
   {

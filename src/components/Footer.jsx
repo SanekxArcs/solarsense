@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const Footer = ({ toggleMOdal, isOpenModal }) => {
   return (
     <footer className="text-center bg-cadet-space text-mint-cream lg:text-left">
@@ -19,6 +21,11 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                 Linki
               </h6>
               <p className="mb-4">
+                <NavLink exact to="/">
+                  Strona główna
+                </NavLink>
+              </p>
+              <p className="mb-4">
                 <a href="#dlaChegoMy">Dlaczego my?</a>
               </p>
               <p className="mb-4">
@@ -27,16 +34,26 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
               <p className="mb-4">
                 <a href="#galeria">Galeria</a>
               </p>
+              <p className="mb-4">
+                <NavLink exact to="/faq">
+                  FAQ
+                </NavLink>
+              </p>
               <p>
-                <a onClick={toggleMOdal} href="#modal">
+                <button
+                  className="transition-colors duration-300 hover:text-primary-mint"
+                  onClick={toggleMOdal}
+                >
                   Polityka Prywatności
-                </a>
+                </button>
                 <div
                   className={`${
-                    isOpenModal ? "" : "hidden"
-                  } fixed top-5 left-0 z-[1055]  h-full w-full overflow-y-auto overflow-x-hidden outline-none`}
+                    isOpenModal
+                      ? " animate-fadeIn bg-black bg-opacity-50"
+                      : "hidden"
+                  } fixed top-0 left-0 z-[1055]  h-full w-full overflow-y-auto overflow-x-hidden outline-none`}
                 >
-                  <div className="pointer-events-none relative h-[calc(100%-1rem)] w-auto translate-y-[-50px]  transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
+                  <div className="mt-5 pointer-events-none relative h-[calc(100%-1rem)] w-auto translate-y-[-50px]  transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
                     <div className="pointer-events-auto relative flex max-h-[100%] w-full flex-col overflow-hidden rounded-sm border-none  bg-mint-cream bg-clip-padding text-current shadow-lg outline-none  ">
                       <div className="flex items-center justify-between flex-shrink-0 p-4 border-b-2 border-opacity-100 rounded-sm border-neutral-100 ">
                         <h5

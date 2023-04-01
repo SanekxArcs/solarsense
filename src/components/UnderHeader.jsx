@@ -1,4 +1,6 @@
+// import { NavLink } from "react-router-dom";
 import LightLogo from "../resourses/solarsense-light-logo.svg";
+import { NavLink } from "react-router-dom";
 
 const Underheader = ({ toggleMenu, isOpen }) => {
   return (
@@ -8,7 +10,9 @@ const Underheader = ({ toggleMenu, isOpen }) => {
       >
         <ul className=" flex justify-between px-4  md:justify-between max-w-[1170px] h-14 md:h-10  mx-auto items-center">
           <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-150">
-            <a href="#home">Strona główna</a>
+            <NavLink exact to="/">
+              Strona główna
+            </NavLink>
           </li>
           <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-300">
             <a href="#dlaChegoMy">Dlaczego my?</a>
@@ -20,8 +24,14 @@ const Underheader = ({ toggleMenu, isOpen }) => {
             <a href="#galeria">Galeria</a>
           </li>
           <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
+            <NavLink exact to="/faq">
+              FAQ
+            </NavLink>
+          </li>
+          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
             <a href="#contact">Kontakt</a>
           </li>
+
           <li className="w-full md:hidden animate-fadeInDown">
             <a className="" href="http://solarsense.pl">
               <img className="h-7" src={LightLogo} alt="logo solar sense " />
@@ -67,20 +77,28 @@ const Underheader = ({ toggleMenu, isOpen }) => {
                     </a>
                   </li>
                   <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint">
-                    <a href="#home">Strona główna</a>
+                    <NavLink exact to="/">
+                      Strona główna
+                    </NavLink>
                   </li>
                   <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint">
-                    <a href="#dlaChegoMy">Dlaczego my?</a>
+                    <a href="/#dlaChegoMy">Dlaczego my?</a>
                   </li>
                   <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint">
-                    <a href="#etapy">Etapy współpracy</a>
+                    <a href="/#etapy">Etapy współpracy</a>
                   </li>
                   <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint">
-                    <a href="#galeria">Galeria</a>
+                    <a href="/#galeria">Galeria</a>
+                  </li>
+                  <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
+                    <NavLink exact to="/faq">
+                      FAQ
+                    </NavLink>
                   </li>
                   <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint">
-                    <a href="#contact">Wycena</a>
+                    <a href="/#contact">Wycena</a>
                   </li>
+
                   <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint">
                     <a
                       className="transition-all hover:text-primary-mint hover:-translate-y-1 hover:drop-shadow "

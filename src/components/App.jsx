@@ -1,14 +1,13 @@
 import { useState } from "react";
 
 import Header from "./Header";
-import Hero from "./Hero";
-import DlaCzego from "./DlaCzegoMy/DlaCzego";
-import Etapy from "./Etapy";
+import UnderHeader from "./UnderHeader";
 import Footer from "./Footer";
-import Galeria from "./Galeria";
-// import Opinia from "./Opinia";
-import Contact from "./Contact";
-import Underheader from "./UnderHeader";
+import HomePage from "./pages/homePage/HomePage";
+import Error404 from "./pages/Errors/404";
+import FAQ from "./pages/faq/FAQ";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ThanksForContact from "./pages/Thanks/ThanksForContact";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,16 +20,17 @@ function App() {
   };
   return (
     <>
-      <Header />
-      <Underheader toggleMenu={toggleMenu} isOpen={isOpen} />
-      <Hero />
-      <DlaCzego />
-      <Etapy />
-      <Galeria />
-      {/* <Opinia /> */}
-      <div className="w-screen h-20 bg-cadet-space"></div>
-      <Contact />
-      <Footer toggleMOdal={toggleMOdal} isOpenModal={isOpenModal} />
+      <Router>
+        <Header />
+        <UnderHeader toggleMenu={toggleMenu} isOpen={isOpen} />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/404" element={<Error404 />} />
+          <Route path="/thanks" element={<ThanksForContact />} />
+        </Routes>
+        <Footer toggleMOdal={toggleMOdal} isOpenModal={isOpenModal} />
+      </Router>
     </>
   );
 }

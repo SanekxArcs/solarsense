@@ -1,6 +1,6 @@
 import WhyWe from "./WhyWe";
-import svgBorderImg from "../../resourses/slider-dash-primary-mint.svg";
-import bottomImage from "../../resourses/wave-haikei (1).svg";
+import svgBorderImg from "../../../../resourses/slider-dash-primary-mint.svg";
+import bottomImage from "../../../../resourses/wave-haikei (1).svg";
 
 function DlaCzego() {
   return (

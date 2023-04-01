@@ -1,6 +1,6 @@
-import HeroImg from "../resourses/hero.webp";
-import BorderImg from "../resourses/slider-dash.svg";
-import BorderImgWhite from "../resourses/wave-haikei-white.svg";
+import HeroImg from "../../../resourses/hero.webp";
+import BorderImg from "../../../resourses/slider-dash.svg";
+import BorderImgWhite from "../../../resourses/wave-haikei-white.svg";
 
 function Hero() {
   return (
@@ -25,7 +25,7 @@ function Hero() {
             solidnym doświadczeniu w branży.
           </p>
           <a
-            className="px-8 py-4 z-50 shadow text-xl font-bold transition-all duration-300 rounded-sm bg-primary-mint text-mint-cream hover:scale-125 hover:bg-cadet-space hover:shadow-md "
+            className="z-50 px-8 py-4 text-xl font-bold transition-all duration-300 rounded-sm shadow bg-primary-mint text-mint-cream hover:scale-125 hover:bg-cadet-space hover:shadow-md "
             href="#contact"
           >
             Wycena
