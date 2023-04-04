@@ -1,12 +1,12 @@
 import { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Header from "./Header";
 import UnderHeader from "./UnderHeader";
 import Footer from "./Footer";
 import HomePage from "./pages/homePage/HomePage";
-import Error404 from "./pages/Errors/404";
 import FAQ from "./pages/faq/FAQ";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Error404 from "./pages/Errors/404";
 import ThanksForContact from "./pages/Thanks/ThanksForContact";
 
 function App() {

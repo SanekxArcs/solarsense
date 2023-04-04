@@ -1,12 +1,12 @@
-import topImg from "../../../resourses/wave-haikei.svg";
-import bottomImg from "../../../resourses/wave-haikei (1).svg";
-import pic1 from "../../../resourses/gal1.webp";
-import pic2 from "../../../resourses/gal2.webp";
-import pic3 from "../../../resourses/ga3.webp";
-import pic4 from "../../../resourses/gal4.webp";
-import pic5 from "../../../resourses/gal5.webp";
-import pic6 from "../../../resourses/gal6.webp";
-import svgRew from "../../../resourses/wave-haikei (4).svg";
+import topImg from "../../../assets/wave-haikei.svg";
+import bottomImg from "../../../assets/wave-haikei (1).svg";
+import pic1 from "../../../assets/gal1.webp";
+import pic2 from "../../../assets/gal2.webp";
+import pic3 from "../../../assets/ga3.webp";
+import pic4 from "../../../assets/gal4.webp";
+import pic5 from "../../../assets/gal5.webp";
+import pic6 from "../../../assets/gal6.webp";
+import svgRew from "../../../assets/wave-haikei (4).svg";
 
 function Galeria() {
   return (

@@ -1,5 +1,5 @@
-import topImg from "../../../resourses/wave-haikei.svg";
-import bottomImg from "../../../resourses/wave-haikei (1).svg";
+import topImg from "../../../assets/wave-haikei.svg";
+import bottomImg from "../../../assets/wave-haikei (1).svg";
 
 function Contact() {
   return (

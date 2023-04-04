@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import LightLogo from "../resourses/solarsense-light-logo.svg";
+import LightLogo from "../assets/solarsense-light-logo.svg";
 import { HashLink as Link } from "react-router-hash-link";
 
 const Underheader = ({ toggleMenu, isOpen }) => {
@@ -53,7 +53,7 @@ const Underheader = ({ toggleMenu, isOpen }) => {
                 isOpen ? "animate-fadeInDown" : `animate-fadeOutUp`
               } absolute inset-2 text-mint-cream  rounded-sm  z-30 min-h-screen `}
             >
-              <div className="relative bg-cadet-space z-50 ">
+              <div className="relative z-50 bg-cadet-space ">
                 <button
                   onClick={toggleMenu}
                   className="absolute text-3xl text-right text-mint-cream top-2 right-2"
@@ -88,7 +88,7 @@ const Underheader = ({ toggleMenu, isOpen }) => {
                   <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint">
                     <Link to="/#galeria">Galeria</Link>
                   </li>
-                  <li className=" px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
+                  <li className="px-4 py-2 transition-all duration-300 rounded-sm  hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
                     <NavLink exact to="/faq" className={setActive}>
                       FAQ
                     </NavLink>
@@ -99,7 +99,7 @@ const Underheader = ({ toggleMenu, isOpen }) => {
 
                   <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint">
                     <a
-                      className="transition-all hover:text-primary-mint hover:-translate-y-1 hover:drop-shadow  text-mint-cream"
+                      className="transition-all hover:text-primary-mint hover:-translate-y-1 hover:drop-shadow text-mint-cream"
                       href="tel:+48733897120"
                     >
                       +48 733 897 120

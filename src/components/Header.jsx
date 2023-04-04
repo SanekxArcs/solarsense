@@ -1,15 +1,15 @@
-import Logo from "../resourses/logo-solar-sense.svg";
+import Logo from "../assets/logo-solar-sense.svg";
 
 function Header() {
   return (
     <header className="hidden shadow-md bg-cadet-space text-mint-cream md:block">
       {/* TIME AND LINKS */}
       <div className=" lg:flex justify-between items-center max-w-[1170px] h-5 mx-auto text-xs  hidden">
-        <span className=" animate-text-focus-in animate-delay-300 ">
+        <span className=" animate-text-focus-in animate-delay-300">
           <i className="pr-2 fa-regular fa-clock"></i>
           Godziny otwarcia: pon. - sob. 8.00 - 18.00
         </span>
-        <span className="flex gap-2  animate-text-focus-in animate-delay-300 ">
+        <span className="flex gap-2 animate-text-focus-in animate-delay-300 ">
           Bądź na bieżąco:
           <a href="#contact">
             <i className="transition-all fa-brands fa-linkedin hover:text-primary-mint"></i>
@@ -34,7 +34,7 @@ function Header() {
           >
             <img className="h-10" src={Logo} alt="logo solar sense" />
           </a>
-          <div className="hidden font-bold md:flex md:pl-5 md:gap-2 lg:gap-5 md:text-md lg:text-xl  animate-text-focus-in animate-delay-300 ">
+          <div className="hidden font-bold md:flex md:pl-5 md:gap-2 lg:gap-5 md:text-md lg:text-xl animate-text-focus-in animate-delay-300 ">
             <a
               className="transition-all hover:text-primary-mint hover:-translate-y-1 hover:drop-shadow "
               href="tel:+48733897120"

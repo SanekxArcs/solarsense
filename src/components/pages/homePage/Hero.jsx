@@ -1,6 +1,6 @@
-import HeroImg from "../../../resourses/hero.webp";
-import BorderImg from "../../../resourses/slider-dash.svg";
-import BorderImgWhite from "../../../resourses/wave-haikei-white.svg";
+import HeroImg from "../../../assets/hero.webp";
+import BorderImg from "../../../assets/slider-dash.svg";
+import BorderImgWhite from "../../../assets/wave-haikei-white.svg";
 
 function Hero() {
   return (
