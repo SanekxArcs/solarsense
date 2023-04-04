@@ -12,18 +12,20 @@ import ThanksForContact from "./pages/Thanks/ThanksForContact";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenModal, setIsOpenModal] = useState(false);
+
   const toggleMOdal = () => {
     setIsOpenModal(!isOpenModal);
   };
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <>
       <Router>
         <Header />
         <UnderHeader toggleMenu={toggleMenu} isOpen={isOpen} />
-
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/faq" element={<FAQ />} />
@@ -37,4 +39,3 @@ function App() {
 }
 
 export default App;
-
