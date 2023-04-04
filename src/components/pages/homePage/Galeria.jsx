@@ -16,7 +16,7 @@ function Galeria() {
           Wykonane montaże
         </h2>
         <div className="grid grid-cols-2 gap-5 px-4 pb-10 md:grid-cols-3 md:grid-rows-3 max-h-144">
-          <div className="relative overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md hover:z-50 ">
+          <div className="relative overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md ">
             <img
               alt="gallery"
               className="block object-cover object-center w-full h-full rounded-sm peer"
@@ -33,7 +33,7 @@ function Galeria() {
             </div>
           </div>
 
-          <div className="relative row-span-2 overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md hover:z-50">
+          <div className="relative row-span-2 overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md ">
             <img
               loading="lazy"
               alt="gallery"
@@ -49,7 +49,7 @@ function Galeria() {
             </div>
           </div>
 
-          <div className="relative overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md hover:z-50 ">
+          <div className="relative overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md ">
             <img
               loading="lazy"
               alt="gallery"
@@ -66,7 +66,7 @@ function Galeria() {
             </div>
           </div>
 
-          <div className="relative row-span-2 overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md hover:z-50 md:row-span-1">
+          <div className="relative row-span-2 overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md md:row-span-1">
             <img
               loading="lazy"
               alt="gallery"
@@ -83,7 +83,7 @@ function Galeria() {
             </div>
           </div>
 
-          <div className="relative overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md hover:z-50 md:row-span-2">
+          <div className="relative overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md md:row-span-2">
             <img
               loading="lazy"
               alt="gallery"
@@ -100,7 +100,7 @@ function Galeria() {
             </div>
           </div>
 
-          <div className="relative overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md hover:z-50 md:col-span-2">
+          <div className="relative overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md md:col-span-2">
             <img
               loading="lazy"
               alt="gallery"

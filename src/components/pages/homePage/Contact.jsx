@@ -18,7 +18,7 @@ function Contact() {
           <input
             type="hidden"
             name="_next"
-            value="https://solarsense.pl/thanks.html"
+            value="https://solarsense.pl/thanks"
           ></input>
           <input type="text" name="_honey" className="hidden" />
           <input

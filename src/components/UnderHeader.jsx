@@ -1,35 +1,35 @@
-// import { NavLink } from "react-router-dom";
-import LightLogo from "../resourses/solarsense-light-logo.svg";
 import { NavLink } from "react-router-dom";
+import LightLogo from "../resourses/solarsense-light-logo.svg";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Underheader = ({ toggleMenu, isOpen }) => {
+  const setActive = ({ isActive }) =>
+    isActive ? "bg-primary-mint px-4 py-2 rounded-sm" : "";
   return (
     <>
       <nav
-        className={`sticky top-0 left-0 right-0 bottom-auto z-40 shadow-md text-mint-cream bg-cadet-space`}
+        className={`sticky top-0 left-0 right-0 bottom-auto z-50 shadow-md text-mint-cream bg-cadet-space`}
       >
         <ul className=" flex justify-between px-4  md:justify-between max-w-[1170px] h-14 md:h-10  mx-auto items-center">
           <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-150">
-            <NavLink exact to="/">
-              Strona główna
-            </NavLink>
+            <Link to="/#">Strona główna</Link>
           </li>
           <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-300">
-            <a href="#dlaChegoMy">Dlaczego my?</a>
+            <Link to="/#dlaChegoMy">Dlaczego my?</Link>
           </li>
           <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-500">
-            <a href="#etapy">Etapy współpracy</a>
+            <Link to="/#etapy">Etapy współpracy</Link>
           </li>
           <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-700">
-            <a href="#galeria">Galeria</a>
+            <Link to="/#galeria">Galeria</Link>
           </li>
           <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
-            <NavLink exact to="/faq">
+            <NavLink exact to="/faq" className={setActive}>
               FAQ
             </NavLink>
           </li>
           <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
-            <a href="#contact">Kontakt</a>
+            <Link to="/#contact">Kontakt</Link>
           </li>
 
           <li className="w-full md:hidden animate-fadeInDown">
@@ -53,7 +53,7 @@ const Underheader = ({ toggleMenu, isOpen }) => {
                 isOpen ? "animate-fadeInDown" : `animate-fadeOutUp`
               } absolute inset-2 text-mint-cream  rounded-sm  z-30 min-h-screen `}
             >
-              <div className="relative bg-cadet-space ">
+              <div className="relative bg-cadet-space z-50 ">
                 <button
                   onClick={toggleMenu}
                   className="absolute text-3xl text-right text-mint-cream top-2 right-2"
@@ -77,31 +77,29 @@ const Underheader = ({ toggleMenu, isOpen }) => {
                     </a>
                   </li>
                   <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint">
-                    <NavLink exact to="/">
-                      Strona główna
-                    </NavLink>
+                    <Link to="/#">Strona główna</Link>
                   </li>
                   <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint">
-                    <a href="/#dlaChegoMy">Dlaczego my?</a>
+                    <Link to="/#dlaChegoMy">Dlaczego my?</Link>
                   </li>
                   <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint">
-                    <a href="/#etapy">Etapy współpracy</a>
+                    <Link to="/#etapy">Etapy współpracy</Link>
                   </li>
                   <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint">
-                    <a href="/#galeria">Galeria</a>
+                    <Link to="/#galeria">Galeria</Link>
                   </li>
-                  <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
-                    <NavLink exact to="/faq">
+                  <li className=" px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
+                    <NavLink exact to="/faq" className={setActive}>
                       FAQ
                     </NavLink>
                   </li>
                   <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint">
-                    <a href="/#contact">Wycena</a>
+                    <Link to="/#contact">Wycena</Link>
                   </li>
 
                   <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint">
                     <a
-                      className="transition-all hover:text-primary-mint hover:-translate-y-1 hover:drop-shadow "
+                      className="transition-all hover:text-primary-mint hover:-translate-y-1 hover:drop-shadow  text-mint-cream"
                       href="tel:+48733897120"
                     >
                       +48 733 897 120
@@ -109,7 +107,7 @@ const Underheader = ({ toggleMenu, isOpen }) => {
                   </li>
                   <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint">
                     <a
-                      className="transition-all hover:text-primary-mint hover:-translate-y-1 hover:drop-shadow"
+                      className="transition-all hover:text-primary-mint hover:-translate-y-1 hover:drop-shadow text-mint-cream"
                       href="mailto:buiro@solarsense.com"
                     >
                       biuro@solarsense.pl

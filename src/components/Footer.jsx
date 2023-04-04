@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Footer = ({ toggleMOdal, isOpenModal }) => {
+  const setActive = ({ isActive }) => (isActive ? "text-primary-mint" : "");
   return (
     <footer className="text-center bg-cadet-space text-mint-cream lg:text-left">
       <div>
@@ -21,21 +23,19 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                 Linki
               </h6>
               <p className="mb-4">
-                <NavLink exact to="/">
-                  Strona główna
-                </NavLink>
+                <Link to="/#">Strona główna</Link>
               </p>
               <p className="mb-4">
-                <a href="#dlaChegoMy">Dlaczego my?</a>
+                <Link to="/#dlaChegoMy">Dlaczego my?</Link>
               </p>
               <p className="mb-4">
-                <a href="#etapy">Etapy współpracy</a>
+                <Link to="/#etapy">Etapy współpracy</Link>
               </p>
               <p className="mb-4">
-                <a href="#galeria">Galeria</a>
+                <Link to="/#galeria">Galeria</Link>
               </p>
               <p className="mb-4">
-                <NavLink exact to="/faq">
+                <NavLink exact to="/faq" className={setActive}>
                   FAQ
                 </NavLink>
               </p>
@@ -344,7 +344,7 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
             </div>
           </div>
         </div>
-        <div className="p-6 text-center bg-rich-black ">
+        <div className="p-6 text-center bg-cadet-space ">
           <span className="select-none ">© 2023 Copyright: </span>
           <a
             className="font-semibold text-neutral-400"

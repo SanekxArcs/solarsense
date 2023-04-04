@@ -23,10 +23,11 @@ function App() {
       <Router>
         <Header />
         <UnderHeader toggleMenu={toggleMenu} isOpen={isOpen} />
+
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/faq" element={<FAQ />} />
-          <Route path="/404" element={<Error404 />} />
+          <Route path="/*" element={<Error404 />} />
           <Route path="/thanks" element={<ThanksForContact />} />
         </Routes>
         <Footer toggleMOdal={toggleMOdal} isOpenModal={isOpenModal} />

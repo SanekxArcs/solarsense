@@ -559,42 +559,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-width: 320px) {
-  .container {
-    max-width: 320px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
-}
-
-@media (min-width: 1920px) {
-  .container {
-    max-width: 1920px;
-  }
-}
-
 .pointer-events-none {
   pointer-events: none;
 }
@@ -864,8 +828,12 @@ video {
   max-height: 100vh;
 }
 
-.min-h-\[500px\] {
-  min-height: 500px;
+.min-h-\[370px\] {
+  min-height: 370px;
+}
+
+.min-h-\[380px\] {
+  min-height: 380px;
 }
 
 .min-h-\[auto\] {
@@ -874,34 +842,6 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-\[calc\(100\%-456px\)\] {
-  min-height: calc(100% - 456px);
-}
-
-.min-h-\[calc\(100\%_-_456px\)\] {
-  min-height: calc(100% - 456px);
-}
-
-.min-h-\[80\%\] {
-  min-height: 80%;
-}
-
-.min-h-\[400px\] {
-  min-height: 400px;
-}
-
-.min-h-\[380px\] {
-  min-height: 380px;
-}
-
-.min-h-\[370px\] {
-  min-height: 370px;
-}
-
-.min-h-\[390px\] {
-  min-height: 390px;
 }
 
 .w-16 {
@@ -1887,6 +1827,10 @@ video {
 
 .hover\:z-50:hover {
   z-index: 50;
+}
+
+.hover\:z-40:hover {
+  z-index: 40;
 }
 
 .hover\:-translate-y-1:hover {

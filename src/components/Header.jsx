@@ -26,7 +26,7 @@ function Header() {
         </span>
       </div>
       {/* HEADER CONTENT  */}
-      <nav className="flex items-center justify-between h-20 bg-mint-cream text-rich-black">
+      <nav className="flex items-center justify-between h-20 bg-mint-cream text-cadet-space">
         <div className="flex items-center justify-between xl:w-[1170px] mx-auto  animate-text-focus-in animate-delay-300 ">
           <a
             className="transition-all duration-300 hover:scale-110"
