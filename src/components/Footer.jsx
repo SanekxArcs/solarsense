@@ -9,10 +9,10 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
         <div className="py-10 text-center md:text-left max-w-[1170px] mx-auto px-6">
           <div className="grid gap-8 grid-1 md:grid-cols-2 lg:grid-cols-3">
             <div className="">
-              <h6 className="pb-5 text-3xl font-black uppercase select-none md:block">
+              <p className="pb-5 text-3xl font-black uppercase select-none md:block">
                 <span className=" text-mint-cream">Solar </span>{" "}
                 <span className=" text-primary-mint">Sense</span>
-              </h6>
+              </p>
               <p className="select-none ">
                 Z nami zyskasz nie tylko oszczędności, ale także pewność, jakość
                 i niezawodność
