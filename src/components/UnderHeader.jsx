@@ -29,6 +29,16 @@ const Underheader = ({ toggleMenu, isOpen }) => {
             </NavLink>
           </li>
           <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
+            <NavLink exact to="/finansowanie" className={setActive}>
+              Finansowanie
+            </NavLink>
+          </li>
+          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
+            <NavLink exact to="/service" className={setActive}>
+              Serwises
+            </NavLink>
+          </li>
+          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
             <Link to="/#contact">Kontakt</Link>
           </li>
 
@@ -88,7 +98,7 @@ const Underheader = ({ toggleMenu, isOpen }) => {
                   <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint">
                     <Link to="/#galeria">Galeria</Link>
                   </li>
-                  <li className="px-4 py-2 transition-all duration-300 rounded-sm  hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
+                  <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
                     <NavLink exact to="/faq" className={setActive}>
                       FAQ
                     </NavLink>

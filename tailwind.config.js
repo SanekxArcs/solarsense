@@ -19,6 +19,7 @@ module.exports = withAnimations({
       lg: "1024px",
       xl: "1440px",
       "2xl": "1920px",
+      "3xl": "1920px",
     },
     fontFamily: {
       sans: ["Montserrat", "sans-serif"],

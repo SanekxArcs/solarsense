@@ -43,9 +43,24 @@ const FAQ = () => {
   ];
   return (
     <>
-      <div className="max-w-[1170px] mx-auto">
-        <h1 className="pt-10 pb-5 text-2xl font-bold text-center md:text-4xl">
-          Najczęściej zadawane pytania
+      <div className="max-w-[1170px] px-6 mx-auto my-24  animate-slideInLeft">
+      <section className="mb-32 text-center text-gray-800">
+
+<div className="flex justify-center">
+  <div className="max-w-[1000px]">
+    <h2 className="mb-5 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
+    Najczęściej <br />
+      <span className=" text-primary-mint">zadawane pytania</span>
+    </h2>
+    {/* <p className="text-lg text-gray-500">
+    
+    </p> */}
+  </div>
+</div>
+
+</section> 
+        <h1 className="text-2xl font-bold text-center  md:text-4xl">
+          
         </h1>
 
         <div className="mb-20">
