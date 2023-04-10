@@ -8,6 +8,8 @@ import HomePage from "./pages/homePage/HomePage";
 import FAQ from "./pages/faq/FAQ";
 import Error404 from "./pages/Errors/404";
 import ThanksForContact from "./pages/Thanks/ThanksForContact";
+import Finansowanie from "./pages/Finansowanie/Finansowanie";
+import Serwise from "./pages/Serwise/Serwise";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,6 +31,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/finansowanie" element={<Finansowanie/>} />
+          <Route path="/service" element={<Serwise/>} />
           <Route path="/*" element={<Error404 />} />
           <Route path="/thanks" element={<ThanksForContact />} />
         </Routes>
