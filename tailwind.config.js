@@ -27,7 +27,7 @@ module.exports = withAnimations({
     extend: {
       colors: {
         "primary-mint": "#41B883",
-        "primary-mint-white": "#41B883",
+        "primary-mint-white": "#F0FAF5",
         "primary-mint-lighter1": "#6BD8A8",
         "primary-mint-lighter2": "#91E9C5",
         "primary-mint-accent1": "#5DA5B5",

@@ -1,53 +1,20 @@
+import React from "react";
 import { NavLink } from "react-router-dom";
-import LightLogo from "../assets/solarsense-light-logo.svg";
+import LightLogo from "../../assets/solarsense-light-logo.svg";
 import { HashLink as Link } from "react-router-hash-link";
 
-const Underheader = ({ toggleMenu, isOpen }) => {
-  const setActive = ({ isActive }) =>
+const MobileNav = ({ toggleMenu, isOpen }) => {
+    const setActive = ({ isActive }) =>
     isActive ? "bg-primary-mint px-4 py-2 rounded-sm" : "";
   return (
     <>
-      <nav
-        className={`sticky top-0 left-0 right-0 bottom-auto z-50 shadow-md text-mint-cream bg-cadet-space`}
-      >
-        <ul className=" flex justify-between px-4  md:justify-between max-w-[1170px] h-14 md:h-10  mx-auto items-center">
-          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-150">
-            <Link to="/#">Strona główna</Link>
-          </li>
-          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-300">
-            <Link to="/#dlaChegoMy">Dlaczego my?</Link>
-          </li>
-          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-500">
-            <Link to="/#etapy">Etapy współpracy</Link>
-          </li>
-          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-700">
-            <Link to="/#galeria">Galeria</Link>
-          </li>
-          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
-            <NavLink exact to="/faq" className={setActive}>
-              FAQ
-            </NavLink>
-          </li>
-          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
-            <NavLink exact to="/finansowanie" className={setActive}>
-              Finansowanie
-            </NavLink>
-          </li>
-          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
-            <NavLink exact to="/service" className={setActive}>
-              Serwises
-            </NavLink>
-          </li>
-          <li className="hidden px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint md:block md:animate-text-focus-in animate-delay-1000">
-            <Link to="/#contact">Kontakt</Link>
-          </li>
-
+      <nav>
+        <ul>
           <li className="w-full md:hidden animate-fadeInDown">
             <a className="" href="http://solarsense.pl">
               <img className="h-7" src={LightLogo} alt="logo solar sense " />
             </a>
           </li>
-
           <li className="flex items-end justify-start w-full rounded-sm md:hidden">
             <button
               onClick={toggleMenu}
@@ -133,4 +100,4 @@ const Underheader = ({ toggleMenu, isOpen }) => {
   );
 };
 
-export default Underheader;
+export default MobileNav;

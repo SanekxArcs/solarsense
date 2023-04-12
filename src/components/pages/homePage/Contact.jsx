@@ -1,5 +1,4 @@
 import topImg from "../../../assets/wave-haikei.svg";
-import bottomImg from "../../../assets/wave-haikei (1).svg";
 
 function Contact() {
   return (
@@ -105,6 +104,7 @@ function Contact() {
                 name="Typ"
                 id="typ"
               >
+                <option value="dach">--Wybierz--</option>
                 <option value="dach">Na dachu</option>
                 <option value="grunt">Na gruncie</option>
                 <option value="PV+ME">Fotowoltaika + magazyn Energii</option>
@@ -170,7 +170,7 @@ function Contact() {
             </div>
             <button
               type="submit"
-              className="w-full rounded-sm bg-primary px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg bg-primary-mint"
+              className="w-full rounded-sm bg-primary px-6 py-2.5 text-xs font-medium uppercase leading-tight  text-primary-dark shadow-md transition duration-150 ease-in-out hover:bg-primary-mint hover:shadow-lg focus:bg-primary-mint focus:shadow-lg focus:outline-none focus:ring-2 active:bg-primary-mint  active:shadow-lg bg-primary-mint-lighter1 "
               data-te-ripple-init
               data-te-ripple-color="light"
             >
@@ -185,11 +185,11 @@ function Contact() {
         src={topImg}
         alt=""
       />
-      <img
+      {/* <img
         className="absolute bottom-0 left-0 right-0 w-full -z-50"
         src={bottomImg}
         alt=""
-      />
+      /> */}
     </div>
   );
 }

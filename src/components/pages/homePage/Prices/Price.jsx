@@ -115,7 +115,7 @@ const Price = ({priceBtn}) => {
     <>
       {mapChange[priceBtn].map((e) => {
         return (
-          <div className="w-full px-4 md:w-1/2 lg:w-1/3 ">
+          <div className="w-full px-4 transition-all duration-300 rounded-sm shadow md:w-1/2 lg:w-1/3 hover:scale-[1.02] hover:shadow-md">
             <div className={` ${e.color ? "bg-primary-mint-lighter2" : "bg-primary-mint-accent2"} relative z-10 px-8 py-10 mb-10 overflow-hidden border rounded-sm  border-primary shadow-pricing border-opacity-20 sm:p-12 lg:py-10 lg:px-6 xl:p-12`}>
               <span className="block mb-4 text-lg font-semibold text-primary">
                 {e.title}
@@ -145,7 +145,7 @@ const Price = ({priceBtn}) => {
               </div>
               <a
                 href=""
-                className={` ${e.color ? "border-primary-dark" : "border-primary-mint-lighter2"}block w-full p-4 text-base font-semibold text-center transition bg-transparent border rounded-sm text-primary-dark hover:bg-primary-mint  hover:text-white`}
+                className={` ${e.color ? "border-primary-dark" : "border-primary-mint-lighter2"} block w-full p-4 text-base font-semibold text-center transition bg-transparent border rounded-sm text-primary-dark hover:bg-primary-mint  hover:text-white`}
               >
                 {e.button}
               </a>

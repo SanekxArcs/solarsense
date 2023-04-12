@@ -10,7 +10,7 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
           <div className="grid gap-8 grid-1 md:grid-cols-2 lg:grid-cols-3">
             <div className="">
               <p className="pb-5 text-3xl font-black uppercase select-none md:block">
-                <span className=" text-mint-cream">Solar </span>{" "}
+                <span className=" text-mint-cream">Solar </span>
                 <span className=" text-primary-mint">Sense</span>
               </p>
               <p className="select-none ">
@@ -105,15 +105,15 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                           techniczne i rozwiązania organizacyjne, zapewniające
                           wysoki poziom ochrony przetwarzanych danych osobowych
                           oraz zabezpieczenia przed dostępem osób
-                          nieupoważnionych. <br />{" "}
+                          nieupoważnionych. <br />
                           <b>I. ADMINISTRATOR DANYCH OSOBOWYCH</b>
                           <br />
                           Administratorem danych osobowych jest Pan Krzysztof
                           Gutter, zamieszkały przy: Szczęsna 26, 02-454 Warszawa
-                          (zwany dalej: „<b>Właściciel</b>"). <br />{" "}
-                          <b>II. CEL PRZETWARZANIA DANYCH OSOBOWYCH</b> <br />{" "}
+                          (zwany dalej: „<b>Właściciel</b>"). <br />
+                          <b>II. CEL PRZETWARZANIA DANYCH OSOBOWYCH</b> <br />
                           1. Administrator przetwarza dane osobowe Użytkownika w
-                          celu: W celu prawidłowej realizacji umów sprzedaży.{" "}
+                          celu: W celu prawidłowej realizacji umów sprzedaży.
                           <br /> 2. Oznacza to, że dane te są potrzebne w
                           szczególności do a. zawarcia umowy; b. dokonania
                           rozliczeń; c. dostarczenia zamówionego przez
@@ -135,22 +135,22 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                           dochodzenia roszczeń lub ochrony przed roszczeniami
                           Użytkownika lub osoby trzeciej, jak również marketingu
                           usług i produktów podmiotów trzecich lub marketingu
-                          własnego, niebędącego marketingiem bezpośrednim.{" "}
+                          własnego, niebędącego marketingiem bezpośrednim.
                           <br />
                           <b>III. RODZAJ DANYCH</b> <br /> 1. Administrator
                           przetwarza następujące dane osobowe, których podanie
                           jest niezbędne do: <br /> a. dokonywania zakupów za
-                          pomocą strony internetowej: <br /> - imię i nazwisko;{" "}
+                          pomocą strony internetowej: <br /> - imię i nazwisko;
                           <br /> - płeć; - adres dostawy;
                           <br /> - numer telefonu; - adres e-mail; b. Dane
                           podawane przez Użytkownika opcjonalnie: <br /> - data
                           urodzenia; <br /> - numer PESEL (w przypadku żądania
                           wystawienia faktury); <br /> - numer NIP (w przypadku
-                          żądania wystawienia faktury dla przedsiębiorcy).{" "}
+                          żądania wystawienia faktury dla przedsiębiorcy).
                           <br />
                           <b>
                             IV. PODSTAWA PRAWNA PRZETWARZANIA DANYCH OSOBOWYCH
-                          </b>{" "}
+                          </b>
                           <br /> 1. Dane osobowe są przetwarzane zgodnie z
                           przepisami Rozporządzenia Parlamentu Europejskiego i
                           Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w
@@ -158,7 +158,7 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                           przetwarzaniem danych osobowych i w sprawie swobodnego
                           przepływu takich danych oraz uchylenia dyrektywy
                           95/46/WE (ogólne rozporządzenie o ochronie danych), OJ
-                          L 119, 4.5.2016, p. 1–88, dalej zwane: „{" "}
+                          L 119, 4.5.2016, p. 1–88, dalej zwane: „
                           <b>rozporządzenie RODO</b> ". <br /> 2. Administrator
                           przetwarza dane osobowe wyłącznie po uprzednim
                           uzyskaniu zgody Użytkownika w chwili potwierdzenia
@@ -206,7 +206,7 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                           osobowych, czy to przez określony czas, czy też bez
                           ograniczenia czasowego, ale w określonym zakresie, co
                           administrator będzie obowiązany spełnić. Żądanie to
-                          nie wpłynie na dotychczas dokonane czynności. <br />{" "}
+                          nie wpłynie na dotychczas dokonane czynności. <br />
                           7. Użytkownik może zażądać, aby administrator
                           przekazał innemu podmiotowi, przetwarzane dane osobowe
                           Użytkownika. Powinien w tym celu napisać prośbę do
@@ -241,7 +241,7 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                           Ponadto, administrator może zachować informacje
                           archiwalne, dotyczące zawartych transakcji, gdyż ich
                           przechowywanie jest związane z przysługującymi
-                          Użytkownikowi roszczeniami np. z tytułu rękojmi.{" "}
+                          Użytkownikowi roszczeniami np. z tytułu rękojmi.
                           <br /> 4. Jeśli żadna umowa nie została zawarta,
                           między Użytkownikiem i Właścicielem, dane osobowe
                           Użytkownika są przechowywane do czasu usunięcia konta
