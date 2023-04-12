@@ -3,7 +3,7 @@ import elementforprice from "../../../../assets/elementforprice.svg"
 import elementforprice1 from "../../../../assets/elementforprice1.svg"
 
 
-const Price = ({priceBtn}) => {
+const Price = ({priceBtn, setTextToMessage}) => {
 
 
 
@@ -11,99 +11,108 @@ const Price = ({priceBtn}) => {
   const priceData4 = [
     {
       title: "Najtaniej",
-      cena: 39999,
+      cena: "17 602",
       description: "Najtańsza opcja inwestycji w przyszłość",
-      inwerter: "SOFAR 3.6KTLM-G3 jedno fazowy",
-      solarPanel: "Jetion Solar 450W JT450SGh",
+      inwerter: "SOFAR 3.6KTLM-G3, L1, 2xMPPT",
+      solarPanel: "JETION SOLAR 545W JT545SSh Bifacial",
       roof: "Trapezowy",
       button: "Wybierz tanio",
       color: false,
+      power: "4 kWp",
     },
     {
       title: "Rekomendowane",
-      cena: 39999,
+      cena: '18 312',
       description: "Najlepsza opcja z uwagi na jakość i ceną",
-      inwerter: "FoxESS F3000 jedno fazowy",
-      solarPanel: "LONGI SOLAR LR5-54HIH-410M",
+      inwerter: "FOXESS S3300, L1, 1xMPPT",
+      solarPanel: "Jinko Solar JKM420N-54HL4-B Full Black",
       roof: "Trapezowy",
       button: "Wybierz rekomendowane",
       color: true,
+      power: "4 kWp",
     },
     {
       title: "Premium",
-      cena: 39999,
+      cena: '27 770',
       description: "Najlepsze materiały i produkty na całym świecie",
-      inwerter: "HUAWEI SUN 2000 3KTL-L1 jedno fazowy",
-      solarPanel: "HYUNDAI-HiE-S430HG G12",
+      inwerter: "HUAWEI SUN 2000 3KTL-L1, 2xMPPT",
+      solarPanel: "HYUNDAI-HiE-S435HG G12 435W Full Black",
       roof: "Trapezowy",
       button: "Wybierz premium",
       color: false,
+      power: "4 kWp",
     },
   ];
 
   const priceData6 = [
     {
       title: "Najtaniej",
-      cena: 49999,
+      cena: "22 682",
       description: "Najtańsza opcja inwestycji w przyszłość",
-      inwerter: "SOFAR 3.6KTLM-G3 jedno fazowy",
-      solarPanel: "Jetion Solar 450W JT450SGh",
+      inwerter: "SOFAR 5.5KTL-X-G3, L3, 2xMPPT",
+      solarPanel: "JETION SOLAR 545W JT545SSh Bifacial",
       roof: "Trapezowy",
       button: "Wybierz tanio",
       color: false,
+      power: "6 kWp",
     },
     {
       title: "Rekomendowane",
-      cena: 59999,
+      cena: '27 218',
       description: "Najlepsza opcja z uwagi na jakość i ceną",
-      inwerter: "FoxESS F3000 jedno fazowy",
-      solarPanel: "LONGI SOLAR LR5-54HIH-410M",
+      inwerter: "FoxESS T6 (G3), L3, 2xMPPT",
+      solarPanel: "Jinko Solar JKM420N-54HL4-B Full Black",
       roof: "Trapezowy",
       button: "Wybierz rekomendowane",
       color: true,
+      power: "6 kWp",
     },
     {
       title: "Premium",
-      cena: 69999,
+      cena: '38 217',
       description: "Najlepsze materiały i produkty na całym świecie",
-      inwerter: "HUAWEI SUN 2000 3KTL-L1 jedno fazowy",
-      solarPanel: "HYUNDAI-HiE-S430HG G12",
+      inwerter: "HUAWEI SUN 2000-6KTL-M1, L3, 2xMPPT",
+      solarPanel: "HYUNDAI-HiE-S435HG G12 435W Full Black",
       roof: "Trapezowy",
       button: "Wybierz premium",
       color: false,
+      power: "6 kWp",
     },
   ];
 
   const priceData10 = [
     {
       title: "Najtaniej",
-      cena: 59999,
+      cena: "34 082",
       description: "Najtańsza opcja inwestycji w przyszłość",
-      inwerter: "SOFAR 3.6KTLM-G3 jedno fazowy",
-      solarPanel: "Jetion Solar 450W JT450SGh",
+      inwerter: "SOFAR 8.8KTL-X-G3, L3, 2xMPPT",
+      solarPanel: "JETION SOLAR 545W JT545SSh Bifacial",
       roof: "Trapezowy",
       button: "Wybierz tanio",
       color: false,
+      power: "10 kWp",
     },
     {
       title: "Rekomendowane",
-      cena: 69999,
+      cena: '40 148',
       description: "Najlepsza opcja z uwagi na jakość i ceną",
-      inwerter: "FoxESS F3000 jedno fazowy",
-      solarPanel: "LONGI SOLAR LR5-54HIH-410M",
+      inwerter: "FoxESS T10 (G3), L3, 2xMPPT",
+      solarPanel: "Jinko Solar JKM420N-54HL4-B Full Black",
       roof: "Trapezowy",
       button: "Wybierz rekomendowane",
       color: true,
+      power: "10 kWp",
     },
     {
       title: "Premium",
-      cena: 79999,
+      cena: '59 139',
       description: "Najlepsze materiały i produkty na całym świecie",
-      inwerter: "HUAWEI SUN 2000 3KTL-L1 jedno fazowy",
-      solarPanel: "HYUNDAI-HiE-S430HG G12",
+      inwerter: "HUAWEI SUN 2000-10KTL-M1, L3, 2xMPPT",
+      solarPanel: "HYUNDAI-HiE-S435HG G12 435W Full Black",
       roof: "Trapezowy",
       button: "Wybierz premium",
       color: false,
+      power: "10 kWp",
     },
   ];
   console.log(priceBtn);
@@ -115,8 +124,8 @@ const Price = ({priceBtn}) => {
     <>
       {mapChange[priceBtn].map((e) => {
         return (
-          <div className="w-full px-4 transition-all duration-300 rounded-sm shadow md:w-1/2 lg:w-1/3 hover:scale-[1.02] hover:shadow-md">
-            <div className={` ${e.color ? "bg-primary-mint-lighter2" : "bg-primary-mint-accent2"} relative z-10 px-8 py-10 mb-10 overflow-hidden border rounded-sm  border-primary shadow-pricing border-opacity-20 sm:p-12 lg:py-10 lg:px-6 xl:p-12`}>
+          <div className="w-full px-4 transition-all duration-300 rounded-sm  md:w-1/2 lg:w-1/3 hover:scale-[1.02] ">
+            <div className={` ${e.color ? "bg-primary-mint-lighter2" : "bg-primary-mint-accent2"} relative z-10 px-8 py-10 mb-10 overflow-hidden border rounded-sm   shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-12`}>
               <span className="block mb-4 text-lg font-semibold text-primary">
                 {e.title}
               </span>
@@ -143,13 +152,9 @@ const Price = ({priceBtn}) => {
                   Typ dachu: {e.roof}
                 </p>
               </div>
-              <a
-                href=""
-                className={` ${e.color ? "border-primary-dark" : "border-primary-mint-lighter2"} block w-full p-4 text-base font-semibold text-center transition bg-transparent border rounded-sm text-primary-dark hover:bg-primary-mint  hover:text-white`}
-              >
+              <a href="#contact" onClick={() => {setTextToMessage(`Dzień dobry, mam pytania odnośnie zestawu '${e.title}' instalacji mocy ~${e.power}. Jej komponentami jest: Falownik ${e.inwerter}, moduly ${e.solarPanel}. Potrzebuje szczególną wycenę.`)}} className={` ${e.color ? "border-primary-dark" : "border-primary-mint-lighter2"} block w-full p-4 text-base font-semibold text-center transition bg-transparent border rounded-sm text-primary-dark hover:bg-primary-mint  hover:text-white`}>
                 {e.button}
               </a>
-
               <div>
                 <span className="absolute right-0 top-7 z-[-1]">
                   <img src={elementforprice} alt="" />

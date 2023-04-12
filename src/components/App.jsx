@@ -8,13 +8,14 @@ import Footer from "./Footer/Footer";
 import HomePage from "./pages/homePage/HomePage";
 import FAQ from "./pages/faq/FAQ";
 import Error404 from "./pages/Errors/404";
-import ThanksForContact from "./pages/Thanks/ThanksForContact";
+import ThanksForContact from "./pages/Thanks/ThanksForContact.jsx";
 import Finansowanie from "./pages/Finansowanie/Finansowanie";
 import Serwise from "./pages/Serwise/Serwise";
 import ScrollToTop from "./service/ScrollToTop";
 import Bottom from "./service/com for style/Bottom"
 
 function App() {
+  const [textToMessage, setTextToMessage] = useState('')
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenModal, setIsOpenModal] = useState(false);
   const { scrollYProgress } = useScroll();
@@ -40,12 +41,12 @@ function App() {
         <Header />
         <UnderHeader toggleMenu={toggleMenu} isOpen={isOpen} />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage textToMessage={textToMessage} setTextToMessage={setTextToMessage}/>} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/finansowanie" element={<Finansowanie/>} />
           <Route path="/service" element={<Serwise/>} />
-          <Route path="/*" element={<Error404 />} />
           <Route path="/thanks" element={<ThanksForContact />} />
+          <Route path="/*" element={<Error404 />} />
         </Routes>
         <Bottom/>
         <Footer toggleMOdal={toggleMOdal} isOpenModal={isOpenModal} />

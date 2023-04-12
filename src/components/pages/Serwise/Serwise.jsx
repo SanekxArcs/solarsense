@@ -1,4 +1,4 @@
-import photoSerwis from '../../../assets/IMG_20220322_173544-_1_.webp'
+import photoSerwis from '../../../assets/serwis.webp'
 import Bottom from '../../service/com for style/Bottom'
 import TopImg from '../../service/com for style/TopImg'
 const Serwise = () => {
@@ -24,7 +24,7 @@ const Serwise = () => {
 
     
         
-    <section className="my-32 text-gray-800 animate-slideInLeft animate-delay-300">
+    <section className="my-32 text-gray-800">
       <div className="block bg-white rounded-sm shadow-lg">
         <div className="flex flex-wrap items-center">
           <div className="hidden w-full grow-0 shrink-0 basis-auto lg:flex lg:w-6/12 xl:w-4/12">

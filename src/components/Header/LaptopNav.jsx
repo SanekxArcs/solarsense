@@ -4,18 +4,16 @@ import { HashLink as Link } from "react-router-hash-link";
 
 const LaptopNav = () => {
 
-  const setActive = ({ isActive }) => 
-    isActive ? "bg-primary-mint" : "bg-transparent";
-
-  const classLi =`px-4 py-2transition-all duration-300 rounded-sm hover:bg-primary-mint`;
-    
+  const classLi = `px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint`;
 
   return (
     <>
       <nav
-        className={`sticky top-0 left-0 right-0 bottom-auto z-50 text-mint-cream bg-primary-dark pt-1`}
+        className={`hidden lg:block sticky top-0 left-0 right-0 bottom-auto z-50 text-mint-cream bg-primary-dark py-1`}
       >
-        <ul className={`flex px-2 py-2 justify-between max-w-[1170px] mx-auto items-center`}>
+        <ul
+          className={`flex justify-between max-w-[1170px] mx-auto items-center`}
+        >
           <li className={classLi}>
             <Link to="/#">Strona główna</Link>
           </li>
@@ -28,11 +26,19 @@ const LaptopNav = () => {
           <li className={classLi}>
             <Link to="/#galeria">Galeria</Link>
           </li>
-          <li>
-            <NavLink exact to="/service" className={`${setActive} ${classLi}`}>Serwisy</NavLink>
+          <li className={classLi}>
+            <NavLink exact to="/service" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? `bg-primary-mint ${classLi}` : `bg-transparent ${classLi}`}>
+              Serwisy
+            </NavLink>
           </li>
-          <li>
-            <NavLink exact to="/faq" className={`${setActive} ${classLi}`} >FAQ</NavLink>
+          <li className={classLi}>
+            <NavLink
+              exact
+              to="/faq"
+              className={({ isActive, isPending }) => isPending ? "pending" : isActive ? `bg-primary-mint ${classLi}` : `bg-transparent ${classLi}`}
+            >
+              FAQ
+            </NavLink>
           </li>
           <li className={classLi}>
             <Link to="/#contact">Kontakt</Link>

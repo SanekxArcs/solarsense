@@ -1,6 +1,12 @@
+import { useState } from "react";
 import topImg from "../../../assets/wave-haikei.svg";
 
-function Contact() {
+function Contact({textToMessage, setTextToMessage}) {
+  const [klientName, setKlientName] = useState()
+  const [klientLastname, setKlientLastname] = useState()
+  const submitSubjecktName = 'Contact od klienta! ' + klientLastname  + " " + klientName;
+  console.log(submitSubjecktName);
+
   return (
     <div id="contact" className="relative px-3 py-32">
       <h2 className="pb-10 text-5xl font-bold text-center uppercase md:text-6xl text-cadet-space">
@@ -8,12 +14,13 @@ function Contact() {
       </h2>
       <div className="max-w-[1170px] p-6 rounded-sm shadow-lg  mx-auto bg-cadet-space  text-mint-cream">
         <form
-          action="https://formsubmit.co/biuro@solarsense.pl"
+          action="https://formsubmit.co/d6c7e0c47156a06e7321617dac55cdac"
           name="contact"
           method="POST"
           data-netlify="true"
           className="grid grid-cols-1 gap-5 lg:grid-rows-3 lg:grid-cols-4"
         >
+          <input type="hidden" name="_template" value="table"></input>
           <input
             type="hidden"
             name="_next"
@@ -23,7 +30,7 @@ function Contact() {
           <input
             type="hidden"
             name="_subject"
-            value="Contact od klienta!"
+            value={submitSubjecktName}
           ></input>
           <input type="hidden" name="_captcha" value="false" />
           <div className="lg:col-span-2 lg:row-span-2">
@@ -35,11 +42,13 @@ function Contact() {
                 Imię
               </label>
               <input
+              onChange={(e) => {setKlientName(e.target.value)}}
                 type="text"
                 className=" bg-mint-cream peer block min-h-[auto] w-full rounded-sm border-0  py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none  text-cadet-space  peer-focus:text-cadet-space "
                 id="Name"
-                name="Name"
+                name="Imię"
                 placeholder="Imię"
+                value={klientName}
               />
             </div>
             <div
@@ -50,11 +59,13 @@ function Contact() {
                 Nazwisko
               </label>
               <input
+              onChange={(e) => {setKlientLastname(e.target.value)}}
                 type="text"
                 className="bg-mint-cream peer block min-h-[auto] w-full rounded-sm border-0  py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none  text-cadet-space  peer-focus:text-cadet-space "
                 id="Lastname"
-                name="Lastname"
+                name="Nazwisko"
                 placeholder="Nazwisko"
+                value={klientLastname}
               />
             </div>
 
@@ -77,7 +88,6 @@ function Contact() {
             </div>
             <div
               className="relative text-cadet-space"
-              data-te-input-wrapper-init
             >
               <label className=" text-mint-cream" htmlFor="tel">
                 Telefon <span className="text-red-500 ">*</span>
@@ -86,7 +96,7 @@ function Contact() {
                 type="tel"
                 className="bg-mint-cream  peer block min-h-[auto] w-full rounded-sm border-0  py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none  text-cadet-space  peer-focus:text-cadet-space"
                 id="tel"
-                name="Phone"
+                name="Telefon"
                 placeholder="Telefon"
               />
             </div>
@@ -104,11 +114,11 @@ function Contact() {
                 name="Typ"
                 id="typ"
               >
-                <option value="dach">--Wybierz--</option>
-                <option value="dach">Na dachu</option>
-                <option value="grunt">Na gruncie</option>
-                <option value="PV+ME">Fotowoltaika + magazyn Energii</option>
-                <option value="Inne">Audyt</option>
+                <option value="Wybierz">--Wybierz--</option>
+                <option value="Na dachu">Na dachu</option>
+                <option value="Na gruncie">Na gruncie</option>
+                <option value="Fotowoltaika + magazyn Energii">Fotowoltaika + magazyn Energii</option>
+                <option value="Audyt">Audyt</option>
               </select>
               {/* <input
                 type="text"
@@ -142,10 +152,11 @@ function Contact() {
             <label className=" text-mint-cream" htmlFor="Wiadomość">
               Wiadomość
             </label>
-            <textarea
-              className="peer bg-mint-cream block h-full w-full rounded-sm border-0  py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none  text-cadet-space  peer-focus:text-cadet-space"
+            <textarea onChange={(e) => {setTextToMessage(e.target.value)}}
+              className="peer bg-mint-cream block h-full w-full rounded-sm border-0  py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear   text-cadet-space"
               id="Wiadomość"
               name="Message"
+              value={textToMessage}
               rows="3"
               placeholder="Wiadomość"
             ></textarea>
@@ -156,8 +167,11 @@ function Contact() {
                 className="relative float-left mr-[6px] -ml-[1.5rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary  checked:border-primary checked:bg-primary  checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:ml-[0.25rem] checked:after:-mt-px checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-t-0 checked:after:border-l-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:ml-[0.25rem] checked:focus:after:-mt-px checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-t-0 checked:focus:after:border-l-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent"
                 type="checkbox"
                 name="Checkbox"
-                value="zgona"
+                value="Wyrażam zgodę na przetwarzanie przez Solar Sense danych
+                personalnych w formularzu kontaktowym w celu wykonania i
+                przesłania oferty."
                 id="Check1"
+                required="true"
               />
               <label
                 className="inline-block pb-5 pl-2 text-sm hover:cursor-pointer"
@@ -171,8 +185,6 @@ function Contact() {
             <button
               type="submit"
               className="w-full rounded-sm bg-primary px-6 py-2.5 text-xs font-medium uppercase leading-tight  text-primary-dark shadow-md transition duration-150 ease-in-out hover:bg-primary-mint hover:shadow-lg focus:bg-primary-mint focus:shadow-lg focus:outline-none focus:ring-2 active:bg-primary-mint  active:shadow-lg bg-primary-mint-lighter1 "
-              data-te-ripple-init
-              data-te-ripple-color="light"
             >
               Wyślij
             </button>

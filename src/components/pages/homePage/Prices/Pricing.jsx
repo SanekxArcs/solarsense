@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Price from "./Price";
 
 
-const Pricing = () => {
+const Pricing = ({setTextToMessage}) => {
   const [priceBtn, setPriceBtn] = useState(0);
   
   return (
@@ -36,7 +36,7 @@ lg:text-6xl">
             </div>
             
             <div className="flex flex-wrap items-stretch justify-center w-full">
-              <Price priceBtn={priceBtn}/>
+              <Price priceBtn={priceBtn} setTextToMessage={setTextToMessage}/>
             </div>
           </div>
         </section>
