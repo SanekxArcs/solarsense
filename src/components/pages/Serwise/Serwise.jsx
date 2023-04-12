@@ -33,7 +33,7 @@ const Serwise = () => {
           </div>
           <div className="w-full grow-0 shrink-0 basis-auto lg:w-6/12 xl:w-8/12">
             <div className="px-6 py-12 md:px-12">
-              <h2 className="pb-2 mb-6 text-3xl font-bold">Sprawdź zalety naszych <br />
+              <h2 className="pb-2 mb-6 text-xl md:text-3xl font-bold">Sprawdź zalety naszych <br />
 USŁUG SERWISOWYCH</h2>
               <p className="pb-2 mb-6 text-gray-500">
           Nasza firma zapewnia szybki i skuteczny serwis instalacji odnawialnych źródeł energii dla klientów indywidualnych oraz przedsiębiorców w atrakcyjnych cenach. <br /> Jeżeli potrzebujesz pomocy doświadczonych fachowców, nie zwlekaj i skontaktuj się z naszą firmą przez powyższy formularz kontaktowy już teraz i poznaj szczegóły oferty.
@@ -41,7 +41,7 @@ USŁUG SERWISOWYCH</h2>
               <div className="flex flex-wrap mb-6">
                 <div className="w-full mb-4 lg:w-6/12 xl:w-4/12">
                   <p className="flex items-center">
-                    <svg className="w-4 h-4 mr-2 text-green-600" role="img" xmlns="http://www.w3.org/2000/svg"
+                    <svg className="w-4 h-4 mr-2 text-primary-mint" role="img" xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 512 512">
                       <path fill="currentColor"
                         d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
@@ -51,7 +51,7 @@ USŁUG SERWISOWYCH</h2>
                 </div>
                 <div className="w-full mb-4 lg:w-6/12 xl:w-4/12">
                   <p className="flex items-center">
-                    <svg className="w-4 h-4 mr-2 text-green-600" role="img" xmlns="http://www.w3.org/2000/svg"
+                    <svg className="w-4 h-4 mr-2  text-primary-mint" role="img" xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 512 512">
                       <path fill="currentColor"
                         d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
@@ -61,7 +61,7 @@ USŁUG SERWISOWYCH</h2>
                 </div>
                 <div className="w-full mb-4 lg:w-6/12 xl:w-4/12">
                   <p className="flex items-center">
-                    <svg className="w-4 h-4 mr-2 text-green-600" role="img" xmlns="http://www.w3.org/2000/svg"
+                    <svg className="w-4 h-4 mr-2 text-primary-mint" role="img" xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 512 512">
                       <path fill="currentColor"
                         d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
@@ -71,7 +71,7 @@ USŁUG SERWISOWYCH</h2>
                 </div>
                 <div className="w-full mb-4 lg:w-6/12 xl:w-4/12">
                   <p className="flex items-center">
-                    <svg className="w-4 h-4 mr-2 text-green-600" role="img" xmlns="http://www.w3.org/2000/svg"
+                    <svg className="w-4 h-4 mr-2 text-primary-mint" role="img" xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 512 512">
                       <path fill="currentColor"
                         d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
@@ -81,7 +81,7 @@ USŁUG SERWISOWYCH</h2>
                 </div>
                 <div className="w-full mb-4 lg:w-6/12 xl:w-4/12">
                   <p className="flex items-center">
-                    <svg className="w-4 h-4 mr-2 text-green-600" role="img" xmlns="http://www.w3.org/2000/svg"
+                    <svg className="w-4 h-4 mr-2 text-primary-mint" role="img" xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 512 512">
                       <path fill="currentColor"
                         d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
@@ -91,7 +91,7 @@ USŁUG SERWISOWYCH</h2>
                 </div>
                 <div className="w-full mb-4 lg:w-6/12 xl:w-4/12">
                   <p className="flex items-center">
-                    <svg className="w-4 h-4 mr-2 text-green-600" role="img" xmlns="http://www.w3.org/2000/svg"
+                    <svg className="w-4 h-4 mr-2 text-primary-mint" role="img" xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 512 512">
                       <path fill="currentColor"
                         d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
@@ -111,7 +111,7 @@ USŁUG SERWISOWYCH</h2>
       </div>
     </section>
 
-    <section className="mb-32 text-center text-gray-800">
+    <section className="mb-0 md:mb-32 text-center text-gray-800">
 
       <div className="flex justify-center">
         <div className="max-w-[1000px]">
@@ -153,23 +153,23 @@ USŁUG SERWISOWYCH</h2>
             <p>Rodzaj</p>
             <p>Cena brutto</p>
             </div>   
-          <div  className='flex justify-between py-2 px-4 bg-white rounded-sm shadow'>
+          <div  className='flex flex-wrap justify-center justify-between py-2 px-4 bg-white rounded-sm shadow'>
             <p>Wymiana paneli</p>
             <p>0d 250 zł</p>
             </div> 
-          <div  className='flex justify-between py-2 px-4 bg-white rounded-sm shadow'>
+          <div  className='flex flex-wrap justify-center justify-between py-2 px-4 bg-white rounded-sm shadow'>
             <p>Mycie paneli</p>
             <p>od 350 zł</p>
             </div> 
-          <div  className='flex justify-between py-2 px-4 bg-white rounded-sm shadow'>
+          <div  className='flex flex-wrap justify-center justify-between py-2 px-4 bg-white rounded-sm shadow'>
             <p>Wymiana falownika</p>
             <p>750 zł</p>
             </div> 
-          <div  className='flex justify-between py-2 px-4 bg-white rounded-sm shadow'>
+          <div  className='flex flex-wrap justify-center md:justify-between py-2 px-4 bg-white rounded-sm shadow'>
             <p>Badanie kamerą termowizyjną paneli</p>
             <p>900 zł</p>
             </div> 
-          <div  className='flex justify-between py-2 px-4 bg-white rounded-sm shadow'>
+          <div  className='flex flex-wrap justify-center justify-between py-2 px-4 bg-white rounded-sm shadow'>
             <p>Pozostałe usługi / z 1 h</p>
             <p>250 zł</p>
             </div> 

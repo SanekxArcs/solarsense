@@ -22,9 +22,9 @@ const Price = ({priceBtn, setTextToMessage}) => {
     },
     {
       title: "Rekomendowane",
-      cena: '18 312',
-      description: "Najlepsza opcja z uwagi na jakość i ceną",
-      inwerter: "FOXESS S3300, L1, 1xMPPT",
+      cena: '20 628',
+      description: "Najlepsza opcja z uwagi na jakość i cenę",
+      inwerter: "FoxESS T4 (G3), L3, 2xMPPT",
       solarPanel: "Jinko Solar JKM420N-54HL4-B Full Black",
       roof: "Trapezowy",
       button: "Wybierz rekomendowane",
@@ -34,7 +34,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
     {
       title: "Premium",
       cena: '27 770',
-      description: "Najlepsze materiały i produkty na całym świecie",
+      description: "Dla wymagających",
       inwerter: "HUAWEI SUN 2000 3KTL-L1, 2xMPPT",
       solarPanel: "HYUNDAI-HiE-S435HG G12 435W Full Black",
       roof: "Trapezowy",
@@ -59,7 +59,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
     {
       title: "Rekomendowane",
       cena: '27 218',
-      description: "Najlepsza opcja z uwagi na jakość i ceną",
+      description: "Najlepsza opcja z uwagi na jakość i cenę",
       inwerter: "FoxESS T6 (G3), L3, 2xMPPT",
       solarPanel: "Jinko Solar JKM420N-54HL4-B Full Black",
       roof: "Trapezowy",
@@ -70,7 +70,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
     {
       title: "Premium",
       cena: '38 217',
-      description: "Najlepsze materiały i produkty na całym świecie",
+      description: "Dla wymagających",
       inwerter: "HUAWEI SUN 2000-6KTL-M1, L3, 2xMPPT",
       solarPanel: "HYUNDAI-HiE-S435HG G12 435W Full Black",
       roof: "Trapezowy",
@@ -95,7 +95,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
     {
       title: "Rekomendowane",
       cena: '40 148',
-      description: "Najlepsza opcja z uwagi na jakość i ceną",
+      description: "Najlepsza opcja z uwagi na jakość i cenę",
       inwerter: "FoxESS T10 (G3), L3, 2xMPPT",
       solarPanel: "Jinko Solar JKM420N-54HL4-B Full Black",
       roof: "Trapezowy",
@@ -106,7 +106,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
     {
       title: "Premium",
       cena: '59 139',
-      description: "Najlepsze materiały i produkty na całym świecie",
+      description: "Dla wymagających",
       inwerter: "HUAWEI SUN 2000-10KTL-M1, L3, 2xMPPT",
       solarPanel: "HYUNDAI-HiE-S435HG G12 435W Full Black",
       roof: "Trapezowy",

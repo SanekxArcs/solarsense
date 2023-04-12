@@ -34,6 +34,11 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
               <p className="mb-4">
                 <Link to="/#galeria">Galeria</Link>
               </p>
+              <p className={`mb-4`}>
+            <NavLink exact to="/service" className={setActive}>
+              Serwisy
+            </NavLink>
+          </p>
               <p className="mb-4">
                 <NavLink exact to="/faq" className={setActive}>
                   FAQ
