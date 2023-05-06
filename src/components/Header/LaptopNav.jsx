@@ -21,6 +21,9 @@ const LaptopNav = () => {
             <Link to="/#dlaChegoMy">Dlaczego my?</Link>
           </li>
           <li className={classLi}>
+            <Link to="/me">Magazyn energii</Link>
+          </li>
+          <li className={classLi}>
             <Link to="/#etapy">Etapy współpracy</Link>
           </li>
           <li className={classLi}>
@@ -28,7 +31,7 @@ const LaptopNav = () => {
           </li>
           <li className={classLi}>
             <NavLink exact to="/service" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? `bg-primary-mint ${classLi}` : `bg-transparent ${classLi}`}>
-              Serwisy
+              Serwis
             </NavLink>
           </li>
           <li className={classLi}>

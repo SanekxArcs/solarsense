@@ -20,7 +20,7 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
             </div>
             <div className="">
               <h6 className="flex justify-center mb-4 font-semibold uppercase md:justify-start">
-                Linki
+                Mapa strony
               </h6>
               <p className="mb-4">
                 <Link to="/#">Strona główna</Link>
@@ -36,7 +36,7 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
               </p>
               <p className={`mb-4`}>
             <NavLink exact to="/service" className={setActive}>
-              Serwisy
+              Serwis
             </NavLink>
           </p>
               <p className="mb-4">

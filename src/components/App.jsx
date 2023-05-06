@@ -13,6 +13,7 @@ import Finansowanie from "./pages/Finansowanie/Finansowanie";
 import Serwise from "./pages/Serwise/Serwise";
 import ScrollToTop from "./service/ScrollToTop";
 import Bottom from "./service/com for style/Bottom"
+import MagazynEnergii from "./pages/Magazyn energii/MagazynEnergii";
 
 function App() {
   const [textToMessage, setTextToMessage] = useState('')
@@ -46,6 +47,7 @@ function App() {
           <Route path="/finansowanie" element={<Finansowanie/>} />
           <Route path="/service" element={<Serwise/>} />
           <Route path="/thanks" element={<ThanksForContact />} />
+          <Route path="/me" element={<MagazynEnergii/>} />
           <Route path="/*" element={<Error404 />} />
         </Routes>
         <Bottom/>
