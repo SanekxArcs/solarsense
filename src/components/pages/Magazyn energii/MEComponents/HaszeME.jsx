@@ -6,7 +6,7 @@ import mepyl from '../../../../assets/me/Product_ME.webp'
 const HaszeME = () => {
   return (
     <>
-      <section className="py-10 text-center md:text-left max-w-[1170px] mx-auto px-6 md:my-20">
+      <section className="py-10 text-center md:text-left max-w-[1170px] mx-auto px-6 md:my-20 snap-always snap-start">
         <h2 className="pt-10 md:mb-12 text-4xl font-bold text-center uppercase md:text-5xl text-primary-dark">
           Nasze modele magazynów
         </h2>

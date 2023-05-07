@@ -153,15 +153,15 @@ USŁUG SERWISOWYCH</h2>
             <p>Rodzaj</p>
             <p>Cena brutto</p>
             </div>   
-          <div  className='flex flex-wrap justify-center justify-between py-2 px-4 bg-white rounded-sm shadow'>
+          <div  className='flex flex-wrap justify-center md:justify-between py-2 px-4 bg-white rounded-sm shadow'>
             <p>Wymiana paneli</p>
             <p>0d 250 zł</p>
             </div> 
-          <div  className='flex flex-wrap justify-center justify-between py-2 px-4 bg-white rounded-sm shadow'>
+          <div  className='flex flex-wrap justify-center md:justify-between py-2 px-4 bg-white rounded-sm shadow'>
             <p>Mycie paneli</p>
             <p>od 350 zł</p>
             </div> 
-          <div  className='flex flex-wrap justify-center justify-between py-2 px-4 bg-white rounded-sm shadow'>
+          <div  className='flex flex-wrap justify-center md:justify-between py-2 px-4 bg-white rounded-sm shadow'>
             <p>Wymiana falownika</p>
             <p>750 zł</p>
             </div> 
@@ -169,7 +169,7 @@ USŁUG SERWISOWYCH</h2>
             <p>Badanie kamerą termowizyjną paneli</p>
             <p>900 zł</p>
             </div> 
-          <div  className='flex flex-wrap justify-center justify-between py-2 px-4 bg-white rounded-sm shadow'>
+          <div  className='flex flex-wrap justify-center md:justify-between py-2 px-4 bg-white rounded-sm shadow'>
             <p>Pozostałe usługi / z 1 h</p>
             <p>250 zł</p>
             </div> 
