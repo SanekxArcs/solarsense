@@ -11,7 +11,7 @@ import svgRew from "../../../assets/wave-haikei (4).svg";
 function Galeria() {
   return (
     <div id="galeria" className="relative select-none ">
-      <section className="max-w-[1170px] mx-auto lg:py-32 ">
+      <section className="max-w-[1170px] mx-auto lg:py-32 pb-20">
         <h2 className="py-10 text-4xl font-bold text-center uppercase max-h-144 lg:text-6xl text-cadet-space">
           Wykonane montaże
         </h2>
@@ -116,6 +116,7 @@ function Galeria() {
               <div className="p-2 bg-mint-cream">58-570 Jelenia Góra</div>
             </div>
           </div>
+
         </div>
       </section>
 

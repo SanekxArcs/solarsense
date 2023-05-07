@@ -24,7 +24,7 @@ const Finansowanie = () => {
 </div>
 
 </section>  
-        <div className="pb-24 sm:pb-32 animate-bounceInUp">
+        <div className="pb-24 sm:pb-32">
           <div className="px-6 mx-auto max-w-7xl lg:px-8">
             <div className="max-w-2xl mx-auto sm:text-center">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Sprawdź teraz</h2>

@@ -1,6 +1,7 @@
 import HeroImg from "../../../assets/hero.webp";
 import BorderImg from "../../../assets/slider-dash.svg";
 import BorderImgWhite from "../../../assets/wave-haikei-white.svg";
+import { motion } from "framer-motion"
 
 function Hero() {
   return (

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Price from "./Price";
 
 
-const Pricing = () => {
+const Pricing = ({setTextToMessage}) => {
   const [priceBtn, setPriceBtn] = useState(0);
   
   return (
@@ -29,14 +29,14 @@ lg:text-6xl">
               </div>
             </div>
 
-            <div className="flex justify-center gap-5 pb-10">
-                <button onClick={()=> {setPriceBtn(0)}} className={`${priceBtn === 0  ? "bg-primary-mint text-mint-cream hover:text-primary-mint-accent2" : "bg-primary-mint-accent2 text-primary-dark "} z-40 px-8 py-4 text-xl font-bold transition-all duration-300 rounded-sm shadow   hover:scale-110 hover:shadow-md`}>4 kWp</button>
-                <button onClick={()=> {setPriceBtn(1)}} className={`${priceBtn === 1  ? "bg-primary-mint text-mint-cream hover:text-primary-mint-accent2" : "bg-primary-mint-accent2 text-primary-dark "} z-40 px-8 py-4 text-xl font-bold transition-all duration-300 rounded-sm shadow hover:scale-110  hover:shadow-md`}>6 kWp</button>
-                <button onClick={()=> {setPriceBtn(2)}} className={`${priceBtn === 2  ? "bg-primary-mint text-mint-cream hover:text-primary-mint-accent2" : "bg-primary-mint-accent2 text-primary-dark "} z-40 px-8 py-4 text-xl font-bold transition-all duration-300 rounded-sm shadow hover:scale-110  hover:shadow-md`}>10 kWp</button>
+            <div className="flex justify-center gap-5 pb-10 ">
+                <button onClick={()=> {setPriceBtn(0)}} className={`${priceBtn === 0  ? "bg-primary-mint text-mint-cream hover:text-primary-mint-accent2" : "bg-primary-mint-accent2 text-primary-dark "} px-6 py-3 text-sm md:text-xl font-bold  transition-all duration-300 rounded-sm shadow   hover:scale-110 hover:shadow-md`}>4 kWp</button>
+                <button onClick={()=> {setPriceBtn(1)}} className={`${priceBtn === 1  ? "bg-primary-mint   text-mint-cream hover:text-primary-mint-accent2" : "bg-primary-mint-accent2 text-primary-dark "} px-6 py-3 text-sm md:text-xl font-bold transition-all duration-300 rounded-sm shadow hover:scale-110  hover:shadow-md`}>6 kWp</button>
+                <button onClick={()=> {setPriceBtn(2)}} className={`${priceBtn === 2  ? "bg-primary-mint   text-mint-cream hover:text-primary-mint-accent2" : "bg-primary-mint-accent2 text-primary-dark "}  px-6 py-3 text-sm md:text-xl font-bold transition-all duration-300 rounded-sm shadow hover:scale-110  hover:shadow-md`}>10 kWp</button>
             </div>
             
-            <div className="flex flex-wrap items-stretch justify-center w-full -mx-4">
-              <Price priceBtn={priceBtn}/>
+            <div className="flex flex-wrap items-stretch justify-center w-full">
+              <Price priceBtn={priceBtn} setTextToMessage={setTextToMessage}/>
             </div>
           </div>
         </section>

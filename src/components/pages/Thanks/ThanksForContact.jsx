@@ -1,8 +1,11 @@
 import React from "react";
+import TopImg from '../../service/com for style/TopImg'
 
 const ThanksForContact = () => {
   return (
-    <div className="max-w-[1170px] min-h-[370px] mx-auto text-center text-lg py-10">
+    <>
+    <TopImg/>
+    <div className="max-w-[1170px] min-h-[600px] mx-auto text-center text-lg py-32 ">
       <h1 className="pb-10 text-4xl font-medium">
         Dziękujemy za przesłanie formularza kontaktowego!
       </h1>
@@ -24,6 +27,8 @@ const ThanksForContact = () => {
         Dziękujemy za zaufanie naszej firmie!
       </p>
     </div>
+    </>
+
   );
 };
 

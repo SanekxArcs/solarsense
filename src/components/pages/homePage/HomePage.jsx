@@ -8,7 +8,7 @@ import Galeria from "./Galeria";
 import Pricing from "./Prices/Pricing";
 import Partners from "./Partners";
 
-function HomePage() {
+function HomePage({setTextToMessage, textToMessage}) {
   return (
     <div>
       <Hero />
@@ -16,9 +16,8 @@ function HomePage() {
       <DlaCzego />
       <Etapy />
       <Galeria />
-      <Pricing/>
-      {/* <div className="w-screen h-20 bg-cadet-space"></div> */}
-      <Contact />
+      <Pricing setTextToMessage={setTextToMessage}/>
+      <Contact setTextToMessage={setTextToMessage} textToMessage={textToMessage}/>
     </div>
   );
 }
