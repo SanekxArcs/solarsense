@@ -59,20 +59,26 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
                 </li>
 
                 <li className={classLi}>
-            <Link to="/#">Strona główna</Link>
+            <Link to="/#">Fotowoltaika</Link>
           </li>
           <li className={classLi}>
+            <Link to="/me">Magazyn energii</Link>
+          </li>
+          <li className={classLi}>
+            <Link to="/me/#Myprad50">Mój prąd 5.0</Link>
+          </li>
+          {/* <li className={classLi}>
             <Link to="/#dlaChegoMy">Dlaczego my?</Link>
-          </li>
-          <li className={classLi}>
+          </li> */}
+          {/* <li className={classLi}>
             <Link to="/#etapy">Etapy współpracy</Link>
-          </li>
+          </li> */}
           <li className={classLi}>
             <Link to="/#galeria">Galeria</Link>
           </li>
           <li className={classLi}>
             <NavLink exact to="/service" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? `bg-primary-mint ${classLi}` : `bg-transparent ${classLi}`}>
-              Serwisy
+              Serwis
             </NavLink>
           </li>
           <li className={classLi}>

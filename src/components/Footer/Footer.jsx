@@ -23,13 +23,13 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                 Mapa strony
               </h6>
               <p className="mb-4">
-                <Link to="/#">Strona główna</Link>
+                <Link to="/#">Fotowoltaika</Link>
               </p>
               <p className="mb-4">
-                <Link to="/#dlaChegoMy">Dlaczego my?</Link>
+              <Link to="/me">Magazyn energii</Link>
               </p>
               <p className="mb-4">
-                <Link to="/#etapy">Etapy współpracy</Link>
+                <Link to="/me/#Myprad50">Mój prąd 5.0</Link>
               </p>
               <p className="mb-4">
                 <Link to="/#galeria">Galeria</Link>
@@ -329,9 +329,9 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                     clip-rule="evenodd"
                   />
                 </svg>
-                <a href="tel:+49735145620">+48 735 145 620</a>
+                <a href="tel:+48733897120">+48 733 897 120 <br />| PL |</a>
               </p>
-              <p className="flex items-center justify-center md:justify-start">
+              <p className="flex items-center justify-center mb-4 md:justify-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -344,8 +344,9 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                     clip-rule="evenodd"
                   />
                 </svg>
-                <a href="tel:+48733897120">+48 733 897 120</a>
+                <a href="tel:+49735145620">+48 735 145 620 <br />| UA |</a>
               </p>
+              
             </div>
           </div>
         </div>

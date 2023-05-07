@@ -10,10 +10,10 @@ const GlowneZalety = () => {
     <>      
     <section className='py-20 text-center md:text-left max-w-[1170px] mx-auto px-6 mb-20'>
         <div>
-            <h1 className='mb-5 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl mt-10'>Magazyn energii</h1>
-            <p className='mb-5 text-5xl tracking-tight xl:text-2xl pb-10'>główne zalety</p>
+            <h1 className='mb-5 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl md:mt-10'>Magazyn energii</h1>
+            <p className='mb-5 text-2xl tracking-tight pb-10'>główne zalety</p>
         </div>
-    <div className='grid grid-cols-3 grid-rows-2 gap-5'>
+    <div className='grid md:grid-cols-2 lg:grid-cols-3  gap-5'>
         <div className=' bg-primary-mint-lighter2 bg-opacity-30 p-5 rounded-sm shadow-md'>
             <div className='flex gap-2 items-center '>
                 <img src={MEWspolPraca} alt="" />

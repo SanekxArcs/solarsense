@@ -15,17 +15,17 @@ const LaptopNav = () => {
           className={`flex justify-between max-w-[1170px] mx-auto items-center`}
         >
           <li className={classLi}>
-            <Link to="/#">Strona główna</Link>
-          </li>
-          <li className={classLi}>
-            <Link to="/#dlaChegoMy">Dlaczego my?</Link>
+            <Link to="/#">Fotowoltaika</Link>
           </li>
           <li className={classLi}>
             <Link to="/me">Magazyn energii</Link>
           </li>
           <li className={classLi}>
-            <Link to="/#etapy">Etapy współpracy</Link>
+            <Link to="/me/#Myprad50">Mój prąd 5.0</Link>
           </li>
+          {/* <li className={classLi}>
+            <Link to="/#etapy">Etapy współpracy</Link>
+          </li> */}
           <li className={classLi}>
             <Link to="/#galeria">Galeria</Link>
           </li>

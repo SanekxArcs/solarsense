@@ -6,13 +6,13 @@ import mepyl from '../../../../assets/me/Product_ME.webp'
 const HaszeME = () => {
   return (
     <>
-      <section className="py-10 text-center md:text-left max-w-[1170px] mx-auto px-6 my-20">
-        <h2 className="pt-10 mb-12 text-4xl font-bold text-center uppercase md:text-5xl text-primary-dark">
+      <section className="py-10 text-center md:text-left max-w-[1170px] mx-auto px-6 md:my-20">
+        <h2 className="pt-10 md:mb-12 text-4xl font-bold text-center uppercase md:text-5xl text-primary-dark">
           Nasze modele magazynów
         </h2>
-        <div className="grid grid-cols-2 pt-10">
-          <div className="flex gap-5">
-            <div>
+        <div className="grid md:grid-cols-2 pt-10">
+          <div className="flex flex-col md:flex-row gap-5 pb-10">
+            <div className="grid place-content-center">
               <img src={mesun} alt="" />
             </div>
             <div>
@@ -31,8 +31,8 @@ const HaszeME = () => {
               </ul>
             </div>
           </div>
-          <div className="flex gap-5">
-          <div>
+          <div className="flex flex-col md:flex-row gap-5 pb-10">
+          <div className="grid place-content-center">
               <img src={mepyl} alt="" />
             </div>
             <div>
