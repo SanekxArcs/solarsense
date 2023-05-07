@@ -14,8 +14,8 @@ import Hybrydowy from "./MEComponents/Hybrydowy";
 const MagazynEnergii = () => {
   return (
     <>
-      <main>
-        <section className="py-24 text-center text-primary-mint-accent2 bg-primary-dark">
+      <main className="snap-y snap-mandatory select-none ">
+        <section className="py-24 text-center text-primary-mint-accent2 bg-primary-dark snap-always snap-center">
           <div className="flex justify-center">
             <div className="max-w-[1000px]">
               <h2 className="mb-5 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
