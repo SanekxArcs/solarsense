@@ -7,6 +7,7 @@ import Etapy from "./Etapy";
 import Galeria from "./Galeria";
 import Pricing from "./Prices/Pricing";
 import Partners from "./Partners";
+import Opinia from "./Opinia";
 
 function HomePage({setTextToMessage, textToMessage}) {
   return (
@@ -17,6 +18,7 @@ function HomePage({setTextToMessage, textToMessage}) {
       <Etapy />
       <Galeria />
       <Pricing setTextToMessage={setTextToMessage}/>
+      <Opinia/>
       <Contact setTextToMessage={setTextToMessage} textToMessage={textToMessage}/>
     </div>
   );

@@ -13,6 +13,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
       title: "Najtaniej",
       cena: "17 602",
       description: "Najtańsza opcja inwestycji w przyszłość",
+      padding: false,
       inwerter: "SOFAR 3.6KTLM-G3, L1, 2xMPPT",
       solarPanel: "JETION SOLAR 545W JT545SSh Bifacial",
       roof: "Trapezowy",
@@ -24,6 +25,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
       title: "Rekomendowane",
       cena: '20 628',
       description: "Najlepsza opcja z uwagi na jakość i cenę",
+      padding: false,
       inwerter: "FoxESS T4 (G3), L3, 2xMPPT",
       solarPanel: "Jinko Solar JKM420N-54HL4-B Full Black",
       roof: "Trapezowy",
@@ -35,6 +37,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
       title: "Premium",
       cena: '27 770',
       description: "Dla wymagających",
+      padding: true,
       inwerter: "HUAWEI SUN 2000 3KTL-L1, 2xMPPT",
       solarPanel: "HYUNDAI-HiE-S435HG G12 435W Full Black",
       roof: "Trapezowy",
@@ -49,6 +52,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
       title: "Najtaniej",
       cena: "22 682",
       description: "Najtańsza opcja inwestycji w przyszłość",
+      padding: false,
       inwerter: "SOFAR 5.5KTL-X-G3, L3, 2xMPPT",
       solarPanel: "JETION SOLAR 545W JT545SSh Bifacial",
       roof: "Trapezowy",
@@ -60,6 +64,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
       title: "Rekomendowane",
       cena: '27 218',
       description: "Najlepsza opcja z uwagi na jakość i cenę",
+      padding: false,
       inwerter: "FoxESS T6 (G3), L3, 2xMPPT",
       solarPanel: "Jinko Solar JKM420N-54HL4-B Full Black",
       roof: "Trapezowy",
@@ -71,6 +76,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
       title: "Premium",
       cena: '38 217',
       description: "Dla wymagających",
+      padding: true,
       inwerter: "HUAWEI SUN 2000-6KTL-M1, L3, 2xMPPT",
       solarPanel: "HYUNDAI-HiE-S435HG G12 435W Full Black",
       roof: "Trapezowy",
@@ -85,6 +91,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
       title: "Najtaniej",
       cena: "34 082",
       description: "Najtańsza opcja inwestycji w przyszłość",
+      padding: false,
       inwerter: "SOFAR 8.8KTL-X-G3, L3, 2xMPPT",
       solarPanel: "JETION SOLAR 545W JT545SSh Bifacial",
       roof: "Trapezowy",
@@ -96,6 +103,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
       title: "Rekomendowane",
       cena: '40 148',
       description: "Najlepsza opcja z uwagi na jakość i cenę",
+      padding: false,
       inwerter: "FoxESS T10 (G3), L3, 2xMPPT",
       solarPanel: "Jinko Solar JKM420N-54HL4-B Full Black",
       roof: "Trapezowy",
@@ -107,6 +115,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
       title: "Premium",
       cena: '59 139',
       description: "Dla wymagających",
+      padding: true,
       inwerter: "HUAWEI SUN 2000-10KTL-M1, L3, 2xMPPT",
       solarPanel: "HYUNDAI-HiE-S435HG G12 435W Full Black",
       roof: "Trapezowy",
@@ -115,7 +124,6 @@ const Price = ({priceBtn, setTextToMessage}) => {
       power: "10 kWp",
     },
   ];
-  console.log(priceBtn);
 
   const mapChange = [
     priceData4, priceData6, priceData10
@@ -124,7 +132,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
     <>
       {mapChange[priceBtn].map((e) => {
         return (
-          <div className="w-full px-4 transition-all duration-300 rounded-sm  md:w-1/2 lg:w-1/3 hover:scale-[1.02] ">
+          <div className="w-full px-4 transition-all duration-300 rounded-sm  md:w-1/2 lg:w-1/3 hover:scale-[1.02] items-stretch justify-stretch">
             <div className={` ${e.color ? "bg-primary-mint-lighter2" : "bg-primary-mint-accent2"} relative z-10 px-8 py-10 mb-10 overflow-hidden border rounded-sm   shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-12`}>
               <span className="block mb-4 text-lg font-semibold text-primary">
                 {e.title}
@@ -135,7 +143,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
                   / zl
                 </span>
               </h2>
-              <p className="pb-8 mb-8 text-base border-b text-body-color border-primary-mint-lighter2">
+              <p className={`${e.padding ? "mb-14" : "mb-8"}  text-base border-b text-body-color border-primary-mint-lighter2`}>
                 {e.description}
               </p>
               <div className="mb-7">

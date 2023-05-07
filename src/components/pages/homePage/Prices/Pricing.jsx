@@ -35,7 +35,7 @@ lg:text-6xl">
                 <button onClick={()=> {setPriceBtn(2)}} className={`${priceBtn === 2  ? "bg-primary-mint   text-mint-cream hover:text-primary-mint-accent2" : "bg-primary-mint-accent2 text-primary-dark "}  px-6 py-3 text-sm md:text-xl font-bold transition-all duration-300 rounded-sm shadow hover:scale-110  hover:shadow-md`}>10 kWp</button>
             </div>
             
-            <div className="flex flex-wrap items-stretch justify-center w-full">
+            <div className="flex flex-wrap items-stretch w-full justify-stretch">
               <Price priceBtn={priceBtn} setTextToMessage={setTextToMessage}/>
             </div>
           </div>

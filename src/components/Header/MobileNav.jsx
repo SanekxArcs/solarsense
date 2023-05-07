@@ -25,7 +25,7 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
                 isOpen ? `opacity-0` : `opacity-100`
               } text-right text-mint-cream px-2 py-1 rounded-sm bg-primary-dark-accent1`}
             >
-              <i class=" text-2xl fa-solid fa-bars"></i>
+              <i className=" text-2xl fa-solid fa-bars"></i>
             </button>
           </li>
 

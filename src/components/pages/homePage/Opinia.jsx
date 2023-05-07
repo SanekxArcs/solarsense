@@ -1,6 +1,6 @@
-import openie1 from "../../../assets/20210715_220221_156.jpg";
-import openie2 from "../../../assets/photo_2023-03-14_19-23-13.jpg";
-import openie3 from "../../../assets/photo_2023-03-14_19-23-15.jpg";
+import openie1 from "../../../assets/opinie1.webp";
+import openie2 from "../../../assets/opinie2.webp";
+import openie3 from "../../../assets/opinie3.webp";
 import svgRew from "../../../assets/wave-haikei (4).svg";
 
 const opiniaData = [
