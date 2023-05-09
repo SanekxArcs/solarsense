@@ -10,6 +10,7 @@ import MojPrad from "./MEComponents/MojPrad";
 import GlowneZalety from "./MEComponents/GlowneZalety";
 import Lipol from "./MEComponents/Lipol";
 import Hybrydowy from "./MEComponents/Hybrydowy";
+import CalkulatorME from "./MEComponents/CalculatorME/CalkulatorME";
 
 const MagazynEnergii = () => {
   return (
@@ -28,6 +29,7 @@ const MagazynEnergii = () => {
         </section>
         
         <TopImg />
+        <CalkulatorME/>
         <HeroME />
         <Bottom />
         <JakDzialaME />
