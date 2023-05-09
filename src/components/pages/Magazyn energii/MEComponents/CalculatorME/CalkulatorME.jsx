@@ -1,6 +1,6 @@
 import React from "react";
 import FisrstEtap from "./FisrstEtap";
-import SecondEtap from "./secondEtap";
+import SecondEtap from "./SecondEtap";
 import Oferta from "./Oferta";
 
 const CalkulatorME = () => {
@@ -21,7 +21,7 @@ const CalkulatorME = () => {
         </div>
         <FisrstEtap/>
         <SecondEtap/>
-        {/* <Oferta/> */}
+        <Oferta/>
       </div>
       <div className="flex justify-between mt-5 ">
         <button className="px-8 py-2 text-xl font-medium rounded-md bg-primary-dark/90 text-primary-mint-white"><i className="pr-2 fa-solid fa-circle-arrow-left"></i>Poprzedni krok</button>
