@@ -15,7 +15,8 @@ import CalkulatorME from "./MEComponents/CalculatorME/CalkulatorME";
 const MagazynEnergii = () => {
   return (
     <>
-      <main className="snap-y snap-mandatory select-none ">
+      <main className="snap-y snap-mandatory ">
+      {/* select-none */}
         <section className="py-24 text-center text-primary-mint-accent2 bg-primary-dark snap-always snap-center">
           <div className="flex justify-center">
             <div className="max-w-[1000px]">

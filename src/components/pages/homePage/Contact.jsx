@@ -6,7 +6,6 @@ function Contact({ textToMessage, setTextToMessage }) {
   const [klientLastname, setKlientLastname] = useState();
   const submitSubjecktName =
     "Contact od klienta! " + klientLastname + " " + klientName;
-  console.log(submitSubjecktName);
 
   return (
     <div id="contact" className="relative px-3 py-32">
@@ -34,7 +33,7 @@ function Contact({ textToMessage, setTextToMessage }) {
           ></input>
           <input type="hidden" name="_captcha" value="false" />
           <div className="grid grid-cols-1 gap-5 lg:grid-cols-2 mb-7">
-            <div className=" flex gap-7 flex-col">
+            <div className="flex flex-col  gap-7">
               <div class="relative h-10 w-full min-w-[200px]">
                 <input
                   type="text"
@@ -143,7 +142,7 @@ function Contact({ textToMessage, setTextToMessage }) {
             </div>
           </div>
 
-          <div className="flex gap-7 flex-col justify-around">
+          <div className="flex flex-col justify-around gap-7">
             <div class="inline-flex items-center">
               <label
                 class="relative flex cursor-pointer items-center rounded-[2px] p-3"
@@ -176,7 +175,7 @@ function Contact({ textToMessage, setTextToMessage }) {
                   </svg>
                 </div>
               </label>
-              <p className=" text-xs md:text-sm lg:text-base">
+              <p className="text-xs  md:text-sm lg:text-base">
                 Wyrażam zgodę na przetwarzanie przez Solar Sense danych
                 personalnych w formularzu kontaktowym w celu wykonania i
                 przesłania oferty.
@@ -185,7 +184,7 @@ function Contact({ textToMessage, setTextToMessage }) {
 
             <button
               type="submit"
-              className="w-full rounded-sm  bg-primary px-6 py-3 font-medium uppercase leading-tight text-primary-dark shadow-md transition duration-150 ease-in-out hover:bg-primary-mint hover:shadow-lg hover:shadow-primary-mint/50 focus:bg-primary-mint focus:shadow-lg focus:outline-none focus:ring-2 active:bg-primary-mint  active:shadow-lg bg-primary-mint-lighter1 text-sm"
+              className="w-full px-6 py-3 text-sm font-medium leading-tight uppercase transition duration-150 ease-in-out rounded-sm shadow-md bg-primary text-primary-dark hover:bg-primary-mint hover:shadow-lg hover:shadow-primary-mint/50 focus:bg-primary-mint focus:shadow-lg focus:outline-none focus:ring-2 active:bg-primary-mint active:shadow-lg bg-primary-mint-lighter1"
             >
               Wyślij
             </button>

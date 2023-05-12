@@ -26,7 +26,7 @@ function Hero() {
             solidnym doświadczeniu w branży.
           </p>
           <a
-            className="z-40 px-8 py-4 text-xl font-bold transition-all duration-300 rounded-sm shadow bg-primary-mint text-mint-cream hover:scale-125 hover:bg-cadet-space hover:shadow-md "
+            className="z-40 px-8 py-4 text-xl font-bold transition-all duration-300 rounded-sm shadow bg-ocean-green-500 text-mint-cream hover:scale-105 hover:bg-port-gore-500 hover:shadow-port-gore-500 hover:rounded-md"
             href="#contact"
           >
             Wycena
