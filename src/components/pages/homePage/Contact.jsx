@@ -146,7 +146,7 @@ function Contact({ textToMessage, setTextToMessage }) {
             <div class="inline-flex items-center">
               <label
                 class="relative flex cursor-pointer items-center rounded-[2px] p-3"
-                for="checkbox"
+                htmlFor="checkbox"
               >
                 <input
                   type="checkbox"
@@ -165,7 +165,7 @@ function Contact({ textToMessage, setTextToMessage }) {
                     viewBox="0 0 20 20"
                     fill="currentColor"
                     stroke="currentColor"
-                    stroke-width="1"
+                    strokeWidth="1"
                   >
                     <path
                       fill-rule="evenodd"

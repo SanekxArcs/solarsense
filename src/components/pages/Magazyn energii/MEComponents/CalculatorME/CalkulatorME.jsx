@@ -4,26 +4,32 @@ import SecondStep from "./CalculatorComponents/SecondStep";
 import Oferta from "./CalculatorComponents/Oferta";
 
 const CalkulatorME = () => {
+
   const [currentPage, setCurrentPage] = useState(1);
   const [firstStepShow, setFirstStepShow] = useState(true);
   const [secondStepShow, setSecondStepShow] = useState(false);
   const [ofertaStepShow, setOfertaStepShow] = useState(false);
-  const [oneMonth, setOneMonth] = useState(false);
+
+  const [oneMonth, setOneMonth] = useState(true);
   const [twoMonth, setTwoMonth] = useState(false);
   const [year, setYear] = useState(false);
+
   const [priceToPay, setPriceToPay] = useState(false);
   const [showPriceForkWp, setShowPriceForkWp] = useState(false);
+
   const [priceForkWp, setPriceForkWp] = useState(0.75);
   const [calculation, setCalculation] = useState(0);
   const [calcE, setCalcE] = useState(12);
   
-  const [showUpPriceForkWp, setShowUpPriceForkWp] = useState(false);
-  const [ActivePV, setActivePV] = useState(false);
+  const [showUpPriceForkWp, setShowUpPriceForkWp] = useState(true);
+  const [ActivePV, setActivePV] = useState(true);
   const [ActivePVME, setActivePVME] = useState(false);
+
   const [standard, setStandard] = useState(true);
-  const [niepełnosprawność, setNiepełnosprawność] = useState(false);
-  const [kartaDużejRodziny, setKartaDużejRodziny] = useState(false);
+  const [niepelnosprawnosc, setNiepelnosprawnosc] = useState(false);
+  const [kartaDuzejRodziny, setKartaDuzejRodziny] = useState(false);
   const [gospodarstwo, setGospodarstwo] = useState(false);
+
   const [priceUpkWp, setPriceUpkWp] = useState(1.38);
 
 
@@ -37,6 +43,7 @@ const CalkulatorME = () => {
     setOfertaStepShow(false);
     setCurrentPage(1);
   };
+
   const secondPage = () => {
     setFirstStepShow(false);
     setSecondStepShow(true);
@@ -127,7 +134,7 @@ const CalkulatorME = () => {
               showPriceForkWp={showPriceForkWp}
               calculation={calculation}
             />
-          ) : null}
+          ) : ""}
           {secondStepShow ? (
             <SecondStep
               setShowUpPriceForkWp={setShowUpPriceForkWp}
@@ -141,16 +148,16 @@ const CalkulatorME = () => {
               ActivePVME={ActivePVME}
               standard={standard}
               setStandard={setStandard}
-              setNiepełnosprawność={setNiepełnosprawność}
-              niepełnosprawność={niepełnosprawność}
-              setKartaDużejRodziny={setKartaDużejRodziny}
-              kartaDużejRodziny={kartaDużejRodziny}
+              setNiepelnosprawnosc={setNiepelnosprawnosc}
+              niepelnosprawnosc={niepelnosprawnosc}
+              setKartaDuzejRodziny={setKartaDuzejRodziny}
+              kartaDuzejRodziny={kartaDuzejRodziny}
               setGospodarstwo={setGospodarstwo}
               gospodarstwo={gospodarstwo}
               
             />
-          ) : null}
-          {ofertaStepShow ? <Oferta /> : null}
+          ) : ""}
+          {ofertaStepShow ? <Oferta /> : ""}
         </div>
         <div className="flex justify-between mt-5 ">
           {secondStepShow && ofertaStepShow ? (
@@ -167,7 +174,7 @@ const CalkulatorME = () => {
               <i className="pr-2 fa-solid fa-circle-arrow-left"></i>Poprzedni
               krok
             </button>
-          ) : null}
+          ) : ""}
           <button
             onClick={() => {
               if (currentPage === 2) {

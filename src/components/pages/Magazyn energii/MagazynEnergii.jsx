@@ -29,7 +29,7 @@ const MagazynEnergii = () => {
         </section>
         
         <TopImg />
-        {/* <CalkulatorME/> */}
+        <CalkulatorME/>
         <HeroME />
         <Bottom />
         <JakDzialaME />

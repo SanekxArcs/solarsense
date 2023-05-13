@@ -15,10 +15,10 @@ const SecondStep = ({
   standard,
   gospodarstwo,
   setGospodarstwo,
-  setKartaDużejRodziny,
-  kartaDużejRodziny,
-  setNiepełnosprawność,
-  niepełnosprawność
+  setKartaDuzejRodziny,
+  kartaDuzejRodziny,
+  setNiepelnosprawnosc,
+  niepelnosprawnosc
 }) => {
   return (
     <div className="grid grid-cols-2 gap-5 mt-5">
@@ -30,8 +30,8 @@ const SecondStep = ({
             <button onClick={() => {
               setStandard(true);
               setGospodarstwo(false);
-              setKartaDużejRodziny(false);
-              setNiepełnosprawność(false);
+              setKartaDuzejRodziny(false);
+              setNiepelnosprawnosc(false);
               }}>
               <i className={`pr-2 ${standard ? "fa-regular fa-circle" : "fa-regular fa-circle"}`}
               ></i>
@@ -40,10 +40,10 @@ const SecondStep = ({
             <button onClick={() => {
               setStandard(false);
               setGospodarstwo(false);
-              setKartaDużejRodziny(false);
-              setNiepełnosprawność(true);
+              setKartaDuzejRodziny(false);
+              setNiepelnosprawnosc(true);
               }}>
-              <i className={`pr-2 ${niepełnosprawność ? "fa-regular fa-circle" : "fa-regular fa-circle"}`}
+              <i className={`pr-2 ${niepelnosprawnosc ? "fa-regular fa-circle" : "fa-regular fa-circle"}`}
               ></i>
               2600 kWh -
               niepełnosprawność
@@ -51,10 +51,10 @@ const SecondStep = ({
             <button onClick={() => {
               setStandard(false);
               setGospodarstwo(false);
-              setKartaDużejRodziny(true);
-              setNiepełnosprawność(false);
+              setKartaDuzejRodziny(true);
+              setNiepelnosprawnosc(false);
               }}>
-                <i className={`pr-2 ${kartaDużejRodziny ? "fa-regular fa-circle" : "fa-regular fa-circle"}`}
+                <i className={`pr-2 ${kartaDuzejRodziny ? "fa-regular fa-circle" : "fa-regular fa-circle"}`}
               ></i>
               3000 kWh - Karta Dużej
               Rodziny
@@ -62,8 +62,8 @@ const SecondStep = ({
             <button onClick={() => {
               setStandard(false);
               setGospodarstwo(true);
-              setKartaDużejRodziny(false);
-              setNiepełnosprawność(false);
+              setKartaDuzejRodziny(false);
+              setNiepelnosprawnosc(false);
               }}>
               <i className={`pr-2 ${gospodarstwo ? "fa-regular fa-circle" : "fa-regular fa-circle"}`}
               ></i>
@@ -82,7 +82,20 @@ const SecondStep = ({
               {showUpPriceForkWp ? "Zwin" : "Rozwin"}
             </button>
           </div>
-          {showUpPriceForkWp ? <ChangePrice price={priceUpkWp} setPrice={setPriceUpkWp} /> : null}
+
+          {showUpPriceForkWp ? <div className="flex gap-2 mt-5">
+        <div className="relative h-10 w-full min-w-[200px]">
+          <input
+            onChange={(e) => setPriceUpkWp(e.target.value)}
+            className="peer h-full w-full rounded-[7px] border  border-ocean-green-400 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-ocean-green-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-ocean-green-400 placeholder-shown:border-t-ocean-green-400 focus:border-2 focus:border-ocean-green-400 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-ocean-green-50"
+            value={priceUpkWp}
+          />
+          <label className="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-ocean-green-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-ocean-green-400 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-ocean-green-400 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-ocean-green-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-ocean-green-400 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:border-ocean-green-400 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:border-ocean-green-400 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-ocean-green-500">
+            Przyjęta stawka za 1 kWh
+          </label>
+        </div>
+      </div> : ""}
+
           <div className="p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
             <p>
             <i className="pr-2 fa-solid fa-circle-info"></i>Nie przekraczasz progu, powyżej którego cena 1 kWh jest dużo
@@ -98,10 +111,10 @@ const SecondStep = ({
         </h5>
         <div className="flex flex-col justify-between gap-5 ">
           <div className="flex gap-5">
-            <button onClick={() => {setActivePVME(false); setActivePV(true)}} className={`${ActivePV ? "bg-ocean-green-300" : null} px-4 py-2 font-bold transition-all border rounded-md text-ocean-green-800 border-ocean-green-700 bg-ocean-green-50 hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}>
+            <button onClick={() => {setActivePVME(false); setActivePV(true)}} className={`${ActivePV ? "bg-ocean-green-300" : ""} px-4 py-2 font-bold transition-all border rounded-md text-ocean-green-800 border-ocean-green-700 bg-ocean-green-50 hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}>
               fotowoltaika
             </button>
-            <button onClick={() => {setActivePVME(true); setActivePV(false)}} className={`${ActivePVME ? "bg-ocean-green-300" : null} px-4 py-2 font-bold transition-all border rounded-md text-ocean-green-800 border-ocean-green-700 bg-ocean-green-50 hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}>
+            <button onClick={() => {setActivePVME(true); setActivePV(false)}} className={`${ActivePVME ? "bg-ocean-green-300" : ""} px-4 py-2 font-bold transition-all border rounded-md text-ocean-green-800 border-ocean-green-700 bg-ocean-green-50 hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}>
               fotowoltaika + magazyn energii
             </button>
           </div>
