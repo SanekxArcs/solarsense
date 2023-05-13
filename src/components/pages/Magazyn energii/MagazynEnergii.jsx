@@ -15,22 +15,21 @@ import CalkulatorME from "./MEComponents/CalculatorME/CalkulatorME";
 const MagazynEnergii = () => {
   return (
     <>
-      <main className="snap-y snap-mandatory ">
-      {/* select-none */}
-        <section className="py-24 text-center text-primary-mint-accent2 bg-primary-dark snap-always snap-center">
+      <main className="snap-y snap-mandatory select-none">
+        <section className="py-24 text-center text-ocean-green-50 bg-port-gore-950 snap-always snap-center">
           <div className="flex justify-center">
             <div className="max-w-[1000px]">
               <h2 className="mb-5 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
                 Magazyn energii
                 <br />
-                <span className=" text-primary-mint">dla domu</span>
+                <span className=" text-ocean-green-400">dla domu</span>
               </h2>
             </div>
           </div>
         </section>
         
         <TopImg />
-        <CalkulatorME/>
+        {/* <CalkulatorME/> */}
         <HeroME />
         <Bottom />
         <JakDzialaME />

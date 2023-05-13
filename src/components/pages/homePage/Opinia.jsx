@@ -5,21 +5,21 @@ import svgRew from "../../../assets/wave-haikei (4).svg";
 
 const opiniaData = [
   {
-    name: "Piotr Szymański - Powstańców 8, 48-320 Sidzina",
+    name: "Powstańców 8, 48-320 Sidzina",
     review:
       "Firma fotowoltaiczna, którą wybrałem, zrobiła świetną robotę z montażem paneli słonecznych. Jestem bardzo zadowolony z ich usług, a ich profesjonalizm i doświadczenie są godne pochwały.",
     photo: openie1,
     altText: "Zdjęcie fotowoltaiczne",
   },
   {
-    name: "Janusz Kowalski",
+    name: "Kamionka, Leśna 9",
     review:
-      "Nigdy wcześniej nie miałem do czynienia z firmą fotowoltaiczną, ale ta firma wykonała montaż paneli słonecznych na gruncie i jestem pod wrażeniem ich pracy. Od pierwszego kontaktu byli bardzo pomocni i kompetentni, a wykonana praca była szybka i dokładna.",
+      "Nigdy wcześniej nie miałem do czynienia z firmą fotowoltaiczną, ale ta firma wykonała montaż paneli słonecznych i jestem pod wrażeniem ich pracy. Od pierwszego kontaktu byli bardzo pomocni i kompetentni, a wykonana praca była szybka i dokładna.",
     photo: openie2,
     altText: "Zdjęcie fotowoltaiczne",
   },
   {
-    name: "Jan Nowakowski - (revolvefitness.pl)",
+    name: "Jablonna, Jablonowska 14A",
     review:
       "Polecam tę firmę fotowoltaiczną każdemu, kto potrzebuje montażu paneli słonecznych. Ich praca była dokładna, zorganizowana i wykonana z pasją. Nie tylko byli profesjonalni, ale również zadbali o każdy szczegół, aby zapewnić, że ich klient jest w pełni zadowolony.",
     photo: openie3,

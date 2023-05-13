@@ -14,7 +14,7 @@ const GlowneZalety = () => {
             <p className='mb-5 text-2xl tracking-tight pb-10'>główne zalety</p>
         </div>
     <div className='grid md:grid-cols-2 lg:grid-cols-3  gap-5'>
-        <div className=' bg-primary-mint-lighter2 bg-opacity-30 p-5 rounded-sm shadow-md'>
+        <div className=' p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200'>
             <div className='flex gap-2 items-center '>
                 <img src={MEWspolPraca} alt="" />
                 <h3 className='font-medium'>Współpraca z instalacją fotowoltaiczną</h3>
@@ -23,7 +23,7 @@ const GlowneZalety = () => {
                 Zamiast oddawać nadwyżki energii produkowanej przez instalację fotowoltaiczną, zatrzymaj je w magazynie. Zgromadzoną energię wykorzystasz w nocy, podczas awarii sieci lub gdy produkcja będzie niewystarczająca do Twoich potrzeb.
             </p>
         </div>
-        <div className=' bg-primary-mint-lighter2 bg-opacity-30 p-5 rounded-sm shadow-md'>
+        <div className=' p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200'>
             <div className='flex gap-2 items-center'>
                 <img src={Bezpieczenstwo} alt="" />
                 <h3 className='font-medium'>Bezpieczeństwo</h3>
@@ -32,7 +32,7 @@ const GlowneZalety = () => {
                 Magazyn Energii od Pylontech posiada zabezpieczenia przed przeciążeniami i zwarciami. Posiada również funkcję backup, która chroni przed nagłą przerwą w dostawie energii z sieci.
             </p>
         </div>
-        <div className=' bg-primary-mint-lighter2 bg-opacity-30 p-5 rounded-sm shadow-md'>
+        <div className=' p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200'>
             <div className='flex gap-2 items-center'>
                 <img src={Nowoczesny} alt="" />
                 <h3 className='font-medium'>
@@ -43,7 +43,7 @@ const GlowneZalety = () => {
                 Niewielki rozmiar sprawia, że urządzenie nie potrzebuje dużej powierzchni do instalacji. Nowoczesna, estetyczna obudowa wykonana z metalu pozwala wkomponować się w praktycznie każde współczesne wnętrze.
             </p>
         </div>
-        <div className=' bg-primary-mint-lighter2 bg-opacity-30 p-5 rounded-sm shadow-md'>
+        <div className=' p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200'>
             <div className='flex gap-2 items-center'>
                 <img src={mocy} alt="" />
                 <h3 className='font-medium'>Jeszcze więcej mocy</h3>
@@ -52,7 +52,7 @@ const GlowneZalety = () => {
                 Modułowa budowa pozwala na bezproblemową rozbudowę magazynu energii. W razie potrzeby, dzięki połączeniu kilku modułów możesz zyskać nawet kilkukrotnie większą pojemność użytkową.
             </p>
         </div>
-        <div className=' bg-primary-mint-lighter2 bg-opacity-30 p-5 rounded-sm shadow-md'>
+        <div className=' p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200'>
             <div className='flex gap-2 items-center'>
                 <img src={Długa} alt="" />
                 <h3 className='font-medium'>Długa żywotność</h3>

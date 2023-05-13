@@ -9,10 +9,10 @@ function Contact({ textToMessage, setTextToMessage }) {
 
   return (
     <div id="contact" className="relative px-3 py-32">
-      <h2 className="pb-10 text-5xl font-bold text-center uppercase md:text-6xl text-cadet-space">
+      <h2 className="pb-10 text-5xl font-bold text-center uppercase md:text-6xl text-port-gore-950">
         Kontakt
       </h2>
-      <div className="max-w-[1170px] p-7 rounded-sm shadow-lg  mx-auto bg-primary-mint/30 ring ring-primary-mint  shadow-primary-mint/50">
+      <div className="max-w-[1170px] p-7 rounded-sm shadow-lg  mx-auto bg-gradient-to-br from-ocean-green-50 to-ocean-green-200 shadow-ocean-green-200 ring ring-primary-mint  shadow-primary-mint/50">
         <form
           action="https://formsubmit.co/d6c7e0c47156a06e7321617dac55cdac"
           name="contact"

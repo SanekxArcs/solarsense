@@ -19,7 +19,7 @@ const Hybrydowy = () => {
             <img  src={HybrydowyIMG} alt="" />
         </div>
     </div>
-    <div className='mt-10 mb-20 bg-primary-mint bg-opacity-50 p-5 rounded-md shadow'>
+    <div className='mt-10 mb-20 p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-200/50 to-ocean-green-600/50 shadow-ocean-green-600/50'>
         <div className='flex flex-col md:flex-row gap-5 items-center'>
             <img src={icohybryd} alt="" />
             <h3 className='text-2xl font-bold mb-5'>
