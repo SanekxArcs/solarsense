@@ -15,7 +15,7 @@ import CalkulatorME from "./MEComponents/CalculatorME/CalkulatorME";
 const MagazynEnergii = () => {
   return (
     <>
-      <main className="snap-y snap-mandatory select-none">
+      <main className="select-none snap-y snap-mandatory">
         <section className="py-24 text-center text-ocean-green-50 bg-port-gore-950 snap-always snap-center">
           <div className="flex justify-center">
             <div className="max-w-[1000px]">
@@ -29,8 +29,8 @@ const MagazynEnergii = () => {
         </section>
         
         <TopImg />
-        <CalkulatorME/>
         <HeroME />
+        <CalkulatorME/>
         <Bottom />
         <JakDzialaME />
         <TopImg />

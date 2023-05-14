@@ -1,26 +1,24 @@
 import React from "react";
 import ChangePrice from "./ChangePrice";
-import Button from "./Button";
 
 const FirstStep = ({btnSetYear, btnSetTwoMonth, btnSetOneMonth, year, twoMonth, oneMonth, priceToPay, setPriceToPay, priceForkWp, setPriceForkWp, showPriceForkWp, setShowPriceForkWp, calculation}) => {
   return (
     <>
-              <div className="grid grid-cols-2 gap-20 mt-10 text-ocean-green-800">
+              <div className="grid md:grid-cols-2 gap-5 md:gap-20 mt-10 text-ocean-green-800">
           <div className="flex flex-col gap-5 ">
             <h4 className="text-2xl font-bold">Dotychczasowy rachunek</h4>
             <p className="font-medium ">
               Wybierz, za jaki okres podasz wysokość opłat za prąd
             </p>
-            <div className="flex flex-wrap gap-3 justify-stretch">
-              {/* <Button onClickBTN={btnSetOneMonth} active={oneMonth} child={miesięczny} /> */}
+            <div className="flex flex-wrap flex-col md:flex-row gap-3 justify-stretch">
 
-              <button onClick={btnSetOneMonth} className={`${oneMonth ? "bg-ocean-green-300" : ""} px-4 py-2 font-bold transition-all border rounded-md text-ocean-green-800 border-ocean-green-700 bg-ocean-green-50 hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}>
+              <button onClick={btnSetOneMonth} className={`${oneMonth ? "bg-ocean-green-300" : "bg-ocean-green-50"} px-4 py-2 font-bold transition-all border rounded-md text-ocean-green-800 border-ocean-green-700 hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}>
                 miesięczny
               </button>
-              <button onClick={btnSetTwoMonth} className={`${twoMonth ? "bg-ocean-green-300" : ""} px-4 py-2 font-bold transition-all border rounded-md text-ocean-green-800 border-ocean-green-700 bg-ocean-green-50 hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}>
+              <button onClick={btnSetTwoMonth} className={`${twoMonth ? "bg-ocean-green-300" : "bg-ocean-green-50"} px-4 py-2 font-bold transition-all border rounded-md text-ocean-green-800 border-ocean-green-700  hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}>
                 2-miesięczny
               </button>
-              <button onClick={btnSetYear} className={`${year ? "bg-ocean-green-300" : ""} px-4 py-2 font-bold transition-all border rounded-md text-ocean-green-800 border-ocean-green-700 bg-ocean-green-50 hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}>
+              <button onClick={btnSetYear} className={`${year ? "bg-ocean-green-300" : "bg-ocean-green-50"} px-4 py-2 font-bold transition-all border rounded-md text-ocean-green-800 border-ocean-green-700 hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}>
                 roczny
               </button>
             </div>
@@ -35,10 +33,10 @@ const FirstStep = ({btnSetYear, btnSetTwoMonth, btnSetOneMonth, year, twoMonth, 
           </div>
           
           <div className="">
-            <h4 className="mb-2 font-medium">Wpisz wysokość {year ? "rocznych": ""}{twoMonth ? "2-miesięcznych": ""}{oneMonth ? "miesięcznych": ""} opłat</h4>
+            <h4 className="mb-2 text-xl font-medium">Wpisz wysokość {year ? "rocznych": ""}{twoMonth ? "2-miesięcznych": ""}{oneMonth ? "miesięcznych": ""} opłat</h4>
             <div>
               <div className ="w-72">
-                <div className ="relative h-10 w-full min-w-[200px]">
+                <div className ="relative h-10  md:w-full min-w-[200px]">
                   <input onChange={(e) => setPriceToPay(e.target.value)}
                     className ="peer h-full w-full rounded-[7px] border  border-ocean-green-700 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-ocean-green-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-ocean-green-700 placeholder-shown:border-t-ocean-green-700 focus:border-2 focus:border-ocean-green-700 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-ocean-green-50"
                     placeholder=" "
@@ -50,7 +48,7 @@ const FirstStep = ({btnSetYear, btnSetTwoMonth, btnSetOneMonth, year, twoMonth, 
                 </div>
               </div>
             </div>
-            <div className="p-5 mt-10 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
+            <div className="p-5 mt-5 md:mt-20 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
               <p className="">
                 <i className="pr-2 fa-solid fa-circle-info"></i>
                 To oznacza, że Twoje roczne zapotrzebowanie na energię elektryczną wynosi około {calculation} kWh.

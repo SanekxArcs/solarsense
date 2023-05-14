@@ -4,7 +4,7 @@ import mehuawei from '../../../../assets/me/05-700009_Pylontech_H2_142kWh_4xbatt
 const HeroME = () => {
   return (
     <>
-    <section className="max-w-[1170px] px-6 mx-auto my-10 md:my-32 snap-always snap-start">
+    <section className="max-w-[1170px] px-6 mx-auto my-10 md:mt-32 snap-always snap-start">
         <div className='grid grid-cols-1 md:grid-cols-3 '>
             <div className='flex flex-col items-center justify-center col-span-2 gap-2 md:px-20'>
                 <p className='pb-10 text-xl'>
@@ -13,7 +13,7 @@ const HeroME = () => {
                     Zapytaj o ofertę na magazyn energii 
                 </a>
                 </div>
-            <div className=' order-first pb-5' >
+            <div className='order-first pb-5 ' >
                 <img className='' src={mehuawei} alt="" />
             </div>
         </div>

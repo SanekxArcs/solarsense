@@ -5,45 +5,45 @@ import {
   XAxis,
   YAxis,
   CartesianGrid,
-  Tooltip
+  Tooltip,
+  Legend,
+  ResponsiveContainer
 } from "recharts";
 
-import React from "react";
-
-const Chart = ({calculation}) => {
-  const data = [
+export default function Chart({calculation, calculation2023}) {
+    const data = [
     {
       name: "Opłaty w 2022 r.",
       zl: calculation,
     },
     {
       name: "Opłaty w 2023 r.",
-      zl: 1,
-    }
+      zl: calculation2023,
+    },
+    {
+      name: "Opłaty z Solar Sense",
+      zl: 128,
+    },
   ];
 
   return (
-    <>
-    
-      <BarChart
-      width={500}
-      height={200}
+    <BarChart
+      width={330}
+      height={160}
       data={data}
       margin={{
         top: 5,
-        right: 0,
-        left: 0,
+        right: 5,
+        left: 5,
         bottom: 5
       }}
     >
-      
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />
       <YAxis />
       <Tooltip />
+      <Legend />
       <Bar dataKey="zl" fill="#35356a" />
     </BarChart>
-    </>
   );
-};
-export default Chart;
+}
