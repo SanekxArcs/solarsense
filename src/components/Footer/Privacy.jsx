@@ -3,7 +3,7 @@ import React from "react";
 const Privacy = () => {
   return (
     <>
-      <div className="relative p-4 overflow-y-auto text-cadet-space">
+      <div className="relative p-4 overflow-y-auto text-port-gore-950">
         <p>
           1. Dla Właściciela niniejszej strony internetowej, ochrona danych
           osobowych Użytkowników jest sprawą najwyższej wagi. Dokłada on ogrom

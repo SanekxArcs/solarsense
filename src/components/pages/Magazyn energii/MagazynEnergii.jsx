@@ -4,7 +4,7 @@ import TopImg from "../../service/com for style/TopImg";
 import Contact from "../homePage/Contact";
 import HeroME from "./MEComponents/HeroME";
 import JakDzialaME from "./MEComponents/JakDzialaME";
-import Bottom from "../../service/com for style/Bottom";
+import Bottom from "../../service/com for style/BottomImg";
 import HaszeME from "./MEComponents/HaszeME";
 import MojPrad from "./MEComponents/MojPrad";
 import GlowneZalety from "./MEComponents/GlowneZalety";

@@ -7,9 +7,9 @@ import img4 from '../../../../assets/me/4.webp'
 const JakDzialaME = () => {
   return (
     <>
-    <div className='bg-primary-dark snap-always snap-start'>
-        <section className='py-10 text-center md:text-left max-w-[1170px] mx-auto px-6  text-mint-cream'>
-    <h2 className='mb-12 text-2xl font-bold text-center uppercase md:text-5xl text-mint-cream'>Jak działa hybrydowa instalacja fotowoltaiczna z magazynem energii?</h2>
+    <div className='bg-port-gore-950 snap-always snap-start'>
+        <section className='py-10 text-center md:text-left max-w-[1170px] mx-auto px-6  text-ocean-green-50'>
+    <h2 className='mb-12 text-2xl font-bold text-center uppercase md:text-5xl text-ocean-green-50'>Jak działa hybrydowa instalacja fotowoltaiczna z magazynem energii?</h2>
     <div className='grid  md:grid-cols-2 lg:grid-cols-4 gap-10'>
         <div className='flex flex-col justify-start items-center'>
             <img src={img1} alt="" />

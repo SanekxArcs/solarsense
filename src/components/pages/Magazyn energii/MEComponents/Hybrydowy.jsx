@@ -7,7 +7,7 @@ import icohybryd from '../../../../assets/me/security_icon.svg'
 const Hybrydowy = () => {
   return (
     <>
-    <div className=' bg-primary-dark text-primary-mint-white snap-always snap-start'>
+    <div className=' bg-port-gore-950 text-ocean-green-50 snap-always snap-start'>
         <section className='py-10 text-center md:text-left max-w-[1170px] mx-auto px-6'>
     <div className='grid md:grid-cols-3'>
         <div className=' col-span-2'>

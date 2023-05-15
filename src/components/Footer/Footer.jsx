@@ -3,16 +3,16 @@ import { HashLink as Link } from "react-router-hash-link";
 import Privacy from "./Privacy";
 
 const Footer = ({ toggleMOdal, isOpenModal }) => {
-  const setActive = ({ isActive }) => (isActive ? "text-primary-mint" : "");
+  const setActive = ({ isActive }) => (isActive ? "text-ocean-green-400" : "");
   return (
-    <footer className="text-center bg-cadet-space text-mint-cream lg:text-left">
+    <footer className="text-center bg-port-gore-950 text-ocean-green-50 lg:text-left">
       <div>
         <div className="py-10 text-center md:text-left max-w-[1170px] mx-auto px-6">
           <div className="grid gap-8 grid-1 md:grid-cols-2 lg:grid-cols-3">
             <div className="">
               <p className="pb-5 text-3xl font-black uppercase select-none md:block">
-                <span className=" text-mint-cream">Solar </span>
-                <span className=" text-primary-mint">Sense</span>
+                <span className=" text-ocean-green-50">Solar </span>
+                <span className=" text-ocean-green-400">Sense</span>
               </p>
               <p className="select-none ">
                 Z nami zyskasz nie tylko oszczędności, ale także pewność, jakość
@@ -24,22 +24,24 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                 Mapa strony
               </h6>
               <p className="mb-4">
-                <Link to="/#">Fotowoltaika</Link>
+                <NavLink exact to="/#" className={setActive}>Fotowoltaika</NavLink>
               </p>
               <p className="mb-4">
-              <Link to="/me">Magazyn energii</Link>
+                <NavLink exact to="/me" className={setActive}>
+                  Magazyn energii
+                </NavLink>
               </p>
               <p className="mb-4">
-                <Link to="/me/#Myprad50">Mój prąd 5.0</Link>
+                <NavLink exact to="/me/#Myprad50" className={setActive}>Mój prąd 5.0</NavLink>
               </p>
               <p className="mb-4">
                 <Link to="/#galeria">Galeria</Link>
               </p>
               <p className={`mb-4`}>
-            <NavLink exact to="/service" className={setActive}>
-              Serwis
-            </NavLink>
-          </p>
+                <NavLink exact to="/service" className={setActive}>
+                  Serwis
+                </NavLink>
+              </p>
               <p className="mb-4">
                 <NavLink exact to="/faq" className={setActive}>
                   FAQ
@@ -47,7 +49,7 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
               </p>
               <p>
                 <button
-                  className="transition-colors duration-300 hover:text-primary-mint"
+                  className="transition-colors duration-300 hover:text-ocean-green-400"
                   onClick={toggleMOdal}
                 >
                   Polityka Prywatności
@@ -55,15 +57,15 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                 <div
                   className={`${
                     isOpenModal
-                      ? " animate-fadeIn bg-black bg-opacity-50"
+                      ? " animate-fadeIn bg-port-gore-950/50"
                       : "hidden"
                   } fixed top-0 left-0 z-[1055]  h-full w-full overflow-y-auto overflow-x-hidden outline-none`}
                 >
                   <div className="mt-5 pointer-events-none relative h-[calc(100%-1rem)] w-auto translate-y-[-50px]  transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
-                    <div className="pointer-events-auto relative flex max-h-[100%] w-full flex-col overflow-hidden rounded-sm border-none  bg-mint-cream bg-clip-padding text-current shadow-lg outline-none  ">
-                      <div className="flex items-center justify-between flex-shrink-0 p-4 border-b-2 border-opacity-100 rounded-sm border-neutral-100 ">
+                    <div className="pointer-events-auto relative flex max-h-[100%] w-full flex-col overflow-hidden rounded-sm border-none  bg-ocean-green-50 bg-clip-padding text-current shadow-lg outline-none  ">
+                      <div className="flex items-center justify-between flex-shrink-0 p-4 border-b-2 border-opacity-100 rounded-sm border-port-gore-50 ">
                         <h5
-                          className="pt-4 text-lg font-medium leading-normal text-center text-cadet-space"
+                          className="pt-4 text-lg font-medium leading-normal text-center text-port-gore-950"
                           id="exampleModalScrollableLabel"
                         >
                           POLITYKA PRYWATNOŚCI STRONY INTERNETOWEJ <br />
@@ -72,7 +74,7 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                         <button
                           onClick={toggleMOdal}
                           type="button"
-                          className="box-content border-none rounded-sm text-cadet-space hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+                          className="box-content border-none rounded-sm text-port-gore-950 hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -90,13 +92,13 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                           </svg>
                         </button>
                       </div>
-                      <Privacy/>
+                      <Privacy />
 
-                      <div className="flex flex-wrap items-center justify-end flex-shrink-0 p-4 border-t-2 border-opacity-100 rounded-sm border-neutral-100">
+                      <div className="flex flex-wrap items-center justify-end flex-shrink-0 p-4 border-t-2 border-opacity-100 rounded-sm border-port-gore-50">
                         <button
                           onClick={toggleMOdal}
                           type="button"
-                          className="inline-block rounded-sm bg-primary-100 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal  text-mint-cream bg-primary-mint transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+                          className="inline-block rounded-sm  px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal  text-ocean-green-50 bg-ocean-green-400 transition duration-150 ease-in-out hover:bg-ocean-green-accent-100 focus:bg-ocean-green-accent-100 focus:outline-none focus:ring-0 active:bg-ocean-green-accent-200"
                         >
                           Zamknąć
                         </button>
@@ -141,7 +143,9 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                     clip-rule="evenodd"
                   />
                 </svg>
-                <a href="tel:+48733897120">+48 733 897 120 <br />| PL |</a>
+                <a href="tel:+48733897120">
+                  +48 733 897 120 <br />| PL |
+                </a>
               </p>
               <p className="flex items-center justify-center mb-4 md:justify-start">
                 <svg
@@ -156,16 +160,17 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                     clip-rule="evenodd"
                   />
                 </svg>
-                <a href="tel:+49735145620">+48 735 145 620 <br />| UA |</a>
+                <a href="tel:+49735145620">
+                  +48 735 145 620 <br />| UA |
+                </a>
               </p>
-              
             </div>
           </div>
         </div>
-        <div className="p-6 text-center bg-cadet-space ">
+        <div className="p-6 text-center bg-port-gore-950 ">
           <span className="select-none ">© 2023 Copyright: </span>
           <a
-            className="font-semibold text-neutral-400"
+            className="font-semibold text-port-gore-400 "
             href="https://github.com/SanekxArcs"
           >
             Solar Sense

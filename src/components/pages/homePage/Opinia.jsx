@@ -29,16 +29,16 @@ const opiniaData = [
 
 function Opinia() {
   return (
-    <div id="opinia" className="py-32 select-none bg-cadet-space">
+    <div id="opinia" className="py-32 select-none bg-port-gore-950">
       <section className="text-center lg:text-left xl:w-[1170px] mx-auto">
-        <h2 className="mb-12 text-4xl font-bold text-center uppercase md:text-6xl text-mint-cream">
+        <h2 className="mb-12 text-4xl font-bold text-center uppercase md:text-6xl text-ocean-green-50 ">
           Nasze najlepsze recenzje
         </h2>
         <div className="grid items-stretch px-2 place-content-end lg:grid-cols-3 gap-x-6 lg:gap-x-12">
           {opiniaData.map((item) => {
             return (
               <div
-                className="grid items-stretch mb-6 transition-all duration-300 rounded-sm shadow-lg lg:mb-0 bg-mint-cream hover:-translate-y-2 hover:shadow-md"
+                className="grid items-stretch mb-6 transition-all duration-300 rounded-sm shadow-lg lg:mb-0 bg-ocean-green-50  hover:-translate-y-2 hover:shadow-xl hover:shadow-ocean-green-400"
                 data-mdb-ripple="true"
                 data-mdb-ripple-color="light"
               >

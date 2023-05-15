@@ -10,11 +10,11 @@ function Hero() {
       className="relative transition-all duration-300 bg-center bg-no-repeat bg-cover xl:min-h-[100%-10rem] min-h-144"
       style={{ backgroundImage: `url(${HeroImg})` }}
     >
-      <div className="grid w-full min-h-screen transition-all duration-500 place-content-center lg:py-32 md:backdrop-blur-sm hover:backdrop-blur-none bg-cadet-space bg-opacity-40 ">
-        <div className="relative flex flex-col items-center justify-center gap-12 mx-auto max-h-102 max-w-[1170px] text-center text-mint-cream px-5 py-10">
+      <div className="grid w-full min-h-screen transition-all duration-500 place-content-center lg:py-32 md:backdrop-blur-sm hover:backdrop-blur-none bg-port-gore-950 bg-opacity-40 ">
+        <div className="relative flex flex-col items-center justify-center gap-12 mx-auto max-h-102 max-w-[1170px] text-center text-ocean-green-50  px-5 py-10">
           <h1 className="hidden text-3xl font-black uppercase md:block animate-text-focus-in">
-            <span className=" text-cadet-space">Solar </span>{" "}
-            <span className=" text-primary-mint">Sense</span>
+            <span className=" text-port-gore-950">Solar </span>{" "}
+            <span className=" text-ocean-green-400">Sense</span>
           </h1>
           <p className="text-2xl font-bold select-none md:text-6xl animate-text-focus-in">
             Z nami zyskasz nie tylko oszczędności, ale także pewność, jakość i
@@ -26,7 +26,7 @@ function Hero() {
             solidnym doświadczeniu w branży.
           </p>
           <a
-            className="z-40 px-8 py-4 text-xl font-bold transition-all duration-300 rounded-sm shadow bg-ocean-green-500 text-mint-cream hover:scale-105 hover:bg-port-gore-500 hover:shadow-port-gore-500 hover:rounded-md"
+            className="z-40 px-8 py-4 text-xl font-bold transition-all duration-300 rounded-sm shadow bg-ocean-green-500 text-ocean-green-50  hover:scale-105 hover:bg-port-gore-500 hover:shadow-port-gore-500 hover:rounded-md"
             href="#contact"
           >
             Wycena

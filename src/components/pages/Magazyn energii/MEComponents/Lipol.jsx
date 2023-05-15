@@ -5,7 +5,7 @@ import icolifepo from '../../../../assets/me/Union-1.svg'
 const Lipol = () => {
   return (
     <>      
-    <div className=' bg-primary-dark text-primary-mint-white snap-always snap-start'>
+    <div className=' bg-port-gore-950 text-ocean-green-50 snap-always snap-start'>
 <section className='py-20 text-center md:text-left max-w-[1170px] mx-auto px-6 '>
     <div className='grid md:grid-cols-2'>
         <div className='grid place-content-center'>

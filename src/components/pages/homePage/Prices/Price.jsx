@@ -133,7 +133,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
       {mapChange[priceBtn].map((e) => {
         return (
           <div className="w-full px-4 transition-all duration-300 rounded-sm  md:w-1/2 lg:w-1/3 hover:scale-[1.02] items-stretch justify-stretch">
-            <div className={` ${e.color ? "bg-primary-mint-lighter2" : "bg-primary-mint-accent2"} relative z-10 px-8 py-10 mb-10 overflow-hidden border rounded-sm   shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-12`}>
+            <div className={` ${e.color ? "bg-ocean-green-200 " : "bg-ocean-green-50 "} relative z-10 px-8 py-10 mb-10 overflow-hidden border rounded-sm   shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-12`}>
               <span className="block mb-4 text-lg font-semibold text-primary">
                 {e.title}
               </span>
@@ -143,7 +143,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
                   / zl
                 </span>
               </h2>
-              <p className={`${e.padding ? "mb-14" : "mb-8"}  text-base border-b text-body-color border-primary-mint-lighter2`}>
+              <p className={`${e.padding ? "mb-14" : "mb-8"}  text-base border-b text-body-color border-ocean-green-200 `}>
                 {e.description}
               </p>
               <div className="mb-7">
@@ -160,7 +160,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
                   Typ dachu: {e.roof}
                 </p>
               </div>
-              <a href="#contact" onClick={() => {setTextToMessage(`Dzień dobry, mam pytania odnośnie zestawu '${e.title}' instalacji mocy ~${e.power}. Jej komponentami jest: Falownik ${e.inwerter}, moduly ${e.solarPanel}. Potrzebuje szczególną wycenę.`)}} className={` ${e.color ? "border-primary-dark" : "border-primary-mint-lighter2"} block w-full p-4 text-base font-semibold text-center transition bg-transparent border rounded-sm text-primary-dark hover:bg-primary-mint  hover:text-white`}>
+              <a href="#contact" onClick={() => {setTextToMessage(`Dzień dobry, mam pytania odnośnie zestawu '${e.title}' instalacji mocy ~${e.power}. Jej komponentami jest: Falownik ${e.inwerter}, moduly ${e.solarPanel}. Potrzebuje szczególną wycenę.`)}} className={` ${e.color ? "border-port-gore-950" : "border-ocean-green-200 "} block w-full p-4 text-base font-semibold text-center transition bg-transparent border rounded-sm text-port-gore-950 hover:bg-ocean-green-400   hover:text-white`}>
                 {e.button}
               </a>
               <div>

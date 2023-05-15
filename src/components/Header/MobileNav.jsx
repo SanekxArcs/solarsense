@@ -4,12 +4,12 @@ import LightLogo from "../../assets/solarsense-light-logo.svg";
 import { HashLink as Link } from "react-router-hash-link";
 
 const MobileNav = ({ toggleMenu, isOpen }) => {
-  const classLi = `px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint`;
+  const classLi = `px-4 py-2 transition-all duration-300 rounded-sm hover:bg-ocean-green-400`;
 
   return (
     <>
       <nav
-        className={`sticky top-0 left-0 right-0 bottom-auto z-50 text-mint-cream bg-primary-dark/80 backdrop-blur-sm l pt-1 lg:hidden`}
+        className={`sticky top-0 left-0 right-0 bottom-auto z-50 text-ocean-green-50 bg-port-gore-950 pt-1 lg:hidden`}
       >
         <ul className="flex items-center justify-between w-full px-2  h-14">
           <li className="">
@@ -23,7 +23,7 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
               onClick={toggleMenu}
               className={`${
                 isOpen ? `opacity-0` : `opacity-100`
-              } text-right text-mint-cream px-2 py-1 rounded-sm bg-primary-dark-accent1`}
+              } text-right text-ocean-green-50 px-2 py-1 rounded-sm bg-port-gore-950`}
             >
               <i className=" text-2xl fa-solid fa-bars"></i>
             </button>
@@ -32,12 +32,12 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
           <nav
             className={`${
               isOpen ? `` : `hidden `
-            } absolute inset-2 text-mint-cream   min-h-screen `}
+            } absolute inset-2 text-ocean-green-50   min-h-screen `}
           >
-            <div className="relative z-50 bg-primary-dark rounded-sm">
+            <div className="relative z-50 bg-port-gore-950  rounded-sm">
               <button
                 onClick={toggleMenu}
-                className="absolute text-3xl text-right text-mint-cream top-2 right-2 "
+                className="absolute text-3xl text-right text-ocean-green-50 top-2 right-2 "
               >
                 <i className="fa-regular fa-circle-xmark text-2xl"></i>
               </button>
@@ -67,17 +67,11 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
           <li className={classLi}>
             <Link to="/me/#Myprad50">Mój prąd 5.0</Link>
           </li>
-          {/* <li className={classLi}>
-            <Link to="/#dlaChegoMy">Dlaczego my?</Link>
-          </li> */}
-          {/* <li className={classLi}>
-            <Link to="/#etapy">Etapy współpracy</Link>
-          </li> */}
           <li className={classLi}>
             <Link to="/#galeria">Galeria</Link>
           </li>
           <li className={classLi}>
-            <NavLink exact to="/service" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? `bg-primary-mint ${classLi}` : `bg-transparent ${classLi}`}>
+            <NavLink exact to="/service" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? `bg-ocean-green-400 ${classLi}` : `bg-transparent ${classLi}`}>
               Serwis
             </NavLink>
           </li>
@@ -85,7 +79,7 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
             <NavLink
               exact
               to="/faq"
-              className={({ isActive, isPending }) => isPending ? "pending" : isActive ? `bg-primary-mint ${classLi}` : `bg-transparent ${classLi}`}
+              className={({ isActive, isPending }) => isPending ? "pending" : isActive ? `bg-ocean-green-400 ${classLi}` : `bg-transparent ${classLi}`}
             >
               FAQ
             </NavLink>
@@ -93,17 +87,17 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
           <li className={classLi}>
             <Link to="/#contact">Kontakt</Link>
           </li>
-                <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint">
+                <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-ocean-green-400">
                   <a
-                    className=" text-mint-cream"
+                    className=" text-ocean-green-50 "
                     href="tel:+48733897120"
                   >
                     +48 733 897 120
                   </a>
                 </li>
-                <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-primary-mint">
+                <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-ocean-green-400">
                   <a
-                    className=" text-mint-cream"
+                    className=" text-ocean-green-50 "
                     href="mailto:buiro@solarsense.com"
                   >
                     biuro@solarsense.pl

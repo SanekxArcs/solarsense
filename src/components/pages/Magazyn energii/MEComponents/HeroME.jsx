@@ -9,12 +9,12 @@ const HeroME = () => {
             <div className='flex flex-col items-center justify-center col-span-2 gap-2 md:px-20'>
                 <p className='pb-10 text-xl'>
                   Pylontech zaprojektował magazyny energii w taki sposób, że zapewniają one bezpieczeństwo i wygodę dla Ciebie i Twojej rodziny w przypadku przerw w zasilaniu. System jest w stanie reagować na przerwy w dostawie prądu już w 40 milisekund, co stanowi znacznie szybszą reakcję niż przeciętne mrugnięcie oka, które trwa 10 razy dłużej.</p>
-                <a href='#contact' className='block w-full p-4 text-base font-semibold text-center transition bg-transparent border rounded-sm border-primary-dark text-primary-dark hover:bg-primary-mint hover:text-white '>
+                <a href='#contact' className='block w-full p-4 text-base font-semibold text-center transition bg-transparent border rounded-sm border-ocean-green-700 text-port-gore-950 hover:bg-ocean-green-400 hover:text-ocean-green-50 '>
                     Zapytaj o ofertę na magazyn energii 
                 </a>
                 </div>
-            <div className='order-first pb-5 ' >
-                <img className='' src={mehuawei} alt="" />
+            <div className='order-first pb-5' >
+                <img className='mix-blend-multiply' src={mehuawei} alt="" />
             </div>
         </div>
       </section>

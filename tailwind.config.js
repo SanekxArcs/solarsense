@@ -25,8 +25,6 @@ module.exports = withAnimations({
       sans: ["Montserrat", "sans-serif"],
     },
     extend: {
-
-
       colors: {
         'ocean-green': {
           '50': '#eefbf4',
@@ -41,7 +39,6 @@ module.exports = withAnimations({
           '900': '#104432',
           '950': '#08261d',
         },
-
         'port-gore': {
           '50': '#f2f4fc',
           '100': '#e2e6f7',
@@ -55,20 +52,6 @@ module.exports = withAnimations({
           '900': '#343674',
           '950': '#222244',
         },
-        "primary-mint": "#41B883",
-        "primary-mint-white": "#F0FAF5",
-        "primary-mint-lighter1": "#6BD8A8",
-        "primary-mint-lighter2": "#91E9C5",
-        "primary-mint-accent1": "#5DA5B5",
-        "primary-mint-accent2": "#D5E5E5",
-        "primary-dark": "#222244",
-        "primary-dark-accent1": "#1D3955",
-        "primary-dark-accent2": "#0D1D2F",
-        "secondary-cadet": "#181D3A",
-        "mint-cream": "#F0FAF5",
-        "sea-green": "#308860",
-        "cadet-space": "#222244",
-        "rich-black": "#0C0F1D",
       },
       animation: {
         "scale-up-center":

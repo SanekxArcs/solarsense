@@ -8,6 +8,8 @@ import Galeria from "./Galeria";
 import Pricing from "./Prices/Pricing";
 import Partners from "./Partners";
 import Opinia from "./Opinia";
+import TopImg from "../../service/com for style/TopImg";
+import BottomImg from "../../service/com for style/BottomImg";
 
 function HomePage({setTextToMessage, textToMessage}) {
   return (
@@ -15,10 +17,14 @@ function HomePage({setTextToMessage, textToMessage}) {
       <Hero />
       <Partners/>
       <DlaCzego />
+      <BottomImg/>
       <Etapy />
+      <TopImg/>
       <Galeria />
+      <BottomImg/>
       <Pricing setTextToMessage={setTextToMessage}/>
       <Opinia/>
+      <TopImg/>
       <Contact setTextToMessage={setTextToMessage} textToMessage={textToMessage}/>
     </div>
   );

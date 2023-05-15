@@ -12,7 +12,7 @@ import ThanksForContact from "./pages/Thanks/ThanksForContact.jsx";
 import Finansowanie from "./pages/Finansowanie/Finansowanie";
 import Serwise from "./pages/Serwise/Serwise";
 import ScrollToTop from "./service/ScrollToTop";
-import Bottom from "./service/com for style/Bottom"
+import Bottom from "./service/com for style/BottomImg"
 import MagazynEnergii from "./pages/Magazyn energii/MagazynEnergii";
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenModal, setIsOpenModal] = useState(false);
   const { scrollYProgress } = useScroll();
+
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,

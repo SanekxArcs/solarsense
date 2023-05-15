@@ -1,7 +1,7 @@
 import React from 'react'
 import bottomImg from "../../../assets/wave-haikei (1).svg";
 
-const Bottom = () => {
+const BottomImg = () => {
   return (
     <div className='relative'>
         <img
@@ -12,4 +12,4 @@ const Bottom = () => {
   )
 }
 
-export default Bottom
+export default BottomImg

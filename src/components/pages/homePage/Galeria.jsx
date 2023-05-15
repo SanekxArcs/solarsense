@@ -12,7 +12,7 @@ function Galeria() {
   return (
     <div id="galeria" className="relative select-none ">
       <section className="max-w-[1170px] mx-auto lg:py-32 pb-20">
-        <h2 className="py-10 text-4xl font-bold text-center uppercase max-h-144 lg:text-6xl text-cadet-space">
+        <h2 className="py-10 text-4xl font-bold text-center uppercase max-h-144 lg:text-6xl text-port-gore-950">
           Wykonane montaże
         </h2>
         <div className="grid grid-cols-2 gap-5 px-4 pb-10 md:grid-cols-3 md:grid-rows-3 max-h-144">
@@ -29,7 +29,7 @@ function Galeria() {
                 src={svgRew}
                 alt="Zdjęcie fotowoltaiczne na dachu Blachodachówka"
               />
-              <div className="p-2 bg-mint-cream">27-200 Starachowice</div>
+              <div className="p-2 bg-ocean-green-50 ">27-200 Starachowice</div>
             </div>
           </div>
 
@@ -45,7 +45,7 @@ function Galeria() {
                 src={svgRew}
                 alt="Zdjęcie fotowoltaiczne na dachu Dachówka 2"
               />
-              <div className="p-2 bg-mint-cream">55-216 Piskorzów</div>
+              <div className="p-2 bg-ocean-green-50 ">55-216 Piskorzów</div>
             </div>
           </div>
 
@@ -62,7 +62,7 @@ function Galeria() {
                 src={svgRew}
                 alt="Zdjęcie fotowoltaiczne na dachu Blacha na rąbek"
               />
-              <div className="p-2 bg-mint-cream">01-366 Warszawa</div>
+              <div className="p-2 bg-ocean-green-50 ">01-366 Warszawa</div>
             </div>
           </div>
 
@@ -79,7 +79,7 @@ function Galeria() {
                 src={svgRew}
                 alt="Zdjęcie fotowoltaiczne na dachu Blachodachówka"
               />
-              <div className="p-2 bg-mint-cream">95-011 Bratoszewice</div>
+              <div className="p-2 bg-ocean-green-50 ">95-011 Bratoszewice</div>
             </div>
           </div>
 
@@ -96,7 +96,7 @@ function Galeria() {
                 src={svgRew}
                 alt="Zdjęcie fotowoltaiczne na dachu Dachówka"
               />
-              <div className="p-2 bg-mint-cream">58-521 Jeżow-Sudecki</div>
+              <div className="p-2 bg-ocean-green-50 ">58-521 Jeżow-Sudecki</div>
             </div>
           </div>
 
@@ -113,25 +113,12 @@ function Galeria() {
                 src={svgRew}
                 alt="Zdjęcie fotowoltaiczne na dachu Blachodachówka 2"
               />
-              <div className="p-2 bg-mint-cream">58-570 Jelenia Góra</div>
+              <div className="p-2 bg-ocean-green-50 ">58-570 Jelenia Góra</div>
             </div>
           </div>
 
         </div>
       </section>
-
-      <img
-        loading="lazy"
-        className="absolute top-0 left-0 right-0 w-full -z-40"
-        src={topImg}
-        alt="Zdjęcie fotowoltaiczne na dachu"
-      />
-      <img
-        loading="lazy"
-        className="absolute bottom-0 left-0 right-0 w-full -z-50"
-        src={bottomImg}
-        alt="Zdjęcie fotowoltaiczne na dachu 2"
-      />
     </div>
   );
 }
