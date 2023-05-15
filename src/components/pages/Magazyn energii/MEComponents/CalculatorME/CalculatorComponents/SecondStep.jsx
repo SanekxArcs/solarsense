@@ -85,7 +85,7 @@ const SecondStep = ({
               onClick={() => setShowUpPriceForkWp(!showUpPriceForkWp)}
               className="pl-2 font-bold text-ocean-green-700"
             >
-              {showUpPriceForkWp ? "Zwin" : "Rozwin"}
+              {showUpPriceForkWp ? "Zwiń" : "Rozwiń"}
             </button>
           </div>
 
