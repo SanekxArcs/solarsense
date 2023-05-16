@@ -8,7 +8,7 @@ const Privacy = ({ isOpenModal, toggleMOdal }) => {
                     isOpenModal
                       ? " animate-fadeIn bg-port-gore-950/50"
                       : "hidden"
-                  } fixed top-0 left-0 z-[1055]  h-full w-full overflow-y-auto overflow-x-hidden outline-none`}
+                  } fixed top-0 left-0 z-[1055]  h-full w-full overflow-y-auto overflow-x-hidden outline-none  select-none`}
                 >
                   <div className="mt-5 pointer-events-none relative h-[calc(100%-1rem)] w-auto translate-y-[-50px]  transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
                     <div className="pointer-events-auto relative flex max-h-[100%] w-full flex-col overflow-hidden rounded-sm border-none  bg-ocean-green-50 bg-clip-padding text-current shadow-lg outline-none  ">

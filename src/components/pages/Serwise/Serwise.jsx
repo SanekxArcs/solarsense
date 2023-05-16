@@ -5,7 +5,7 @@ import Contact from "../homePage/Contact";
 const Serwise = () => {
   return (
     <>
-      <section className="py-24 text-center text-port-gore-50  bg-port-gore-950">
+      <section className="py-24 text-center text-port-gore-50  bg-port-gore-950 select-none">
         <div className="flex justify-center">
           <div className="max-w-[1000px]">
             <h2 className="mb-12 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
@@ -20,7 +20,7 @@ const Serwise = () => {
         </div>
       </section>
       <TopImg />
-      <div className="max-w-[1170px] px-6 mx-auto my-24 ">
+      <div className="max-w-[1170px] px-6 mx-auto my-24  select-none">
         <section className="my-32 text-port-gore-900">
           <div className="block bg-white rounded-sm shadow-lg">
             <div className="flex flex-wrap items-center">

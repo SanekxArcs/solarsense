@@ -41,7 +41,7 @@ const FaqKatalogKarts = () => {
     ]
   return (
     <>
-      <div className="flex flex-col justify-center max-w-[1170px] mx-auto mb-32">
+      <div className="flex flex-col justify-center max-w-[1170px] mx-auto mb-32 select-none">
         <div>
           <h3 className="mb-10 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl text-center">
             Karty katalogowe produktów

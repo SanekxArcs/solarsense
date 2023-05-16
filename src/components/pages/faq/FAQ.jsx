@@ -45,7 +45,7 @@ const FAQ = () => {
   ];
   return (
     <>
-      <section className="py-24 text-center  text-ocean-green-50 bg-port-gore-950">
+      <section className="py-24 text-center  text-ocean-green-50 bg-port-gore-950 select-none">
         <div className="flex justify-center">
           <div className="max-w-[1000px]">
             <h2 className="mb-5 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">

@@ -4,7 +4,7 @@ const Accordion = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="overflow-hidden border rounded-sm bg-white shadow transition-all ">
+    <div className="overflow-hidden border rounded-sm bg-white shadow transition-all  select-none">
       <div
         className={`${isActive ? "border-b border-1 border-ocean-green-700" : "border-0"} transition-all duration-1000 flex flex-wrap items-center justify-between px-4 py-2`}
         onClick={() => setIsActive(!isActive)}
