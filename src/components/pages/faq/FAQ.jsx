@@ -1,6 +1,7 @@
 import React from "react";
 import Accordion from "./Accordion";
 import TopImg from "../../service/com for style/TopImg";
+import FaqKatalogKarts from "./FaqKatalogKarts";
 
 const FAQ = () => {
   const accordionData = [
@@ -65,64 +66,8 @@ const FAQ = () => {
           ))}
         </div>
       </div>
-      <div className="flex flex-col justify-center max-w-[1170px] mx-auto mb-32">
-        <div className="">
-          <h3 className="mb-10 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl text-center">
-            Karty katalogowe produktów
-          </h3>
-        </div>
-        <div className="flex flex-col gap-2">
-          <h4 className="pb-5 text-xl font-semibold text-center">Falowniki FoxESS</h4>
-          <div className="flex justify-between py-2 px-4 bg-ocean-green-300 rounded-sm shadow font-medium">
-            <p>Nazwa</p>
-            <p>Link na PDF</p>
-          </div>
-          <div className="flex flex-wrap justify-between py-2 px-4 bg-white rounded-sm shadow">
-            <p>Falowniki trójfazowe SERIA T</p>
-            <a className="hover:text-ocean-green-400 transition-colors " href="https://static.fox-ess.pro/upload/T_DS_PL_29dbdf1b5a.pdf" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-file-pdf pr-2"></i>KARTA KATALOGOWA</a>
-          </div>
-          <div className="flex justify-between py-2 px-4 flex-wrap bg-white rounded-sm shadow">
-            <p>Falowniki jednofazowe
-SERIA F</p>
-            <a className="hover:text-ocean-green-400 transition-colors " href="https://static.fox-ess.pro/upload/F_G1_PL_9edc136e09.pdf" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-file-pdf pr-2"></i>KARTA KATALOGOWA</a>
-          </div>
-          <div className="flex justify-between py-2 px-4 flex-wrap bg-white rounded-sm shadow">
-            <p>Falowniki jednofazowe
-SERIA S</p>
-            <a className="hover:text-ocean-green-400 transition-colors " href="https://static.fox-ess.pro/upload/S_DS_PL_aee906850d.pdf" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-file-pdf pr-2"></i>KARTA KATALOGOWA</a>
-          </div>
-          <div className="flex justify-between py-2 px-4 flex-wrap bg-white rounded-sm shadow">
-            <p>Falowniki jednofazowe
-SERIA S-G2</p>
-            <a className="hover:text-ocean-green-400 transition-colors " href="https://static.fox-ess.pro/upload/G2_S_Mini_DS_PL_514d9917ee.pdf" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-file-pdf pr-2"></i>KARTA KATALOGOWA</a>
-          </div>
-          <div className="flex justify-between py-2 px-4 flex-wrap bg-white rounded-sm shadow">
-            <p>Falowniki trójfazowe
-SERIA T-G3</p>
-            <a className="hover:text-ocean-green-400 transition-colors " href="https://static.fox-ess.pro/upload/T_G3_PL_afce301aac.pdf" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-file-pdf pr-2"></i>KARTA KATALOGOWA</a>
-          </div>
-          <div className="flex justify-between py-2 px-4 flex-wrap bg-white rounded-sm shadow">
-            <p>Falowniki trójfazowe
-HYBRYDA H3/ŁADOWARKA AC3</p>
-            <a className="hover:text-ocean-green-400 transition-colors " href="https://static.fox-ess.pro/upload/NEW_AC_3_H3_DS_PL_6608648ec0.pdf" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-file-pdf pr-2"></i>KARTA KATALOGOWA</a>
-          </div>
-          <div className="flex justify-between py-2 px-4 flex-wrap bg-white rounded-sm shadow">
-            <p>Falowniki jednofazowe
-HYBRYDA H1/ŁADOWARKA AC1</p>
-            <a className="hover:text-ocean-green-400 transition-colors " href="https://static.fox-ess.pro/upload/H1_AC_1_DS_PL_1_637437a287.pdf" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-file-pdf pr-2"></i>KARTA KATALOGOWA</a>
-          </div>
-          <div className="flex justify-between py-2 px-4 flex-wrap bg-white rounded-sm shadow">
-            <p>AIO Trójfazowe
-ALL IN ONE</p>
-            <a className="hover:text-ocean-green-400 transition-colors " href="https://static.fox-ess.pro/upload/AIO_3_P_PL_c0d971342f.pdf" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-file-pdf pr-2"></i>KARTA KATALOGOWA</a>
-          </div>
-          <div className="flex flex-wrap justify-between bg-white py-4 px-4  rounded-sm shadow">
-            <p>Strona producenta z certyfikatami</p>
-            <a className="hover:text-ocean-green-400 transition-colors " href="https://www.fox-ess.pro/do-pobrania/" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-file-pdf pr-2"></i>Pozostale do pobrania</a>
-          </div>
-          
-        </div>
-      </div>
+      <FaqKatalogKarts/>
+
     </>
   );
 };

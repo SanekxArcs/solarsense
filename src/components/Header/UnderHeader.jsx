@@ -7,7 +7,6 @@ const UnderHeader = ({ toggleMenu, isOpen }) => {
     <>
     <LaptopNav />
     <MobileNav isOpen={isOpen} toggleMenu={toggleMenu}/>
-      
     </>
   );
 };

@@ -5,20 +5,20 @@ import { HashLink as Link } from "react-router-hash-link";
 
 const MobileNav = ({ toggleMenu, isOpen }) => {
   const classLi = `px-4 py-2 transition-all duration-300 rounded-sm hover:bg-ocean-green-400`;
-
+  const classLiActive = ({ isActive, isPending }) => isPending ? "pending" : isActive ? `bg-ocean-green-400 ${classLi}` : `bg-transparent ${classLi}`;
   return (
     <>
       <nav
         className={`sticky top-0 left-0 right-0 bottom-auto z-50 text-ocean-green-50 bg-port-gore-950 pt-1 lg:hidden`}
       >
         <ul className="flex items-center justify-between w-full px-2  h-14">
-          <li className="">
-            <a className="" href="http://solarsense.pl">
+          <li >
+            <a  href="http://solarsense.pl">
               <img className="h-7" src={LightLogo} alt="logo solar sense" />
             </a>
           </li>
 
-          <li className="">
+          <li >
             <button
               onClick={toggleMenu}
               className={`${
@@ -45,7 +45,7 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
                 onClick={toggleMenu}
                 className="flex flex-col items-center justify-between gap-2 px-4 py-5 "
               >
-                <li className="">
+                <li >
                   <a
                     className="transition-all duration-300 hover:scale-110"
                     href="http://solarsense.pl"
@@ -59,39 +59,55 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
                 </li>
 
                 <li className={classLi}>
-            <Link to="/#">Fotowoltaika</Link>
-          </li>
-          <li className={classLi}>
-            <Link to="/me">Magazyn energii</Link>
-          </li>
-          <li className={classLi}>
-            <Link to="/me/#Myprad50">Mój prąd 5.0</Link>
-          </li>
-          <li className={classLi}>
-            <Link to="/#galeria">Galeria</Link>
-          </li>
-          <li className={classLi}>
-            <NavLink exact to="/service" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? `bg-ocean-green-400 ${classLi}` : `bg-transparent ${classLi}`}>
-              Serwis
-            </NavLink>
-          </li>
-          <li className={classLi}>
-            <NavLink
-              exact
-              to="/faq"
-              className={({ isActive, isPending }) => isPending ? "pending" : isActive ? `bg-ocean-green-400 ${classLi}` : `bg-transparent ${classLi}`}
-            >
-              FAQ
-            </NavLink>
-          </li>
-          <li className={classLi}>
-            <Link to="/#contact">Kontakt</Link>
-          </li>
-                <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-ocean-green-400">
-                  <a
-                    className=" text-ocean-green-50 "
-                    href="tel:+48733897120"
+                <NavLink
+                    exact
+                    to="/#"
+                    className={classLiActive
+                    }
                   >
+                    Fotowoltaika
+                  </NavLink>
+                </li>
+                <li className={classLi}>
+                <NavLink
+                    exact
+                    to="/me"
+                    className={classLiActive
+                    }
+                  >
+                    Magazyn energii
+                  </NavLink>
+                </li>
+                <li className={classLi}>
+                  <Link to="/me/#Myprad50">Mój prąd 5.0</Link>
+                </li>
+                <li className={classLi}>
+                  <Link to="/#galeria">Galeria</Link>
+                </li>
+                <li className={classLi}>
+                  <NavLink
+                    exact
+                    to="/service"
+                    className={classLiActive
+                    }
+                  >
+                    Serwis
+                  </NavLink>
+                </li>
+                <li className={classLi}>
+                  <NavLink
+                    exact
+                    to="/faq"
+                    className={classLiActive}
+                  >
+                    FAQ
+                  </NavLink>
+                </li>
+                <li className={classLi}>
+                  <Link to="/#contact">Kontakt</Link>
+                </li>
+                <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-ocean-green-400">
+                  <a className=" text-ocean-green-50 " href="tel:+48733897120">
                     +48 733 897 120
                   </a>
                 </li>

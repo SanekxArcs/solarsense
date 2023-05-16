@@ -15,162 +15,110 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                 <span className=" text-ocean-green-400">Sense</span>
               </p>
               <p className="select-none ">
-                Z nami zyskasz nie tylko oszczędności, ale także pewność, jakość
-                i niezawodność
+                Z nami zyskasz nie tylko <b className=" text-ocean-green-300">oszczędności</b> , ale także <b className=" text-ocean-green-300">pewność</b> , <b className=" text-ocean-green-300">jakość</b> i <b className=" text-ocean-green-300">niezawodność</b> 
               </p>
             </div>
-            <div>
-              <h6 className="flex justify-center mb-4 font-semibold uppercase md:justify-start">
+            <ul className="flex flex-col gap-4">
+              <li>
+                <h6 className="flex justify-center font-semibold uppercase md:justify-start text-ocean-green-200">
                 Mapa strony
               </h6>
-              <p className="mb-4">
-                <NavLink exact to="/#" className={setActive}>Fotowoltaika</NavLink>
-              </p>
-              <p className="mb-4">
-                <NavLink exact to="/me" className={setActive}>
+              </li>
+              <li  className="hover:text-ocean-green-300"><NavLink exact to="/#" className={setActive}>
+                  Fotowoltaika
+                </NavLink></li>
+              <li  className="hover:text-ocean-green-300"><NavLink exact to="/me" className={setActive}>
                   Magazyn energii
-                </NavLink>
-              </p>
-              <p className="mb-4">
-                <NavLink exact to="/me/#Myprad50" className={setActive}>Mój prąd 5.0</NavLink>
-              </p>
-              <p className="mb-4">
-                <Link to="/#galeria">Galeria</Link>
-              </p>
-              <p className={`mb-4`}>
-                <NavLink exact to="/service" className={setActive}>
+                </NavLink></li>
+              <li  className="hover:text-ocean-green-300"><NavLink exact to="/me/#Myprad50" className={setActive}>
+                  Mój prąd 5.0
+                </NavLink></li>
+              <li  className="hover:text-ocean-green-300"><Link to="/#galeria">Galeria</Link></li>
+              <li  className="hover:text-ocean-green-300"><NavLink exact to="/service" className={setActive}>
                   Serwis
-                </NavLink>
-              </p>
-              <p className="mb-4">
-                <NavLink exact to="/faq" className={setActive}>
+                </NavLink></li>
+              <li  className="hover:text-ocean-green-300"><NavLink exact to="/faq" className={setActive}>
                   FAQ
-                </NavLink>
-              </p>
-              <p>
-                <button
-                  className="transition-colors duration-300 hover:text-ocean-green-400"
+                </NavLink></li>
+              <li  className="hover:text-ocean-green-300"><button
+                  className="transition-colors duration-300"
                   onClick={toggleMOdal}
                 >
                   Polityka Prywatności
                 </button>
-                <div
-                  className={`${
-                    isOpenModal
-                      ? " animate-fadeIn bg-port-gore-950/50"
-                      : "hidden"
-                  } fixed top-0 left-0 z-[1055]  h-full w-full overflow-y-auto overflow-x-hidden outline-none`}
-                >
-                  <div className="mt-5 pointer-events-none relative h-[calc(100%-1rem)] w-auto translate-y-[-50px]  transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
-                    <div className="pointer-events-auto relative flex max-h-[100%] w-full flex-col overflow-hidden rounded-sm border-none  bg-ocean-green-50 bg-clip-padding text-current shadow-lg outline-none  ">
-                      <div className="flex items-center justify-between flex-shrink-0 p-4 border-b-2 border-opacity-100 rounded-sm border-port-gore-50 ">
-                        <h5
-                          className="pt-4 text-lg font-medium leading-normal text-center text-port-gore-950"
-                          id="exampleModalScrollableLabel"
-                        >
-                          POLITYKA PRYWATNOŚCI STRONY INTERNETOWEJ <br />
-                          WWW.SOLARSENSE.PL
-                        </h5>
-                        <button
-                          onClick={toggleMOdal}
-                          type="button"
-                          className="box-content border-none rounded-sm text-port-gore-950 hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth="1.5"
-                            stroke="currentColor"
-                            className="w-6 h-6"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M6 18L18 6M6 6l12 12"
-                            />
-                          </svg>
-                        </button>
-                      </div>
-                      <Privacy />
+                <Privacy toggleMOdal={toggleMOdal} isOpenModal={isOpenModal} /></li>
+            </ul>
 
-                      <div className="flex flex-wrap items-center justify-end flex-shrink-0 p-4 border-t-2 border-opacity-100 rounded-sm border-port-gore-50">
-                        <button
-                          onClick={toggleMOdal}
-                          type="button"
-                          className="inline-block rounded-sm  px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal  text-ocean-green-50 bg-ocean-green-400 transition duration-150 ease-in-out hover:bg-ocean-green-accent-100 focus:bg-ocean-green-accent-100 focus:outline-none focus:ring-0 active:bg-ocean-green-accent-200"
-                        >
-                          Zamknąć
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </p>
-            </div>
-
-            <div>
-              <h6 className="flex justify-center mb-4 font-semibold uppercase md:justify-start">
-                Kontakt
-              </h6>
-              <p className="flex items-center justify-center mb-4 select-none md:justify-start">
-                Ul. Szczęsna 26
-                <br />
-                02-454 Warszawa <br /> NIP: 7382063255
-              </p>
-              <p className="flex items-center justify-center mb-4 md:justify-start">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="w-5 h-5 mr-3"
-                >
-                  <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
-                  <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
-                </svg>
-                <a href="mailto:biuro@solarsense.pl">biuro@solarsense.pl</a>
-              </p>
-              <p className="flex items-center justify-center mb-4 md:justify-start">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="w-5 h-5 mr-3"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <a href="tel:+48733897120">
-                  +48 733 897 120 <br />| PL |
-                </a>
-              </p>
-              <p className="flex items-center justify-center mb-4 md:justify-start">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="w-5 h-5 mr-3"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <a href="tel:+49735145620">
-                  +48 735 145 620 <br />| UA |
-                </a>
-              </p>
-            </div>
+              <ul className="flex flex-col gap-4">
+                <li>
+                  <h6 className="flex justify-center font-semibold uppercase md:justify-start text-ocean-green-200">
+                    Kontakt
+                  </h6>
+                </li>
+                <li className="flex items-center justify-center select-none md:justify-start">
+                  <a  className="hover:text-ocean-green-300" href="https://goo.gl/maps/ieRqAmFSHC8XmtXA8">Ul. Szczęsna 26
+                  <br />
+                  02-454 Warszawa </a>
+                </li>
+                <li  className="flex items-center justify-center select-none md:justify-start">
+                  NIP: 7382063255
+                </li>
+                <li className="flex items-center justify-center md:justify-start">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-5 h-5 mr-3"
+                  >
+                    <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                    <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                  </svg>
+                  <a className="hover:text-ocean-green-300" href="mailto:biuro@solarsense.pl">biuro@solarsense.pl</a>
+                </li>
+                <li className="flex items-center justify-center md:justify-start">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-5 h-5 mr-3"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <a className="hover:text-ocean-green-300" href="tel:+48733897120">
+                    +48 733 897 120
+                  </a>
+                </li>
+                <li className="flex items-center justify-center md:justify-start">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-5 h-5 mr-3"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <a className="hover:text-ocean-green-300" href="tel:+49735145620">
+                    +48 735 145 620
+                  </a>
+                </li>
+              </ul>
           </div>
         </div>
-        <div className="p-6 text-center bg-port-gore-950 ">
-          <span className="select-none ">© 2023 Copyright: </span>
+
+        <div className="p-6 text-center bg-port-gore-950">
+          <span className="select-none ">
+            © 2023 Wszelkie prawa zastrzeżone:
+          </span>
           <a
-            className="font-semibold text-port-gore-400 "
+            className="font-semibold text-port-gore-400 hover:text-port-gore-200 transition"
             href="https://github.com/SanekxArcs"
           >
             Solar Sense

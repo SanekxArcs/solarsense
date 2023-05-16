@@ -16,6 +16,7 @@ function Galeria() {
           Wykonane montaże
         </h2>
         <div className="grid grid-cols-2 gap-5 px-4 pb-10 md:grid-cols-3 md:grid-rows-3 max-h-144">
+          
           <div className="relative overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md ">
             <img
               alt="gallery"
