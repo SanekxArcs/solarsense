@@ -1,5 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
+import TopImg from './com for style/TopImg';
+import BottomImg from './com for style/BottomImg';
 
 export const Loading = () => {
   return (
@@ -8,10 +10,11 @@ export const Loading = () => {
       animate={{opacity: 1}}
       exit={{opacity: 0}}  
       className='h-screen w-screen grid place-content-center'>
-        <motion.h1 className="hidden text-6xl font-black uppercase text-center md:block animate-text-focus-in">
+        <h1 className="text-6xl font-black uppercase text-center">
             <span className=" text-port-gore-950">Solar </span>
             <span className=" text-ocean-green-400">Sense</span>
-          </motion.h1>
-          <h2 className='text-5xl text-center pt-10'>Ładowanie witryny</h2></motion.div>
+          </h1>
+          <h2 className='text-5xl text-center pt-10'>Ładowanie witryny</h2>
+          </motion.div>
   )
 }

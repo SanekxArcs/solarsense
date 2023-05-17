@@ -17,7 +17,7 @@ const MagazynEnergii = () => {
   return (
     <>
     <motion.div
-    initial={{opacity: 0.9,}}
+    initial={{opacity: 0,}}
     animate={{opacity: 1,}}
     exit={{opacity: 0,}} >
       <main className="select-none snap-y snap-mandatory">
