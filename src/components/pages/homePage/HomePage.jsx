@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import Hero from "./Hero";
 import DlaCzego from "./DlaCzegoMy/DlaCzego";
@@ -13,7 +14,10 @@ import BottomImg from "../../service/com for style/BottomImg";
 
 function HomePage({setTextToMessage, textToMessage}) {
   return (
-    <div>
+    <motion.div
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}>
       <Hero />
       <Partners/>
       <DlaCzego />
@@ -26,7 +30,7 @@ function HomePage({setTextToMessage, textToMessage}) {
       <Opinia/>
       <TopImg/>
       <Contact setTextToMessage={setTextToMessage} textToMessage={textToMessage}/>
-    </div>
+    </motion.div>
   );
 }
 

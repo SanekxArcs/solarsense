@@ -1,6 +1,6 @@
 import WhyWe from "./WhyWe";
 import svgBorderImg from "../../../../assets/slider-dash-primary-mint.svg";
-import bottomImage from "../../../../assets/wave-haikei (1).svg";
+import { motion } from "framer-motion";
 
 function DlaCzego() {
   return (
@@ -8,34 +8,47 @@ function DlaCzego() {
       <section className="xl:w-[1170px] mx-auto">
         <div className="relative grid items-center grid-cols-1 ld:grid-cols-3">
           <div className="relative w-full p-10 mb-6 grow-0 shrink-0 basis-auto md:mb-0">
-            <p className="mb-6 text-sm font-bold uppercase text-ocean-green-600 lg:text-base">
+            <motion.p
+                          initial={{ opacity: 0, x: -1000}}
+                          whileInView={{ opacity: 1, x: 0}}
+                          transition={{ duration: 0.5, delay: 0.2 }}
+                          viewport={{ once: true }}  
+             className="mb-6 text-sm font-bold uppercase text-ocean-green-600 lg:text-base">
               OFERUJEMY RÓŻNE USŁUGI
-            </p>
-            <h2 className="mb-6 text-3xl font-bold lg:text-5xl">
+            </motion.p>
+            <motion.h2 
+            initial={{ opacity: 0, x: -1000}}
+            whileInView={{ opacity: 1, x: 0}}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="mb-6 text-3xl font-bold lg:text-5xl">
               Dlaczego my?
-            </h2>
+            </motion.h2>
 
             <p className="text-sm lg:mb-12"></p>
           </div>
 
-          <img
-            className="absolute -rotate-90 bottom-2 right-2 animate-fadeInUpBig"
+          <motion.img
+          initial={{ opacity: 0, }}
+          whileInView={{ opacity: 1, }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          viewport={{ once: true }}
+            className="absolute -rotate-90 bottom-2 right-2 "
             src={svgBorderImg}
             alt="design image2"
           />
-          <img
-            className="absolute rotate-90 top-2 left-2 animate-fadeInUpBig"
+          <motion.img
+          initial={{ opacity: 0, }}
+          whileInView={{ opacity: 1, }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          viewport={{ once: true }}
+            className="absolute rotate-90 top-2 left-2 "
             src={svgBorderImg}
             alt="design image3"
           />
           <WhyWe />
         </div>
       </section>
-      <img
-        className="absolute bottom-0 left-0 right-0 w-full -z-50"
-        src={bottomImage}
-        alt=""
-      />
     </div>
   );
 }

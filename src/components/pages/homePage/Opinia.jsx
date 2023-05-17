@@ -2,6 +2,7 @@ import openie1 from "../../../assets/opinie1.webp";
 import openie2 from "../../../assets/opinie2.webp";
 import openie3 from "../../../assets/opinie3.webp";
 import svgRew from "../../../assets/wave-haikei (4).svg";
+import { motion } from "framer-motion";
 
 const opiniaData = [
   {
@@ -31,18 +32,26 @@ function Opinia() {
   return (
     <div id="opinia" className="py-32 select-none bg-port-gore-950">
       <section className="text-center lg:text-left xl:w-[1170px] mx-auto">
-        <h2 className="mb-12 text-4xl font-bold text-center uppercase md:text-6xl text-ocean-green-50 ">
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          viewport={{ once: true }}
+          className="mb-12 text-4xl font-bold text-center uppercase md:text-6xl text-ocean-green-50 "
+        >
           Nasze najlepsze recenzje
-        </h2>
+        </motion.h2>
         <div className="grid items-stretch px-2 place-content-end lg:grid-cols-3 gap-x-6 lg:gap-x-12">
           {opiniaData.map((item) => {
             return (
               <div
                 className="grid items-stretch mb-6 transition-all duration-300 rounded-sm shadow-lg lg:mb-0 bg-ocean-green-50  hover:-translate-y-2 hover:shadow-xl hover:shadow-ocean-green-400"
-                data-mdb-ripple="true"
-                data-mdb-ripple-color="light"
               >
-                <div className="relative overflow-hidden bg-no-repeat bg-cover">
+                <motion.div
+              initial={{ opacity: 0, }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}  className="relative overflow-hidden bg-no-repeat bg-cover">
                   <img
                     src={item.photo}
                     className="w-full h-full bg-cover rounded-t-sm "
@@ -56,10 +65,18 @@ function Opinia() {
                     src={svgRew}
                     alt="svg"
                   />
-                </div>
+                </motion.div>
                 <div className="flex flex-col justify-between p-6">
-                  <h5 className="mb-3 text-lg font-bold">{item.name}</h5>
-                  <p className="pb-2 mb-4">{item.review}</p>
+                  <motion.h5
+                  initial={{ opacity: 0, }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                  viewport={{ once: true }}  className="mb-3 text-lg font-bold">{item.name}</motion.h5>
+                  <motion.p
+                  initial={{ opacity: 0, }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                  viewport={{ once: true }}  className="pb-2 mb-4">{item.review}</motion.p>
                 </div>
               </div>
             );

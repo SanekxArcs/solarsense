@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const WhyWe = () => {
   const dataWhyWe = [
     {
@@ -30,13 +32,25 @@ const WhyWe = () => {
             <div className="w-full px-3 mb-12 grow-0 shrink-0 basis-auto lg:w-6/12">
               <div className="flex transition-all duration-300 hover:-translate-y-1">
                 <div className="shrink-0">
-                  <div className="grid w-16 h-16 text-2xl rounded-sm shadow-lg text-port-gore-950 bg-ocean-green-300 place-content-center">
+                  <motion.div
+                  initial={{ opacity: 0, }}
+                  whileInView={{ opacity: 1, }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                  viewport={{ once: true }} className="grid w-16 h-16 text-2xl rounded-sm shadow-lg text-port-gore-950 bg-ocean-green-300 place-content-center">
                     <i className={item.logo}></i>
-                  </div>
+                  </motion.div>
                 </div>
                 <div className="ml-4 grow">
-                  <p className="mb-1 font-bold text-port-gore-950">{item.name}</p>
-                  <p className="text-sm text-port-gore-950">{item.text}</p>
+                  <motion.p
+                  initial={{ opacity: 0, }}
+                  whileInView={{ opacity: 1, }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                  viewport={{ once: true }} className="mb-1 font-bold text-port-gore-950">{item.name}</motion.p>
+                  <motion.p
+                  initial={{ opacity: 0, }}
+                  whileInView={{ opacity: 1, }}
+                  transition={{ duration: 0.5, delay: 0.7 }}
+                  viewport={{ once: true }} className="text-sm text-port-gore-950">{item.text}</motion.p>
                 </div>
               </div>
             </div>
