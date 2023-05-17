@@ -1,6 +1,5 @@
 import { useState } from "react";
-import topImg from "../../../assets/wave-haikei.svg";
-
+import { motion } from "framer-motion";
 function Contact({ textToMessage, setTextToMessage }) {
   const [klientName, setKlientName] = useState();
   const [klientLastname, setKlientLastname] = useState();
@@ -9,10 +8,19 @@ function Contact({ textToMessage, setTextToMessage }) {
 
   return (
     <div id="contact" className="relative px-3 py-32">
-      <h2 className="pb-10 text-5xl font-bold text-center uppercase md:text-6xl text-port-gore-950">
+      <motion.h2
+            initial={{ opacity: 0, y: 50}}
+            whileInView={{ opacity: 1, y: 0}}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }} 
+            className="pb-10 text-5xl font-bold text-center uppercase md:text-6xl text-port-gore-950">
         Kontakt
-      </h2>
-      <div className="max-w-[1170px] p-7 rounded-sm shadow-lg  mx-auto bg-gradient-to-br from-ocean-green-50 to-ocean-green-200 shadow-ocean-green-200 ring ring-ocean-green-400 ">
+      </motion.h2>
+      <motion.div
+            initial={{ opacity: 0, y: 50}}
+            whileInView={{ opacity: 1, y: 0}}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}  className="max-w-[1170px] p-7 rounded-sm shadow-lg  mx-auto bg-gradient-to-br from-ocean-green-50 to-ocean-green-200 shadow-ocean-green-200 ring ring-ocean-green-400 ">
         <form
           action="https://formsubmit.co/d6c7e0c47156a06e7321617dac55cdac"
           name="contact"
@@ -190,7 +198,7 @@ function Contact({ textToMessage, setTextToMessage }) {
             </button>
           </div>
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -1,13 +1,17 @@
 import { NavLink } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import Privacy from "./Privacy";
+import { motion } from "framer-motion";
 
 const Footer = ({ toggleMOdal, isOpenModal }) => {
   const setActive = ({ isActive }) => (isActive ? "text-ocean-green-400" : "");
   return (
-    <footer className="text-center bg-port-gore-950 text-ocean-green-50 lg:text-left">
+    <motion.Footer className="text-center bg-port-gore-950 text-ocean-green-50 lg:text-left">
       <div>
-        <div className="py-10 text-center md:text-left max-w-[1170px] mx-auto px-6">
+        <motion.div initial={{ opacity: 0, y: 150 }}
+                  whileInView={{ opacity: 1, y: 0}}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                  viewport={{ once: true }}className="py-10 text-center md:text-left max-w-[1170px] mx-auto px-6">
           <div className="grid gap-8 grid-1 md:grid-cols-2 lg:grid-cols-3">
             <div className="">
               <p className="pb-5 text-3xl font-black uppercase select-none md:block">
@@ -111,7 +115,7 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                 </li>
               </ul>
           </div>
-        </div>
+        </motion.div>
 
         <div className="p-6 text-center bg-port-gore-950">
           <span className="select-none ">
@@ -125,7 +129,7 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
           </a>
         </div>
       </div>
-    </footer>
+    </motion.Footer>
   );
 };
 

@@ -1,13 +1,9 @@
 import React from "react";
-import elementforprice from "../../../../assets/elementforprice.svg"
-import elementforprice1 from "../../../../assets/elementforprice1.svg"
+import elementforprice from "../../../../assets/elementforprice.svg";
+import elementforprice1 from "../../../../assets/elementforprice1.svg";
+import { motion, AnimatePresence } from "framer-motion";
 
-
-const Price = ({priceBtn, setTextToMessage}) => {
-
-
-
-
+const Price = ({ priceBtn, setTextToMessage }) => {
   const priceData4 = [
     {
       title: "Najtaniej",
@@ -23,7 +19,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
     },
     {
       title: "Rekomendowane",
-      cena: '20 628',
+      cena: "20 628",
       description: "Najlepsza opcja z uwagi na jakość i cenę",
       padding: false,
       inwerter: "FoxESS T4 (G3), L3, 2xMPPT",
@@ -35,7 +31,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
     },
     {
       title: "Premium",
-      cena: '27 770',
+      cena: "27 770",
       description: "Dla wymagających",
       padding: true,
       inwerter: "HUAWEI SUN 2000 3KTL-L1, 2xMPPT",
@@ -62,7 +58,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
     },
     {
       title: "Rekomendowane",
-      cena: '27 218',
+      cena: "27 218",
       description: "Najlepsza opcja z uwagi na jakość i cenę",
       padding: false,
       inwerter: "FoxESS T6 (G3), L3, 2xMPPT",
@@ -74,7 +70,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
     },
     {
       title: "Premium",
-      cena: '38 217',
+      cena: "38 217",
       description: "Dla wymagających",
       padding: true,
       inwerter: "HUAWEI SUN 2000-6KTL-M1, L3, 2xMPPT",
@@ -101,7 +97,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
     },
     {
       title: "Rekomendowane",
-      cena: '40 148',
+      cena: "40 148",
       description: "Najlepsza opcja z uwagi na jakość i cenę",
       padding: false,
       inwerter: "FoxESS T10 (G3), L3, 2xMPPT",
@@ -113,7 +109,7 @@ const Price = ({priceBtn, setTextToMessage}) => {
     },
     {
       title: "Premium",
-      cena: '59 139',
+      cena: "59 139",
       description: "Dla wymagających",
       padding: true,
       inwerter: "HUAWEI SUN 2000-10KTL-M1, L3, 2xMPPT",
@@ -125,55 +121,119 @@ const Price = ({priceBtn, setTextToMessage}) => {
     },
   ];
 
-  const mapChange = [
-    priceData4, priceData6, priceData10
-  ];
+  const mapChange = [priceData4, priceData6, priceData10];
   return (
     <>
       {mapChange[priceBtn].map((e) => {
         return (
-          <div className="w-full px-4 transition-all duration-300 rounded-sm  md:w-1/2 lg:w-1/3 hover:scale-[1.02] items-stretch justify-stretch">
-            <div className={` ${e.color ? "bg-ocean-green-200 " : "bg-ocean-green-50 "} relative z-10 px-8 py-10 mb-10 overflow-hidden border rounded-sm   shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-12`}>
-              <span className="block mb-4 text-lg font-semibold text-primary">
+          <motion.div 
+          initial={{ opacity: 0, }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5, }}
+          viewport={{ once: true }}
+           className="w-full px-4 transition-all duration-300 rounded-sm  md:w-1/2 lg:w-1/3 hover:scale-[1.02] items-stretch justify-stretch">
+            <div
+              className={` ${
+                e.color ? "bg-ocean-green-200 " : "bg-ocean-green-50 "
+              } relative z-10 px-8 py-10 mb-10 overflow-hidden border rounded-sm   shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-12`}
+            >
+              <motion.span
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="block mb-4 text-lg font-semibold text-primary"
+              >
                 {e.title}
-              </span>
-              <h2 className="text-dark mb-5 text-[42px] font-bold">
+              </motion.span>
+              <motion.h2
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-dark mb-5 text-[42px] font-bold"
+              >
                 {e.cena}
                 <span className="text-base font-medium text-body-color">
                   / zl
                 </span>
-              </h2>
-              <p className={`${e.padding ? "mb-14" : "mb-8"}  text-base border-b text-body-color border-ocean-green-200 `}>
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+                className={`${
+                  e.padding ? "mb-14" : "mb-8"
+                }  text-base border-b text-body-color border-ocean-green-200 `}
+              >
                 {e.description}
-              </p>
+              </motion.p>
               <div className="mb-7">
-                <p className="mb-1 text-lg font-semibold leading-loose text-body-color">
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                  viewport={{ once: true }}
+                  className="mb-1 text-lg font-semibold leading-loose text-body-color"
+                >
                   Komponenty:
-                </p>
-                <p className="mb-1 text-base leading-loose text-body-color">
+                </motion.p>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                  viewport={{ once: true }}
+                  className="mb-1 text-base leading-loose text-body-color"
+                >
                   Falownik: {e.inwerter}
-                </p>
-                <p className="mb-1 text-base leading-loose text-body-color">
+                </motion.p>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                  viewport={{ once: true }}
+                  className="mb-1 text-base leading-loose text-body-color"
+                >
                   Moduły: {e.solarPanel}
-                </p>
-                <p className="mb-1 text-base leading-loose text-body-color">
+                </motion.p>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 0.6 }}
+                  viewport={{ once: true }}
+                  className="mb-1 text-base leading-loose text-body-color"
+                >
                   Typ dachu: {e.roof}
-                </p>
+                </motion.p>
               </div>
-              <a href="#contact" onClick={() => {setTextToMessage(`Dzień dobry, mam pytania odnośnie zestawu '${e.title}' instalacji mocy ~${e.power}. Jej komponentami jest: Falownik ${e.inwerter}, moduly ${e.solarPanel}. Potrzebuje szczególną wycenę.`)}} className={` ${e.color ? "border-port-gore-950" : "border-ocean-green-200 "} block w-full p-4 text-base font-semibold text-center transition bg-transparent border rounded-sm text-port-gore-950 hover:bg-ocean-green-400   hover:text-white`}>
+              <motion.a
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+                viewport={{ once: true }}
+                href="#contact"
+                onClick={() => {
+                  setTextToMessage(
+                    `Dzień dobry, mam pytania odnośnie zestawu '${e.title}' instalacji mocy ~${e.power}. Jej komponentami jest: Falownik ${e.inwerter}, moduly ${e.solarPanel}. Potrzebuje szczególną wycenę.`
+                  );
+                }}
+                className={` ${
+                  e.color ? "border-port-gore-950" : "border-ocean-green-200 "
+                } block w-full p-4 text-base font-semibold text-center transition bg-transparent border rounded-sm text-port-gore-950 hover:bg-ocean-green-400   hover:text-white`}
+              >
                 {e.button}
-              </a>
+              </motion.a>
               <div>
                 <span className="absolute right-0 top-7 z-[-1]">
                   <img src={elementforprice} alt="" />
                 </span>
                 <span className="absolute right-4 top-4 z-[-1]">
                   <img src={elementforprice1} alt="" />
-                  
                 </span>
               </div>
             </div>
-          </div>
+          </motion.div>
         );
       })}
     </>

@@ -2,6 +2,7 @@ import React from "react";
 import Accordion from "./Accordion";
 import TopImg from "../../service/com for style/TopImg";
 import FaqKatalogKarts from "./FaqKatalogKarts";
+import { motion } from "framer-motion";
 
 const FAQ = () => {
   const accordionData = [
@@ -45,29 +46,40 @@ const FAQ = () => {
   ];
   return (
     <>
-      <section className="py-24 text-center  text-ocean-green-50 bg-port-gore-950 select-none">
-        <div className="flex justify-center">
-          <div className="max-w-[1000px]">
-            <h2 className="mb-5 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
-              Najczęściej <br />
-              <span className=" text-ocean-green-400">zadawane pytania</span>
-            </h2>
-            {/* <p className="text-lg text-gray-500">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <section
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="py-24 text-center  text-ocean-green-50 bg-port-gore-950 select-none"
+        >
+          <div className="flex justify-center">
+            <div className="max-w-[1000px]">
+              <h2 className="mb-5 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
+                Najczęściej <br />
+                <span className=" text-ocean-green-400">zadawane pytania</span>
+              </h2>
+              {/* <p className="text-lg text-gray-500">
     
     </p> */}
+            </div>
+          </div>
+        </section>
+        <TopImg />
+        <div className="max-w-[1170px] px-6 mx-auto my-32">
+          <div className="mb-20 flex gap-2 flex-col">
+            {accordionData.map(({ title, content }) => (
+              <Accordion title={title} content={content} />
+            ))}
           </div>
         </div>
-      </section>
-      <TopImg />
-      <div className="max-w-[1170px] px-6 mx-auto my-32">
-        <div className="mb-20 flex gap-2 flex-col">
-          {accordionData.map(({ title, content }) => (
-            <Accordion title={title} content={content} />
-          ))}
-        </div>
-      </div>
-      <FaqKatalogKarts/>
+      </motion.div>
 
+      <FaqKatalogKarts />
     </>
   );
 };

@@ -1,5 +1,4 @@
-import topImg from "../../../assets/wave-haikei.svg";
-import bottomImg from "../../../assets/wave-haikei (1).svg";
+
 import pic1 from "../../../assets/gal1.webp";
 import pic2 from "../../../assets/gal2.webp";
 import pic3 from "../../../assets/ga3.webp";
@@ -7,18 +6,28 @@ import pic4 from "../../../assets/gal4.webp";
 import pic5 from "../../../assets/gal5.webp";
 import pic6 from "../../../assets/gal6.webp";
 import svgRew from "../../../assets/wave-haikei (4).svg";
+import { motion } from "framer-motion";
 
 function Galeria() {
   return (
     <div id="galeria" className="relative select-none ">
       <section className="max-w-[1170px] mx-auto lg:py-32 pb-20">
-        <h2 className="py-10 text-4xl font-bold text-center uppercase max-h-144 lg:text-6xl text-port-gore-950">
+        <motion.h2
+              initial={{ opacity: 0, }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}  
+              className="py-10 text-4xl font-bold text-center uppercase max-h-144 lg:text-6xl text-port-gore-950">
           Wykonane montaże
-        </h2>
+        </motion.h2>
         <div className="grid grid-cols-2 gap-5 px-4 pb-10 md:grid-cols-3 md:grid-rows-3 max-h-144">
           
           <div className="relative overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md ">
-            <img
+            <motion.img
+                          initial={{ opacity: 0, }}
+                          whileInView={{ opacity: 1 }}
+                          transition={{ duration: 0.5, delay: 0.3 }}
+                          viewport={{ once: true }}  
               alt="gallery"
               className="block object-cover object-center w-full h-full rounded-sm peer"
               src={pic1}
@@ -35,7 +44,11 @@ function Galeria() {
           </div>
 
           <div className="relative row-span-2 overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md ">
-            <img
+            <motion.img
+                          initial={{ opacity: 0, }}
+                          whileInView={{ opacity: 1 }}
+                          transition={{ duration: 0.5, delay: 0.4 }}
+                          viewport={{ once: true }}
               loading="lazy"
               alt="gallery"
               className="block object-cover object-center w-full h-full transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md"
@@ -51,7 +64,11 @@ function Galeria() {
           </div>
 
           <div className="relative overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md ">
-            <img
+            <motion.img
+                          initial={{ opacity: 0, }}
+                          whileInView={{ opacity: 1 }}
+                          transition={{ duration: 0.5, delay: 0.4 }}
+                          viewport={{ once: true }}
               loading="lazy"
               alt="gallery"
               className="block object-cover object-center w-full h-full transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md"
@@ -68,7 +85,11 @@ function Galeria() {
           </div>
 
           <div className="relative row-span-2 overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md md:row-span-1">
-            <img
+            <motion.img
+                          initial={{ opacity: 0, }}
+                          whileInView={{ opacity: 1 }}
+                          transition={{ duration: 0.5, delay: 0.5 }}
+                          viewport={{ once: true }}
               loading="lazy"
               alt="gallery"
               className="block object-cover object-center w-full h-full transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md"
@@ -85,7 +106,11 @@ function Galeria() {
           </div>
 
           <div className="relative overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md md:row-span-2">
-            <img
+            <motion.img
+                          initial={{ opacity: 0, }}
+                          whileInView={{ opacity: 1 }}
+                          transition={{ duration: 0.5, delay: 0.6 }}
+                          viewport={{ once: true }}
               loading="lazy"
               alt="gallery"
               className="block object-cover object-center w-full h-full transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md"
@@ -102,7 +127,11 @@ function Galeria() {
           </div>
 
           <div className="relative overflow-hidden transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md md:col-span-2">
-            <img
+            <motion.img
+                          initial={{ opacity: 0, }}
+                          whileInView={{ opacity: 1 }}
+                          transition={{ duration: 0.5, delay: 0.7 }}
+                          viewport={{ once: true }}
               loading="lazy"
               alt="gallery"
               className="block object-cover object-center w-full h-full transition-all duration-300 rounded-sm hover:scale-110 hover:rounded-md"

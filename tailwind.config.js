@@ -53,43 +53,6 @@ module.exports = withAnimations({
           '950': '#222244',
         },
       },
-      animation: {
-        "scale-up-center":
-          "scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both",
-        "kenburns-top": "kenburns-top 5s ease   both",
-        "text-focus-in":
-          "text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530)   both",
-      },
-      keyframes: {
-        "scale-up-center": {
-          "0%": {
-            transform: "scale(.5)",
-          },
-          to: {
-            transform: "scale(1)",
-          },
-        },
-        "kenburns-top": {
-          "0%": {
-            transform: "scale(1) translateY(0)",
-            "transform-origin": "50% 16%",
-          },
-          to: {
-            transform: "scale(1.25) translateY(-15px)",
-            "transform-origin": "top",
-          },
-        },
-        "text-focus-in": {
-          "0%": {
-            filter: "blur(12px)",
-            opacity: "0",
-          },
-          to: {
-            filter: "blur(0)",
-            opacity: "1",
-          },
-        },
-      },
       spacing: {
         98: "26rem",
         100: "28rem",

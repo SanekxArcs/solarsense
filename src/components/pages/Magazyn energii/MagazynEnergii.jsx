@@ -1,5 +1,6 @@
 import React from "react";
 import TopImg from "../../service/com for style/TopImg";
+import { motion } from "framer-motion";
 
 import Contact from "../homePage/Contact";
 import HeroME from "./MEComponents/HeroME";
@@ -15,6 +16,10 @@ import CalkulatorME from "./MEComponents/CalculatorME/CalkulatorME";
 const MagazynEnergii = () => {
   return (
     <>
+    <motion.div
+    initial={{opacity: 0.9,}}
+    animate={{opacity: 1,}}
+    exit={{opacity: 0,}} >
       <main className="select-none snap-y snap-mandatory">
         <section className="py-24 text-center text-ocean-green-50 bg-port-gore-950 snap-always snap-center">
           <div className="flex justify-center">
@@ -45,6 +50,8 @@ const MagazynEnergii = () => {
         <Contact />
         
       </main>
+    </motion.div>
+
     </>
   );
 };

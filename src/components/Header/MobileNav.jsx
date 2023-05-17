@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import LightLogo from "../../assets/solarsense-light-logo.svg";
 import { HashLink as Link } from "react-router-hash-link";
+import { motion, AnimatePresence } from "framer-motion"
 
 const MobileNav = ({ toggleMenu, isOpen }) => {
   const classLi = `px-4 py-2 transition-all duration-300 rounded-sm hover:bg-ocean-green-400`;
@@ -28,11 +29,13 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
               <i className=" text-2xl fa-solid fa-bars"></i>
             </button>
           </li>
-
-          <nav
-            className={`${
-              isOpen ? `` : `hidden `
-            } absolute inset-2 text-ocean-green-50   min-h-screen `}
+          <AnimatePresence >
+            {isOpen && <motion.nav
+            initial={{ opacity: 0, scale: 0.5, y: -1000 }}
+            animate={{ opacity: 1, scale: 1, y: -0 }}
+            exit={{ opacity: 0, scale: 0.5, y: -1000 }}
+            transition={{ duration: 0.5 }}
+            className={` absolute inset-2 text-ocean-green-50   min-h-screen `}
           >
             <div className="relative z-50 bg-port-gore-950  rounded-sm">
               <button
@@ -121,7 +124,10 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
                 </li>
               </ul>
             </div>
-          </nav>
+          </motion.nav>}  
+          </AnimatePresence>
+            
+
         </ul>
       </nav>
     </>
