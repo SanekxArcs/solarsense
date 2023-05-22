@@ -1,11 +1,10 @@
 @tailwind base;
-/* Firefox */
+
 * {
     scrollbar-width: thin;
     scrollbar-color: #aae9d2 #222244;
 }
 
-/* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
     width: 10px;
 }
@@ -32,5 +31,4 @@
     height: 5px;
     background: #41B883;
     transform-origin: 0%;
-  }
-  
+}

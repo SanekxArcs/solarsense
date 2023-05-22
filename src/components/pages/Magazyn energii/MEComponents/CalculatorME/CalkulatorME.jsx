@@ -4,7 +4,6 @@ import SecondStep from "./CalculatorComponents/SecondStep";
 import Oferta from "./CalculatorComponents/Oferta";
 
 const CalkulatorME = () => {
-
   const [currentPage, setCurrentPage] = useState(1);
   const [firstStepShow, setFirstStepShow] = useState(true);
   const [secondStepShow, setSecondStepShow] = useState(false);
@@ -21,7 +20,7 @@ const CalkulatorME = () => {
   const [calculation, setCalculation] = useState(0);
   const [calculation2023, setCalculation2023] = useState(0);
   const [calcE, setCalcE] = useState(12);
-  
+
   const [showUpPriceForkWp, setShowUpPriceForkWp] = useState(false);
   const [ActivePV, setActivePV] = useState(true);
   const [ActivePVME, setActivePVME] = useState(false);
@@ -30,7 +29,7 @@ const CalkulatorME = () => {
   const [niepelnosprawnosc, setNiepelnosprawnosc] = useState(false);
   const [kartaDuzejRodziny, setKartaDuzejRodziny] = useState(false);
   const [gospodarstwo, setGospodarstwo] = useState(false);
-  const [limit , setLimit] = useState(2000);
+  const [limit, setLimit] = useState(2000);
 
   const [priceUpkWp, setPriceUpkWp] = useState(1.38);
   const [progWOneKwp, setProgWOneKwp] = useState(0);
@@ -39,44 +38,41 @@ const CalkulatorME = () => {
   const [result, setResult] = useState(0);
   const [resultForSecondPage, setResultForSecondPage] = useState(0);
 
-
   useEffect(() => {
-    if(standard) {
-      return setLimit(2000)
-    } 
-    if(niepelnosprawnosc) {
-      return setLimit(2600)
-    } 
-    if(kartaDuzejRodziny) {
-      return setLimit(3000)
-    } 
-    if(gospodarstwo) {
-      return setLimit(3000)
-    } 
+    if (standard) {
+      return setLimit(2000);
+    }
+    if (niepelnosprawnosc) {
+      return setLimit(2600);
+    }
+    if (kartaDuzejRodziny) {
+      return setLimit(3000);
+    }
+    if (gospodarstwo) {
+      return setLimit(3000);
+    }
   }, [standard, niepelnosprawnosc, kartaDuzejRodziny, gospodarstwo]);
 
   useEffect(() => {
-    const calculatedValue = ((calculation2023 / 1000) * 4014.8) / 7
+    const calculatedValue = ((calculation2023 / 1000) * 4014.8) / 7;
     const formattedValue = calculatedValue.toFixed(2);
-    setResult(formattedValue)
-  },[calculation2023]);
-
-  useEffect(()=>{
-    const calculatedValue = calculation2023 - result
-    const formattedValue = calculatedValue.toFixed(2);
-    setResultForSecondPage(formattedValue)
-  },[calculation2023, result])
+    setResult(formattedValue);
+  }, [calculation2023]);
 
   useEffect(() => {
-    const calculatedValueKwp = calculation  - limit;
-    console.log(calculatedValueKwp);
+    const calculatedValue = calculation2023 - result;
+    const formattedValue = calculatedValue.toFixed(2);
+    setResultForSecondPage(formattedValue);
+  }, [calculation2023, result]);
+
+  useEffect(() => {
+    const calculatedValueKwp = calculation - limit;
     const calculatedValueZl = calculatedValueKwp * priceUpkWp;
-    console.log(calculatedValueZl);
 
     const formattedValueKwp = calculatedValueKwp.toFixed(2);
     const formattedValueZl = calculatedValueZl.toFixed(2);
-    setProgWOneKwp(formattedValueKwp)
-    setProgWOneZl(formattedValueZl)
+    setProgWOneKwp(formattedValueKwp);
+    setProgWOneZl(formattedValueZl);
   }, [limit, calculation, priceUpkWp]);
 
   useEffect(() => {
@@ -84,7 +80,6 @@ const CalkulatorME = () => {
     const formattedValue = calculatedValue.toFixed(2);
     setCalculation(formattedValue);
   }, [priceToPay, calcE, priceForkWp]);
-  
 
   useEffect(() => {
     const calculatedValue = calculation * priceUpkWp;
@@ -116,19 +111,19 @@ const CalkulatorME = () => {
     setOneMonth(true);
     setTwoMonth(false);
     setYear(false);
-    setCalcE(12)
+    setCalcE(12);
   };
   const btnSetTwoMonth = () => {
     setOneMonth(false);
     setTwoMonth(true);
     setYear(false);
-    setCalcE(6)
+    setCalcE(6);
   };
   const btnSetYear = () => {
     setOneMonth(false);
     setTwoMonth(false);
     setYear(true);
-    setCalcE(1)
+    setCalcE(1);
   };
 
   return (
@@ -175,58 +170,68 @@ const CalkulatorME = () => {
           </div>
           <div>
             {firstStepShow ? (
-            <FirstStep
-              year={year}
-              twoMonth={twoMonth}
-              oneMonth={oneMonth}
-              btnSetOneMonth={btnSetOneMonth}
-              btnSetTwoMonth={btnSetTwoMonth}
-              btnSetYear={btnSetYear}
-              setPriceToPay={setPriceToPay}
-              priceToPay={priceToPay}
-              setPriceForkWp={setPriceForkWp}
-              priceForkWp={priceForkWp}
-              setShowPriceForkWp={setShowPriceForkWp}
-              showPriceForkWp={showPriceForkWp}
-              calculation={calculation}
-            />
-          ) : ""}
-          {secondStepShow ? (
-            <SecondStep
-              setShowUpPriceForkWp={setShowUpPriceForkWp}
-              showUpPriceForkWp={showUpPriceForkWp}
-              priceUpkWp={priceUpkWp}
-              setPriceUpkWp={setPriceUpkWp}
-              calculation={calculation}
-              calculation2023={calculation2023}
-              setActivePVME={setActivePVME}
-              setActivePV={setActivePV}
-              ActivePV={ActivePV}
-              ActivePVME={ActivePVME}
-              standard={standard}
-              setStandard={setStandard}
-              setNiepelnosprawnosc={setNiepelnosprawnosc}
-              niepelnosprawnosc={niepelnosprawnosc}
-              setKartaDuzejRodziny={setKartaDuzejRodziny}
-              kartaDuzejRodziny={kartaDuzejRodziny}
-              setGospodarstwo={setGospodarstwo}
-              gospodarstwo={gospodarstwo}
-              progWOneZl={progWOneZl}
-              progWOneKwp={progWOneKwp}
-              limit={limit}
-              resultForSecondPage={resultForSecondPage}
-              
-            />
-          ) : ""}
-          {ofertaStepShow ? <Oferta ActivePV={ActivePV} ActivePVME={ActivePVME} result={result} /> : ""}
+              <FirstStep
+                year={year}
+                twoMonth={twoMonth}
+                oneMonth={oneMonth}
+                btnSetOneMonth={btnSetOneMonth}
+                btnSetTwoMonth={btnSetTwoMonth}
+                btnSetYear={btnSetYear}
+                setPriceToPay={setPriceToPay}
+                priceToPay={priceToPay}
+                setPriceForkWp={setPriceForkWp}
+                priceForkWp={priceForkWp}
+                setShowPriceForkWp={setShowPriceForkWp}
+                showPriceForkWp={showPriceForkWp}
+                calculation={calculation}
+              />
+            ) : (
+              ""
+            )}
+            {secondStepShow ? (
+              <SecondStep
+                setShowUpPriceForkWp={setShowUpPriceForkWp}
+                showUpPriceForkWp={showUpPriceForkWp}
+                priceUpkWp={priceUpkWp}
+                setPriceUpkWp={setPriceUpkWp}
+                calculation={calculation}
+                calculation2023={calculation2023}
+                setActivePVME={setActivePVME}
+                setActivePV={setActivePV}
+                ActivePV={ActivePV}
+                ActivePVME={ActivePVME}
+                standard={standard}
+                setStandard={setStandard}
+                setNiepelnosprawnosc={setNiepelnosprawnosc}
+                niepelnosprawnosc={niepelnosprawnosc}
+                setKartaDuzejRodziny={setKartaDuzejRodziny}
+                kartaDuzejRodziny={kartaDuzejRodziny}
+                setGospodarstwo={setGospodarstwo}
+                gospodarstwo={gospodarstwo}
+                progWOneZl={progWOneZl}
+                progWOneKwp={progWOneKwp}
+                limit={limit}
+                resultForSecondPage={resultForSecondPage}
+              />
+            ) : (
+              ""
+            )}
+            {ofertaStepShow ? (
+              <Oferta
+                ActivePV={ActivePV}
+                ActivePVME={ActivePVME}
+                result={result}
+              />
+            ) : (
+              ""
+            )}
           </div>
-          
         </div>
         <div className="flex justify-between mt-5 ">
           {secondStepShow && ofertaStepShow ? (
             <button
               onClick={() => {
-                if ((currentPage === 2)) {
+                if (currentPage === 2) {
                   firstPage();
                 } else {
                   secondPage();
@@ -237,7 +242,9 @@ const CalkulatorME = () => {
               <i className="pr-2 fa-solid fa-circle-arrow-left"></i>Poprzedni
               krok
             </button>
-          ) : ""}
+          ) : (
+            ""
+          )}
           <button
             onClick={() => {
               if (currentPage === 2) {
@@ -246,7 +253,9 @@ const CalkulatorME = () => {
                 secondPage();
               }
             }}
-            className={`px-2 md:px-4 py-2 text-xs md:text-xl rounded-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 text-ocean-green-800 transition-all  ${currentPage == 1 ? "opacity-0": "opacity-100"}`}
+            className={`px-2 md:px-4 py-2 text-xs md:text-xl rounded-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 text-ocean-green-800 transition-all  ${
+              currentPage == 1 ? "opacity-0" : "opacity-100"
+            }`}
           >
             <i className="pr-2 fa-solid fa-circle-arrow-left"></i>Poprzedni krok
           </button>
@@ -259,7 +268,9 @@ const CalkulatorME = () => {
                 ofertaPage();
               }
             }}
-            className={`px-2 md:px-4 py-2 text-xs md:text-xl rounded-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 text-ocean-green-800 transition-all  ${currentPage == 3 || priceToPay == 0 ? "opacity-0": "opacity-100"}`}
+            className={`px-2 md:px-4 py-2 text-xs md:text-xl rounded-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 text-ocean-green-800 transition-all  ${
+              currentPage == 3 || priceToPay == 0 ? "opacity-0" : "opacity-100"
+            }`}
           >
             Przejdź dalej
             <i className="pl-2 fa-solid fa-circle-arrow-right"></i>

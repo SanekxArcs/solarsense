@@ -1,9 +1,9 @@
-import React, { useState } from "react";
 import Price from "./Price";
 import { motion } from "framer-motion";
+import useLocalStorageState from "../../../service/useLocalStorageState";
 
 const Pricing = ({ setTextToMessage }) => {
-  const [priceBtn, setPriceBtn] = useState(0);
+  const [priceBtn, setPriceBtn] = useLocalStorageState("priceBtn", 0);
 
   return (
     <>
@@ -14,28 +14,31 @@ const Pricing = ({ setTextToMessage }) => {
               <div className="w-full px-4">
                 <div className="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-10 text-ocean-green-100 ">
                   <motion.span
-                  initial={{ opacity: 0, }}
-               whileInView={{ opacity: 1 }}
-               transition={{ duration: 0.5, delay: 0.1 }}
-               viewport={{ once: true }} 
-                  className="block mb-2 text-lg font-semibold text-primary ">
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                    viewport={{ once: true }}
+                    className="block mb-2 text-lg font-semibold text-primary "
+                  >
                     Nasz cennik
                   </motion.span>
                   <motion.h2
-                  initial={{ opacity: 0, }}
-               whileInView={{ opacity: 1 }}
-               transition={{ duration: 0.5, delay: 0.2 }}
-               viewport={{ once: true }} 
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    viewport={{ once: true }}
                     className="text-dark mb-4 font-bold sm:text-4xl md:text-[40px] uppercase text-4xl
 lg:text-6xl"
                   >
                     Zestawy
                   </motion.h2>
                   <motion.p
-                  initial={{ opacity: 0, }}
-               whileInView={{ opacity: 1 }}
-               transition={{ duration: 0.5, delay: 0.3 }}
-               viewport={{ once: true }}  className="text-base text-body-color">
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                    viewport={{ once: true }}
+                    className="text-base text-body-color"
+                  >
                     Wybierz moc instalacji jaka ci jest najbliżej i dowiedź się
                     ceny na zestaw.
                   </motion.p>

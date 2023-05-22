@@ -1,4 +1,3 @@
-
 import {
   BarChart,
   Bar,
@@ -7,11 +6,10 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
-  ResponsiveContainer
 } from "recharts";
 
-export default function Chart({calculation, calculation2023}) {
-    const data = [
+export default function Chart({ calculation, calculation2023 }) {
+  const data = [
     {
       name: "Opłaty w 2022 r.",
       zl: calculation,
@@ -35,7 +33,7 @@ export default function Chart({calculation, calculation2023}) {
         top: 5,
         right: 5,
         left: 5,
-        bottom: 5
+        bottom: 5,
       }}
     >
       <CartesianGrid strokeDasharray="3 3" />

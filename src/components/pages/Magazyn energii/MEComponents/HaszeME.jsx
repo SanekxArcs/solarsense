@@ -1,7 +1,6 @@
 import React from "react";
-import mesun from '../../../../assets/me/magazyn-energii-4k-02-1-1.webp'
-import mepyl from '../../../../assets/me/Product_ME.webp'
-
+import mesun from "../../../../assets/me/magazyn-energii-4k-02-1-1.webp";
+import mepyl from "../../../../assets/me/Product_ME.webp";
 
 const HaszeME = () => {
   return (
@@ -13,7 +12,7 @@ const HaszeME = () => {
         <div className="grid md:grid-cols-2 pt-10">
           <div className="flex flex-col md:flex-row gap-5 pb-10">
             <div className="grid place-content-center">
-              <img src={mesun} alt="inverter huawei" />
+              <img loading="lazy" src={mesun} alt="inverter huawei" />
             </div>
             <div>
               <h3 className="text-xl">Magazyn energii US2000</h3>
@@ -32,13 +31,13 @@ const HaszeME = () => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row gap-5 pb-10">
-          <div className="grid place-content-center">
-              <img src={mepyl} alt="inverter pylotech" />
+            <div className="grid place-content-center">
+              <img loading="lazy" src={mepyl} alt="inverter pylotech" />
             </div>
             <div>
               <h3 className="text-xl">Magazyn energii FORCE H2</h3>
               <p className="text-sm">dla instalacji trójfazowych</p>
-              <p  className="pt-5 pb-2">Zalety:</p>
+              <p className="pt-5 pb-2">Zalety:</p>
               <ul className="pl-5 list-disc">
                 <li>modułowy design umożliwiający rozbudowę,</li>
                 <li>niezawodność i wydajność,</li>

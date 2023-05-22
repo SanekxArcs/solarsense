@@ -126,12 +126,13 @@ const Price = ({ priceBtn, setTextToMessage }) => {
     <>
       {mapChange[priceBtn].map((e) => {
         return (
-          <motion.div 
-          initial={{ opacity: 0, }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, }}
-          viewport={{ once: true }}
-           className="w-full px-4 transition-all duration-300 rounded-sm  md:w-1/2 lg:w-1/3 hover:scale-[1.02] items-stretch justify-stretch">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="w-full px-4 transition-all duration-300 rounded-sm  md:w-1/2 lg:w-1/3 hover:scale-[1.02] items-stretch justify-stretch"
+          >
             <div
               className={` ${
                 e.color ? "bg-ocean-green-200 " : "bg-ocean-green-50 "
@@ -226,10 +227,18 @@ const Price = ({ priceBtn, setTextToMessage }) => {
               </motion.a>
               <div>
                 <span className="absolute right-0 top-7 z-[-1]">
-                  <img src={elementforprice} alt="elementforprice" />
+                  <img
+                    loading="lazy"
+                    src={elementforprice}
+                    alt="elementforprice"
+                  />
                 </span>
                 <span className="absolute right-4 top-4 z-[-1]">
-                  <img src={elementforprice1} alt="elementforprice 1" />
+                  <img
+                    loading="lazy"
+                    src={elementforprice1}
+                    alt="elementforprice 1"
+                  />
                 </span>
               </div>
             </div>

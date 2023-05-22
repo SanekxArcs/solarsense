@@ -1,8 +1,8 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Accordion from "./Accordion";
 import TopImg from "../../service/com for style/TopImg";
 import FaqKatalogKarts from "./FaqKatalogKarts";
-import { motion } from "framer-motion";
 
 const FAQ = () => {
   const accordionData = [
@@ -63,9 +63,6 @@ const FAQ = () => {
                 Najczęściej <br />
                 <span className=" text-ocean-green-400">zadawane pytania</span>
               </h2>
-              {/* <p className="text-lg text-gray-500">
-    
-    </p> */}
             </div>
           </div>
         </section>

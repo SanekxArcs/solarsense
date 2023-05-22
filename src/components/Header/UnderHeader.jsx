@@ -2,11 +2,10 @@ import LaptopNav from "./LaptopNav";
 import MobileNav from "./MobileNav";
 
 const UnderHeader = ({ toggleMenu, isOpen }) => {
-
   return (
     <>
-    <LaptopNav />
-    <MobileNav isOpen={isOpen} toggleMenu={toggleMenu}/>
+      <LaptopNav />
+      <MobileNav isOpen={isOpen} toggleMenu={toggleMenu} />
     </>
   );
 };

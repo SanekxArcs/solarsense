@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { motion, useScroll, useSpring } from "framer-motion";
 
 import Header from "./Header/Header";
@@ -8,11 +8,13 @@ import Footer from "./Footer/Footer";
 import ScrollToTop from "./service/ScrollToTop";
 import Bottom from "./service/com for style/BottomImg";
 import LayoutAnimete from "./LayoutAnimete";
-
+import useLocalStorageState from "./service/useLocalStorageState";
 
 function App() {
- 
-  const [textToMessage, setTextToMessage] = useState("");
+  const [textToMessage, setTextToMessage] = useLocalStorageState(
+    "textToMessage",
+    ""
+  );
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenModal, setIsOpenModal] = useState(false);
   const { scrollYProgress } = useScroll();
@@ -38,7 +40,10 @@ function App() {
         <motion.div className="progress-bar z-[9999]" style={{ scaleX }} />
         <Header />
         <UnderHeader toggleMenu={toggleMenu} isOpen={isOpen} />
-        <LayoutAnimete textToMessage={textToMessage} setTextToMessage={setTextToMessage}/>
+        <LayoutAnimete
+          textToMessage={textToMessage}
+          setTextToMessage={setTextToMessage}
+        />
         <Bottom />
         <Footer toggleMOdal={toggleMOdal} isOpenModal={isOpenModal} />
       </Router>

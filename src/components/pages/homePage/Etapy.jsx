@@ -8,21 +8,23 @@ const Etapy = () => {
     >
       <div className="max-w-[1170px] mx-auto">
         <section className="text-center ">
-          <motion.h2 
-          initial={{ opacity: 0, y: 50}}
-          whileInView={{ opacity: 1, y: 0}}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          viewport={{ once: true }}
-           className="pb-10 text-3xl font-bold uppercase md:text-6xl ">
+          <motion.h2
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="pb-10 text-3xl font-bold uppercase md:text-6xl "
+          >
             Etapy współpracy
           </motion.h2>
           <div className="grid items-stretch gap-6 p-5 md:grid-cols-3 place-content-center lg:gap-x-6">
-            <motion.div 
-            initial={{ opacity: 0, y: 100}}
-            whileInView={{ opacity: 1, y: 0}}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950 ">
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950 "
+            >
               <i className="fa-solid fa-chalkboard-user text-5xl pb-2"></i>
               <h3 className="pb-2 text-lg font-medium">Kontakt</h3>
               <p className="text-sm">
@@ -36,11 +38,13 @@ const Etapy = () => {
               <i className="fa-solid fa-angle-down absolute left-1/2  bottom-0 translate-y-1/2 -translate-x-1/2 text-6xl text-ocean-green-50  md:hidden"></i>
             </motion.div>
 
-            <motion.div 
-            initial={{ opacity: 0, y: 100}}
-            whileInView={{ opacity: 1, y: 0}}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            viewport={{ once: true }} className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950">
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"
+            >
               <i className="fa-solid fa-file-signature text-5xl pb-2"></i>
               <h3 className="text-lg font-medium">Wstępna rozmowa i audyt</h3>
               <p className="text-sm">
@@ -56,11 +60,13 @@ const Etapy = () => {
               <i className="fa-solid fa-angle-down absolute left-1/2  bottom-0 translate-y-1/2 -translate-x-1/2 text-6xl text-ocean-green-50  md:hidden"></i>
             </motion.div>
 
-            <motion.div 
-            initial={{ opacity: 0, y: 100}}
-            whileInView={{ opacity: 1, y: 0}}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            viewport={{ once: true }} className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950">
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"
+            >
               <i className="fa-solid fa-file-signature text-5xl pb-2"></i>
               <h3 className="text-lg font-medium">Projekt i oferta</h3>
               <p className="text-sm">
@@ -75,11 +81,13 @@ const Etapy = () => {
               <i className="fa-solid fa-angle-down absolute left-1/2  bottom-0 translate-y-1/2 -translate-x-1/2 text-6xl text-ocean-green-50 "></i>
             </motion.div>
 
-            <motion.div 
-            initial={{ opacity: 0, y: 100}}
-            whileInView={{ opacity: 1, y: 0}}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            viewport={{ once: true }} className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950">
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"
+            >
               <i className="fa-regular fa-handshake text-5xl pb-2"></i>
               <h3 className="text-lg font-medium">
                 Umowa i przygotowanie materiałów
@@ -96,11 +104,13 @@ const Etapy = () => {
               <i className="fa-solid fa-angle-down absolute left-1/2  bottom-0 translate-y-1/2 -translate-x-1/2 text-6xl text-ocean-green-50  md:hidden"></i>
             </motion.div>
 
-            <motion.div 
-            initial={{ opacity: 0, y: 100}}
-            whileInView={{ opacity: 1, y: 0}}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            viewport={{ once: true }} className="relative p-10 transition-all duration-500 rounded-sm md:col-start-2 md:row-start-2 lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950">
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="relative p-10 transition-all duration-500 rounded-sm md:col-start-2 md:row-start-2 lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"
+            >
               <i className="fa-solid fa-screwdriver-wrench text-5xl pb-2"></i>
               <h3 className="text-lg font-medium">Montaż</h3>
               <p className="text-sm">
@@ -115,11 +125,13 @@ const Etapy = () => {
               <i className="fa-solid fa-angle-down absolute left-1/2  bottom-0 translate-y-1/2 -translate-x-1/2 text-6xl text-ocean-green-50  md:hidden"></i>
             </motion.div>
 
-            <motion.div 
-            initial={{ opacity: 0, y: 100}}
-            whileInView={{ opacity: 1, y: 0}}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            viewport={{ once: true }} className="relative p-10 transition-all duration-500 rounded-sm md:col-start-1 md:row-start-2 lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950">
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="relative p-10 transition-all duration-500 rounded-sm md:col-start-1 md:row-start-2 lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"
+            >
               <i className="fa-solid fa-handshake-simple text-5xl pb-2"></i>
               <h3 className="text-lg font-medium">Odbiór instalacji</h3>
               <p className="text-sm">

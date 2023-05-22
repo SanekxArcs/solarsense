@@ -12,24 +12,28 @@ import Opinia from "./Opinia";
 import TopImg from "../../service/com for style/TopImg";
 import BottomImg from "../../service/com for style/BottomImg";
 
-function HomePage({setTextToMessage, textToMessage}) {
+function HomePage({ setTextToMessage, textToMessage }) {
   return (
     <motion.div
-    initial={{opacity: 0}}
-    animate={{opacity: 1}}
-    exit={{opacity: 0}}>
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Hero />
-      <Partners/>
+      <Partners />
       <DlaCzego />
-      <BottomImg/>
+      <BottomImg />
       <Etapy />
-      <TopImg/>
+      <TopImg />
       <Galeria />
-      <BottomImg/>
-      <Pricing setTextToMessage={setTextToMessage}/>
-      <Opinia/>
-      <TopImg/>
-      <Contact setTextToMessage={setTextToMessage} textToMessage={textToMessage}/>
+      <BottomImg />
+      <Pricing setTextToMessage={setTextToMessage} />
+      <Opinia />
+      <TopImg />
+      <Contact
+        setTextToMessage={setTextToMessage}
+        textToMessage={textToMessage}
+      />
     </motion.div>
   );
 }

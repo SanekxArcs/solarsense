@@ -32,6 +32,7 @@ const Serwise = () => {
               <div className="flex flex-wrap items-center">
                 <div className="hidden w-full grow-0 shrink-0 basis-auto lg:flex lg:w-6/12 xl:w-4/12">
                   <img
+                    loading="lazy"
                     src={photoSerwis}
                     alt="Trendy Pants and Shoes"
                     className="w-full rounded-t-sm lg:rounded-tr-none lg:rounded-bl-sm"
