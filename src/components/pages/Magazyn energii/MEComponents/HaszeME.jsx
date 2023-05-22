@@ -13,7 +13,7 @@ const HaszeME = () => {
         <div className="grid md:grid-cols-2 pt-10">
           <div className="flex flex-col md:flex-row gap-5 pb-10">
             <div className="grid place-content-center">
-              <img src={mesun} alt="" />
+              <img src={mesun} alt="inverter huawei" />
             </div>
             <div>
               <h3 className="text-xl">Magazyn energii US2000</h3>
@@ -33,7 +33,7 @@ const HaszeME = () => {
           </div>
           <div className="flex flex-col md:flex-row gap-5 pb-10">
           <div className="grid place-content-center">
-              <img src={mepyl} alt="" />
+              <img src={mepyl} alt="inverter pylotech" />
             </div>
             <div>
               <h3 className="text-xl">Magazyn energii FORCE H2</h3>

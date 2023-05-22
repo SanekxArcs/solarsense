@@ -14,7 +14,7 @@ const HeroME = () => {
                 </a>
                 </div>
             <div className='order-first pb-5' >
-                <img className='mix-blend-multiply' src={mehuawei} alt="" />
+                <img className='mix-blend-multiply' src={mehuawei} alt="pylotech" />
             </div>
         </div>
       </section>

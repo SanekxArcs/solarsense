@@ -1,5 +1,5 @@
 import WhyWe from "./WhyWe";
-import svgBorderImg from "../../../../assets/slider-dash-primary-mint.svg";
+import svgBorderImg from "../../../../assets/Svgs/slider-dash-primary-mint.svg";
 import { motion } from "framer-motion";
 
 function DlaCzego() {

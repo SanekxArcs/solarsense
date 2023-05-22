@@ -8,7 +8,7 @@ const MojPrad = () => {
         <section className='py-20 text-center md:text-left max-w-[1170px] mx-auto px-6'>
     <div className='grid md:grid-cols-3'>
         <div className='col-span-2 '>
-            <img src="" alt="" />
+            <img src="" alt="icon money" />
             <h2 className='mb-5 text-4xl font-bold tracking-tight md:text-6xl xl:text-7xl text-ocean-green-300'>Mój prąd 5.0</h2>
             <p>dofinansowanie do <b>23 000 zł</b>  </p>
             <p className='pt-5 md:text-xl'>
@@ -17,7 +17,7 @@ const MojPrad = () => {
             <p className='pt-5 text-xl '><b>Ile wynosi dotacja w Mój Prąd 5.0?</b> </p>
         </div>
         <div className='hidden md:flex items-center justify-center'>
-            <img src={monejPanel} alt="" />
+            <img src={monejPanel} alt="ico money" />
         </div>
     </div>
     <div className='grid md:grid-cols-3 gap-10 pt-20 place-content-center'>

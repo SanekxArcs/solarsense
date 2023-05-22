@@ -25,7 +25,7 @@ const GlowneZalety = () => {
         </div>
         <div className=' p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200'>
             <div className='flex gap-2 items-center'>
-                <img src={Bezpieczenstwo} alt="" />
+                <img src={Bezpieczenstwo} alt="Bezpieczenstwo" />
                 <h3 className='font-medium'>Bezpieczeństwo</h3>
             </div>
             <p>
@@ -34,7 +34,7 @@ const GlowneZalety = () => {
         </div>
         <div className=' p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200'>
             <div className='flex gap-2 items-center'>
-                <img src={Nowoczesny} alt="" />
+                <img src={Nowoczesny} alt="Nowoczesny" />
                 <h3 className='font-medium'>
                     Nowoczesny design
                 </h3>
@@ -45,7 +45,7 @@ const GlowneZalety = () => {
         </div>
         <div className=' p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200'>
             <div className='flex gap-2 items-center'>
-                <img src={mocy} alt="" />
+                <img src={mocy} alt="Jeszcze więcej mocy" />
                 <h3 className='font-medium'>Jeszcze więcej mocy</h3>
             </div>
             <p>
@@ -54,7 +54,7 @@ const GlowneZalety = () => {
         </div>
         <div className=' p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200'>
             <div className='flex gap-2 items-center'>
-                <img src={Długa} alt="" />
+                <img src={Długa} alt="Długa żywotność" />
                 <h3 className='font-medium'>Długa żywotność</h3>
             </div>
             <p>

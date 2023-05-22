@@ -12,19 +12,19 @@ const JakDzialaME = () => {
     <h2 className='mb-12 text-2xl font-bold text-center uppercase md:text-5xl text-ocean-green-50'>Jak działa hybrydowa instalacja fotowoltaiczna z magazynem energii?</h2>
     <div className='grid  md:grid-cols-2 lg:grid-cols-4 gap-10'>
         <div className='flex flex-col justify-start items-center'>
-            <img src={img1} alt="" />
+            <img src={img1} alt="icon headphones" />
             <p className='text-base '>W przypadku mikroinstalacji, generowany prąd trafia do inwertera znajdującego się w domu.</p>
         </div>
         <div className='flex flex-col justify-start items-center'>
-            <img src={img2} alt="" />
+            <img src={img2} alt="icon shield" />
             <p className='text-base '>Urządzenia elektryczne w domu zasilane są w pierwszej kolejności z prądu produkowanego przez mikroinstalację, co pozwala na zmniejszenie zużycia prądu z sieci energetycznej.</p>
         </div>
         <div className='flex flex-col justify-start items-center'>
-            <img src={img3} alt="" />
+            <img src={img3} alt="icon delivery" />
             <p className='text-base '>Nadmiar energii, który nie jest wykorzystywany w czasie rzeczywistym, zostaje przekierowany do magazynu energii, gdzie jest magazynowany. Ta energia jest później używana, kiedy produkcja energii jest mniejsza niż zapotrzebowanie w domu, zwłaszcza po zachodzie słońca.</p>
         </div>
         <div className='flex flex-col justify-start items-center'>
-            <img src={img4} alt="" />
+            <img src={img4} alt="icon hand with dollar" />
             <p className='text-base '>Jeśli po zużyciu energii z magazynu wciąż występuje nadmiar energii, to wtedy taki nadmiar jest przekazywany do sieci energetycznej. W takiej sytuacji, jeśli energia w magazynie zostanie całkowicie wykorzystana, dom wciąż będzie miał zapewnione zasilanie z sieci energetycznej.</p>
         </div>
     </div>

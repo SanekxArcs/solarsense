@@ -1,7 +1,5 @@
 import React from 'react'
 import { motion } from "framer-motion";
-import TopImg from './com for style/TopImg';
-import BottomImg from './com for style/BottomImg';
 
 export const Loading = () => {
   return (

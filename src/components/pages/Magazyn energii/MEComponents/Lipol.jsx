@@ -9,11 +9,11 @@ const Lipol = () => {
 <section className='py-20 text-center md:text-left max-w-[1170px] mx-auto px-6 '>
     <div className='grid md:grid-cols-2'>
         <div className='grid place-content-center'>
-            <img className=' md:scale-150' src={Pylotech} alt="" />
+            <img className=' md:scale-150' src={Pylotech} alt="backup pylotech" />
         </div>
         <div >
             <div className='flex gap-5 items-center'>
-                <img src={icolifepo} alt="" />
+                <img src={icolifepo} alt="icon battery" />
                 <h3 className='mt-5 text-2xl md:text-4xl font-bold tracking-tight mb-2'>Technologia LiFePO4</h3>
             </div>
             

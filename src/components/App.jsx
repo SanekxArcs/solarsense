@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom";
 import { motion, useScroll, useSpring } from "framer-motion";
 
 import Header from "./Header/Header";

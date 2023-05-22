@@ -1,11 +1,11 @@
 
-import pic1 from "../../../assets/gal1.webp";
-import pic2 from "../../../assets/gal2.webp";
-import pic3 from "../../../assets/ga3.webp";
-import pic4 from "../../../assets/gal4.webp";
-import pic5 from "../../../assets/gal5.webp";
-import pic6 from "../../../assets/gal6.webp";
-import svgRew from "../../../assets/wave-haikei (4).svg";
+import pic1 from "../../../assets/Home/gal1.webp";
+import pic2 from "../../../assets/Home/gal2.webp";
+import pic3 from "../../../assets/Home/ga3.webp";
+import pic4 from "../../../assets/Home/gal4.webp";
+import pic5 from "../../../assets/Home/gal5.webp";
+import pic6 from "../../../assets/Home/gal6.webp";
+import svgRew from "../../../assets/Svgs/bottom-white.svg";
 import { motion } from "framer-motion";
 
 function Galeria() {

@@ -1,7 +1,7 @@
-import openie1 from "../../../assets/opinie1.webp";
-import openie2 from "../../../assets/opinie2.webp";
-import openie3 from "../../../assets/opinie3.webp";
-import svgRew from "../../../assets/wave-haikei (4).svg";
+import openie1 from "../../../assets/Home/opinie1.webp";
+import openie2 from "../../../assets/Home/opinie2.webp";
+import openie3 from "../../../assets/Home/opinie3.webp";
+import svgRew from "../../../assets/Svgs/bottom-white.svg";
 import { motion } from "framer-motion";
 
 const opiniaData = [

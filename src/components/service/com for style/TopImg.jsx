@@ -1,5 +1,5 @@
 import React from 'react'
-import topImg from "../../../assets/wave-haikei.svg";
+import topImg from "../../../assets/Svgs/top-black.svg";
 const TopImg = () => {
   return (
     <div className=' relative'>

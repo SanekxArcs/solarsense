@@ -1,6 +1,6 @@
 import React from "react";
-import elementforprice from "../../../../assets/elementforprice.svg";
-import elementforprice1 from "../../../../assets/elementforprice1.svg";
+import elementforprice from "../../../../assets/Svgs/elementforprice.svg";
+import elementforprice1 from "../../../../assets/Svgs/elementforprice1.svg";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Price = ({ priceBtn, setTextToMessage }) => {
@@ -226,10 +226,10 @@ const Price = ({ priceBtn, setTextToMessage }) => {
               </motion.a>
               <div>
                 <span className="absolute right-0 top-7 z-[-1]">
-                  <img src={elementforprice} alt="" />
+                  <img src={elementforprice} alt="elementforprice" />
                 </span>
                 <span className="absolute right-4 top-4 z-[-1]">
-                  <img src={elementforprice1} alt="" />
+                  <img src={elementforprice1} alt="elementforprice 1" />
                 </span>
               </div>
             </div>

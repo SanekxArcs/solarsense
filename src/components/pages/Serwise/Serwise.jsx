@@ -1,4 +1,4 @@
-import photoSerwis from "../../../assets/serwis.webp";
+import photoSerwis from "../../../assets/Servise/serwis.webp";
 import BottomImg from "../../service/com for style/BottomImg";
 import TopImg from "../../service/com for style/TopImg";
 import Contact from "../homePage/Contact";
