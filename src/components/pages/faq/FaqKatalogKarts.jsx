@@ -52,7 +52,7 @@ const FaqKatalogKarts = () => {
     <>
       <div className="flex flex-col justify-center max-w-[1170px] mx-auto mb-32 select-none">
         <div>
-          <h3 className="mb-10 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl text-center">
+          <h3 className="mb-10 text-5xl font-bold tracking-tight text-center md:text-6xl xl:text-7xl">
             Karty katalogowe produktów
           </h3>
         </div>
@@ -60,21 +60,24 @@ const FaqKatalogKarts = () => {
           <h4 className="pb-5 text-xl font-semibold text-center">
             Falowniki FoxESS
           </h4>
-          <div className="flex justify-between py-2 px-4 bg-ocean-green-300 rounded-sm shadow font-medium">
+          <div className="flex justify-between px-4 py-2 font-medium rounded-sm shadow bg-ocean-green-300">
             <p>Nazwa</p>
             <p>Link na PDF</p>
           </div>
-          {data.map((e) => {
+          {data.map((e, index) => {
             return (
-              <div className="flex flex-wrap justify-between py-2 px-4 bg-white rounded-sm shadow">
+              <div
+                key={index}
+                className="flex flex-wrap justify-between px-4 py-2 bg-white rounded-sm shadow"
+              >
                 <p>{e.name}</p>
                 <a
-                  className="hover:text-ocean-green-400 transition-colors "
+                  className="transition-colors hover:text-ocean-green-400 "
                   href={e.link}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa-solid fa-file-pdf pr-2"></i>KARTA KATALOGOWA
+                  <i className="pr-2 fa-solid fa-file-pdf"></i>KARTA KATALOGOWA
                 </a>
               </div>
             );

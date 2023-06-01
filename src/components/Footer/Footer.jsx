@@ -6,7 +6,7 @@ import Privacy from "./Privacy";
 const Footer = ({ toggleMOdal, isOpenModal }) => {
   const setActive = ({ isActive }) => (isActive ? "text-ocean-green-400" : "");
   return (
-    <motion.Footer className="text-center bg-port-gore-950 text-ocean-green-50 lg:text-left">
+    <motion.footer className="text-center bg-port-gore-950 text-ocean-green-50 lg:text-left">
       <div>
         <motion.div
           initial={{ opacity: 0, y: 150 }}
@@ -166,7 +166,7 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
           </a>
         </div>
       </div>
-    </motion.Footer>
+    </motion.footer>
   );
 };
 

@@ -124,9 +124,10 @@ const Price = ({ priceBtn, setTextToMessage }) => {
   const mapChange = [priceData4, priceData6, priceData10];
   return (
     <>
-      {mapChange[priceBtn].map((e) => {
+      {mapChange[priceBtn].map((e, index) => {
         return (
           <motion.div
+            key={index}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5 }}

@@ -27,9 +27,12 @@ const WhyWe = () => {
   return (
     <div className="w-full col-span-2 px-3 mb-6 grow-0 shrink-0 basis-auto md:mb-0 text-port-gore-950">
       <div className="flex flex-wrap">
-        {dataWhyWe.map((item) => {
+        {dataWhyWe.map((item, index) => {
           return (
-            <div className="w-full px-3 mb-12 grow-0 shrink-0 basis-auto lg:w-6/12">
+            <div
+              key={index}
+              className="w-full px-3 mb-12 grow-0 shrink-0 basis-auto lg:w-6/12"
+            >
               <div className="flex transition-all duration-300 hover:-translate-y-1">
                 <div className="shrink-0">
                   <motion.div

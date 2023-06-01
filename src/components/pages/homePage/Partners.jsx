@@ -25,9 +25,9 @@ const Partners = () => {
     <>
       <section className="mt-10 text-center text-gray-800">
         <div className="grid gap-6 px-6 grid-cols-2 lg:grid-cols-8 items-center">
-          {data.map((e) => {
+          {data.map((e, index) => {
             return (
-              <div className="mx-auto">
+              <div key={index} className="mx-auto">
                 <motion.img
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}

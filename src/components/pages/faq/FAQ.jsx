@@ -51,12 +51,7 @@ const FAQ = () => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        <section
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="py-24 text-center  text-ocean-green-50 bg-port-gore-950 select-none"
-        >
+        <section className="py-24 text-center select-none text-ocean-green-50 bg-port-gore-950">
           <div className="flex justify-center">
             <div className="max-w-[1000px]">
               <h2 className="mb-5 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
@@ -68,11 +63,21 @@ const FAQ = () => {
         </section>
         <TopImg />
         <div className="max-w-[1170px] px-6 mx-auto my-32">
-          <div className="mb-20 flex gap-2 flex-col">
-            {accordionData.map(({ title, content }) => (
-              <Accordion title={title} content={content} />
+          <div className="flex flex-col gap-2 mb-20">
+            {accordionData.map(({ title, content, index }) => (
+              <Accordion key={index} title={title} content={content} />
             ))}
           </div>
+          <p class="text-center text-gray-600 textbase mt-9 ">
+            Nie znalazłeś odpowiedzi, której szukasz?
+            <a
+              href="/#contact"
+              title="kontakt"
+              class="pl-2 font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline"
+            >
+              Skontaktuj się z naszym wsparciem
+            </a>
+          </p>
         </div>
       </motion.div>
 

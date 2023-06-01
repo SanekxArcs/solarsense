@@ -1,31 +1,49 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const Accordion = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="overflow-hidden border rounded-sm bg-white shadow transition-all  select-none">
-      <div
-        className={`${
-          isActive ? "border-b border-1 border-ocean-green-700" : "border-0"
-        } transition-all duration-1000 flex flex-wrap items-center justify-between px-4 py-2`}
-        onClick={() => setIsActive(!isActive)}
+    <>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
+        className="transition-all duration-200 bg-white border border-gray-200 cursor-pointer select-none hover:shadow-lg hover:bg-gray-50"
       >
-        <div className="text-base font-medium  md:text-2xl">{title}</div>
-        <div className=" text-ocean-green-700 font-medium transition-transform duration-1000 ">
-          {isActive ? "Zwiń" : "Rozwiń"}
-        </div>
-      </div>
-      <div
-        className={`${
-          isActive ? "h-full py-4" : "h-0 py-0"
-        } transition-all duration-1000 px-4 overflow-hidden`}
-      >
-        <span className={`${isActive ? "animate-fadeInDown delay-300" : ""}`}>
-          {content}
-        </span>{" "}
-      </div>
-    </div>
+        <button
+          onClick={() => setIsActive(!isActive)}
+          type="button"
+          className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+        >
+          <span className="flex text-lg font-semibold text-black">{title}</span>
+          <svg
+            className={`${
+              isActive ? "rotate-0" : "rotate-180"
+            } w-6 h-6 text-gray-400 transition-all`}
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+        <motion.div
+          className={`${
+            isActive ? " max-h-96  sm:pb-6" : "max-h-0 overflow-hidden "
+          } transition-all duration-300 px-4 sm:px-6`}
+        >
+          <p>{content}</p>
+        </motion.div>
+      </motion.div>
+    </>
   );
 };
 

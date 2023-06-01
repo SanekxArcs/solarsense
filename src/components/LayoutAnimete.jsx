@@ -14,9 +14,9 @@ const SerwisePageLazy = lazy(() => import("./pages/Serwise/Serwise"));
 const MagazynEnergiiPageLazy = lazy(() =>
   import("./pages/Magazyn energii/MagazynEnergii")
 );
-const FinansowaniePageLazy = lazy(() =>
-  import("./pages/Finansowanie/Finansowanie")
-);
+// const FinansowaniePageLazy = lazy(() =>
+//   import("./pages/Finansowanie/Finansowanie")
+// );
 
 const LayoutAnimete = ({ setTextToMessage, textToMessage }) => {
   const location = useLocation();
@@ -43,14 +43,14 @@ const LayoutAnimete = ({ setTextToMessage, textToMessage }) => {
               </Suspense>
             }
           />
-          <Route
+          {/* <Route
             path="/finansowanie"
             element={
               <Suspense fallback={<Loading />}>
                 <FinansowaniePageLazy />
               </Suspense>
             }
-          />
+          /> */}
           <Route
             path="/service"
             element={

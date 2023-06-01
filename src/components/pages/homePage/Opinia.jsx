@@ -54,9 +54,9 @@ function Opinia() {
           Nasze najlepsze recenzje
         </motion.h2>
         <div className="grid items-stretch px-2 place-content-end lg:grid-cols-3 gap-x-6 lg:gap-x-12">
-          {opiniaData.map((item) => {
+          {opiniaData.map((item, index) => {
             return (
-              <div className="grid items-stretch mb-6 transition-all duration-300 rounded-sm shadow-lg lg:mb-0 bg-ocean-green-50  hover:-translate-y-2 hover:shadow-xl hover:shadow-ocean-green-400">
+              <div key={index} className="grid items-stretch mb-6 transition-all duration-300 rounded-sm shadow-lg lg:mb-0 bg-ocean-green-50  hover:-translate-y-2 hover:shadow-xl hover:shadow-ocean-green-400">
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
