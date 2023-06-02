@@ -7,16 +7,10 @@ import { AnimatePresence } from "framer-motion";
 const HomePageLazy = lazy(() => import("./pages/homePage/HomePage"));
 const FAQPageLazy = lazy(() => import("./pages/faq/FAQ"));
 const Error404PageLazy = lazy(() => import("./pages/Errors/404"));
-const ThanksForContactPageLazy = lazy(() =>
-  import("./pages/Thanks/ThanksForContact")
-);
-const SerwisePageLazy = lazy(() => import("./pages/Serwise/Serwise"));
-const MagazynEnergiiPageLazy = lazy(() =>
-  import("./pages/Magazyn energii/MagazynEnergii")
-);
-// const FinansowaniePageLazy = lazy(() =>
-//   import("./pages/Finansowanie/Finansowanie")
-// );
+const ThanksForContactPageLazy = lazy(() =>import("./pages/Thanks/ThanksForContact"));
+const SerwisePageLazy = lazy(() => import("./pages/Serwise/ServisePage"));
+const MagazynEnergiiPageLazy = lazy(() =>import("./pages/Magazyn energii/MagazynEnergii"));
+
 
 const LayoutAnimete = ({ setTextToMessage, textToMessage }) => {
   const location = useLocation();
@@ -43,14 +37,6 @@ const LayoutAnimete = ({ setTextToMessage, textToMessage }) => {
               </Suspense>
             }
           />
-          {/* <Route
-            path="/finansowanie"
-            element={
-              <Suspense fallback={<Loading />}>
-                <FinansowaniePageLazy />
-              </Suspense>
-            }
-          /> */}
           <Route
             path="/service"
             element={
