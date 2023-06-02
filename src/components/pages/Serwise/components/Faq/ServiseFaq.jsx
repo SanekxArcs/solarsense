@@ -2,19 +2,54 @@ import { motion } from "framer-motion";
 import Accordion from "./Accordion";
 
 const ServiseFaq = () => {
+  const text1 = () => {
+    return (
+      <p>
+        <b>
+          Pakiety Inspekcji
+          <span className=" text-ocean-green-700">Solar Sense</span> to
+          najefektywniejszy sposób na regularne przeglądy i zapewnienie stałej,
+          konkurencyjnej ceny przez nawet 3 lata.
+        </b>
+        <br />
+        Po zakupie pakietu 1, 2 lub 3 inspekcji serwisowych, Twój system
+        fotowoltaiczny będzie objęty profesjonalną opieką ekspertów
+        <span className="font-medium text-ocean-green-700">Solar Sense</span>. Jeśli masz
+        jakiekolwiek wątpliwości dotyczące działania Twojego systemu, skontaktuj
+        się z naszą infolinią i umów się na wizytę naszych techników w dogodnym
+        dla Ciebie terminie.
+        <br />
+        Przed rozpoczęciem sezonu 2023 przygotowaliśmy specjalne promocyjne
+        pakiety inspekcji okresowych. Tylko teraz, kupując 2-letni pakiet,
+        otrzymasz aż 15% rabatu na każdą z dwóch przeglądanych inspekcji. W
+        przypadku wyboru opcji 3-letniej, nasi technicy odwiedzą Cię trzy razy w
+        ustalonych terminach, a Ty zaoszczędzisz aż 20% w porównaniu do
+        regularnej ceny, płacąc z góry.
+        <br /> <b>W ramach wybranego pakietu otrzymasz:</b>
+        <ul className="list-disc list-inside">
+          <li>
+            W pakiecie rocznym - przeprowadzimy 1 inspekcję eksploatacyjną
+            Twojego systemu PV w umówionym terminie.
+          </li>
+          <li>
+            W pakiecie 2-letnim - przeprowadzimy 2 inspekcje eksploatacyjne
+            Twojego systemu PV w umówionych terminach.
+          </li>
+          <li>
+            W pakiecie 3-letnim - przeprowadzimy 3 inspekcje eksploatacyjne
+            Twojego systemu PV w umówionych terminach.
+          </li>
+        </ul>
+        Zalecamy regularne przeglądy systemów fotowoltaicznych raz w roku,
+        najlepiej na wiosnę, przed rozpoczęciem okresu o najwyższej produkcji
+        energii elektrycznej.
+      </p>
+    );
+  };
   const accordionData = [
     {
       title: "Jak działa pakiet przeglądów serwisowych fotowoltaiki?",
-      content: `Pakiety Przeglądów Fotowoltaiki BiomarCARE to najlepszy sposób na regularne korzystanie z przeglądów i pewność stałej niskiej ceny w okresie nawet 3 lat. Po zakupie pakietu przeglądów serwisowych Basic, Premium lub Biznes, Twoja instalacja fotowoltaiczna zostaje objęta opieką serwisową specjalistów Biomar. Gdy tylko masz wątpliwości, czy Twoja instalacja pracuje właściwie - skontaktuj się z naszą infolinią i umów wizytę serwisantów w odpowiednim dla siebie czasie.
-
-Specjalnie przed sezonem 2023 przygotowaliśmy promocyjne pakiety przeglądów okresowych. Tylko teraz kupując pakiet 2 letni - otrzymasz dwa przeglądy okresowe z 15% rabatem na każdy z nich. Przy zamówieniu opcji na 3 lata - nasi serwisanci przyjadą do Ciebie trzykrotnie w ustalonych terminach, a Ty zaoszczędzisz aż 20% względem ceny regularnej, dzięki płatności "z góry".
-
-W ramach zakupionego pakietu otrzymasz:
-
-W pakiecie rocznym - serwis wykona 1 przegląd eksploatacyjny twojej instalacji PV w umówionym terminie.
-W pakiecie 2-letnim - serwis wykona 2 przeglądy eksploatacyjne instalacji PV w umówionych terminach.
-W pakiecie 3-letnim - serwis wykona 3 przeglądy eksploatacyjne instalacji PV w umówionych terminach.
-Zaleca się wykonywanie przeglądów okresowych fotowoltaiki raz w roku, najlepiej wczesną wiosną, tuż przed początkiem okresu o największej produkcji energii elektrycznej. `,
+      content: text1(),
     },
     {
       title: "Na czym polega przegląd instalacji fotowoltaicznej?",

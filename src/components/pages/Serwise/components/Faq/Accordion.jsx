@@ -40,7 +40,7 @@ const Accordion = ({ title, content }) => {
             isActive ? " max-h-96  sm:pb-6" : "max-h-0 overflow-hidden "
           } transition-all duration-300 px-4 sm:px-6`}
         >
-          <p>{content}</p>
+          <div className="text-start">{content}</div>
         </motion.div>
       </motion.div>
     </>
