@@ -5,11 +5,11 @@ const AdditionalServices = () => {
   return (
     <section className="max-w-[1170px] px-6 mx-auto my-32">
       <img
-        className="max-w-[1170px] px-6 mx-auto my-14 border-b-2 pb-5 border-ocean-green-400"
+        className="w-[600px] md:w-full md:max-w-[1170px] px-6 mx-auto my-14 border-b-2 pb-5 border-ocean-green-400"
         src={uziom}
         alt=""
       />
-      <h3 className="mb-8 text-5xl font-bold tracking-tight text-center ">
+      <h3 className="mb-8 text-3xl font-bold tracking-tight text-center md:text-5xl ">
         Dodatkowe
         <span className="pl-2 text-ocean-green-400">Uslugi</span>
       </h3>
@@ -18,23 +18,19 @@ const AdditionalServices = () => {
           <p>Rodzaj</p>
           <p>Cena brutto</p>
         </div>
-        <div className="flex flex-wrap justify-center px-4 py-2 bg-white rounded-sm ring-1 ring-ocean-green-700 md:justify-between">
+        <div className="flex justify-between gap-2 px-4 py-2 bg-white rounded-sm ring-1 ring-ocean-green-700 md:justify-between">
           <p>Wymiana paneli</p>
           <p>0d 250 zł</p>
         </div>
-        <div className="flex flex-wrap justify-center px-4 py-2 bg-white rounded-sm ring-1 ring-ocean-green-700 md:justify-between">
+        <div className="flex justify-between gap-2 px-4 py-2 bg-white rounded-sm ring-1 ring-ocean-green-700 md:justify-between">
           <p>Mycie paneli</p>
           <p>od 350 zł</p>
         </div>
-        <div className="flex flex-wrap justify-center px-4 py-2 bg-white rounded-sm ring-1 ring-ocean-green-700 md:justify-between">
+        <div className="flex justify-between gap-2 px-4 py-2 bg-white rounded-sm ring-1 ring-ocean-green-700 md:justify-between">
           <p>Wymiana falownika</p>
           <p>800 zł</p>
         </div>
-        <div className="flex flex-wrap justify-center px-4 py-2 bg-white rounded-sm ring-1 ring-ocean-green-700 md:justify-between">
-          <p>Badanie kamerą termowizyjną paneli</p>
-          <p>1099 zł</p>
-        </div>
-        <div className="flex flex-wrap justify-center px-4 py-2 bg-white rounded-sm ring-1 ring-ocean-green-700 md:justify-between">
+        <div className="flex justify-between gap-2 px-4 py-2 bg-white rounded-sm ring-1 ring-ocean-green-700 md:justify-between">
           <p>Pozostałe usługi / z 1 h</p>
           <p>356 zł</p>
         </div>

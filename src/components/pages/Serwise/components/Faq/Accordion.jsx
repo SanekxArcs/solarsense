@@ -36,8 +36,9 @@ const Accordion = ({ title, content }) => {
           </svg>
         </button>
         <motion.div
+          onClick={() => setIsActive(!isActive)}
           className={`${
-            isActive ? " max-h-96  sm:pb-6" : "max-h-0 overflow-hidden "
+            isActive ? " max-h-[9999px]  sm:pb-6" : "max-h-0 overflow-hidden "
           } transition-all duration-300 px-4 sm:px-6`}
         >
           <div className="text-start">{content}</div>

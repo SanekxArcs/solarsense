@@ -2,21 +2,23 @@ import React from "react";
 
 const ListComponent = ({ data }) => {
   return (
-    <div className="p-10 rounded-md bg-port-gore-900">
-      <div className="flex justify-end gap-5 min-w-[300px] text-2xl">
-        <p>Basic</p>
-        <p>Premium</p>
-        <p>Biznes</p>
+    <div className="relative p-5 text-center rounded-md lg:text-start lg:p-10 bg-port-gore-900">
+      <div className="bg-port-gore-900 sticky py-2 top-16 flex justify-between lg:gap-16 lg:justify-end  lg:min-w-[400px] text-lg">
+        <p>Wariant I</p>
+        <p>Wariant II</p>
+        <p>Wariant III</p>
       </div>
       {data.map((item) => {
         return (
           <div className="">
-            <div className="px-3 text-xl font-medium bg-port-gore-800">{item.name}</div>
+            <div className="px-3 text-xl font-medium bg-port-gore-800">
+              {item.name}
+            </div>
             {item.items.map((item) => {
               return (
-                <div className="flex justify-between py-1 pl-3">
+                <div className="flex flex-col justify-between py-1 pl-3 lg:flex-row">
                   <div className="">{item.variant}</div>
-                  <div className="flex items-center justify-between px-5 gap-5 w-[300px]">
+                  <div className="flex  items-center justify-between px-12 gap-5 lg:w-[400px]">
                     <div className="grid place-items-center">
                       {item.one ? (
                         <svg

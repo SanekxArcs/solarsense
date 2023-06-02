@@ -4,7 +4,7 @@ import Card from './Card'
 const Prices = () => {
 const data = [
   {
-    name: "Opcja 1",
+    name: "Wariant I",
     priceOne: "900",
     priceTwo: "785",
     priceThree: "653",
@@ -17,7 +17,7 @@ const data = [
     ],
   },
   {
-    name: "Opcja 2",
+    name: "Wariant II",
     priceOne: "1250",
     priceTwo: "1107",
     priceThree: "964",
@@ -33,7 +33,7 @@ const data = [
     ],
   },
   {
-    name: "Opcja 3",
+    name: "Wariant III",
     priceOne: "1950",
     priceTwo: "1549",
     priceThree: "1399",
@@ -61,7 +61,7 @@ const data = [
             PRZEGLĄD INSTALACJI <br />
             <span className="pl-2 text-ocean-green-400">FOTOWOLTAICZNEJ</span>
           </h2>
-          <div className="flex justify-between">
+          <div className="flex flex-wrap justify-between gap-5">
             <Card data={data} />
           </div>
         </section>

@@ -22,7 +22,7 @@ const InAllServises = () => {
         WE WSZYSTKICH <br />
         <span className="pl-2 text-ocean-green-400">PAKIETACH</span>
       </h2>
-      <div className="flex justify-between px-5 pb-10 border-b-4 border-ocean-green-200">
+      <div className="flex flex-col justify-between px-5 pb-10 border-b-4 md:flex-row border-ocean-green-200">
         {data.map((item) => (
           <div
             key={item.id}
@@ -41,7 +41,7 @@ const InAllServises = () => {
           </span>
         </h2>
         <div className="flex flex-col items-center justify-center gap-2">
-          <img className="max-w-[800px] mb-5" src={regser} alt="" />
+          <img className="w-[360px] md:w-full max-w-[800px] mb-5" src={regser} alt="" />
           <ul className="flex flex-col gap-2 py-5 border-y-4 border-ocean-green-200">
             <li className="flex items-center justify-start gap-2">
               <img className="w-14 h-14" src={ico1} alt="" />

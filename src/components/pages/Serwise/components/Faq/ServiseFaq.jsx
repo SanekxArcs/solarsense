@@ -46,6 +46,40 @@ const ServiseFaq = () => {
       </p>
     );
   };
+    const text2 = () => {
+      return (
+        <p>
+          Przedmiotem rocznej oceny instalacji fotowoltaicznej jest analiza
+          regularna parametrów działania oraz poprawności funkcjonowania
+          wszystkich składników systemu. <br />
+           Większość czynności kontrolnych, które
+          są przeprowadzane w trakcie przeglądu, wykorzystuje specjalistyczne
+          urządzenia pomiarowe i sprzęt. W przypadku instalacji
+          fotowoltaicznych, narażonych na trudniejsze warunki niż instalacje
+          elektryczne wewnątrz budynków (np. ze względu na nasłonecznienie,
+          opady deszczu i śniegu), istnieje większe ryzyko awarii. System
+          fotowoltaiczny składa się z wielu połączeń, z których każde może być
+          potencjalnym źródłem usterek lub problemów.
+          <br /> W ramach regularnej
+          inspekcji eksploatacyjnej instalacji fotowoltaicznej (w zależności od
+          wybranego przez właściciela pakietu PV) poddawane są badaniu kilka
+          obszarów:
+          <ul className="list-disc list-inside">
+            <li>Analiza inwertera</li>
+            <li>Pomiary elektryczne </li>
+            <li>Test przeciwpożarowy</li>
+            <li>Test uziemienia</li>
+            <li>Kontrola stanu modułów</li>
+            <li>Kontrola konstrukcji wsporczej</li>
+            <li>Kontrola połączeń w rozdzielnicy</li>
+            <li>Kontrola monitoringu</li>
+            <li>Badanie kamerą termowizyjną</li>
+            <li>Pomiary impedancji i rezystancji</li>
+            <li>Sprawdzenie mocowań modułów</li>
+          </ul>
+        </p>
+      );
+    };
   const accordionData = [
     {
       title: "Jak działa pakiet przeglądów serwisowych fotowoltaiki?",
@@ -53,23 +87,7 @@ const ServiseFaq = () => {
     },
     {
       title: "Na czym polega przegląd instalacji fotowoltaicznej?",
-      content: `Przegląd instalacji fotowoltaicznej polega na corocznym badaniu parametrów pracy i poprawności działania wszystkich elementów systemu. Większość czynności kontrolnych wykonywanych podczas przeglądu instalacji fotowoltaicznej odbywa się przy wykorzystaniu specjalistycznych mierników i sprzętu.
-
-Instalacja fotowoltaiczna jest poddana oddziaływaniu zdecydowanie cięższych warunków niż instalacja elektryczna znajdująca się wewnątrz budynku (np. z uwagi na promieniowanie słoneczne, deszcz, śnieg). System fotowoltaiczny składa się dodatkowo z wielu połączeń, z których każde może potencjalnie być powodem usterki lub awarii.
-
-W ramach okresowego przeglądu eksploatacyjnego fotowoltaiki (w zależności od wybranego przez właściciela instalacji PV pakietu) badaniu poddawanych jest kilka obszarów:
-
-Analiza inwertera
-Pomiary elektryczne
-Test przeciwpożarowy
-Test uziemienia
-Kontrola stanu modułów
-Kontrola konstrukcji wsporczej
-Kontrola połączeń w rozdzielnicy
-Kontrola monitoringu
-Badanie kamerą termowizyjną
-Pomiary impedancji i rezystancji
-Sprawdzenie mocowań modułów`,
+      content: text2(),
     },
     {
       title: "Jaki jest koszt przeglądu instalacji fotowoltaicznej?",
@@ -172,7 +190,7 @@ Wykonywanie okresowych przeglądów elektrycznych jest niezwykle istotne w kwest
         <section className="py-24 text-center select-none bg-port-gore-950">
           <div className="flex justify-center">
             <div className="max-w-[1000px]">
-              <h2 className="mb-5 text-5xl font-bold tracking-tight text-ocean-green-50">
+              <h2 className="mb-5 text-3xl font-bold tracking-tight md:text-5xl text-ocean-green-50">
                 PRZEGLĄDY SERWISOWE FOTOWOLTAIKI
                 <br />
                 <span className=" text-ocean-green-400">
@@ -182,7 +200,7 @@ Wykonywanie okresowych przeglądów elektrycznych jest niezwykle istotne w kwest
             </div>
           </div>
 
-          <div className="max-w-[1170px] px-6 mx-auto my-32">
+          <div className="max-w-[1170px] px-6 mx-auto md:my-32 my-10">
             <div className="flex flex-col gap-2 mb-20">
               {accordionData.map(({ title, content, index }) => (
                 <Accordion key={index} title={title} content={content} />
