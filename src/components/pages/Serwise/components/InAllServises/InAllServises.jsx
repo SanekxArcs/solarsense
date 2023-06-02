@@ -18,7 +18,7 @@ const InAllServises = () => {
 
   return (
     <div className="max-w-[1170px] px-6 mx-auto py-32">
-      <h2 className="mb-12 text-5xl font-bold tracking-tight text-center ">
+      <h2 className="mb-12 text-3xl font-bold tracking-tight text-center md:text-5xl ">
         WE WSZYSTKICH <br />
         <span className="pl-2 text-ocean-green-400">PAKIETACH</span>
       </h2>
@@ -35,13 +35,17 @@ const InAllServises = () => {
       </div>
       <div className="">
         <h2 className="mt-20 mb-12 text-4xl font-bold tracking-tight text-center ">
-          Dlaczego warto przeprowadzaé <br />
+          Dlaczego warto przeprowadzać <br />
           <span className="pl-2 text-ocean-green-400">
             regularnie serwisy fotowoltaiki?
           </span>
         </h2>
         <div className="flex flex-col items-center justify-center gap-2">
-          <img className="w-[360px] md:w-full max-w-[800px] mb-5" src={regser} alt="" />
+          <img
+            className="w-[360px] md:w-full max-w-[800px] mb-5"
+            src={regser}
+            alt=""
+          />
           <ul className="flex flex-col gap-2 py-5 border-y-4 border-ocean-green-200">
             <li className="flex items-center justify-start gap-2">
               <img className="w-14 h-14" src={ico1} alt="" />

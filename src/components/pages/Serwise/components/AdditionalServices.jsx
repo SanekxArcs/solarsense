@@ -11,7 +11,7 @@ const AdditionalServices = () => {
       />
       <h3 className="mb-8 text-3xl font-bold tracking-tight text-center md:text-5xl ">
         Dodatkowe
-        <span className="pl-2 text-ocean-green-400">Uslugi</span>
+        <span className="pl-2 text-ocean-green-400">Usługi</span>
       </h3>
       <div className="flex flex-col gap-2 py-10">
         <div className="flex justify-between px-4 py-4 font-bold rounded-sm ring-1 ring-ocean-green-700 bg-ocean-green-200">

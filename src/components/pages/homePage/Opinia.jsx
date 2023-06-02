@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 const opiniaData = [
   {
-    name: "Sidzina",
+    name: "Kobylanka",
     review:
       "Firma fotowoltaiczna, którą wybrałem, zrobiła świetną robotę z montażem paneli słonecznych. Jestem bardzo zadowolony z ich usług, a ich profesjonalizm i doświadczenie są godne pochwały.",
     photo1280: openie1,
@@ -30,7 +30,7 @@ const opiniaData = [
     altText: "Zdjęcie fotowoltaiczne",
   },
   {
-    name: "Jablonna",
+    name: "Jabłonna",
     review:
       "Polecam tę firmę fotowoltaiczną każdemu, kto potrzebuje montażu paneli słonecznych. Ich praca była dokładna, zorganizowana i wykonana z pasją. Nie tylko byli profesjonalni, ale również zadbali o każdy szczegół, aby zapewnić, że ich klient jest w pełni zadowolony.",
     photo1280: openie3,
@@ -56,7 +56,7 @@ function Opinia() {
         <div className="grid items-stretch px-2 place-content-end lg:grid-cols-3 gap-x-6 lg:gap-x-12">
           {opiniaData.map((item, index) => {
             return (
-              <div key={index} className="grid items-stretch mb-6 transition-all duration-300 rounded-sm shadow-lg lg:mb-0 bg-ocean-green-50  hover:-translate-y-2 hover:shadow-xl hover:shadow-ocean-green-400">
+              <div key={index} className="grid items-stretch mb-6 transition-all duration-300 rounded-sm shadow-lg lg:mb-0 bg-ocean-green-50 hover:-translate-y-2 hover:shadow-xl hover:shadow-ocean-green-400">
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
