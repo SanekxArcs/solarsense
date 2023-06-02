@@ -4,10 +4,10 @@ import Card from './Card'
 const Prices = () => {
 const data = [
   {
-    name: "Pakiet Basic",
-    priceOne: "1199",
-    priceTwo: "1019",
-    priceThree: "959",
+    name: "Opcja 1",
+    priceOne: "900",
+    priceTwo: "785",
+    priceThree: "653",
     list: [
       "Analiza inwertera",
       "Pomiary elektryczne",
@@ -17,10 +17,10 @@ const data = [
     ],
   },
   {
-    name: "Pakiet Premium",
-    priceOne: "1499",
-    priceTwo: "1274",
-    priceThree: "1199",
+    name: "Opcja 2",
+    priceOne: "1250",
+    priceTwo: "1107",
+    priceThree: "964",
     list: [
       "Analiza inwertera",
       "Pomiary elektryczne",
@@ -33,10 +33,10 @@ const data = [
     ],
   },
   {
-    name: "Pakiet Biznes",
-    priceOne: "2999",
-    priceTwo: "2549",
-    priceThree: "2399",
+    name: "Opcja 3",
+    priceOne: "1950",
+    priceTwo: "1549",
+    priceThree: "1399",
     list: [
       "Analiza inwertera",
       "Pomiary elektryczne",

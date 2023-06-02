@@ -141,7 +141,7 @@ const Advantages = () => {
             </div>
           </div>
         </section>
-        {/* <section className="mb-0 text-center text-gray-800 md:mb-32">
+        <section className="mb-0 text-center text-gray-800 md:mb-32">
           <div className="flex justify-center">
             <div className="max-w-[1000px]">
               <h3 className="mb-10 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
@@ -177,7 +177,7 @@ const Advantages = () => {
             </div>
           </div>
 
-        </section> */}
+        </section>
       </div>
     </>
   );
