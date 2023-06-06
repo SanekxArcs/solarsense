@@ -8,7 +8,7 @@ import Długa from "./../../../assets/me/Magazyn_icon_5.svg";
 const GlowneZalety = () => {
   return (
     <>
-      <section className="py-20 text-center md:text-left max-w-[1170px] mx-auto px-6 mb-20 snap-always snap-start">
+      <section id="zalety" className="py-20 text-center md:text-left max-w-[1170px] mx-auto px-6 mb-20 snap-always snap-start">
         <div>
           <h1 className="mb-5 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl md:mt-10">
             Magazyn energii

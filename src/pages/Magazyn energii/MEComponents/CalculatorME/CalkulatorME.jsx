@@ -128,7 +128,10 @@ const CalkulatorME = () => {
 
   return (
     <>
-      <section className="py-32 max-w-[1170px] mx-auto snap-always snap-start transition-all px-2">
+      <section
+        id="kalkulator"
+        className="py-32 max-w-[1170px] mx-auto snap-always snap-start transition-all px-2"
+      >
         <h2 className="mb-5 text-4xl font-bold tracking-tight text-center">
           Oblicz opłacalność fotowoltaiki z magazynem energii
         </h2>
