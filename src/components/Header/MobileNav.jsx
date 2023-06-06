@@ -17,7 +17,7 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
       <nav
         className={`sticky top-0 left-0 right-0 bottom-auto z-50 text-ocean-green-50 bg-port-gore-950 pt-1 lg:hidden`}
       >
-        <ul className="flex items-center justify-between w-full px-2  h-14">
+        <ul className="flex items-center justify-between w-full px-2 h-14">
           <li>
             <a href="http://solarsense.pl">
               <img
@@ -37,7 +37,7 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
                 isOpen ? `opacity-0` : `opacity-100`
               } text-right text-ocean-green-50 px-2 py-1 rounded-sm bg-port-gore-950`}
             >
-              <i className=" text-2xl fa-solid fa-bars"></i>
+              <i className="text-2xl fa-solid fa-bars"></i>
             </button>
           </li>
           <AnimatePresence>
@@ -49,13 +49,13 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
                 transition={{ duration: 0.5 }}
                 className={` absolute inset-2 text-ocean-green-50   min-h-screen `}
               >
-                <div className="relative z-50 bg-port-gore-950  rounded-sm">
+                <div className="relative z-50 rounded-sm bg-port-gore-950">
                   <button
                     title="hamburger menu close"
                     onClick={toggleMenu}
                     className="absolute text-3xl text-right text-ocean-green-50 top-2 right-2 "
                   >
-                    <i className="fa-regular fa-circle-xmark text-2xl"></i>
+                    <i className="text-2xl fa-regular fa-circle-xmark"></i>
                   </button>
                   <ul
                     onClick={toggleMenu}
@@ -68,7 +68,7 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
                       >
                         <img
                           loading="lazy"
-                          className="h-7  w-auto"
+                          className="w-auto h-7"
                           src={LightLogo}
                           alt="logo solar sense"
                         />
@@ -85,11 +85,7 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
                         Magazyn energii
                       </NavLink>
                     </li>
-                    <li>
-                      <NavLink exact to="/gallery" className={classLiActive}>
-                        Galeria
-                      </NavLink>
-                    </li>
+
                     <li>
                       <NavLink exact to="/service" className={classLiActive}>
                         Serwis
@@ -100,12 +96,17 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
                         FAQ
                       </NavLink>
                     </li>
+                    <li>
+                      <NavLink exact to="/gallery" className={classLiActive}>
+                        Realizacje
+                      </NavLink>
+                    </li>
                     <li className={classLi}>
                       <Link to="/#contact">Kontakt</Link>
                     </li>
                     <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-ocean-green-400">
                       <a
-                        className=" text-ocean-green-50 "
+                        className=" text-ocean-green-50"
                         href="tel:+48733897120"
                       >
                         +48 733 897 120
@@ -113,7 +114,7 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
                     </li>
                     <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-ocean-green-400">
                       <a
-                        className=" text-ocean-green-50 "
+                        className=" text-ocean-green-50"
                         href="mailto:buiro@solarsense.com"
                       >
                         biuro@solarsense.pl

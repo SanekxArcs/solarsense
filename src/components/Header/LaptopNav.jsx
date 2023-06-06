@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import LiDropDown from "./LiDropDown";
 
 const LaptopNav = () => {
-  const classLi = `px-4 py-1 transition-all duration-300 rounded-sm group-hover:bg-port-gore-800 group-hover:w-full hover:bg-port-gore-800 flex gap-1 justify-center items-center`;
+  const classLi = `px-4 py-1 transition-all z-50 duration-300 rounded-sm group-hover:bg-port-gore-800 group-hover:w-full hover:bg-port-gore-800 flex gap-1 justify-center items-center`;
   const classLiActive = ({ isActive, isPending }) =>
     isPending
       ? "pending"
@@ -51,12 +51,12 @@ const LaptopNav = () => {
                 />
               </svg>
             </NavLink>
-            <div className="absolute left-0 z-50 flex flex-col items-stretch justify-center w-full overflow-hidden transition-all duration-500 max-h-0 top-8 text-port-gore-50 bg-port-gore-900/70 backdrop-blur-md group-hover:max-h-96 rounded-b-md group-hover:pb-2">
+            <div className="absolute left-0 z-50 flex flex-col items-stretch justify-center w-full overflow-hidden transition-all duration-500 max-h-0 top-10 text-port-gore-50 bg-port-gore-900/70 backdrop-blur-md group-hover:max-h-96 rounded-b-md group-hover:pb-2">
               <ul>
-                <LiDropDown link={"/#home"} children={"Glowna"} />
+                <LiDropDown link={"/#home"} children={"Głowna"} />
                 <LiDropDown link={"/#dlaChegoMy"} children={"Dlaczego my?"} />
                 <LiDropDown link={"/#etapy"} children={"Etapy"} />
-                <LiDropDown link={"/#zestawy"} children={"Zetawy"} />
+                <LiDropDown link={"/#zestawy"} children={"Zestawy"} />
                 <LiDropDown link={"/#opinia"} children={"Opinia"} />
                 <LiDropDown link={"/#contact"} children={"Kontakt"} />
               </ul>
@@ -86,13 +86,13 @@ const LaptopNav = () => {
                 />
               </svg>
             </NavLink>
-            <div className="absolute left-0 z-50 flex flex-col items-stretch justify-center w-full overflow-hidden transition-all duration-500 max-h-0 top-8 text-port-gore-50 bg-port-gore-900/70 backdrop-blur-md group-hover:max-h-96 group-hover:pb-2 rounded-b-md">
-              <ul>
+            <div className="absolute left-0 z-50 flex flex-col items-stretch justify-center w-full overflow-hidden transition-all duration-500 max-h-0 top-10 text-port-gore-50 bg-port-gore-900/70 backdrop-blur-md group-hover:max-h-96 rounded-b-md">
+              <ul className="py-2">
                 <LiDropDown link={"/me#kalkulator"} children={"Kalkulator"} />
-                <LiDropDown link={"/me#jakdziala"} children={"Jak Dziala"} />
+                <LiDropDown link={"/me#jakdziala"} children={"Jak Działa"} />
                 <LiDropDown link={"/me#backup"} children={"Nasze Backupy"} />
-                <LiDropDown link={"/me#Myprad50"} children={"Moj prad 5.0"} />
-                <LiDropDown link={"/me#zalety"} children={"Glowne zalety"} />
+                <LiDropDown link={"/me#Myprad50"} children={"Moj prąd 5.0"} />
+                <LiDropDown link={"/me#zalety"} children={"Główne zalety"} />
                 <LiDropDown link={"/me#tech"} children={"Technologia"} />
               </ul>
             </div>
@@ -122,12 +122,9 @@ const LaptopNav = () => {
                 />
               </svg>
             </NavLink>
-            <div className="absolute z-50 flex flex-col items-stretch justify-center overflow-hidden transition-all duration-500 -left-1/2 w-52 max-h-0 top-8 text-port-gore-50 bg-port-gore-900/70 backdrop-blur-md group-hover:max-h-96 rounded-b-md group-hover:pb-2">
-              <ul>
-                <LiDropDown
-                  link={"/service#Przegland"}
-                  children={"Przegland"}
-                />
+            <div className="absolute z-50 flex flex-col items-stretch justify-center overflow-hidden transition-all duration-500 top-10 -left-1/2 w-52 max-h-0 text-port-gore-50 bg-port-gore-900/70 backdrop-blur-md group-hover:max-h-96 rounded-b-md">
+              <ul className="py-2">
+                <LiDropDown link={"/service#Przegland"} children={"Przegląd"} />
                 <LiDropDown
                   link={"/service#pakietach"}
                   children={"W pakietach"}
@@ -138,11 +135,11 @@ const LaptopNav = () => {
                 />
                 <LiDropDown
                   link={"/service#porownanie"}
-                  children={"Porównanie Pakietów"}
+                  children={"Porównanie pakietów"}
                 />
                 <LiDropDown
                   link={"/service#uzimienie"}
-                  children={"Uzimienie fotowoltaiki"}
+                  children={"Uziemienie fotowoltaiki"}
                 />
                 <LiDropDown
                   link={"/service#dodatkowe"}
@@ -176,9 +173,8 @@ const LaptopNav = () => {
                 />
               </svg>
             </NavLink>
-            <div className="absolute z-50 flex flex-col items-stretch justify-center overflow-hidden transition-all duration-500 -left-3 max-h-0 top-8 text-port-gore-50 bg-port-gore-900/70 backdrop-blur-md group-hover:max-h-96 rounded-b-md group-hover:pb-2">
+            <div className="absolute left-0 z-40 flex flex-col items-stretch justify-center w-full overflow-hidden transition-all duration-500 max-h-0 top-10 text-port-gore-50 bg-port-gore-900/70 backdrop-blur-md group-hover:max-h-96 rounded-b-md group-hover:pb-2">
               <ul>
-                <LiDropDown link={"/faq#karty"} children={"Karty katalogowe"} />
                 <LiDropDown link={"/faq#foxess"} children={"FoxEss"} />
               </ul>
             </div>
@@ -191,7 +187,7 @@ const LaptopNav = () => {
             className="relative group"
           >
             <NavLink exact to="/gallery" className={classLiActive}>
-              Galeria
+              Realizacje
             </NavLink>
           </motion.li>
           <motion.li

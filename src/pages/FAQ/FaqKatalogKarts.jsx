@@ -45,7 +45,7 @@ const FaqKatalogKarts = () => {
     {
       name: "Strona producenta z certyfikatami",
       link: "https://www.fox-ess.pro/do-pobrania/",
-      secondName: "Pozostale do pobrania",
+      secondName: "Pozostałe do pobrania",
     },
   ];
   return (

@@ -45,12 +45,6 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                   Magazyn energii
                 </NavLink>
               </li>
-
-              <li className="hover:text-ocean-green-300">
-                <NavLink exact to="/gallery" className={setActive}>
-                  Galeria
-                </NavLink>
-              </li>
               <li className="hover:text-ocean-green-300">
                 <NavLink exact to="/service" className={setActive}>
                   Serwis
@@ -59,6 +53,11 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
               <li className="hover:text-ocean-green-300">
                 <NavLink exact to="/faq" className={setActive}>
                   FAQ
+                </NavLink>
+              </li>
+              <li className="hover:text-ocean-green-300">
+                <NavLink exact to="/gallery" className={setActive}>
+                  Realizacje
                 </NavLink>
               </li>
               <li className="hover:text-ocean-green-300">
@@ -157,7 +156,7 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
             © 2023 Wszelkie prawa zastrzeżone:
           </span>
           <a
-            className="font-semibold text-port-gore-400 hover:text-port-gore-200 transition"
+            className="font-semibold transition text-port-gore-400 hover:text-port-gore-200"
             href="https://github.com/SanekxArcs"
           >
             Solar Sense

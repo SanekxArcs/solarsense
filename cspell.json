@@ -3,7 +3,12 @@
     "ignorePaths": [],
     "dictionaryDefinitions": [],
     "dictionaries": [],
-    "words": [],
+    "words": [
+        "Blachodachówka",
+        "Fotowoltaika",
+        "SOLARSENSE"
+    ],
     "ignoreWords": [],
-    "import": []
+    "import": [],
+    "language": "en,pl,pl-PL"
 }

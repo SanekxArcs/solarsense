@@ -33,7 +33,7 @@ const FAQ = () => {
     },
     {
       title: "Czy muszę zajmować się moją instalacją fotowoltaiczną?",
-      content: `Nie musisz. System fotowoltaiczny jest praktycznie całkowicie bezobsługowy, nie posiada ruchomych elementów i jest bardzo odporny na awarie. Nie wymaga też regularnego serwisowania. Nie musisz myć ani odśnieżać paneli - deszcz spłucze z nich zabrudzenia, a śnieg zsuje się sam pod wpływem grawitacji. Wystarczy skorzystać z dedykowanej aplikacji, która pozwoli Ci na monitorowanie pracy systemu i produkcji energii elektrycznej z dowolnego miejsca z dostępem do internetu.`,
+      content: `Nie musisz. System fotowoltaiczny jest praktycznie całkowicie bezobsługowy, nie posiada ruchomych elementów i jest bardzo odporny na awarie. Nie wymaga też regularnego serwisowania. Nie musisz myć ani odśnieżać paneli - deszcz spłucze z nich zabrudzenia, a śnieg szuje się sam pod wpływem grawitacji. Wystarczy skorzystać z dedykowanej aplikacji, która pozwoli Ci na monitorowanie pracy systemu i produkcji energii elektrycznej z dowolnego miejsca z dostępem do internetu.`,
     },
     {
       title: "Czym jest moduł HALF CUT?",
@@ -68,7 +68,7 @@ const FAQ = () => {
               <Accordion key={index} title={title} content={content} />
             ))}
           </div>
-          <p class="text-center text-gray-600 textbase mt-9 ">
+          <p class="text-center text-gray-600 text-base mt-9 ">
             Nie znalazłeś odpowiedzi, której szukasz?
             <a
               href="/#contact"
