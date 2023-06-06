@@ -59,7 +59,7 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
                   </button>
                   <ul
                     onClick={toggleMenu}
-                    className="flex flex-col items-center justify-between gap-2 px-4 py-5 "
+                    className="flex flex-col items-center justify-between gap-5 px-4 py-5 "
                   >
                     <li>
                       <a
@@ -75,28 +75,27 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
                       </a>
                     </li>
 
-                    <li className={classLi}>
+                    <li>
                       <NavLink exact to="/#" className={classLiActive}>
                         Fotowoltaika
                       </NavLink>
                     </li>
-                    <li className={classLi}>
+                    <li>
                       <NavLink exact to="/me" className={classLiActive}>
                         Magazyn energii
                       </NavLink>
                     </li>
-                    <li className={classLi}>
-                      <Link to="/me/#Myprad50">Mój prąd 5.0</Link>
+                    <li>
+                      <NavLink exact to="/gallery" className={classLiActive}>
+                        Galeria
+                      </NavLink>
                     </li>
-                    <li className={classLi}>
-                      <Link to="/#galeria">Galeria</Link>
-                    </li>
-                    <li className={classLi}>
+                    <li>
                       <NavLink exact to="/service" className={classLiActive}>
                         Serwis
                       </NavLink>
                     </li>
-                    <li className={classLi}>
+                    <li>
                       <NavLink exact to="/faq" className={classLiActive}>
                         FAQ
                       </NavLink>

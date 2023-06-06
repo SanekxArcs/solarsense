@@ -22,10 +22,10 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                 <span className=" text-ocean-green-400">Sense</span>
               </p>
               <p className="select-none ">
-                Z nami zyskasz nie tylko{" "}
+                Z nami zyskasz nie tylko
                 <b className=" text-ocean-green-300">oszczędności</b> , ale
-                także <b className=" text-ocean-green-300">pewność</b> ,{" "}
-                <b className=" text-ocean-green-300">jakość</b> i{" "}
+                także <b className=" text-ocean-green-300">pewność</b> ,
+                <b className=" text-ocean-green-300">jakość</b> i
                 <b className=" text-ocean-green-300">niezawodność</b>
               </p>
             </div>
@@ -45,13 +45,11 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                   Magazyn energii
                 </NavLink>
               </li>
+
               <li className="hover:text-ocean-green-300">
-                <NavLink exact to="/me/#Myprad50" className={setActive}>
-                  Mój prąd 5.0
+                <NavLink exact to="/gallery" className={setActive}>
+                  Galeria
                 </NavLink>
-              </li>
-              <li className="hover:text-ocean-green-300">
-                <Link to="/#galeria">Galeria</Link>
               </li>
               <li className="hover:text-ocean-green-300">
                 <NavLink exact to="/service" className={setActive}>
@@ -87,7 +85,7 @@ const Footer = ({ toggleMOdal, isOpenModal }) => {
                 >
                   Ul. Szczęsna 26
                   <br />
-                  02-454 Warszawa{" "}
+                  02-454 Warszawa
                 </a>
               </li>
               <li className="flex items-center justify-center select-none md:justify-start">

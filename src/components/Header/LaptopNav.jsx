@@ -48,22 +48,12 @@ const LaptopNav = () => {
           <motion.li
             initial={"hidden"}
             animate={"visible"}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            variants={liVariants}
-          >
-            <Link to="/me/#Myprad50" className={classLi}>
-              Mój prąd 5.0
-            </Link>
-          </motion.li>
-          <motion.li
-            initial={"hidden"}
-            animate={"visible"}
             transition={{ duration: 0.5, delay: 0.4 }}
             variants={liVariants}
           >
-            <Link to="/#galeria" className={classLi}>
+            <NavLink exact to="/gallery" className={classLiActive}>
               Galeria
-            </Link>
+            </NavLink>
           </motion.li>
           <motion.li
             initial={"hidden"}
