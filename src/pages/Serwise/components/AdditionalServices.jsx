@@ -3,13 +3,16 @@ import uziom from "./../../../assets/Servise/instalacja-odgromowa-a-fotowoltaika
 
 const AdditionalServices = () => {
   return (
-    <section className="max-w-[1170px] px-6 mx-auto my-32">
+    <section id="uzimienie" className="max-w-[1170px] px-6 mx-auto my-32">
       <img
         className="w-[600px] md:w-full md:max-w-[1170px] px-6 mx-auto my-14 border-b-2 pb-5 border-ocean-green-400"
         src={uziom}
         alt=""
       />
-      <h3 className="mb-8 text-3xl font-bold tracking-tight text-center md:text-5xl ">
+      <h3
+        id="dodatkowe"
+        className="mb-8 text-3xl font-bold tracking-tight text-center md:text-5xl scroll-m-14"
+      >
         Dodatkowe
         <span className="pl-2 text-ocean-green-400">Usługi</span>
       </h3>

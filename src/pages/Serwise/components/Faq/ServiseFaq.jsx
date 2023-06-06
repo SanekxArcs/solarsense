@@ -121,7 +121,10 @@ Wykonywanie okresowych przeglądów elektrycznych jest niezwykle istotne w kwest
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        <section className="py-24 text-center select-none bg-port-gore-950">
+        <section
+          id="faq"
+          className="py-24 text-center select-none bg-port-gore-950 "
+        >
           <div className="flex justify-center">
             <div className="max-w-[1000px]">
               <h2 className="mb-5 text-3xl font-bold tracking-tight md:text-5xl text-ocean-green-50">

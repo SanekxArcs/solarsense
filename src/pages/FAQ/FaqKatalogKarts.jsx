@@ -50,13 +50,16 @@ const FaqKatalogKarts = () => {
   ];
   return (
     <>
-      <div className="flex flex-col justify-center max-w-[1170px] mx-auto mb-32 select-none">
+      <div
+        id="karty"
+        className="flex flex-col justify-center max-w-[1170px] mx-auto mb-32 select-none scroll-m-14"
+      >
         <div>
           <h3 className="mb-10 text-5xl font-bold tracking-tight text-center md:text-6xl xl:text-7xl">
             Karty katalogowe produktów
           </h3>
         </div>
-        <div className="flex flex-col gap-2">
+        <div id="foxess" className="flex flex-col gap-2 scroll-m-14">
           <h4 className="pb-5 text-xl font-semibold text-center">
             Falowniki FoxESS
           </h4>

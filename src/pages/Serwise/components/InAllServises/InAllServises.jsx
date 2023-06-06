@@ -17,7 +17,7 @@ const InAllServises = () => {
   ];
 
   return (
-    <div className="max-w-[1170px] px-6 mx-auto py-32">
+    <div id="pakietach" className="max-w-[1170px] px-6 mx-auto py-32">
       <h2 className="mb-12 text-3xl font-bold tracking-tight text-center md:text-5xl ">
         WE WSZYSTKICH <br />
         <span className="pl-2 text-ocean-green-400">PAKIETACH</span>
@@ -33,7 +33,7 @@ const InAllServises = () => {
           </div>
         ))}
       </div>
-      <div className="">
+      <div id="regularnie" className="scroll-m-14">
         <h2 className="mt-20 mb-12 text-4xl font-bold tracking-tight text-center ">
           Dlaczego warto przeprowadzać <br />
           <span className="pl-2 text-ocean-green-400">

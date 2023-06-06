@@ -55,7 +55,7 @@ const data = [
 
   return (
     <>
-      <div className="bg-port-gore-950 text-ocean-green-50">
+      <div id="Przegland" className="bg-port-gore-950 text-ocean-green-50">
         <section className="max-w-[1170px] px-6 mx-auto py-32">
           <h2 className="mb-12 text-3xl font-bold tracking-tight text-center md:text-5xl ">
             PRZEGLĄD INSTALACJI <br />
