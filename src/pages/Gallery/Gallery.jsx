@@ -170,7 +170,7 @@ const Gallery = () => {
         </div>
       </section>
       <TopImg />
-      <div className="flex flex-wrap justify-center gap-5 mx-auto my-32 max-w-8xl">
+      <div className="grid max-w-6xl gap-5 mx-auto my-32 max-w-8xl">
         {data.map((i) => {
           return (
             <Card
