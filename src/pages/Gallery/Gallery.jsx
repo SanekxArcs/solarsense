@@ -170,7 +170,7 @@ const Gallery = () => {
         </div>
       </section>
       <TopImg />
-      <div className="grid max-w-6xl gap-5 mx-auto my-32 max-w-8xl">
+      <div className="grid max-w-6xl gap-5 mx-auto mt-32 max-w-8xl">
         {data.map((i) => {
           return (
             <Card
@@ -185,9 +185,16 @@ const Gallery = () => {
             />
           );
         })}
-        
       </div>
-      {/* <Galeria /> */}
+      <div className="mt-10 mb-32 text-center text-gray-500">
+        <h2>
+          Jeśli nie widzisz swojej lub widzisz swoja instalacje na stronie i
+          chcesz zasugerować zmiany to skontaktuj się z nami
+          <a className="pl-2 font-medium text-blue-400 hover:text-blue-600" href="tel:+48735145620">
+            Klikni tytaj
+          </a>
+        </h2>
+      </div>
     </div>
   );
 }
