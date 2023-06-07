@@ -10,7 +10,7 @@ const Card = ({ pic, moc, imie, opinie, modul, invert, typ, loc }) => {
       <div className="flex flex-col gap-10 p-2 md:p-10 m-2 w-[310px] mx-auto rounded-xl shadow-lg md:w-[750px] lg:w-[1000px] xl:w-[1144] bg-gradient-to-br from-ocean-green-50 to-ocean-green-200 ring-ocean-green-400 ring-2 select-none">
         <div className={`flex flex-col md:flex-row gap-5 w-full`}>
           <img
-            className="object-cover rounded-md shadow-lg max-w-80 max-h-60 md:w-[240px]"
+            className="object-cover rounded-md shadow-lg max-w-80 max-h-60 md:w-[240px] lg:w-[320px]"
             src={pic}
             alt=""
           />

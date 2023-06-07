@@ -1,12 +1,12 @@
 import openie1_320 from "./../../assets/Home/opinie1-320.webp";
 import openie2_320 from "./../../assets/Home/opinie2-320.webp";
-import openie3_320 from "./../../assets/Home/opinie3-320.webp";
 import openie1_768 from "./../../assets/Home/opinie1-768.webp";
 import openie2_768 from "./../../assets/Home/opinie2-768.webp";
-import openie3_768 from "./../../assets/Home/opinie3-768.webp";
 import openie1 from "./../../assets/Home/opinie1.webp";
 import openie2 from "./../../assets/Home/opinie2.webp";
-import openie3 from "./../../assets/Home/opinie3.webp";
+import pic2 from "./../../assets/Home/gal2.webp";
+
+import bialas from "./../../assets/Gallery/bialas.webp";
 import svgRew from "./../../assets/Svgs/bottom-white.svg";
 import { motion } from "framer-motion";
 
@@ -24,18 +24,18 @@ const opiniaData = [
     name: "Kamionka",
     review:
       "Nigdy wcześniej nie miałem do czynienia z firmą fotowoltaiczną, ale ta firma wykonała montaż paneli słonecznych i jestem pod wrażeniem ich pracy. Od pierwszego kontaktu byli bardzo pomocni i kompetentni, a wykonana praca była szybka i dokładna.",
-    photo1280: openie2,
-    photo320: openie2_320,
-    photo768: openie2_768,
+    photo1280: pic2,
+    photo320: pic2,
+    photo768: pic2,
     altText: "Zdjęcie fotowoltaiczne",
   },
   {
-    name: "Jabłonna",
+    name: "Warszawa",
     review:
       "Polecam tę firmę fotowoltaiczną każdemu, kto potrzebuje montażu paneli słonecznych. Ich praca była dokładna, zorganizowana i wykonana z pasją. Nie tylko byli profesjonalni, ale również zadbali o każdy szczegół, aby zapewnić, że ich klient jest w pełni zadowolony.",
-    photo1280: openie3,
-    photo320: openie3_320,
-    photo768: openie3_768,
+    photo1280: bialas,
+    photo320: bialas,
+    photo768: bialas,
     altText: "Zdjęcie fotowoltaiczne",
   },
 ];
@@ -58,7 +58,7 @@ function Opinia() {
             return (
               <div
                 key={index}
-                className="grid items-stretch mb-6 transition-all duration-300 rounded-sm shadow-lg  lg:mb-0 bg-ocean-green-50 hover:-translate-y-2 hover:shadow-xl hover:shadow-ocean-green-400"
+                className="grid items-stretch mb-6 transition-all duration-300 rounded-sm shadow-lg lg:mb-0 bg-ocean-green-50 hover:-translate-y-2 hover:shadow-xl hover:shadow-ocean-green-400"
               >
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -76,7 +76,7 @@ function Opinia() {
                     <source srcset={item.photo320} />
                     <img
                       src={item.photo320}
-                      className="w-full h-auto bg-cover rounded-sm "
+                      className="object-cover w-full bg-cover rounded-sm h-60 "
                       alt={item.altText}
                       loading="lazy"
                     />
@@ -89,13 +89,13 @@ function Opinia() {
                     />
                   </div>
                 </motion.div>
-                <div className="flex flex-col justify-between p-6">
+                <div className="grid gap-5 p-6 place-content-start">
                   <motion.p
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                     viewport={{ once: true }}
-                    className="mb-3 text-lg font-bold"
+                    className="text-lg font-bold"
                   >
                     {item.name}
                   </motion.p>
@@ -104,7 +104,7 @@ function Opinia() {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
                     viewport={{ once: true }}
-                    className="pb-2 mb-4"
+                    className=""
                   >
                     {item.review}
                   </motion.p>
