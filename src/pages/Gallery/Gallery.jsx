@@ -18,7 +18,7 @@ import PageHeader from '../../components/PageHeader';
 import ContainerWrap from '../../components/Container';
 
 const Gallery = () => {
-  const data = [
+  const gallerydata = [
     {
       pic: ewa,
       moc: "12,3",
@@ -160,35 +160,37 @@ const Gallery = () => {
   ];
   return (
     <>
-        <PageHeader first={'Poznaj nasze'} second={'realizacje'}/>
-      <ContainerWrap> 
-      <div className="grid gap-5 ">
-        {data.map((i) => {
-          return (
-            <Card
-              moc={i.moc}
-              pic={i.pic}
-              opinie={i.opinie}
-              imie={i.imie}
-              modul={i.modul}
-              invert={i.invert}
-              typ={i.typ}
-              loc={i.loc}
-            />
-          );
-        })}
-      </div>
-      <div className="mt-10 mb-32 text-center text-gray-500">
-        <h2>
-          Jeśli nie widzisz swojej lub widzisz swoja instalacje na stronie i
-          chcesz zasugerować zmiany to skontaktuj się z nami
-          <a className="pl-2 font-medium text-blue-400 hover:text-blue-600" href="tel:+48735145620">
-            Klikni tytaj
-          </a>
-        </h2>
-      </div>
+      <PageHeader first={"Poznaj nasze"} second={"realizacje"} />
+      <ContainerWrap>
+        <div className="grid gap-5 ">
+          {gallerydata.map((i) => {
+            return (
+              <Card
+                moc={i.moc}
+                pic={i.pic}
+                opinie={i.opinie}
+                imie={i.imie}
+                modul={i.modul}
+                invert={i.invert}
+                typ={i.typ}
+                loc={i.loc}
+              />
+            );
+          })}
+        </div>
+        <div className="mt-10 mb-32 text-center text-gray-500">
+          <h2>
+            Jeśli nie widzisz swojej lub widzisz swoja instalacje na stronie i
+            chcesz zasugerować zmiany to skontaktuj się z nami
+            <a
+              className="pl-2 font-medium text-blue-400 hover:text-blue-600"
+              href="tel:+48735145620"
+            >
+              Klikni tytaj
+            </a>
+          </h2>
+        </div>
       </ContainerWrap>
-      
     </>
   );
 }

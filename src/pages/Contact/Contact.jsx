@@ -82,7 +82,7 @@ function Contact({ textToMessage, setTextToMessage }) {
                 type="email"
                 id="email"
                 name="E-mail"
-                value={klientLastname}
+                value={mail}
                 onChange={(e) => {
                   setMail(e.target.value);
                 }}
@@ -92,7 +92,7 @@ function Contact({ textToMessage, setTextToMessage }) {
                 type="tel"
                 id="Telefon"
                 name="Telefon"
-                value={klientLastname}
+                value={telefon}
                 onChange={(e) => {
                   setTelefon(e.target.value);
                 }}
@@ -118,15 +118,15 @@ function Contact({ textToMessage, setTextToMessage }) {
                   </option>
                   <option value="Audyt">Audyt</option>
                 </select>
-                <Label id="typ" placeholder="Typ instalacji"/>
+                <Label id="typ" placeholder="Typ instalacji" />
               </div>
               <InputField
                 type="number"
                 id="Bill"
                 name="Bill"
-                value={klientLastname}
+                value={rachunek}
                 onChange={(e) => {
-                  setTelefon(e.target.value);
+                  setRachunek(e.target.value);
                 }}
                 placeholder="Twój rachunek za miesiąc"
               />

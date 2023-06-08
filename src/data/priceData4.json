@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Najtaniej",
+    "cena": "18 763",
+    "description": "Najtańsza opcja inwestycji w przyszłość",
+    "padding": false,
+    "inwerter": "SOFAR 3.3 KTLX-G3, L3, 2xMPPT",
+    "solarPanel": "TONGWEI TW460MAP-120-H-S",
+    "roof": "Trapezowy",
+    "button": "Wybierz tanio",
+    "color": false,
+    "power": "4 kWp"
+  },
+  {
+    "title": "Rekomendowane",
+    "cena": "20 223",
+    "description": "Najlepsza opcja z uwagi na jakość i cenę",
+    "padding": false,
+    "inwerter": "FoxESS T4 (G3), L3, 2xMPPT",
+    "solarPanel": "CORAB ENCOR EC460M-10-120S",
+    "roof": "Trapezowy",
+    "button": "Wybierz rekomendowane",
+    "color": true,
+    "power": "4 kWp"
+  },
+  {
+    "title": "Premium",
+    "cena": "26 814",
+    "description": "Dla wymagających",
+    "padding": true,
+    "inwerter": "HUAWEI SUN 2000 4KTL-L3, 2xMPPT",
+    "solarPanel": "Jolywood jw-hd108n-415w",
+    "roof": "Trapezowy",
+    "button": "Wybierz premium",
+    "color": false,
+    "power": "4 kWp"
+  }
+]

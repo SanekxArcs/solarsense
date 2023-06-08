@@ -1,125 +1,19 @@
-import React from "react";
+
+import motion from "framer-motion";
 import elementforprice from "./../../../assets/Svgs/elementforprice.svg";
 import elementforprice1 from "./../../../assets/Svgs/elementforprice1.svg";
-import { motion, AnimatePresence } from "framer-motion";
+
+import priceData10 from "./../../../data/priceData10.json";
+import priceData6 from "./../../../data/priceData6.json";
+import priceData4 from "./../../../data/priceData4.json";
 
 const Price = ({ priceBtn, setTextToMessage }) => {
-  const priceData4 = [
-    {
-      title: "Najtaniej",
-      cena: "18 763",
-      description: "Najtańsza opcja inwestycji w przyszłość",
-      padding: false,
-      inwerter: "SOFAR 3.3 KTLX-G3, L3, 2xMPPT",
-      solarPanel: "TONGWEI TW460MAP-120-H-S",
-      roof: "Trapezowy",
-      button: "Wybierz tanio",
-      color: false,
-      power: "4 kWp",
-    },
-    {
-      title: "Rekomendowane",
-      cena: "20 223",
-      description: "Najlepsza opcja z uwagi na jakość i cenę",
-      padding: false,
-      inwerter: "FoxESS T4 (G3), L3, 2xMPPT",
-      solarPanel: "CORAB ENCOR EC460M-10-120S",
-      roof: "Trapezowy",
-      button: "Wybierz rekomendowane",
-      color: true,
-      power: "4 kWp",
-    },
-    {
-      title: "Premium",
-      cena: "26 814",
-      description: "Dla wymagających",
-      padding: true,
-      inwerter: "HUAWEI SUN 2000 4KTL-L3, 2xMPPT",
-      solarPanel: "Jolywood jw-hd108n-415w",
-      roof: "Trapezowy",
-      button: "Wybierz premium",
-      color: false,
-      power: "4 kWp",
-    },
-  ];
+  const handleClick = () => {
+    setTextToMessage(
+      `Dzień dobry, mam pytania odnośnie zestawu '${item.title}' instalacji mocy ~${item.power}. Jej komponentami jest: Falownik ${item.inwerter}, moduly ${item.solarPanel}. Potrzebuje szczególną wycenę.`
+    );
+  };
 
-  const priceData6 = [
-    {
-      title: "Najtaniej",
-      cena: "24 335",
-      description: "Najtańsza opcja inwestycji w przyszłość",
-      padding: false,
-      inwerter: "SOFAR 5.5KTL-X-G3, L3, 2xMPPT",
-      solarPanel: "TONGWEI TW460MAP-120-H-S",
-      roof: "Trapezowy",
-      button: "Wybierz tanio",
-      color: false,
-      power: "6 kWp",
-    },
-    {
-      title: "Rekomendowane",
-      cena: "29 447",
-      description: "Najlepsza opcja z uwagi na jakość i cenę",
-      padding: false,
-      inwerter: "FoxESS T6 (G3), L3, 2xMPPT",
-      solarPanel: "CORAB ENCOR EC460M-10-120S",
-      roof: "Trapezowy",
-      button: "Wybierz rekomendowane",
-      color: true,
-      power: "6 kWp",
-    },
-    {
-      title: "Premium",
-      cena: "35 172",
-      description: "Dla wymagających",
-      padding: true,
-      inwerter: "HUAWEI SUN 2000-6KTL-M1, L3, 2xMPPT",
-      solarPanel: "Jolywood jw-hd108n-415w",
-      roof: "Trapezowy",
-      button: "Wybierz premium",
-      color: false,
-      power: "6 kWp",
-    },
-  ];
-
-  const priceData10 = [
-    {
-      title: "Najtaniej",
-      cena: "37 137",
-      description: "Najtańsza opcja inwestycji w przyszłość",
-      padding: false,
-      inwerter: "SOFAR 11KTL-X-G3, L3, 2xMPPT",
-      solarPanel: "TONGWEI TW460MAP-120-H-S",
-      roof: "Trapezowy",
-      button: "Wybierz tanio",
-      color: false,
-      power: "10 kWp",
-    },
-    {
-      title: "Rekomendowane",
-      cena: "44 264",
-      description: "Najlepsza opcja z uwagi na jakość i cenę",
-      padding: false,
-      inwerter: "FoxESS T10 (G3), L3, 2xMPPT",
-      solarPanel: "CORAB ENCOR EC460M-10-120S",
-      roof: "Trapezowy",
-      button: "Wybierz rekomendowane",
-      color: true,
-      power: "10 kWp",
-    },
-    {
-      title: "Premium",
-      cena: "52 231",
-      description: "Dla wymagających",
-      padding: true,
-      inwerter: "HUAWEI SUN 2000-10KTL-M1, L3, 2xMPPT",
-      solarPanel: "Jolywood jw-hd108n-415w",
-      roof: "Trapezowy",
-      button: "Wybierz premium",
-      color: false,
-      power: "10 kWp",
-    },
-  ];
 
   const mapChange = [priceData4, priceData6, priceData10];
   return (
@@ -218,7 +112,7 @@ const Price = ({ priceBtn, setTextToMessage }) => {
                 viewport={{ once: true }}
                 href="#contact"
                 onClick={() => {
-                  setTextToMessage(
+                  handleClick(
                     `Dzień dobry, mam pytania odnośnie zestawu '${e.title}' instalacji mocy ~${e.power}. Jej komponentami jest: Falownik ${e.inwerter}, moduly ${e.solarPanel}. Potrzebuje szczególną wycenę.`
                   );
                 }}
