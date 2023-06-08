@@ -58,7 +58,7 @@ function Opinia() {
             return (
               <div
                 key={index}
-                className="grid items-stretch mb-6 transition-all duration-300 rounded-sm shadow-lg lg:mb-0 bg-ocean-green-50 hover:-translate-y-2 hover:shadow-xl hover:shadow-ocean-green-400"
+                className="grid items-stretch mb-6 transition-all duration-300 rounded  shadow-lg lg:mb-0 bg-ocean-green-50 hover:-translate-y-2 hover:shadow-xl hover:shadow-ocean-green-400"
               >
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -67,7 +67,7 @@ function Opinia() {
                   viewport={{ once: true }}
                   className="relative overflow-hidden bg-no-repeat bg-cover"
                 >
-                  <picture className="overflow-hidden rounded-sm">
+                  <picture className="overflow-hidden rounded ">
                     <source
                       media="(min-width: 1100px)"
                       srcset={item.photo320}
@@ -76,7 +76,7 @@ function Opinia() {
                     <source srcset={item.photo320} />
                     <img
                       src={item.photo320}
-                      className="object-cover w-full bg-cover rounded-sm h-60 "
+                      className="object-cover w-full bg-cover rounded  h-60 "
                       alt={item.altText}
                       loading="lazy"
                     />

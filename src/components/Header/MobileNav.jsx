@@ -1,17 +1,22 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import LightLogo from "../../assets/solarsense-light-logo.svg";
-import { HashLink as Link } from "react-router-hash-link";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const MobileNav = ({ toggleMenu, isOpen }) => {
-  const classLi = `px-4 py-2 transition-all duration-300 rounded-sm hover:bg-ocean-green-400`;
   const classLiActive = ({ isActive, isPending }) =>
     isPending
       ? "pending"
       : isActive
-      ? `bg-ocean-green-400 ${classLi}`
-      : `bg-transparent ${classLi}`;
+      ? `bg-ocean-green-400 px-4 py-2 transition-all duration-300 rounded hover:bg-ocean-green-400 w-full text-center`
+      : `bg-transparent px-4 py-2 transition-all duration-300 rounded hover:bg-ocean-green-400 w-full text-center`;
+
+  const containerVariants = {
+    hidden: { opacity: 0, scale: 0.5, y: -1000 },
+    visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.5 } },
+    exit: { opacity: 0, scale: 0.5, y: -1000, transition: { duration: 0.5 } },
+  };
+
   return (
     <>
       <nav
@@ -35,7 +40,7 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
               onClick={toggleMenu}
               className={`${
                 isOpen ? `opacity-0` : `opacity-100`
-              } text-right text-ocean-green-50 px-2 py-1 rounded-sm bg-port-gore-950`}
+              } text-right text-ocean-green-50 px-2 py-1 rounded  bg-port-gore-950`}
             >
               <i className="text-2xl fa-solid fa-bars"></i>
             </button>
@@ -43,13 +48,13 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
           <AnimatePresence>
             {isOpen && (
               <motion.nav
-                initial={{ opacity: 0, scale: 0.5, y: -1000 }}
-                animate={{ opacity: 1, scale: 1, y: -0 }}
-                exit={{ opacity: 0, scale: 0.5, y: -1000 }}
-                transition={{ duration: 0.5 }}
-                className={` absolute inset-2 text-ocean-green-50   min-h-screen `}
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                className={`absolute inset-2 text-ocean-green-50 min-h-screen`}
               >
-                <div className="relative z-50 rounded-sm bg-port-gore-950">
+                <div className="relative z-50 rounded  bg-port-gore-950">
                   <button
                     title="hamburger menu close"
                     onClick={toggleMenu}
@@ -101,10 +106,12 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
                         Realizacje
                       </NavLink>
                     </li>
-                    <li className={classLi}>
-                      <Link to="/#contact">Kontakt</Link>
+                    <li>
+                      <NavLink exact className={classLiActive} to="/contact">
+                        Kontakt
+                      </NavLink>
                     </li>
-                    <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-ocean-green-400">
+                    <li className="px-4 py-2 transition-all duration-300 rounded  hover:bg-ocean-green-400 w-full text-center">
                       <a
                         className=" text-ocean-green-50"
                         href="tel:+48733897120"
@@ -112,7 +119,7 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
                         +48 733 897 120
                       </a>
                     </li>
-                    <li className="px-4 py-2 transition-all duration-300 rounded-sm hover:bg-ocean-green-400">
+                    <li className="px-4 py-2 transition-all duration-300 rounded  hover:bg-ocean-green-400 w-full text-center">
                       <a
                         className=" text-ocean-green-50"
                         href="mailto:buiro@solarsense.com"

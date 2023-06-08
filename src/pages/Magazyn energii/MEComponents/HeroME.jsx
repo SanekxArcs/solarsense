@@ -1,10 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import mehuawei from "./../../../assets/me/05-700009_Pylontech_H2_142kWh_4xbattery.jpg.webp";
 
 const HeroME = () => {
   return (
     <>
-      <section className="max-w-[1170px] px-6 mx-auto my-10 md:mt-32 snap-always snap-start">
+      <motion.section
+        className="max-w-7xl px-6 mx-auto my-10 md:mt-32 snap-always snap-start"
+      >
         <div className="grid grid-cols-1 md:grid-cols-3 ">
           <div className="flex flex-col items-center justify-center col-span-2 gap-2 md:px-20">
             <p className="pb-10 text-xl">
@@ -17,7 +21,7 @@ const HeroME = () => {
             </p>
             <a
               href="#contact"
-              className="block w-full p-4 text-base font-semibold text-center transition bg-transparent border rounded-sm border-ocean-green-700 text-port-gore-950 hover:bg-ocean-green-400 hover:text-ocean-green-50 "
+              className="block w-full p-4 text-base font-semibold text-center transition bg-transparent border rounded  border-ocean-green-700 text-port-gore-950 hover:bg-ocean-green-400 hover:text-ocean-green-50 "
             >
               Zapytaj o ofertę na magazyn energii
             </a>
@@ -31,7 +35,7 @@ const HeroME = () => {
             />
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

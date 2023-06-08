@@ -7,7 +7,7 @@ const HaszeME = () => {
     <>
       <section
         id="backup"
-        className="py-10 text-center md:text-left max-w-[1170px] mx-auto px-6 md:my-20 snap-always snap-start"
+        className="py-10 text-center md:text-left max-w-7xl mx-auto px-6 md:my-20 snap-always snap-start"
       >
         <h2 className="pt-10 text-4xl font-bold text-center uppercase md:mb-12 md:text-5xl text-port-gore-950">
           Nasze modele magazynów

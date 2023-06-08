@@ -1,45 +1,50 @@
-import React from 'react'
+import React from "react";
 import { motion } from "framer-motion";
 
 import BottomImg from "../../service/com for style/BottomImg";
 import TopImg from "../../service/com for style/TopImg";
 
 import Advantages from "./components/Advantages";
-import Serwise from './components/ServiseHeader';
-import Contact from './../homePage/Contact';
-import AdditionalServices from './components/AdditionalServices';
-import ServiseFaq from './components/Faq/ServiseFaq';
-import Prices from './components/PriceCards/Prices';
-import InAllServises from './components/InAllServises/InAllServises';
-import List from './components/List/List';
+import Contact from "./../Contact/Contact";
+import AdditionalServices from "./components/AdditionalServices";
+import ServiceFaq from "./components/Faq/ServiseFaq";
+import Prices from "./components/PriceCards/Prices";
+import InAllServises from "./components/InAllServises/InAllServises";
+import List from "./components/List/List";
+import PageHeader from "../../components/PageHeader";
 
 const SerwisPage = () => {
   return (
     <>
-      <motion.div
+      <motion.main
+        className="select-none snap-y snap-mandatory"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        <Serwise />
-        <TopImg />
+        <PageHeader
+          first={"Najlepszy serwis"}
+          second={"w Twojej okolicy"}
+          three={
+            "Oferowane przez Solar Sense usługi serwisowe mają wiele korzyści. Poznaj je bliżej!"
+          }
+        />
         <Advantages />
         <BottomImg />
-        <Prices/>
+        <Prices />
         <TopImg />
-        <InAllServises/>
+        <InAllServises />
         <BottomImg />
-        <List/>
+        <List />
         <TopImg />
         <AdditionalServices />
         <BottomImg />
-        <ServiseFaq/>
+        <ServiceFaq />
         <TopImg />
         <Contact />
-        <BottomImg />
-      </motion.div>
+      </motion.main>
     </>
   );
-}
+};
 
-export default SerwisPage
+export default SerwisPage;

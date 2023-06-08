@@ -1,4 +1,5 @@
 import React from "react";
+import ContainerWrap from "../../components/Container";
 
 const FaqKatalogKarts = () => {
   const data = [
@@ -50,11 +51,8 @@ const FaqKatalogKarts = () => {
   ];
   return (
     <>
-      <div
-        id="karty"
-        className="flex flex-col justify-center max-w-[1170px] mx-auto mb-32 select-none scroll-m-14"
-      >
-        <div>
+    <ContainerWrap>
+        <div id="karty" className="scroll-m-14">
           <h3 className="mb-10 text-5xl font-bold tracking-tight text-center md:text-6xl xl:text-7xl">
             Karty katalogowe produktów
           </h3>
@@ -63,7 +61,7 @@ const FaqKatalogKarts = () => {
           <h4 className="pb-5 text-xl font-semibold text-center">
             Falowniki FoxESS
           </h4>
-          <div className="flex justify-between px-4 py-2 font-medium rounded-sm shadow bg-ocean-green-300">
+          <div className="flex justify-between px-4 py-2 font-medium rounded  shadow bg-ocean-green-300">
             <p>Nazwa</p>
             <p>Link na PDF</p>
           </div>
@@ -71,7 +69,7 @@ const FaqKatalogKarts = () => {
             return (
               <div
                 key={index}
-                className="flex flex-wrap justify-between px-4 py-2 bg-white rounded-sm shadow"
+                className="flex flex-wrap justify-between px-4 py-2 bg-white rounded  shadow"
               >
                 <p>{e.name}</p>
                 <a
@@ -86,7 +84,8 @@ const FaqKatalogKarts = () => {
             );
           })}
         </div>
-      </div>
+    </ContainerWrap>
+
     </>
   );
 };

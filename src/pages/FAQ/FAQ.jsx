@@ -1,11 +1,31 @@
 import React from "react";
-import { motion } from "framer-motion";
 import Accordion from "./Accordion";
-import TopImg from "../../service/com for style/TopImg";
 import FaqKatalogKarts from "./FaqKatalogKarts";
+import PageHeader from "../../components/PageHeader";
+import ContainerWrap from "../../components/Container";
 
 const FAQ = () => {
   const accordionData = [
+    {
+      title: "Wysokie Rachunki?",
+      content: `Gdy tylko wykonamy zgłoszenie Twojej instalacji do Zakładu Energetycznego, niezwłocznie Cię o tym poinformujemy za pośrednictwem wiadomości SMS. Termin przesłania przez nas Zgłoszenia Mikroinstalacji w Twoim imieniu, jest zależny od wybranej przez Ciebie oferty – dla przykładu, w ofercie Pro to zaledwie 7 dni od zakończenia montażu. Zanim się z nami skontaktujesz, upewnij się czy termin na zgłoszenie w Twoim przypadku minął. Twój Zakład Energetyczny od momentu przyjęcia Zgłoszenia ma z kolei do 30 dni kalendarzowych na wymianę licznika. Ważne – nie włączaj instalacji przed wymianą licznika. Jeśli już wcześniej byłeś posiadaczem instalacji, którą rozbudowałeś – wysyłamy w Twoim imieniu aktualizację zgłoszenia mikroinstalacji.`,
+    },
+    {
+      title: "Termin wymiany licznika",
+      content: `W ramach serwisu Solar Sense przysługuje Ci możliwość skorzystania z bezpłatnej weryfikacji rachunków przez naszych specjalistów. Niepokoi Cię wysokość kwoty do zapłaty? Prześlij do nas czytelne zdjęcie lub skan otrzymanego rachunki. Poddamy go analizie, sprawdzimy poprawność pracy instalacji i zasugerujemy odpowiednie rozwiązanie.`,
+    },
+    {
+      title: "Monitoring instalacji",
+      content: `Do śledzenia pracy instalacji możesz korzystać z dedykowanych aplikacji dostępnych do pobrania bezpłatnie ze Sklepu Play czy stron internetowych poszczególnych producentów. W dniu montażu otrzymujesz od nas wiadomość mailową z danymi do logowania – konfiguracją Twojego konta zajmują się nasi specjaliści. 
+      Możesz założyć konto w danej aplikacji samodzielnie, jednak nie rekomendujemy takiego rozwiązania. Wówczas nie będziemy mieć wglądu w Twoją instalację, co może utrudnić sprawną reakcję, w razie zgłoszenia jakichkolwiek zapytań o jej pracę.
+      Pamiętaj, że zdalny monitoring wymaga doprowadzenia internetu w pobliże inwertera bądź bramki zbierającej dane z mikroinwerterów.`,
+    },
+    {
+      title: "Sprawne zgłoszenie podejrzenia awarii",
+      content: `W trakcie rozmowy telefonicznej poprosimy Cię o podanie daty zaobserwowania problemu wraz z dokładnym opisem sytuacji. Uwzględnij warunki atmosferyczne i zweryfikuj, czy nie wystąpił równocześnie problem z zasilaniem w domowej instalacji elektrycznej. 
+      W przypadku:
+      alarmu – niezbędny nam będzie kod błędu z aplikacji lub wyświetlacza falownika oraz zdjęcia bezpieczników po stronie instalacji, jak i Twoich domowych, uszkodzenia mechanicznego – zdjęcia usterki i potwierdzenie miejsce, gdzie została wpięta instalacja (np. w rozdzielni głównej).`,
+    },
     {
       title: "Jak działa energia słoneczna w fotowoltaice?",
       content: `Fotowoltaika opiera się na prostym mechanizmie - promienie słoneczne padają na panele fotowoltaiczne, gdzie zostają przetworzone na energię elektryczną. Aby to się stało, panele fotowoltaiczne wykorzystują foton - nośnik oddziaływań elektrycznych, który jest przyciągany przez panele. Foton wprawia w ruch elektrony, co generuje napięcie elektryczne. Prąd stały, który wytwarzają panele, jest przekształcany w prąd przemienny przez falownik, co pozwala na zasilanie urządzeń elektrycznych w domu i wyparcie prądu sieciowego. Dzięki temu procesowi energia słoneczna jest bezpośrednio wykorzystywana jako darmowe źródło zasilania.`,
@@ -46,42 +66,25 @@ const FAQ = () => {
   ];
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-      >
-        <section className="py-24 text-center select-none text-ocean-green-50 bg-port-gore-950">
-          <div className="flex justify-center">
-            <div className="max-w-[1000px]">
-              <h2 className="mb-5 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
-                Najczęściej <br />
-                <span className=" text-ocean-green-400">zadawane pytania</span>
-              </h2>
-            </div>
-          </div>
-        </section>
-        <TopImg />
-        <div className="max-w-[1170px] px-6 mx-auto my-32">
-          <div className="flex flex-col gap-2 mb-20">
-            {accordionData.map(({ title, content, index }) => (
-              <Accordion key={index} title={title} content={content} />
-            ))}
-          </div>
-          <p class="text-center text-gray-600 text-base mt-9 ">
-            Nie znalazłeś odpowiedzi, której szukasz?
-            <a
-              href="/#contact"
-              title="kontakt"
-              class="pl-2 font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline"
-            >
-              Skontaktuj się z naszym wsparciem
-            </a>
-          </p>
+      <PageHeader first={"Najczęściej"} second={"zadawane pytania"} />
+      <ContainerWrap>
+        <div className="flex flex-col gap-2 mb-20">
+          {accordionData.map(({ title, content, index }) => (
+            <Accordion key={index} title={title} content={content} />
+          ))}
         </div>
-      </motion.div>
-
-      <FaqKatalogKarts />
+        <p class="text-center text-gray-600 text-base mt-9 ">
+          Nie znalazłeś odpowiedzi, której szukasz?
+          <a
+            href="/#contact"
+            title="kontakt"
+            class="pl-2 font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline"
+          >
+            Skontaktuj się z naszym wsparciem
+          </a>
+        </p>
+        <FaqKatalogKarts />
+      </ContainerWrap>
     </>
   );
 };

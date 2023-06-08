@@ -40,7 +40,7 @@ const WhyWe = () => {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                     viewport={{ once: true }}
-                    className="grid w-16 h-16 text-2xl rounded-sm shadow-lg text-port-gore-950 bg-ocean-green-300 place-content-center"
+                    className="grid w-16 h-16 text-2xl rounded  shadow-lg text-port-gore-950 bg-ocean-green-300 place-content-center"
                   >
                     <i className={item.logo}></i>
                   </motion.div>

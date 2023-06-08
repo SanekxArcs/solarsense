@@ -6,7 +6,7 @@ const Lipol = () => {
   return (
     <>
       <div id="tech" className=" bg-port-gore-950 text-ocean-green-50 snap-always snap-start">
-        <section className="py-20 text-center md:text-left max-w-[1170px] mx-auto px-6 ">
+        <section className="py-20 text-center md:text-left max-w-7xl mx-auto px-6 ">
           <div className="grid md:grid-cols-2">
             <div className="grid place-content-center">
               <img

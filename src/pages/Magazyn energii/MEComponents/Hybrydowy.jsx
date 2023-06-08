@@ -6,7 +6,7 @@ const Hybrydowy = () => {
   return (
     <>
       <div className=" bg-port-gore-950 text-ocean-green-50 snap-always snap-start">
-        <section className="py-10 text-center md:text-left max-w-[1170px] mx-auto px-6">
+        <section className="py-10 text-center md:text-left max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-3">
             <div className="col-span-2 ">
               <h2 className="mb-2 text-4xl font-bold tracking-tight ">
@@ -32,7 +32,7 @@ const Hybrydowy = () => {
               <img loading="lazy" src={HybrydowyIMG} alt="inwerter foxess" />
             </div>
           </div>
-          <div className="p-5 mt-10 mb-20 rounded-md shadow-md bg-gradient-to-br from-ocean-green-200/50 to-ocean-green-600/50 shadow-ocean-green-600/50">
+          <div className="p-5 mt-10 mb-20 rounded  shadow-md bg-gradient-to-br from-ocean-green-200/50 to-ocean-green-600/50 shadow-ocean-green-600/50">
             <div className="flex flex-col items-center gap-5 md:flex-row">
               <img loading="lazy" src={icohybryd} alt="ico shield" />
               <h3 className="mb-5 text-2xl font-bold">

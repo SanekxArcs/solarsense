@@ -1,19 +1,19 @@
-import React from 'react'
+import React from "react";
 import photoSerwis from "./../../../assets/Servise/serwis.webp";
 
 const Advantages = () => {
   return (
     <>
-      <div className="max-w-[1170px] px-6 mx-auto my-24 select-none">
+      <div className="max-w-7xl px-6 mx-auto my-24 select-none">
         <section className="my-32 text-port-gore-900">
-          <div className="block bg-white rounded-sm shadow-lg">
+          <div className="block bg-white rounded  shadow-lg">
             <div className="flex flex-wrap items-center">
               <div className="hidden w-full lg:flex lg:w-6/12 xl:w-4/12">
                 <img
                   loading="lazy"
                   src={photoSerwis}
                   alt="solar panel work man"
-                  className="object-cover w-full h-full rounded-t-sm lg:rounded-tr-none lg:rounded-bl-sm"
+                  className="object-cover w-full h-full rounded-t lg:rounded-tr-none lg:rounded-bl-sm"
                 />
               </div>
               <div className="w-full grow-0 shrink-0 basis-auto lg:w-6/12 xl:w-8/12">
@@ -133,7 +133,6 @@ const Advantages = () => {
             </div>
           </div>
         </section>
-
       </div>
     </>
   );

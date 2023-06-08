@@ -16,7 +16,7 @@ function Hero() {
       style={{ backgroundImage: `url(${HeroImg})` }}
     >
       <div className="grid w-full min-h-screen transition-all duration-500 place-content-center lg:py-32 md:backdrop-blur-sm hover:backdrop-blur-none bg-port-gore-950 bg-opacity-40 ">
-        <div className="relative flex flex-col items-center justify-center gap-12 mx-auto max-h-102 max-w-[1170px] text-center text-ocean-green-50  px-5 py-10">
+        <div className="relative flex flex-col items-center justify-center gap-12 mx-auto max-h-102 max-w-7xl text-center text-ocean-green-50  px-5 py-10">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ function Hero() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
             viewport={{ once: true }}
-            className="z-40 px-8 py-4 text-xl font-bold transition-all duration-300 rounded-sm shadow bg-ocean-green-500 text-ocean-green-50 hover:scale-105 hover:bg-port-gore-500 hover:shadow-port-gore-500 hover:rounded-md"
+            className="z-40 px-8 py-4 text-xl font-bold transition-all duration-300 rounded  shadow bg-ocean-green-500 text-ocean-green-50 hover:scale-105 hover:bg-port-gore-500 hover:shadow-port-gore-500 hover:rounded "
             href="#contact"
           >
             Wycena

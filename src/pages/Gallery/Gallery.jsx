@@ -1,6 +1,5 @@
 import React from 'react'
-// import Galeria from './Galeria'
-import pic1 from "./../../assets/Home/gal1.webp";
+
 import pic2 from "./../../assets/Home/gal6.webp";
 import albert from "./../../assets/Gallery/albert.webp";
 import anna from "./../../assets/Gallery/anna.webp";
@@ -14,8 +13,9 @@ import tadeusz from "./../../assets/Gallery/tadeusz.webp";
 import tomasz from "./../../assets/Gallery/tomasz.webp";
 import zdunek from "./../../assets/Gallery/zdunek.webp";
 
-import TopImg from '../../service/com for style/TopImg';
 import Card from './Card';
+import PageHeader from '../../components/PageHeader';
+import ContainerWrap from '../../components/Container';
 
 const Gallery = () => {
   const data = [
@@ -159,20 +159,10 @@ const Gallery = () => {
     },
   ];
   return (
-    <div>
-      <section className="py-24 text-center select-none text-port-gore-50 bg-port-gore-950">
-        <div className="flex justify-center">
-          <div className="max-w-[1000px]">
-            <h2 className="mb-12 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
-              Poznaj nasze <br />
-              <span className=" text-ocean-green-300">realizacje</span>
-            </h2>
-            <p className="text-lg text-port-gore-200"></p>
-          </div>
-        </div>
-      </section>
-      <TopImg />
-      <div className="grid max-w-6xl gap-5 mx-auto mt-32 max-w-8xl">
+    <>
+        <PageHeader first={'Poznaj nasze'} second={'realizacje'}/>
+      <ContainerWrap> 
+      <div className="grid gap-5 ">
         {data.map((i) => {
           return (
             <Card
@@ -197,7 +187,9 @@ const Gallery = () => {
           </a>
         </h2>
       </div>
-    </div>
+      </ContainerWrap>
+      
+    </>
   );
 }
 

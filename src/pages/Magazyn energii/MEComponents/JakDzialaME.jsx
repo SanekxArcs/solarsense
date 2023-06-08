@@ -8,7 +8,7 @@ const JakDzialaME = () => {
   return (
     <>
       <div id="jakdziala" className="bg-port-gore-950 snap-always snap-start">
-        <section className="py-10 text-center md:text-left max-w-[1170px] mx-auto px-6  text-ocean-green-50">
+        <section className="py-10 text-center md:text-left max-w-7xl mx-auto px-6  text-ocean-green-50">
           <h2 className="mb-12 text-2xl font-bold text-center uppercase md:text-5xl text-ocean-green-50">
             Jak działa hybrydowa instalacja fotowoltaiczna z magazynem energii?
           </h2>

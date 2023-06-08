@@ -10,7 +10,7 @@ const Oferta = ({ ActivePV, ActivePVME, result }) => {
           kalkulacji i do 24 godzin skontaktujemy się z Tobą telefonicznie w
           celu przygotowania specjalnej oferty dopasowanej do Twoich potrzeb.
         </p>
-        <div className="p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
+        <div className="p-5 rounded  shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
           <h6 className="text-xl font-medium">
             Podsumowanie kalkulacji{" "}
             <button>
@@ -38,7 +38,7 @@ const Oferta = ({ ActivePV, ActivePVME, result }) => {
       <div className="grid place-content-center">
         <a
           href="#contact"
-          className="px-4 py-2 mb-5 text-xl transition-all rounded-md ring-ocean-green-400 ring-offset-2 ring-offset-ocean-green-50 ring bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 text-ocean-green-800 hover:from-ocean-green-200 hover:to-ocean-green-300"
+          className="px-4 py-2 mb-5 text-xl transition-all rounded  ring-ocean-green-400 ring-offset-2 ring-offset-ocean-green-50 ring bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 text-ocean-green-800 hover:from-ocean-green-200 hover:to-ocean-green-300"
         >
           Zapytaj o ofertę
         </a>

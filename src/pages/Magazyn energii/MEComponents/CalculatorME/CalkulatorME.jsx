@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import FirstStep from "./CalculatorComponents/FirstStep";
 import SecondStep from "./CalculatorComponents/SecondStep";
 import Oferta from "./CalculatorComponents/Oferta";
+import { motion } from "framer-motion";
+
 
 const CalkulatorME = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -128,14 +130,14 @@ const CalkulatorME = () => {
 
   return (
     <>
-      <section
+      <motion.section
         id="kalkulator"
-        className="py-32 max-w-[1170px] mx-auto snap-always snap-start transition-all px-2"
+        className="py-32 max-w-7xl mx-auto snap-always snap-start transition-all px-2"
       >
         <h2 className="mb-5 text-4xl font-bold tracking-tight text-center">
           Oblicz opłacalność fotowoltaiki z magazynem energii
         </h2>
-        <div className="p-2 mt-20 rounded-md shadow-md md:p-10 ring ring-ocean-green-400 bg-gradient-to-br from-ocean-green-50 to-ocean-green-100 ">
+        <div className="p-2 mt-20 rounded  shadow-md md:p-10 ring ring-ocean-green-400 bg-gradient-to-br from-ocean-green-50 to-ocean-green-100 ">
           <div className="mb-5">
             <h3 className="mb-5 text-3xl font-bold text-center">
               Kalkulator rachunków 2023
@@ -240,7 +242,7 @@ const CalkulatorME = () => {
                   secondPage();
                 }
               }}
-              className="px-8 py-2 text-xl font-medium rounded-md bg-port-gore-900 text-ocean-green-50"
+              className="px-8 py-2 text-xl font-medium rounded  bg-port-gore-900 text-ocean-green-50"
             >
               <i className="pr-2 fa-solid fa-circle-arrow-left"></i>Poprzedni
               krok
@@ -256,7 +258,7 @@ const CalkulatorME = () => {
                 secondPage();
               }
             }}
-            className={`px-2 md:px-4 py-2 text-xs md:text-xl rounded-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 text-ocean-green-800 transition-all  ${
+            className={`px-2 md:px-4 py-2 text-xs md:text-xl rounded  bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 text-ocean-green-800 transition-all  ${
               currentPage == 1 ? "opacity-0" : "opacity-100"
             }`}
           >
@@ -271,7 +273,7 @@ const CalkulatorME = () => {
                 ofertaPage();
               }
             }}
-            className={`px-2 md:px-4 py-2 text-xs md:text-xl rounded-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 text-ocean-green-800 transition-all  ${
+            className={`px-2 md:px-4 py-2 text-xs md:text-xl rounded  bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 text-ocean-green-800 transition-all  ${
               currentPage == 3 || priceToPay == 0 ? "opacity-0" : "opacity-100"
             }`}
           >
@@ -279,7 +281,7 @@ const CalkulatorME = () => {
             <i className="pl-2 fa-solid fa-circle-arrow-right"></i>
           </button>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

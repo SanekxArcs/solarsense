@@ -137,7 +137,7 @@ Wykonywanie okresowych przeglądów elektrycznych jest niezwykle istotne w kwest
             </div>
           </div>
 
-          <div className="max-w-[1170px] px-6 mx-auto md:my-32 my-10">
+          <div className="max-w-7xl px-6 mx-auto md:my-32 my-10">
             <div className="flex flex-col gap-2 mb-20">
               {accordionData.map(({ title, content, index }) => (
                 <Accordion key={index} title={title} content={content} />

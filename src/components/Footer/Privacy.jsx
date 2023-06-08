@@ -1,16 +1,17 @@
 import React from "react";
 
-const Privacy = ({ isOpenModal, toggleMOdal }) => {
+const Privacy = ({ isOpenModal, toggleModal }) => {
   return (
     <>
       <div
+        onClick={toggleModal}
         className={`${
           isOpenModal ? " animate-fadeIn bg-port-gore-950/50" : "hidden"
         } fixed top-0 left-0 z-[1055]  h-full w-full overflow-y-auto overflow-x-hidden outline-none  select-none`}
       >
         <div className="mt-5 pointer-events-none relative h-[calc(100%-1rem)] w-auto translate-y-[-50px]  transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
-          <div className="pointer-events-auto relative flex max-h-[100%] w-full flex-col overflow-hidden rounded-sm border-none  bg-ocean-green-50 bg-clip-padding text-current shadow-lg outline-none  ">
-            <div className="flex items-center justify-between flex-shrink-0 p-4 border-b-2 border-opacity-100 rounded-sm border-port-gore-50 ">
+          <div className="pointer-events-auto relative flex max-h-[100%] w-full flex-col overflow-hidden rounded border-none  bg-ocean-green-50 bg-clip-padding text-current shadow-lg outline-none  ">
+            <div className="flex items-center justify-between flex-shrink-0 p-4 border-b-2 border-opacity-100 rounded border-port-gore-50 ">
               <h5
                 className="pt-4 text-lg font-medium leading-normal text-center text-port-gore-950"
                 id="exampleModalScrollableLabel"
@@ -19,9 +20,9 @@ const Privacy = ({ isOpenModal, toggleMOdal }) => {
                 WWW.SOLARSENSE.PL
               </h5>
               <button
-                onClick={toggleMOdal}
+                onClick={toggleModal}
                 type="button"
-                className="box-content border-none rounded-sm text-port-gore-950 hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+                className="box-content border-none rounded text-port-gore-950 hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -201,11 +202,11 @@ const Privacy = ({ isOpenModal, toggleMOdal }) => {
                 rozporządzenia RODO.
               </p>
             </div>
-            <div className="flex flex-wrap items-center justify-end flex-shrink-0 p-4 border-t-2 border-opacity-100 rounded-sm border-port-gore-50">
+            <div className="flex flex-wrap items-center justify-end flex-shrink-0 p-4 border-t-2 border-opacity-100 rounded border-port-gore-50">
               <button
-                onClick={toggleMOdal}
+                onClick={toggleModal}
                 type="button"
-                className="inline-block rounded-sm  px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal  text-ocean-green-50 bg-ocean-green-400 transition duration-150 ease-in-out hover:bg-ocean-green-accent-100 focus:bg-ocean-green-accent-100 focus:outline-none focus:ring-0 active:bg-ocean-green-accent-200"
+                className="inline-block rounded  px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal  text-ocean-green-50 bg-ocean-green-400 transition duration-150 ease-in-out hover:bg-ocean-green-accent-100 focus:bg-ocean-green-accent-100 focus:outline-none focus:ring-0 active:bg-ocean-green-accent-200"
               >
                 Zamknąć
               </button>

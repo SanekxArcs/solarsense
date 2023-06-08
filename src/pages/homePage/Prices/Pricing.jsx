@@ -8,7 +8,7 @@ const Pricing = ({ setTextToMessage }) => {
   return (
     <>
       <div className="my-32 text-port-gore-950" id="zestawy">
-        <section className="relative z-20 overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] max-w-[1170px] mx-auto ">
+        <section className="relative z-20 overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] max-w-7xl mx-auto ">
           <div className="container mx-auto">
             <div className="flex flex-wrap -mx-4">
               <div className="w-full px-4">
@@ -64,7 +64,7 @@ const Pricing = ({ setTextToMessage }) => {
                   priceBtn === 0
                     ? "bg-ocean-green-400 text-ocean-green-50 hover:text-ocean-green-100 "
                     : "bg-ocean-green-100  text-port-gore-950 "
-                } px-6 py-3 text-sm md:text-xl font-bold  transition-all duration-300 rounded-sm shadow   hover:scale-110 hover:shadow-md`}
+                } px-6 py-3 text-sm md:text-xl font-bold  transition-all duration-300 rounded  shadow   hover:scale-110 hover:shadow-md`}
               >
                 4 kWp
               </motion.button>
@@ -80,7 +80,7 @@ const Pricing = ({ setTextToMessage }) => {
                   priceBtn === 1
                     ? "bg-ocean-green-400   text-ocean-green-50 hover:text-ocean-green-100 "
                     : "bg-ocean-green-100  text-port-gore-950 "
-                } px-6 py-3 text-sm md:text-xl font-bold transition-all duration-300 rounded-sm shadow hover:scale-110  hover:shadow-md`}
+                } px-6 py-3 text-sm md:text-xl font-bold transition-all duration-300 rounded  shadow hover:scale-110  hover:shadow-md`}
               >
                 6 kWp
               </motion.button>
@@ -96,7 +96,7 @@ const Pricing = ({ setTextToMessage }) => {
                   priceBtn === 2
                     ? "bg-ocean-green-400   text-ocean-green-50 hover:text-ocean-green-100 "
                     : "bg-ocean-green-100  text-port-gore-950 "
-                }  px-6 py-3 text-sm md:text-xl font-bold transition-all duration-300 rounded-sm shadow hover:scale-110  hover:shadow-md`}
+                }  px-6 py-3 text-sm md:text-xl font-bold transition-all duration-300 rounded  shadow hover:scale-110  hover:shadow-md`}
               >
                 10 kWp
               </motion.button>

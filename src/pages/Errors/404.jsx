@@ -1,22 +1,26 @@
 import React from "react";
-import TopImg from "../../service/com for style/TopImg";
+import Container from "../../components/Container";
+import { motion } from "framer-motion";
+import PageHeader from "../../components/PageHeader";
+
 
 const Error404 = () => {
   return (
     <>
-      <TopImg />
+      <PageHeader first={"Błąd"} second={"404"} />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="grid place-content-center min-h-[600px] max-h-screen max-w-[1170px] mx-auto  "
       >
-        <div className="flex flex-col items-center justify-center gap-5">
-          <h1 className="font-black text-red-500 text-9xl">
-            <span className="pr-5 text-4xl">Błąd</span>404
-          </h1>
-          <p>Proszę wrócić do strony głównej</p>
-        </div>
+        <Container>
+          <div className="grid place-content-center max-h-screen">
+            <div className="flex flex-col items-center justify-center gap-5 text-5xl">
+              <p>Takiej strony nie istnieje.</p>
+              <p>Proszę wrócić do strony głównej</p>
+            </div>
+          </div>
+        </Container>
       </motion.div>
     </>
   );

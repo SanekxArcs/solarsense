@@ -8,7 +8,7 @@ const MojPrad = () => {
         id="Myprad50"
         className=" bg-port-gore-950 text-ocean-green-50 snap-always snap-start"
       >
-        <section className="py-20 text-center md:text-left max-w-[1170px] mx-auto px-6">
+        <section className="py-20 text-center md:text-left max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-3">
             <div className="col-span-2 ">
               <img loading="lazy" src="" alt="icon money" />
@@ -43,18 +43,18 @@ const MojPrad = () => {
           </div>
           <div className="grid gap-10 pt-20 md:grid-cols-3 place-content-center">
             <div
-              className={`relative grid py-5 text-center rounded-sm place-content-center bg-ocean-green-100 ring-port-gore-950 ring-1 text-port-gore-950 after:content-['+'] after:text-5xl after:font-bold after:absolute after:-bottom-16 after:left-1/2 md:after:-right-5 md:after:top-[70%] after:-translate-x-1/2 md:after:translate-x-1/2 after:-translate-y-1/2 after:text-ocean-green-50`}
+              className={`relative grid py-5 text-center rounded  place-content-center bg-ocean-green-100 ring-port-gore-950 ring-1 text-port-gore-950 after:content-['+'] after:text-5xl after:font-bold after:absolute after:-bottom-16 after:left-1/2 md:after:-right-5 md:after:top-[70%] after:-translate-x-1/2 md:after:translate-x-1/2 after:-translate-y-1/2 after:text-ocean-green-50`}
             >
               <p className="text-2xl font-black">do 7 000 zł</p>
               <p>instalacja fotowoltaiczna</p>
             </div>
             <div
-              className={`relative grid py-5 text-center rounded-sm place-content-center bg-ocean-green-100 ring-port-gore-950 ring-1 text-port-gore-950 after:content-['='] after:text-5xl after:font-bold after:absolute after:-bottom-16 after:left-1/2 md:after:-right-5 md:after:top-[70%] after:-translate-x-1/2 md:after:translate-x-1/2 after:-translate-y-1/2 after:text-ocean-green-50`}
+              className={`relative grid py-5 text-center rounded  place-content-center bg-ocean-green-100 ring-port-gore-950 ring-1 text-port-gore-950 after:content-['='] after:text-5xl after:font-bold after:absolute after:-bottom-16 after:left-1/2 md:after:-right-5 md:after:top-[70%] after:-translate-x-1/2 md:after:translate-x-1/2 after:-translate-y-1/2 after:text-ocean-green-50`}
             >
               <p className="text-2xl font-black">do 16 000 zł</p>
               <p>magazyn energii</p>
             </div>
-            <div className="grid py-5 text-center rounded-sm place-content-center bg-ocean-green-300 ring-1 text-port-gore-950">
+            <div className="grid py-5 text-center rounded  place-content-center bg-ocean-green-300 ring-1 text-port-gore-950">
               <p className="text-2xl font-black">do 23 000 zł</p>
               <p>na dom niezależny energetycznie/samowystarczalny</p>
             </div>

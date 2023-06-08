@@ -29,7 +29,7 @@ const FirstStep = ({
               onClick={btnSetOneMonth}
               className={`${
                 oneMonth ? "bg-ocean-green-300" : "bg-ocean-green-50"
-              } px-4 py-2 font-bold transition-all border rounded-md text-ocean-green-800 border-ocean-green-700 hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}
+              } px-4 py-2 font-bold transition-all border rounded  text-ocean-green-800 border-ocean-green-700 hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}
             >
               miesięczny
             </button>
@@ -37,7 +37,7 @@ const FirstStep = ({
               onClick={btnSetTwoMonth}
               className={`${
                 twoMonth ? "bg-ocean-green-300" : "bg-ocean-green-50"
-              } px-4 py-2 font-bold transition-all border rounded-md text-ocean-green-800 border-ocean-green-700  hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}
+              } px-4 py-2 font-bold transition-all border rounded  text-ocean-green-800 border-ocean-green-700  hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}
             >
               2-miesięczny
             </button>
@@ -45,13 +45,13 @@ const FirstStep = ({
               onClick={btnSetYear}
               className={`${
                 year ? "bg-ocean-green-300" : "bg-ocean-green-50"
-              } px-4 py-2 font-bold transition-all border rounded-md text-ocean-green-800 border-ocean-green-700 hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}
+              } px-4 py-2 font-bold transition-all border rounded  text-ocean-green-800 border-ocean-green-700 hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}
             >
               roczny
             </button>
           </div>
           <div>
-            <p className="p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
+            <p className="p-5 rounded  shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
               <i className="pr-2 fa-solid fa-circle-info"></i>
               Moc instalacji dobiera się na podstawie rocznego zapotrzebowania,
               dlatego rekomendujemy podanie wysokości rachunków za cały
@@ -82,7 +82,7 @@ const FirstStep = ({
               </div>
             </div>
           </div>
-          <div className="p-5 mt-5 rounded-md shadow-md md:mt-20 bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
+          <div className="p-5 mt-5 rounded  shadow-md md:mt-20 bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
             <p className="">
               <i className="pr-2 fa-solid fa-circle-info"></i>
               To oznacza, że Twoje roczne zapotrzebowanie na energię elektryczną

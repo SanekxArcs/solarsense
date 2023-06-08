@@ -11,6 +11,7 @@ const ThanksForContactPageLazy = lazy(() =>import("./pages/Thanks/ThanksForConta
 const SerwisePageLazy = lazy(() => import("./pages/Serwise/ServisePage"));
 const MagazynEnergiiPageLazy = lazy(() =>import("./pages/Magazyn energii/MagazynEnergii"));
 const Gallery = lazy(() => import("./pages/Gallery/Gallery"));
+const IndexContact = lazy(() => import("./pages/Contact/IndexContact"));
 
 
 const LayoutAnimete = ({ setTextToMessage, textToMessage }) => {
@@ -23,10 +24,7 @@ const LayoutAnimete = ({ setTextToMessage, textToMessage }) => {
             path="/"
             element={
               <Suspense fallback={<Loading />}>
-                <HomeLazy
-                  textToMessage={textToMessage}
-                  setTextToMessage={setTextToMessage}
-                />
+                <HomeLazy/>
               </Suspense>
             }
           />
@@ -59,6 +57,17 @@ const LayoutAnimete = ({ setTextToMessage, textToMessage }) => {
             element={
               <Suspense fallback={<Loading />}>
                 <Gallery />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <Suspense fallback={<Loading />}>
+                <IndexContact
+                  textToMessage={textToMessage}
+                  setTextToMessage={setTextToMessage}
+                />
               </Suspense>
             }
           />

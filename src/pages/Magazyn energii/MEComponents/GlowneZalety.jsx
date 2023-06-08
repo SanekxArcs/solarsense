@@ -8,7 +8,7 @@ import Długa from "./../../../assets/me/Magazyn_icon_5.svg";
 const GlowneZalety = () => {
   return (
     <>
-      <section id="zalety" className="py-20 text-center md:text-left max-w-[1170px] mx-auto px-6 mb-20 snap-always snap-start">
+      <section id="zalety" className="py-20 text-center md:text-left max-w-7xl mx-auto px-6 mb-20 snap-always snap-start">
         <div>
           <h1 className="mb-5 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl md:mt-10">
             Magazyn energii
@@ -16,7 +16,7 @@ const GlowneZalety = () => {
           <p className="pb-10 mb-5 text-2xl tracking-tight">główne zalety</p>
         </div>
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          <div className="p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
+          <div className="p-5 rounded  shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
             <div className="flex items-center gap-2 ">
               <img loading="lazy" src={MEWspolPraca} alt="" />
               <h3 className="font-medium">
@@ -30,7 +30,7 @@ const GlowneZalety = () => {
               niewystarczająca do Twoich potrzeb.
             </p>
           </div>
-          <div className="p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
+          <div className="p-5 rounded  shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
             <div className="flex items-center gap-2">
               <img loading="lazy" src={Bezpieczenstwo} alt="Bezpieczenstwo" />
               <h3 className="font-medium">Bezpieczeństwo</h3>
@@ -41,7 +41,7 @@ const GlowneZalety = () => {
               chroni przed nagłą przerwą w dostawie energii z sieci.
             </p>
           </div>
-          <div className="p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
+          <div className="p-5 rounded  shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
             <div className="flex items-center gap-2">
               <img loading="lazy" src={Nowoczesny} alt="Nowoczesny" />
               <h3 className="font-medium">Nowoczesny design</h3>
@@ -53,7 +53,7 @@ const GlowneZalety = () => {
               wnętrze.
             </p>
           </div>
-          <div className="p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
+          <div className="p-5 rounded  shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
             <div className="flex items-center gap-2">
               <img loading="lazy" src={mocy} alt="Jeszcze więcej mocy" />
               <h3 className="font-medium">Jeszcze więcej mocy</h3>
@@ -64,7 +64,7 @@ const GlowneZalety = () => {
               zyskać nawet kilkukrotnie większą pojemność użytkową.
             </p>
           </div>
-          <div className="p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
+          <div className="p-5 rounded  shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
             <div className="flex items-center gap-2">
               <img loading="lazy" src={Długa} alt="Długa żywotność" />
               <h3 className="font-medium">Długa żywotność</h3>

@@ -25,7 +25,7 @@ function App() {
     restDelta: 0.001,
   });
 
-  const toggleMOdal = () => {
+  const toggleModal = () => {
     setIsOpenModal(!isOpenModal);
   };
 
@@ -45,7 +45,7 @@ function App() {
           setTextToMessage={setTextToMessage}
         />
         <Bottom />
-        <Footer toggleMOdal={toggleMOdal} isOpenModal={isOpenModal} />
+        <Footer toggleModal={toggleModal} isOpenModal={isOpenModal} />
       </Router>
     </>
   );

@@ -6,7 +6,7 @@ const Etapy = () => {
       id="etapy"
       className="relative select-none bg-port-gore-950 py-14 text-ocean-green-50 "
     >
-      <div className="max-w-[1170px] mx-auto">
+      <div className="max-w-7xl mx-auto">
         <section className="text-center ">
           <motion.h2
             initial={{ opacity: 0, y: 50 }}
@@ -23,7 +23,7 @@ const Etapy = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
-              className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950 "
+              className="relative p-10 transition-all duration-500 rounded  lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950 "
             >
               <i className="fa-solid fa-chalkboard-user text-5xl pb-2"></i>
               <h3 className="pb-2 text-lg font-medium">Kontakt</h3>
@@ -43,7 +43,7 @@ const Etapy = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
-              className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"
+              className="relative p-10 transition-all duration-500 rounded  lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"
             >
               <i className="fa-solid fa-file-signature text-5xl pb-2"></i>
               <h3 className="text-lg font-medium">Wstępna rozmowa i audyt</h3>
@@ -65,7 +65,7 @@ const Etapy = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
               viewport={{ once: true }}
-              className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"
+              className="relative p-10 transition-all duration-500 rounded  lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"
             >
               <i className="fa-solid fa-file-signature text-5xl pb-2"></i>
               <h3 className="text-lg font-medium">Projekt i oferta</h3>
@@ -86,7 +86,7 @@ const Etapy = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
-              className="relative p-10 transition-all duration-500 rounded-sm lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"
+              className="relative p-10 transition-all duration-500 rounded  lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"
             >
               <i className="fa-regular fa-handshake text-5xl pb-2"></i>
               <h3 className="text-lg font-medium">
@@ -109,7 +109,7 @@ const Etapy = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
-              className="relative p-10 transition-all duration-500 rounded-sm md:col-start-2 md:row-start-2 lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"
+              className="relative p-10 transition-all duration-500 rounded  md:col-start-2 md:row-start-2 lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"
             >
               <i className="fa-solid fa-screwdriver-wrench text-5xl pb-2"></i>
               <h3 className="text-lg font-medium">Montaż</h3>
@@ -130,7 +130,7 @@ const Etapy = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
               viewport={{ once: true }}
-              className="relative p-10 transition-all duration-500 rounded-sm md:col-start-1 md:row-start-2 lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"
+              className="relative p-10 transition-all duration-500 rounded  md:col-start-1 md:row-start-2 lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"
             >
               <i className="fa-solid fa-handshake-simple text-5xl pb-2"></i>
               <h3 className="text-lg font-medium">Odbiór instalacji</h3>

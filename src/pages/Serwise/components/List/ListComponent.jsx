@@ -2,7 +2,7 @@ import React from "react";
 
 const ListComponent = ({ data }) => {
   return (
-    <div className="relative p-5 text-center rounded-md lg:text-start lg:p-10 bg-port-gore-900">
+    <div className="relative p-5 text-center rounded  lg:text-start lg:p-10 bg-port-gore-900">
       <div className="bg-port-gore-900 sticky py-2 top-16 flex justify-between lg:gap-16 lg:justify-end  lg:min-w-[400px] text-lg">
         <p>Wariant I</p>
         <p>Wariant II</p>

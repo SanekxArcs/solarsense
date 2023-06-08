@@ -122,7 +122,7 @@ const SecondStep = ({
             ""
           )}
 
-          <div className="p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
+          <div className="p-5 rounded  shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
             <p>
               <i className="pr-2 fa-solid fa-circle-info"></i>
               {limit >= calculation
@@ -145,7 +145,7 @@ const SecondStep = ({
               }}
               className={`${
                 ActivePV ? "bg-ocean-green-300" : "bg-ocean-green-50"
-              } px-4 py-2 font-bold transition-all border rounded-md text-ocean-green-800 border-ocean-green-700  hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}
+              } px-4 py-2 font-bold transition-all border rounded  text-ocean-green-800 border-ocean-green-700  hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}
             >
               fotowoltaika
             </button>
@@ -156,7 +156,7 @@ const SecondStep = ({
               }}
               className={`${
                 ActivePVME ? "bg-ocean-green-300" : "bg-ocean-green-50"
-              } px-4 py-2 font-bold transition-all border rounded-md text-ocean-green-800 border-ocean-green-700  hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}
+              } px-4 py-2 font-bold transition-all border rounded  text-ocean-green-800 border-ocean-green-700  hover:shadow-md hover:shadow-ocean-green-100 hover:-translate-y-1 hover:bg-ocean-green-200`}
             >
               fotowoltaika + magazyn energii
             </button>
@@ -167,7 +167,7 @@ const SecondStep = ({
               calculation2023={calculation2023}
             />
           </div>
-          <p className="p-5 rounded-md shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
+          <p className="p-5 rounded  shadow-md bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 shadow-ocean-green-200">
             <i className="pr-2 fa-solid fa-circle-info"></i>
             {ActivePV
               ? `Czy wiesz, że z fotowoltaiką Twoje roczne opłaty spadłyby aż o ${resultForSecondPage} zł? Przejdź dalej, by poznać obliczenia.`
