@@ -6,7 +6,7 @@ const ServiseFaq = () => {
     return (
       <p>
         <b>
-          Pakiety Inspekcji
+          Pakiety Inspekcji&nbsp;
           <span className=" text-ocean-green-700">Solar Sense</span> to
           najefektywniejszy sposób na regularne przeglądy i zapewnienie stałej,
           konkurencyjnej ceny przez nawet 3 lata.
@@ -30,14 +30,6 @@ const ServiseFaq = () => {
           <li>
             W pakiecie rocznym - przeprowadzimy 1 inspekcję eksploatacyjną
             Twojego systemu PV w umówionym terminie.
-          </li>
-          <li>
-            W pakiecie 2-letnim - przeprowadzimy 2 inspekcje eksploatacyjne
-            Twojego systemu PV w umówionych terminach.
-          </li>
-          <li>
-            W pakiecie 3-letnim - przeprowadzimy 3 inspekcje eksploatacyjne
-            Twojego systemu PV w umówionych terminach.
           </li>
         </ul>
         Zalecamy regularne przeglądy systemów fotowoltaicznych raz w roku,
@@ -143,7 +135,7 @@ Wykonywanie okresowych przeglądów elektrycznych jest niezwykle istotne w kwest
                 <Accordion key={index} title={title} content={content} />
               ))}
             </div>
-            <p class="text-center text-gray-300 textbase mt-9 ">
+            <p class="text-center text-gray-300 text-base mt-9 ">
               Nie znalazłeś odpowiedzi, której szukasz?
               <a
                 href="/#contact"

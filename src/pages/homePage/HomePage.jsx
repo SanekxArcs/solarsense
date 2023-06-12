@@ -29,8 +29,8 @@ function HomePage({ setTextToMessage, textToMessage }) {
       <Opinia />
       <TopImg />
       <Contact
-        setTextToMessage={setTextToMessage}
         textToMessage={textToMessage}
+        setTextToMessage={setTextToMessage}
       />
     </motion.div>
   );

@@ -7,12 +7,12 @@ const Pricing = ({ setTextToMessage }) => {
 
   return (
     <>
-      <div className="my-32 text-port-gore-950" id="zestawy">
-        <section className="relative z-20 overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] max-w-7xl mx-auto ">
+      <div className="my-20 md:my-32 text-port-gore-950" id="zestawy">
+        <section className="relative z-20 overflow-hidden max-w-7xl mx-auto ">
           <div className="container mx-auto">
-            <div className="flex flex-wrap -mx-4">
+            <div className="flex flex-wrap">
               <div className="w-full px-4">
-                <div className="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-10 ">
+                <div className="mx-auto w-full text-center">
                   <motion.span
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -27,7 +27,7 @@ const Pricing = ({ setTextToMessage }) => {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                     viewport={{ once: true }}
-                    className="text-dark mb-4 font-bold sm:text-4xl md:text-[40px] uppercase text-4xl lg:text-6xl"
+                    className="text-dark mb-4 font-bold uppercase text-4xl md:text-6xl"
                   >
                     Zestawy
                   </motion.h2>
@@ -36,7 +36,7 @@ const Pricing = ({ setTextToMessage }) => {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                     viewport={{ once: true }}
-                    className="text-base text-body-color"
+                    className="text-base text-body-color pb-10"
                   >
                     Wybierz moc instalacji jaka ci jest najbliżej i dowiedź się
                     ceny na zestaw.
@@ -50,7 +50,7 @@ const Pricing = ({ setTextToMessage }) => {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              className="flex justify-center gap-5 pb-10 "
+              className="flex justify-center gap-2 md:gap-5 pb-4 px-2"
             >
               <motion.button
                 initial={{ opacity: 0 }}
@@ -102,7 +102,7 @@ const Pricing = ({ setTextToMessage }) => {
               </motion.button>
             </motion.div>
 
-            <div className="flex flex-wrap items-stretch w-full justify-stretch">
+            <div className="flex flex-wrap justify-center gap-y-5 mb-10">
               <Price priceBtn={priceBtn} setTextToMessage={setTextToMessage} />
             </div>
           </div>

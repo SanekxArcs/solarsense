@@ -10,10 +10,10 @@ const FooterLogo = () => {
         <span className="text-ocean-green-400">Sense</span>
       </p>
       <p className="select-none ">
-        Z nami zyskasz nie tylko
-        <b className="text-ocean-green-300">oszczędności</b> , ale także
-        <b className="text-ocean-green-300">pewność</b> ,
-        <b className="text-ocean-green-300">jakość</b> i
+        Z nami zyskasz nie tylko&nbsp;
+        <b className="text-ocean-green-300">oszczędności</b> , ale także&nbsp;
+        <b className="text-ocean-green-300">pewność</b> ,&nbsp;
+        <b className="text-ocean-green-300">jakość</b> i&nbsp;
         <b className="text-ocean-green-300">niezawodność</b>
       </p>
     </div>
@@ -167,7 +167,7 @@ const Footer = ({ toggleModal, isOpenModal }) => {
 
         <div className="p-6 text-center bg-port-gore-950">
           <span className="select-none">
-            © 2023 Wszelkie prawa zastrzeżone:
+            © 2023 Wszelkie prawa zastrzeżone:&nbsp;
           </span>
           <a
             className="font-semibold transition text-port-gore-400 hover:text-port-gore-200"

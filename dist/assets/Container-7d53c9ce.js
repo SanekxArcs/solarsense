@@ -1,0 +1,1 @@
+import{j as i,m as e}from"./index-9a10cbb6.js";const s=({children:t,addClass:a})=>i(e.div,{initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},className:`py-20 text-center md:text-left max-w-7xl mx-auto px-6 my-20 snap-always snap-start ${a}`,children:t});export{s as C};

@@ -13,7 +13,7 @@ import InAllServises from "./components/InAllServises/InAllServises";
 import List from "./components/List/List";
 import PageHeader from "../../components/PageHeader";
 
-const SerwisPage = () => {
+const SerwisPage = ({ setTextToMessage, textToMessage }) => {
   return (
     <>
       <motion.main
@@ -41,7 +41,10 @@ const SerwisPage = () => {
         <BottomImg />
         <ServiceFaq />
         <TopImg />
-        <Contact />
+        <Contact
+          textToMessage={textToMessage}
+          setTextToMessage={setTextToMessage}
+        />
       </motion.main>
     </>
   );

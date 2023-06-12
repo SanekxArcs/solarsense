@@ -9,18 +9,18 @@ const Etapy = () => {
       <div className="max-w-7xl mx-auto">
         <section className="text-center ">
           <motion.h2
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0,}}
+            whileInView={{ opacity: 1, }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
             className="pb-10 text-3xl font-bold uppercase md:text-6xl "
           >
             Etapy współpracy
           </motion.h2>
-          <div className="grid items-stretch gap-6 p-5 md:grid-cols-3 place-content-center lg:gap-x-6">
+          <div className="grid items-stretch gap-6 px-4 md:grid-cols-3 place-content-center">
             <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0}}
+              whileInView={{ opacity: 1}}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
               className="relative p-10 transition-all duration-500 rounded  lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950 "
@@ -39,8 +39,8 @@ const Etapy = () => {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
               className="relative p-10 transition-all duration-500 rounded  lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"
@@ -61,8 +61,8 @@ const Etapy = () => {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
               viewport={{ once: true }}
               className="relative p-10 transition-all duration-500 rounded  lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"
@@ -82,8 +82,8 @@ const Etapy = () => {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
               className="relative p-10 transition-all duration-500 rounded  lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"
@@ -105,8 +105,8 @@ const Etapy = () => {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
               className="relative p-10 transition-all duration-500 rounded  md:col-start-2 md:row-start-2 lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"
@@ -126,8 +126,8 @@ const Etapy = () => {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
               viewport={{ once: true }}
               className="relative p-10 transition-all duration-500 rounded  md:col-start-1 md:row-start-2 lg:mb-0 hover:bg-ocean-green-400  bg-ocean-green-400/10 hover:text-port-gore-950"

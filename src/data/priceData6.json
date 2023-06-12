@@ -2,7 +2,7 @@
   {
     "title": "Najtaniej",
     "cena": "24 335",
-    "description": "Najtańsza opcja inwestycji w przyszłość",
+    "description": "Inwestycja w przyszłość",
     "padding": false,
     "inwerter": "SOFAR 5.5KTL-X-G3, L3, 2xMPPT",
     "solarPanel": "TONGWEI TW460MAP-120-H-S",
@@ -14,7 +14,7 @@
   {
     "title": "Rekomendowane",
     "cena": "29 447",
-    "description": "Najlepsza opcja z uwagi na jakość i cenę",
+    "description": "Jakość i cena",
     "padding": false,
     "inwerter": "FoxESS T6 (G3), L3, 2xMPPT",
     "solarPanel": "CORAB ENCOR EC460M-10-120S",
