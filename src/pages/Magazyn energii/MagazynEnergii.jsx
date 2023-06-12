@@ -14,33 +14,36 @@ import Hybrydowy from "./MEComponents/Hybrydowy";
 import CalkulatorME from "./MEComponents/CalculatorME/CalkulatorME";
 import PageHeader from "../../components/PageHeader";
 
-const MagazynEnergii = () => {
+const MagazynEnergii = ({ setTextToMessage, textToMessage }) => {
   return (
-      <motion.main
-        className="select-none snap-y snap-mandatory"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-      >
-        <PageHeader first={"Magazyn energii"} second={"dla domu"} />
+    <motion.main
+      className="select-none snap-y snap-mandatory"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <PageHeader first={"Magazyn energii"} second={"dla domu"} />
 
-        <TopImg />
-        <HeroME />
-        <CalkulatorME />
-        <Bottom />
-        <JakDzialaME />
-        <TopImg />
-        <HaszeME />
-        <Bottom />
-        <MojPrad />
-        <TopImg />
-        <GlowneZalety />
-        <Bottom />
-        <Lipol />
-        <Hybrydowy />
-        <TopImg />
-        <Contact />
-      </motion.main>
+      <TopImg />
+      <HeroME />
+      <CalkulatorME />
+      <Bottom />
+      <JakDzialaME />
+      <TopImg />
+      <HaszeME />
+      <Bottom />
+      <MojPrad />
+      <TopImg />
+      <GlowneZalety />
+      <Bottom />
+      <Lipol />
+      <Hybrydowy />
+      <TopImg />
+      <Contact
+        textToMessage={textToMessage}
+        setTextToMessage={setTextToMessage}
+      />
+    </motion.main>
   );
 };
 

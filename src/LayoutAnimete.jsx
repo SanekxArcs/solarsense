@@ -24,7 +24,10 @@ const LayoutAnimete = ({ setTextToMessage, textToMessage }) => {
             path="/"
             element={
               <Suspense fallback={<Loading />}>
-                <HomeLazy/>
+                <HomeLazy
+                  setTextToMessage={setTextToMessage}
+                  textToMessage={textToMessage}
+                />
               </Suspense>
             }
           />
@@ -40,7 +43,10 @@ const LayoutAnimete = ({ setTextToMessage, textToMessage }) => {
             path="/service"
             element={
               <Suspense fallback={<Loading />}>
-                <SerwisePageLazy />
+                <SerwisePageLazy
+                  textToMessage={textToMessage}
+                  setTextToMessage={setTextToMessage}
+                />
               </Suspense>
             }
           />
@@ -75,7 +81,10 @@ const LayoutAnimete = ({ setTextToMessage, textToMessage }) => {
             path="/me"
             element={
               <Suspense fallback={<Loading />}>
-                <MagazynEnergiiPageLazy />
+                <MagazynEnergiiPageLazy
+                  textToMessage={textToMessage}
+                  setTextToMessage={setTextToMessage}
+                />
               </Suspense>
             }
           />
