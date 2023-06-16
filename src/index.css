@@ -6,7 +6,8 @@
 }
 
 *::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
+    height: 0;
 }
 
 *::-webkit-scrollbar-track {
@@ -16,7 +17,7 @@
 *::-webkit-scrollbar-thumb {
     background-color: #41B883;
     border-radius: 5px;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
 }
 
 @tailwind components;

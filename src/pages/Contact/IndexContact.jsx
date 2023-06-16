@@ -4,6 +4,9 @@ import Contact from './Contact';
 import PageHeader from '../../components/PageHeader';
 
 const IndexContact = ({ textToMessage, setTextToMessage }) => {
+  const handleClick = () => {
+    console.log("Button clicked!");
+  };
   return (
     <>
       <motion.div
@@ -11,12 +14,18 @@ const IndexContact = ({ textToMessage, setTextToMessage }) => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        <PageHeader first={"Nasze"} second={"Kontakty"} three={"Masz pytanie, potrzebujesz wsparcia lub szukasz rozwiązań dla swojego domu, biznesu czy instytucji? Jesteś w dobrym miejscu!"} />
+        <PageHeader
+          first={"Nasze"}
+          second={"Kontakty"}
+          three={
+            "Masz pytanie, potrzebujesz wsparcia lub szukasz rozwiązań dla swojego domu, biznesu czy instytucji? Jesteś w dobrym miejscu!"
+          }
+        />
+
         <Contact
           textToMessage={textToMessage}
           setTextToMessage={setTextToMessage}
         />
-        
       </motion.div>
     </>
   );

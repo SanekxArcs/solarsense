@@ -7,7 +7,7 @@ const ContainerWrap = ({children, addClass}) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className={`py-20 text-center md:text-left max-w-7xl mx-auto px-6 my-20 snap-always snap-start ${addClass}`}
+      className={`text-center md:text-left max-w-7xl mx-auto px-4 my-20 snap-always snap-start py-0 md:py-20 ${addClass}`}
     >
       {children}
     </motion.div>

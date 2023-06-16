@@ -86,20 +86,10 @@ const Gallery = () => {
       loc: "Wroclaw",
     },
     {
-      pic: albert,
-      moc: "4,92",
-      imie: "Albert",
-      opinie: false,
-      modul: "Jinko 410w",
-      invert: "Sofar",
-      typ: "Gont bitumiczny",
-      loc: "Cisie",
-    },
-    {
       pic: anna,
       moc: "5,22",
       imie: "Anna",
-      opinie: false,
+      opinie: "Z całą przyjemnością polecam firmę Solar Sense i ich usługi. Pan Krzysztof bardzo cierpliwie i rzeczowo analizował nasze potrzeby zmieniając i dostosowując projekt tak by wszystko było jak najkorzystniej dla nas a zlecenie nie było proste. Fotowoltaika założona szybko, fachowo i wszystko przebiegło bardzo sprawnie nawet część prac zleconych 'ponad normę'. Z całą pewnością jeśli będziemy jeszcze modyfikować lub rozbudowywać naszą fotowoltaikę to także z tą firmą.",
       modul: "Jinko 475w",
       invert: "HUAWEI SUN 5KTL",
       typ: "Trójkąt",
@@ -117,16 +107,6 @@ const Gallery = () => {
       loc: "Kobylanka",
     },
     {
-      pic: karol,
-      moc: "4,73",
-      imie: "Karol",
-      opinie: false,
-      modul: "Jinko 430w",
-      invert: "FoxEss T4",
-      typ: "Dachówka",
-      loc: "Jabłonna",
-    },
-    {
       pic: bialas,
       moc: "9,09",
       imie: "Konrad",
@@ -137,6 +117,29 @@ const Gallery = () => {
       typ: "Dachówka",
       loc: "Warsawa",
     },
+    {
+      pic: albert,
+      moc: "4,92",
+      imie: "Albert",
+      opinie: false,
+      modul: "Jinko 410w",
+      invert: "Sofar",
+      typ: "Gont bitumiczny",
+      loc: "Cisie",
+    },
+
+
+    {
+      pic: karol,
+      moc: "4,73",
+      imie: "Karol",
+      opinie: false,
+      modul: "Jinko 430w",
+      invert: "FoxEss T4",
+      typ: "Dachówka",
+      loc: "Jabłonna",
+    },
+    
     {
       pic: robert,
       moc: "6,88",
@@ -161,8 +164,8 @@ const Gallery = () => {
   return (
     <>
       <PageHeader first={"Poznaj nasze"} second={"realizacje"} />
-      <ContainerWrap>
-        <div className="grid gap-5 ">
+      <ContainerWrap addClass={"py-0 md:py-20"}>
+        <div className="grid gap-5">
           {gallerydata.map((i) => {
             return (
               <Card
@@ -178,7 +181,7 @@ const Gallery = () => {
             );
           })}
         </div>
-        <div className="mt-10 mb-32 text-center text-gray-500">
+        <div className="mt-10 mb-32 text-center text-gray-500 flex flex-col gap-3">
           <h2>
             Jeśli nie widzisz swojej lub widzisz swoja instalacje na stronie i
             chcesz zasugerować zmiany to skontaktuj się z nami
@@ -189,6 +192,15 @@ const Gallery = () => {
               Klikni tytaj
             </a>
           </h2>
+          <h3>
+            Jeżeli chcesz dodać swoje opinie
+            <a
+              className="pl-2 font-medium text-blue-400 hover:text-blue-600"
+              href="https://g.page/r/CQ5oW87oVCpKEBM/review"
+            >
+              Klikni tytaj
+            </a>
+          </h3>
         </div>
       </ContainerWrap>
     </>

@@ -21,7 +21,7 @@ const PageHeader = ({ first, second, three }) => {
           </div>
         </div>
         {three && (
-          <p className="text-lg text-port-gore-200">
+          <p className="text-lg text-port-gore-200 px-4">
             {three}
           </p>
         )}

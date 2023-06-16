@@ -7,10 +7,10 @@ import local from './../../assets/Gallery/home_checklist.svg'
 const Card = ({ pic, moc, imie, opinie, modul, invert, typ, loc }) => {
   return (
     <>
-      <div className="flex flex-col gap-10 p-2 md:p-10 m-2 w-[310px] mx-auto rounded shadow-lg md:w-[750px] lg:w-[1000px] xl:w-[1144] bg-gradient-to-br from-ocean-green-50 to-ocean-green-200 ring-ocean-green-400 ring-2 select-none">
+      <div className="flex flex-col w-full gap-10 p-2 md:p-10 mx-auto rounded shadow-lg bg-gradient-to-br from-ocean-green-50 to-ocean-green-200 ring-ocean-green-400 ring-2 select-none max-w-6xl">
         <div className={`flex flex-col md:flex-row gap-5 w-full`}>
           <img
-            className="object-cover rounded shadow-lg max-w-80 max-h-60 md:w-[240px] lg:w-[320px]"
+            className="object-cover rounded shadow-lg max-h-60"
             src={pic}
             alt=""
           />
@@ -33,13 +33,13 @@ const Card = ({ pic, moc, imie, opinie, modul, invert, typ, loc }) => {
               <img className="w-10 h-10" src={falownik} alt="icon" />
 
               <p>
-                Falownik: <br /> <b>{invert}</b>{" "}
+                Falownik: <br /> <b>{invert}</b>
               </p>
             </div>
             <div className="flex items-center gap-3 px-4 py-2 rounded ">
               <img className="w-10 h-10" src={roof} alt="icon" />
               <p>
-                Typ instalacji: <br /> <b>{typ}</b>{" "}
+                Typ instalacji: <br /> <b>{typ}</b>
               </p>
             </div>
             <div className="flex items-center gap-3 px-4 py-2 rounded ">
@@ -55,7 +55,7 @@ const Card = ({ pic, moc, imie, opinie, modul, invert, typ, loc }) => {
             <p className="py-3 text-2xl text-center">
               Opinie od <b>{imie}</b>:
             </p>
-            <p className="overflow-hidden transition-all duration-300 max-h-5 group-hover:max-h-96 group-active:max-h-96">
+            <p className="overflow-hidden transition-all duration-300 max-h-5 group-hover:max-h-96 group-active:max-h-96 ">
               {opinie}
             </p>
             <p className="pt-5 text-xs text-center text-gray-500">
