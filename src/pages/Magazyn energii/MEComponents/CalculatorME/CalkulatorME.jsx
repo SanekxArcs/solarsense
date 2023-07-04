@@ -4,68 +4,11 @@ import SecondStep from "./CalculatorComponents/SecondStep";
 import Oferta from "./CalculatorComponents/Oferta";
 import { motion } from "framer-motion";
 
-const usePageNavigation = () => {
+const CalkulatorME = () => {
   const [currentPage, setCurrentPage] = useState(1);
-
-  const firstPage = () => {
-    setCurrentPage(1);
-  };
-
-  const secondPage = () => {
-    setCurrentPage(2);
-  };
-
-  const ofertaPage = () => {
-    setCurrentPage(3);
-  };
-
-  return { currentPage, firstPage, secondPage, ofertaPage };
-};
-
-const useStepVisibility = () => {
   const [firstStepShow, setFirstStepShow] = useState(true);
   const [secondStepShow, setSecondStepShow] = useState(false);
   const [ofertaStepShow, setOfertaStepShow] = useState(false);
-
-  const showFirstStep = () => {
-    setFirstStepShow(true);
-    setSecondStepShow(false);
-    setOfertaStepShow(false);
-  };
-
-  const showSecondStep = () => {
-    setFirstStepShow(false);
-    setSecondStepShow(true);
-    setOfertaStepShow(false);
-  };
-
-  const showOfertaStep = () => {
-    setFirstStepShow(false);
-    setSecondStepShow(false);
-    setOfertaStepShow(true);
-  };
-
-  return {
-    firstStepShow,
-    secondStepShow,
-    ofertaStepShow,
-    showFirstStep,
-    showSecondStep,
-    showOfertaStep,
-  };
-};
-
-const CalkulatorME = () => {
-  const { currentPage, firstPage, secondPage, ofertaPage } =
-    usePageNavigation();
-  const {
-    firstStepShow,
-    secondStepShow,
-    ofertaStepShow,
-    showFirstStep,
-    showSecondStep,
-    showOfertaStep,
-  } = useStepVisibility();
 
   const [oneMonth, setOneMonth] = useState(true);
   const [twoMonth, setTwoMonth] = useState(false);
@@ -98,9 +41,16 @@ const CalkulatorME = () => {
 
   useEffect(() => {
     if (standard) {
-      setLimit(2000);
-    } else if (niepelnosprawnosc || kartaDuzejRodziny || gospodarstwo) {
-      setLimit(3000);
+      return setLimit(2000);
+    }
+    if (niepelnosprawnosc) {
+      return setLimit(2600);
+    }
+    if (kartaDuzejRodziny) {
+      return setLimit(3000);
+    }
+    if (gospodarstwo) {
+      return setLimit(3000);
     }
   }, [standard, niepelnosprawnosc, kartaDuzejRodziny, gospodarstwo]);
 
@@ -138,20 +88,38 @@ const CalkulatorME = () => {
     setCalculation2023(formattedValue);
   }, [priceToPay, calcE, calculation, priceUpkWp]);
 
+  const firstPage = () => {
+    setFirstStepShow(true);
+    setSecondStepShow(false);
+    setOfertaStepShow(false);
+    setCurrentPage(1);
+  };
+
+  const secondPage = () => {
+    setFirstStepShow(false);
+    setSecondStepShow(true);
+    setOfertaStepShow(false);
+    setCurrentPage(2);
+  };
+  const ofertaPage = () => {
+    setFirstStepShow(false);
+    setSecondStepShow(false);
+    setOfertaStepShow(true);
+    setCurrentPage(3);
+  };
+
   const btnSetOneMonth = () => {
     setOneMonth(true);
     setTwoMonth(false);
     setYear(false);
     setCalcE(12);
   };
-
   const btnSetTwoMonth = () => {
     setOneMonth(false);
     setTwoMonth(true);
     setYear(false);
     setCalcE(6);
   };
-
   const btnSetYear = () => {
     setOneMonth(false);
     setTwoMonth(false);
@@ -163,12 +131,12 @@ const CalkulatorME = () => {
     <>
       <motion.section
         id="kalkulator"
-        className="py-32 max-w-7xl mx-auto snap-always snap-start transition-all px-2"
+        className="px-2 py-32 mx-auto transition-all max-w-7xl snap-always snap-start"
       >
         <h2 className="mb-5 text-4xl font-bold tracking-tight text-center">
           Oblicz opłacalność fotowoltaiki z magazynem energii
         </h2>
-        <div className="p-2 mt-20 rounded shadow-md md:p-10 ring ring-ocean-green-400 bg-gradient-to-br from-ocean-green-50 to-ocean-green-100">
+        <div className="p-2 mt-20 rounded shadow-md md:p-10 ring ring-ocean-green-400 bg-gradient-to-br from-ocean-green-50 to-ocean-green-100 ">
           <div className="mb-5">
             <h3 className="mb-5 text-3xl font-bold text-center">
               Kalkulator rachunków 2023
@@ -180,7 +148,7 @@ const CalkulatorME = () => {
                   firstStepShow
                     ? "font-bold text-ocean-green-700 text-lg"
                     : "text-xs"
-                } transition-all`}
+                }  transition-all`}
               >
                 Stan obecny
               </p>
@@ -189,7 +157,7 @@ const CalkulatorME = () => {
                   secondStepShow
                     ? "font-bold text-ocean-green-700 text-lg"
                     : "text-xs"
-                } transition-all`}
+                } transition-all `}
               >
                 Rachunek 2023
               </p>
@@ -198,14 +166,14 @@ const CalkulatorME = () => {
                   ofertaStepShow
                     ? "font-bold text-ocean-green-700 text-lg"
                     : "text-xs"
-                } transition-all`}
+                } transition-all `}
               >
                 Wycena
               </p>
             </div>
           </div>
           <div>
-            {firstStepShow && (
+            {firstStepShow ? (
               <FirstStep
                 year={year}
                 twoMonth={twoMonth}
@@ -221,8 +189,10 @@ const CalkulatorME = () => {
                 showPriceForkWp={showPriceForkWp}
                 calculation={calculation}
               />
+            ) : (
+              ""
             )}
-            {secondStepShow && (
+            {secondStepShow ? (
               <SecondStep
                 setShowUpPriceForkWp={setShowUpPriceForkWp}
                 showUpPriceForkWp={showUpPriceForkWp}
@@ -247,18 +217,22 @@ const CalkulatorME = () => {
                 limit={limit}
                 resultForSecondPage={resultForSecondPage}
               />
+            ) : (
+              ""
             )}
-            {ofertaStepShow && (
+            {ofertaStepShow ? (
               <Oferta
                 ActivePV={ActivePV}
                 ActivePVME={ActivePVME}
                 result={result}
               />
+            ) : (
+              ""
             )}
           </div>
         </div>
-        <div className="flex justify-between mt-5">
-          {(secondStepShow || ofertaStepShow) && (
+        <div className="flex justify-between mt-5 ">
+          {secondStepShow && ofertaStepShow ? (
             <button
               onClick={() => {
                 if (currentPage === 2) {
@@ -272,6 +246,8 @@ const CalkulatorME = () => {
               <i className="pr-2 fa-solid fa-circle-arrow-left"></i>Poprzedni
               krok
             </button>
+          ) : (
+            ""
           )}
           <button
             onClick={() => {
@@ -281,8 +257,8 @@ const CalkulatorME = () => {
                 secondPage();
               }
             }}
-            className={`px-2 md:px-4 py-2 text-xs md:text-xl rounded bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 text-ocean-green-800 transition-all  ${
-              currentPage === 1 ? "opacity-0" : "opacity-100"
+            className={`px-2 md:px-4 py-2 text-xs md:text-xl rounded  bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 text-ocean-green-800 transition-all  ${
+              currentPage == 1 ? "opacity-0" : "opacity-100"
             }`}
           >
             <i className="pr-2 fa-solid fa-circle-arrow-left"></i>Poprzedni krok
@@ -296,10 +272,8 @@ const CalkulatorME = () => {
                 ofertaPage();
               }
             }}
-            className={`px-2 md:px-4 py-2 text-xs md:text-xl rounded bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 text-ocean-green-800 transition-all  ${
-              currentPage === 3 || priceToPay === 0
-                ? "opacity-0"
-                : "opacity-100"
+            className={`px-2 md:px-4 py-2 text-xs md:text-xl rounded  bg-gradient-to-br from-ocean-green-100 to-ocean-green-200 text-ocean-green-800 transition-all  ${
+              currentPage == 3 || priceToPay == 0 ? "opacity-0" : "opacity-100"
             }`}
           >
             Przejdź dalej

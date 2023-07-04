@@ -4,10 +4,8 @@ import Card from './Card'
 const Prices = () => {
 const data = [
   {
-    name: "Wariant I",
-    priceOne: "900",
-    priceTwo: "785",
-    priceThree: "653",
+    name: "Standard",
+    priceOne: "531 zł/rok netto",
     list: [
       "Analiza inwertera",
       "Pomiary elektryczne",
@@ -17,10 +15,8 @@ const data = [
     ],
   },
   {
-    name: "Wariant II",
-    priceOne: "1250",
-    priceTwo: "1107",
-    priceThree: "964",
+    name: "Dla Domy",
+    priceOne: "783 zł/rok netto",
     list: [
       "Analiza inwertera",
       "Pomiary elektryczne",
@@ -33,10 +29,8 @@ const data = [
     ],
   },
   {
-    name: "Wariant III",
-    priceOne: "1950",
-    priceTwo: "1549",
-    priceThree: "1399",
+    name: "Dla Firmy",
+    priceOne: "Indywidualna wycena",
     list: [
       "Analiza inwertera",
       "Pomiary elektryczne",
@@ -56,12 +50,12 @@ const data = [
   return (
     <>
       <div id="Przegland" className="bg-port-gore-950 text-ocean-green-50">
-        <section className="max-w-7xl px-6 mx-auto py-32">
+        <section className="px-6 py-32 mx-auto max-w-7xl">
           <h2 className="mb-12 text-3xl font-bold tracking-tight text-center md:text-5xl ">
             PRZEGLĄD INSTALACJI <br />
             <span className="pl-2 text-ocean-green-400">FOTOWOLTAICZNEJ</span>
           </h2>
-          <div className="flex flex-wrap justify-between gap-5">
+          <div className="flex flex-wrap gap-5 justify-stretch">
             <Card data={data} />
           </div>
         </section>
