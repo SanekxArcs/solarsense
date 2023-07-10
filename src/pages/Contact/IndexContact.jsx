@@ -22,6 +22,8 @@ const IndexContact = ({ textToMessage, setTextToMessage }) => {
           }
         />
 
+
+
         <Contact
           textToMessage={textToMessage}
           setTextToMessage={setTextToMessage}
