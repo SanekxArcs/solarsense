@@ -1,0 +1,14 @@
+backend:
+  name: github
+  repo: SanekxArcs/solarsense
+media_folder: /src/assets
+public_folder: /public/assets
+collections:
+  - name: 'posts'
+    label: 'Posts'
+    folder: 'content/posts'
+    create: true
+    fields:
+      - { name: 'title', label: 'Title' }
+      - { name: 'date', label: 'Date', widget: 'date' }
+      - { name: 'body', label: 'Body', widget: 'markdown' }
