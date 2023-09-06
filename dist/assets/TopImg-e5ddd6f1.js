@@ -1,1 +1,0 @@
-import{j as t,m as a,t as i}from"./index-c5161e4d.js";const s=()=>t(a.div,{initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},className:"relative ",children:t("img",{className:"absolute top-0 left-0 right-0 w-full -z-50",src:i,alt:""})});export{s as T};
