@@ -40,6 +40,12 @@ function App() {
         <motion.div className="progress-bar z-[9999]" style={{ scaleX }} />
         <Header />
         <UnderHeader toggleMenu={toggleMenu} isOpen={isOpen} />
+        <div className="flex flex-col justify-center px-5 text-xl bg-red-600 py-7">
+          <p className="text-center">Uwaga firma jest zamknięta!</p>
+          <p className="text-center">
+            Dane na stronie są nieaktualne
+          </p>
+        </div>
         <LayoutAnimete
           textToMessage={textToMessage}
           setTextToMessage={setTextToMessage}

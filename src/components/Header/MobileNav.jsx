@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import LightLogo from "../../assets/solarsense-light-logo.svg";
+import LightLogo from "../../assets/logo-solar-sense.svg";
 import { AnimatePresence, motion } from "framer-motion";
 
 const MobileNav = ({ toggleMenu, isOpen }) => {
@@ -54,7 +54,7 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
                 exit="exit"
                 className={`absolute inset-2 text-ocean-green-50 min-h-screen`}
               >
-                <div className="relative z-50 rounded  bg-port-gore-950">
+                <div className="relative z-50 rounded bg-port-gore-950">
                   <button
                     title="hamburger menu close"
                     onClick={toggleMenu}
@@ -111,7 +111,7 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
                         Kontakt
                       </NavLink>
                     </li>
-                    <li className="px-4 py-2 transition-all duration-300 rounded  hover:bg-ocean-green-400 w-full text-center">
+                    <li className="w-full px-4 py-2 text-center transition-all duration-300 rounded hover:bg-ocean-green-400">
                       <a
                         className=" text-ocean-green-50"
                         href="tel:+48733897120"
@@ -119,7 +119,7 @@ const MobileNav = ({ toggleMenu, isOpen }) => {
                         +48 733 897 120
                       </a>
                     </li>
-                    <li className="px-4 py-2 transition-all duration-300 rounded  hover:bg-ocean-green-400 w-full text-center">
+                    <li className="w-full px-4 py-2 text-center transition-all duration-300 rounded hover:bg-ocean-green-400">
                       <a
                         className=" text-ocean-green-50"
                         href="mailto:buiro@solarsense.com"
